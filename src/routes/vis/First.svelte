@@ -151,7 +151,7 @@
             least two (local) conflict stakeholders, at least one of them
             needing to be a belligerent. <br /><br />
 
-            <strong style="color: steelblue;">Mediation-related events</strong>:
+            <strong>Mediation-related events</strong>:
             non-coercive measures to facilitate the mediation. These measures
             are aimed at (1) encouraging a conflict party or parties to come
             to/continue with the negotiation; (2) expanding the range of actors
@@ -159,8 +159,7 @@
             among third-parties; (4) monitoring and advising on implementation
             as part of formal follow-up mechanisms.<br /><br />
 
-            <strong style="color: red;"
-                >Best estimate of battle-related deaths</strong
+            <strong>Best estimate of battle-related deaths</strong
             >: the most reliable assessment of fatalities resulting directly
             from combat between armed actors. Source:
             <a

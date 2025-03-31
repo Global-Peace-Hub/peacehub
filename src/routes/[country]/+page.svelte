@@ -556,108 +556,129 @@
     $: pathData = line(ucdp_final);
 </script>
 
+<header>
+    <a href="#main" class="skip-link">Skip to main content</a>
+</header>
+
 <div class="wrapper" bind:clientWidth={width}>
-    <div class="header">
-        <h1 style="font-size: 50px;">{country + " " + header_years}</h1>
-    </div>
-    <!-- mediations per month -->
-    <First
-        {innerWidthAdjusted}
-        {innerHeight}
-        {width}
-        {height}
-        {margin}
-        {xScale}
-        {yScale}
-        {ucdp_xScale}
-        {ucdp_yScale}
-        {historical_events}
-        {processedData}
-        {processedM}
-        {pathData}
-        {ucdp_final}
-    />
-    <!-- unique actors -->
-    <Second
-        {width}
-        {height}
-        {innerHeight}
-        {margin}
-        {xScale}
-        {historical_events}
-        {result}
-    />
+    <main id="main">
+        <div class="header">
+            <h1 style="font-size: 50px;">{country + " " + header_years}</h1>
+        </div>
+        <!-- mediations per month -->
+        <First
+            {innerWidthAdjusted}
+            {innerHeight}
+            {width}
+            {height}
+            {margin}
+            {xScale}
+            {yScale}
+            {ucdp_xScale}
+            {ucdp_yScale}
+            {historical_events}
+            {processedData}
+            {processedM}
+            {pathData}
+            {ucdp_final}
+        />
+        <!-- unique actors -->
+        <Second
+            {width}
+            {height}
+            {innerHeight}
+            {margin}
+            {xScale}
+            {historical_events}
+            {result}
+        />
 
-    <!-- mediation locations -->
-    <Third
-        {mediations}
-        {width}
-        {height}
-        {margin}
-        {topLocations}
-        {horizontal_xScale}
-        {horizontal_yScale}
-    />
+        <!-- mediation locations -->
+        <Third
+            {mediations}
+            {width}
+            {height}
+            {margin}
+            {topLocations}
+            {horizontal_xScale}
+            {horizontal_yScale}
+        />
 
-    <h1>Agreements</h1>
+        <h1>Agreements</h1>
 
-    <!-- agreements per month -->
-    <Fourth
-        {width}
-        {height}
-        {innerHeight}
-        {margin}
-        {historical_events}
-        {xScale}
-        {agt_processed}
-    />
+        <!-- agreements per month -->
+        <Fourth
+            {width}
+            {height}
+            {innerHeight}
+            {margin}
+            {historical_events}
+            {xScale}
+            {agt_processed}
+        />
 
-    <!-- list of agreements -->
-    <Fifth {width} {agreements} />
+        <!-- list of agreements -->
+        <Fifth {width} {agreements} />
 
-    <h1>Mediation</h1>
+        <h1>Mediation</h1>
 
-    <!-- top mediators -->
-    <Sixth
-        {width}
-        {height}
-        {margin}
-        {top_ten_mediators}
-        {horizontal_yScale}
-        {horizontal_mediator_yScale}
-    />
-    <!-- types of mediators -->
-    <Seventh
-        {width}
-        {innerWidthAdjusted}
-        {height}
-        {nodes}
-        {margin}
-        {r_scale}
-        {categories}
-        {x_circle}
-    />
+        <!-- top mediators -->
+        <Sixth
+            {width}
+            {height}
+            {margin}
+            {top_ten_mediators}
+            {horizontal_yScale}
+            {horizontal_mediator_yScale}
+        />
+        <!-- types of mediators -->
+        <Seventh
+            {width}
+            {innerWidthAdjusted}
+            {height}
+            {nodes}
+            {margin}
+            {r_scale}
+            {categories}
+            {x_circle}
+        />
 
-    <!-- processes -->
-    <h1>Processes</h1>
-    <!-- <Eight {width} {fil_processes} {country} /> -->
+        <!-- processes -->
+        <h1>Processes</h1>
+        <!-- <Eight {width} {fil_processes} {country} /> -->
 
-    <!-- mediation timeline -->
-    <Nine
-        {width}
-        {height}
-        {innerHeight}
-        {innerWidthAdjusted}
-        {margin}
-        {mediator_counts}
-        {mediations_only}
-        {only_M}
-        {actorLookup}
-        {abbreviations}
-    />
+        <!-- mediation timeline -->
+        <Nine
+            {width}
+            {height}
+            {innerHeight}
+            {innerWidthAdjusted}
+            {margin}
+            {mediator_counts}
+            {mediations_only}
+            {only_M}
+            {actorLookup}
+            {abbreviations}
+        />
+    </main>
 </div>
 
 <style>
+    .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 10px;
+        background: #000;
+        color: #fff;
+        padding: 8px;
+        z-index: 100;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .skip-link:focus {
+        top: 10px;
+    }
     .wrapper {
         width: calc(100% - 100px); /* Ensures a margin of 50px on both sides */
         box-sizing: border-box; /* Ensures padding and borders are included in the width */

@@ -117,13 +117,10 @@
 </script>
 
 <div id="wrapper" bind:clientWidth={width}>
-    <!-- <p on:click={() => goto("/sudan")}>
-        Visit svelte.dev/docs/kit to read the documentation
-    </p> -->
     <div id="home">
         <div class="logos">
             <img alt="University of St Andrews Logo" src="uosa.png" />
-            <img alt="University of St Andrews Logo" src="uoe_white.png" />
+            <img alt="University of Edinburgh Logo" src="uoe_white.png" />
             <img alt="PeaceRep Logo" src="peacerep_logo.jpg" />
         </div>
 
@@ -145,16 +142,18 @@
 
             <!-- Individual Buttons (Desktop) -->
             {#if !isSmallScreen}
-                {#each sections as section}
-                    <button
-                        class="menu-button"
-                        on:click={() => scrollToSection(section.id)}
-                    >
-                        {section.name}
-                    </button>
-                {/each}
+                <nav aria-label="Main Navigation">
+                    {#each sections as section}
+                        <button
+                            class="menu-button"
+                            on:click={() => scrollToSection(section.id)}
+                            tabindex="0"
+                        >
+                            {section.name}
+                        </button>
+                    {/each}
+                </nav>
             {/if}
-
             <!-- Dropdown Menu (Mobile) -->
             {#if isSmallScreen && isMenuOpen}
                 <ul class="dropdown">
@@ -164,6 +163,7 @@
                                 style="background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
                                 on:click={() => scrollToSection(section.id)}
                                 class="menu-item"
+                                tabindex="0"
                             >
                                 {section.name}
                             </button>
@@ -173,12 +173,15 @@
             {/if}
         </div>
 
-        <!-- <h1>MEND: Mediation Events and Negotiators Database</h1> -->
-        <h1 style="font-size: 50px;">Global PeaceHub</h1>
-        <h3>
-            Understanding shifts in the geopolitical context of peace and
-            transition processes
-        </h3>
+        <header>
+            <h1 style="font-size: 50px;">Global PeaceHub</h1>
+        </header>
+        <section aria-labelledby="geopolitical-context">
+            <h3 id="geopolitical-context">
+                Understanding shifts in the geopolitical context of peace and
+                transition processes
+            </h3>
+        </section>
     </div>
 
     <main
@@ -202,8 +205,8 @@
         />
     </main>
 
-    <div id="about">
-        <h3 style="padding: 10px;">About</h3>
+    <section id="about" aria-labelledby="about-heading">
+        <h3 id="about-heading" style="padding: 10px;">About</h3>
         <div id="about_content">
             <p id="first-paragraph" style="text-align: justify;">
                 Our research explores fragmentations in the global order and how
@@ -287,10 +290,15 @@
                 {contentVisible ? "Show Less" : "Read More"}
             </button>
         </div>
-    </div>
+    </section>
 
-    <div id="people">
-        <h3 style="width: 100px;text-align: left; padding: 10px">Team</h3>
+    <section id="people" aria-labelledby="team-heading">
+        <h3
+            id="team-heading"
+            style="width: 100px; text-align: left; padding: 10px"
+        >
+            Team
+        </h3>
         <div class="image-grid">
             {#each images_ppl as { src, name, position } (src)}
                 <div class="image-container-people">
@@ -300,54 +308,22 @@
                         {src}
                         alt={name}
                     />
-                    <p><strong>{name}</strong></p>
+                    <h3>{name}</h3>
+                    <!-- Changed to h3 for the name -->
                     <p>{position}</p>
                 </div>
             {/each}
         </div>
-    </div>
+    </section>
 
     <!-- research section -->
-    <div id="research">
+    <section id="research" aria-labelledby="research-heading">
         <h3
-            style="width: 100px;text-align: left;border-radius: 2px; font-size:20px;"
+            id="research-heading"
+            style="width: 100px; text-align: left; border-radius: 2px; font-size: 20px;"
         >
             Research
         </h3>
-        <!-- <div class="gallery-container-research">
-            <button
-                class="arrow left"
-                style="border: 2px solid white;"
-                aria-label="Scroll left"
-                on:click={() => scrollGalleryResearch(-1)}
-            >
-                <i
-                    class="fa fa-arrow-left"
-                    style="color: white;"
-                    aria-hidden="true"
-                ></i>
-            </button>
-            <div class="image-row-research">
-                {#each images as { src, name } (src)}
-                    <div class="image-container">
-                        <img loading="lazy" {src} alt={name} />
-                        <p>{name}</p>
-                    </div>
-                {/each}
-            </div>
-            <button
-                class="arrow right"
-                aria-label="Scroll right"
-                style="border: 2px solid white;"
-                on:click={() => scrollGalleryResearch(1)}
-            >
-                <i
-                    class="fa fa-arrow-right"
-                    style="color: white;"
-                    aria-hidden="true"
-                ></i>
-            </button>
-        </div> -->
 
         <div id="publications">
             <div class="publication_content">
@@ -521,10 +497,10 @@
                 </button>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="funding">
-        <h3 style="padding: 10px;">Funding</h3>
+    <section id="funding" aria-labelledby="funding-heading">
+        <h3 id="funding-heading" style="padding: 10px;">Funding</h3>
         <div id="funding_content">
             <p>
                 Our research is supported by the Peace and Conflict Resolution
@@ -535,19 +511,21 @@
                 from the Universities of St Andrews and Edinburgh.
             </p>
         </div>
-    </div>
+    </section>
 
-    <div id="credit" style="background-color: #001c23;">
+    <footer id="credit" style="background-color: #001c23;">
         <p style="text-align: center;">
-            Web and Visualization Development: <strong
-                ><a
+            Web and Visualization Development: <strong>
+                <a
                     style="text-decoration: none;"
                     href="https://tomasvancisin.co.uk/"
-                    target="_blank">Tomas Vancisin</a
-                ></strong
-            >
+                    target="_blank"
+                >
+                    Tomas Vancisin
+                </a>
+            </strong>
         </p>
-    </div>
+    </footer>
 </div>
 
 <style>
@@ -603,6 +581,13 @@
         display: flex;
         align-items: center;
         gap: 3px;
+    }
+
+    button:focus {
+        outline: 3px solid #005fcc; /* Add visible focus indicator */
+        outline-offset: 2px; /* Adds spacing around the outline */
+        position: relative; /* Ensures it’s not off-screen */
+        z-index: 1;
     }
 
     .menu-button {
@@ -776,4 +761,5 @@
         background-color: rgb(78, 78, 78);
         color: white;
     }
+
 </style>

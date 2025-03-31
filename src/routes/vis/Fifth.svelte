@@ -26,6 +26,7 @@
             pips
             range
             all="label"
+            ariaLabels={[selectedYearsAgt[0],selectedYearsAgt[1]]}
         />
     </div>
     <div class="table">
@@ -47,6 +48,7 @@
                         style="margin-left: auto;"
                         href={`https://pax.peaceagreements.org/agreements/${row.agmt_id_PAX}`}
                         target="_blank"
+                        alt={"agreement number" + row.agmt_id_PAX}
                     >
                         <img
                             alt="logo"

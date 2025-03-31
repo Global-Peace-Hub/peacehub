@@ -195,6 +195,8 @@
         //     return i;
         // });
     }
+    $: console.log(selectedYears);
+    
 </script>
 
 <!-- actors and mediations over time -->
@@ -210,10 +212,11 @@
             pips
             range
             all="label"
+            ariaLabels={[selectedYears[0],selectedYears[1]]}
         />
     </div>
     <!-- Dropdown List -->
-    <div class="select_group">
+    <!-- <div class="select_group">
         <Select
             --border-radius="3px"
             --placeholder-color="white"
@@ -235,7 +238,7 @@
                 {item.label}
             </div>
         </Select>
-    </div>
+    </div> -->
 
     <svg {width} {height}>
         <g transform={`translate(${margin.left}, ${margin.top})`}>

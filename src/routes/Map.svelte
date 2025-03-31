@@ -224,7 +224,7 @@
   </script>
   
   <div class="map-container" bind:clientHeight={height}>
-    <div id="map" bind:this={map}></div>
+    <div class="map" bind:this={map}></div>
     {#if isOverlayVisible}
       <div class="overlay">
         <button class="remove-overlay" on:click={removeOverlay}
@@ -244,7 +244,7 @@
       position: relative;
     }
   
-    #map {
+    .map {
       width: 100%;
       height: 100%;
     }
