@@ -44,7 +44,7 @@ deploy-test:
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
 
-deploy-test:
+deploy-prod:
   stage: deploy-prod
   environment:
     name: Prod
