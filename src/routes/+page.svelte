@@ -121,7 +121,7 @@
         <div class="logos">
             <img alt="University of St Andrews Logo" src="uosa.png" />
             <img alt="University of Edinburgh Logo" src="uoe_white.png" />
-            <img alt="PeaceRep Logo" src="peacerep_logo.jpg" />
+            <img alt="PeaceRep logo (Peace and Conflict Resolution Evidence Platform)" src="peacerep_logo.jpg" />
         </div>
 
         <div id="navigation">
@@ -534,22 +534,17 @@
     }
 
     .logos {
-        display: flex;
-        gap: 5px;
-        position: absolute;
-        top: 5px;
-        right: 5px;
+        gap: 30px;
     }
 
     img {
-        height: 35px;
-        margin-left: 5px;
+        height: 60px;
+        margin-left: 30px;
     }
 
     h1 {
         color: white;
         font-weight: 800;
-        margin-bottom: 5px;
     }
 
     h3 {
@@ -562,7 +557,8 @@
     #home {
         position: relative;
         width: 100%;
-        height: 300px;
+        padding-top: 70px;
+        padding-bottom: 50px;
         align-content: center;
         text-align: center;
         background-color: #001c23;
@@ -761,5 +757,4 @@
         background-color: rgb(78, 78, 78);
         color: white;
     }
-
 </style>
