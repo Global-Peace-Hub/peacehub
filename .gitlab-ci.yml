@@ -1,0 +1,64 @@
+image: node:23-bookworm
+
+include:
+  - project: 'ResComp/gitlab-ci-includes'
+    file:
+      - ssh.yml
+
+.deploy:
+  script:
+    - ssh -o stricthostkeychecking=no $SSH_USER@$SSH_SERVER "rm -fr $DEPLOY_PATH/*"
+    - scp -o stricthostkeychecking=no -r build/* $SSH_USER@$SSH_SERVER:$DEPLOY_PATH
+
+stages:
+  - build
+  - deploy-test
+  - deploy-prod
+
+build:
+  stage: build
+  before_script:
+    - yarn --frozen-lockfile install
+  script:
+    - yarn build
+  artifacts:
+    paths:
+      - build/
+
+deploy-test:
+  stage: deploy-test
+  environment:
+    name: Test
+  variables:
+    SSH_USER: $TEST_SSH_USER
+    SSH_SERVER: $TEST_SSH_SERVER
+    SSH_KEY: "$TEST_SSH_KEY"
+    SSH_PASSPHRASE: "$TEST_SSH_PASS"
+    DEPLOY_PATH: $TEST_DEPLOY_PATH
+  before_script:
+    - !reference [.ssh_with_passphrase, before_script]
+    - !reference [build, before_script]
+  script:
+    - !reference [build, before_script]
+    - !reference [.deploy, script]
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+
+deploy-prod:
+  stage: deploy-prod
+  environment:
+    name: Prod
+  variables:
+    SSH_USER: $PROD_SSH_USER
+    SSH_SERVER: $PROD_SSH_SERVER
+    SSH_KEY: "$PROD_SSH_KEY"
+    SSH_PASSPHRASE: "$PROD_SSH_PASS"
+    DEPLOY_PATH: $PROD_DEPLOY_PATH
+  before_script:
+    - !reference [.ssh_with_passphrase, before_script]
+    - !reference [build, before_script]
+  script:
+    - !reference [build, before_script]
+    - !reference [.deploy, script]
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
