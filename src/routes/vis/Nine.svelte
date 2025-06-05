@@ -201,7 +201,7 @@
 
 <!-- actors and mediations over time -->
 <div class="actor_types">
-    <h2>Mediation Timeline</h2>
+    <h3>Mediation Timeline</h3>
     <!-- Slider UI -->
     <div class="slider-container">
         <RangeSlider

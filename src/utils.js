@@ -6,6 +6,12 @@ export async function getGeo(url) {
     return json;
 }
 
+export async function getGeoMultiple(urls) {
+    const promises = urls.map(url => getGeo(url));
+    const results = await Promise.all(promises);
+    return results; // array of GeoJSON objects
+}
+
 export async function getIndividualCSV(path) {
     let loadedData = await d3.csv(path);
     return loadedData;

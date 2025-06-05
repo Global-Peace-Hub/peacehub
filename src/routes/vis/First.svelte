@@ -59,7 +59,7 @@
 
 <!-- mediations per month -->
 <div class="mediation_type" bind:clientWidth={width}>
-    <h2>Mediation Events per Month</h2>
+    <h3>Mediation Events per Month</h3>
     <div class="legend">
         <div class="legend-item">
             <div class="color-box white"></div>

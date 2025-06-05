@@ -2,7 +2,7 @@
     import { goto } from "$app/navigation";
     import { onMount } from "svelte";
     import {
-        getGeo,
+        getGeoMultiple,
         images,
         sections,
         scrollToSection,
@@ -12,6 +12,7 @@
 
     let width;
     let all_polygons;
+    let geo_labels;
     let showScrollToTop = false; // Visibility of the scroll-to-top button
     let isMenuOpen = false; // Toggle menu visibility
     let isSmallScreen = false; // Check if screen size is small
@@ -78,9 +79,10 @@
     // INIT
     onMount(() => {
         // Load GEOJSON
-        const json_path = "data/geojson.json";
-        getGeo(json_path).then((geo) => {
-            all_polygons = geo;
+        const json_path = ["data/geojson.json", "data/central_points.json"];
+        getGeoMultiple(json_path).then((geo) => {
+            all_polygons = geo[0];
+            geo_labels = geo[1];
         });
 
         checkScreenSize();
@@ -118,14 +120,7 @@
 
 <div id="wrapper" bind:clientWidth={width}>
     <div id="home">
-        <div class="logos">
-            <img alt="University of St Andrews Logo" src="uosa.png" />
-            <img alt="University of Edinburgh Logo" src="uoe_white.png" />
-            <img alt="PeaceRep logo (Peace and Conflict Resolution Evidence Platform)" src="peacerep_logo.jpg" />
-        </div>
-
         <div id="navigation">
-            <!-- Hamburger Icon (Mobile) -->
             <i
                 style="padding: 5px; cursor: pointer;"
                 class="fa fa-bars menu-icon"
@@ -139,25 +134,45 @@
                     }
                 }}
             ></i>
-
             <!-- Individual Buttons (Desktop) -->
             {#if !isSmallScreen}
                 <nav aria-label="Main Navigation">
-                    {#each sections as section}
+                    <!-- {#each sections as section}
                         <button
                             class="menu-button"
-                            on:click={() => scrollToSection(section.id)}
+                            on:click={() => goto("/about")}
                             tabindex="0"
                         >
                             {section.name}
                         </button>
-                    {/each}
+                    {/each} -->
+                    <button
+                        class="menu-button"
+                        on:click={() => scrollToSection("home")}
+                        tabindex="0"
+                    >
+                        Home
+                    </button>
+                    <button
+                        class="menu-button"
+                        on:click={() => goto("/about")}
+                        tabindex="0"
+                    >
+                        About
+                    </button>
+                    <button
+                        class="menu-button"
+                        on:click={() => goto("/research")}
+                        tabindex="0"
+                    >
+                        Research
+                    </button>
                 </nav>
             {/if}
             <!-- Dropdown Menu (Mobile) -->
             {#if isSmallScreen && isMenuOpen}
                 <ul class="dropdown">
-                    {#each sections as section}
+                    <!-- {#each sections as section}
                         <li>
                             <button
                                 style="background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
@@ -168,20 +183,50 @@
                                 {section.name}
                             </button>
                         </li>
-                    {/each}
+                    {/each} -->
+                    <button
+                        style="background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
+                        on:click={() => scrollToSection("home")}
+                        class="menu-item"
+                        tabindex="0"
+                    >
+                        Home
+                    </button>
+                    <button
+                        style="background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
+                        on:click={() => goto("/about")}
+                        class="menu-item"
+                        tabindex="0"
+                    >
+                        About
+                    </button>
+                    <button
+                        style="background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
+                        on:click={() => goto("/research")}
+                        class="menu-item"
+                        tabindex="0"
+                    >
+                        Research
+                    </button>
                 </ul>
             {/if}
         </div>
 
         <header>
-            <h1 style="font-size: 50px;">Global PeaceHub</h1>
-        </header>
-        <section aria-labelledby="geopolitical-context">
-            <h3 id="geopolitical-context">
+            <h1 style="font-size: 45px; margin-bottom: 0px">Global PeaceHub</h1>
+            <h2 id="geopolitical-context">
                 Understanding shifts in the geopolitical context of peace and
                 transition processes
-            </h3>
-        </section>
+            </h2>
+            <div class="logos">
+                <img alt="University of St Andrews Logo" src="uosa.png" />
+                <img alt="University of Edinburgh Logo" src="uoe_white.png" />
+                <img
+                    alt="PeaceRep logo (Peace and Conflict Resolution Evidence Platform)"
+                    src="peacerep_logo.jpg"
+                />
+            </div>
+        </header>
     </div>
 
     <main
@@ -199,105 +244,16 @@
         </h3>
         <Map
             {all_polygons}
+            {geo_labels}
             subpage={(data) => {
                 goto("/" + data);
             }}
         />
     </main>
 
-    <section id="about" aria-labelledby="about-heading">
-        <h3 id="about-heading" style="padding: 10px;">About</h3>
-        <div id="about_content">
-            <p id="first-paragraph" style="text-align: justify;">
-                Our research explores fragmentations in the global order and how
-                these impact peace and transition processes. We seek to better
-                understand why and how different third-party actors – state,
-                intergovernmental, and non-governmental actors – intervene in
-                attempts to broker peace, and how they see themselves
-                contributing to reduction of conflict and risks of conflict
-                relapse. We also study how local actors are navigating this
-                multiplicity of mediators and peacebuilders and how this is
-                shaping conflict outcomes and post-conflict governance.
-                <br />
-                <br />
-                The project produces dedicated case and trends studies as part of
-                the
-                <a
-                    href="https://peacerep.org/research/geopolitical-transitions/"
-                    style="text-decoration: none">PeaceRep Global Transitions</a
-                >
-                series and is developing two complementary datasets:
-                <strong
-                    >Third Parties in Peace Agreements Dataset (PAA-X)</strong
-                >
-                and
-                <strong>Mediation Event and Negotiators Database (MEND)</strong
-                >.
-            </p>
-
-            <!-- Conditional rendering for the additional paragraphs -->
-            {#if contentVisible}
-                <p style="margin-left: 30px; margin-right: 30px;">
-                    • <strong>Third Parties in Peace Agreements Dataset</strong
-                    >. Most formal agreements in peace processes are supported
-                    by parties external to the armed conflict, in the form of
-                    third-party signature to the agreement. In the PA-X
-                    collection of peace agreements that address inter- and
-                    intra- state, or mixed conflicts, around sixty percent of
-                    agreements feature a signatory which is not one of the main
-                    conflict parties, and around one-third of all agreements
-                    feature an international third-party signatory. The Third
-                    Parties in Peace Agreements dataset draws on the Peace
-                    Agreement Actors Dataset (PAA-X) and is the only existing
-                    data resource on third-party signatories in peace
-                    agreements. It allows for an in-depth examination of the
-                    patterns of engagement in peace agreements and provides
-                    valuable insights into what actors are necessary for
-                    conflict parties to commit to a formal, written agreement.
-                    This data is instrumental in discerning the regional and
-                    topical priorities of individual interveners since 1990,
-                    giving us insight into the types of agreements supported by
-                    individual third parties.
-                </p>
-                <p style="margin-left: 30px; margin-right: 30px;">
-                    • <strong
-                        >Mediation Event and Negotiators Database (MEND)</strong
-                    > is a new and growing resource for researchers and practitioners
-                    with a focus on peace and conflict resolution. The dataset comprehensively
-                    covers broader peacemaking efforts within major armed conflicts,
-                    tracking all mediation and mediation-related events involving
-                    external third-party actors, regardless of whether these events
-                    result in a formal peace agreement. It captures mediation as
-                    part of formal peace initiatives and mediation efforts running
-                    in support or in parallel to these. Each record corresponds to
-                    a unique event, providing detailed metadata about location, third
-                    parties, local actors, and individuals involved. The MEND dataset
-                    facilitates a nuanced understanding of the roles various actors
-                    play in contributing to the peace processes and in brokering
-                    agreements. It also enables the identification of unsuccessful
-                    or spoiler mediation efforts that may still have influenced the
-                    ongoing conflict management. In an era marked by global fragmentation,
-                    this data plays a crucial role in providing insights into where,
-                    when, how, and why actors engage in mediation activities, allowing
-                    for the mapping of network dynamics between international and
-                    local actors, and identification of the mediation conditions
-                    conducive to the eventual signing of agreements.
-                </p>
-            {/if}
-
-            <!-- "Read more" button -->
-            <button id="read-more-btn" on:click={toggleContent}>
-                {contentVisible ? "Show Less" : "Read More"}
-            </button>
-        </div>
-    </section>
-
     <section id="people" aria-labelledby="team-heading">
-        <h3
-            id="team-heading"
-            style="width: 100px; text-align: left; padding: 10px"
-        >
-            Team
+        <h3 id="team-heading" style="text-align: left; padding: 10px">
+            Core Team
         </h3>
         <div class="image-grid">
             {#each images_ppl as { src, name, position } (src)}
@@ -306,9 +262,9 @@
                         style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);"
                         loading="lazy"
                         {src}
-                        alt={name}
+                        alt="PeaceHub team member"
                     />
-                    <h3>{name}</h3>
+                    <h4 style="margin: 10px;">{name}</h4>
                     <!-- Changed to h3 for the name -->
                     <p>{position}</p>
                 </div>
@@ -316,214 +272,16 @@
         </div>
     </section>
 
-    <!-- research section -->
-    <section id="research" aria-labelledby="research-heading">
-        <h3
-            id="research-heading"
-            style="width: 100px; text-align: left; border-radius: 2px; font-size: 20px;"
-        >
-            Research
-        </h3>
-
-        <div id="publications">
-            <div class="publication_content">
-                <h3>2025</h3>
-                <p>
-                    <strong>Elisa D’Amico</strong> (2025)
-                    <a
-                        style="color: #b6cee2; text-decoration: none;"
-                        href="https://peacerep.org/publication/conflict-in-a-warming-world/"
-                        >Conflict in a Warming World: How Climate Shocks Impact
-                        Rebel Demands and Peace Agreement Outcomes. [Climate &
-                        Natural Resources Series]. PeaceRep: The Peace and
-                        Conflict Resolution Evidence Platform, University of
-                        Edinburgh.</a
-                    >
-                </p>
-                <h3>2024</h3>
-                <p>
-                    <strong>Mateja Peter</strong> (2024)
-                    <a
-                        style="color: #b6cee2;text-decoration: none;"
-                        href="https://www.cogitatiopress.com/politicsandgovernance/article/view/7357"
-                        >‘Global fragmentation and collective security
-                        instruments: Weakening the liberal international order
-                        from within.’ Politics and Governance, 12 (7357), 1-15.</a
-                    >
-                </p>
-                <p>
-                    <strong>Sanja Badanjak and Mateja Peter</strong> (2024)
-                    <a
-                        style="color: #b6cee2;text-decoration: none;"
-                        href="https://www.c-r.org/accord/still-time-to-talk"
-                        >‘Diversification and Congestion in Peacemaking: What
-                        the Data Says’. in Theresa Whitfield (ed.), Still time
-                        to talk: Adaptation and innovation in peace mediation,
-                        Accord 30. London: Conciliation Resources.</a
-                    >
-                </p>
-                <p>
-                    <strong>Mateja Peter and Kasia Houghton</strong> (2024)
-                    <a
-                        style="color: #b6cee2;text-decoration: none;"
-                        href="https://peacerep.org/publication/russia-and-china-in-liberal-peacebuilding/"
-                        >Russia and China in Liberal Peacebuilding: Perceptions
-                        and Engagement with the Dayton Peace Process in Bosnia
-                        and Herzegovina. [Global Transitions Series]. PeaceRep:
-                        The Peace and Conflict Resolution Evidence Platform,
-                        University of Edinburgh.</a
-                    >
-                </p>
-                <p>
-                    <strong>Niamh Henry</strong> (2024)
-                    <a
-                        style="color: #b6cee2;text-decoration: none;"
-                        href="https://peacerep.org/publication/extracting-named-actors-from-text/"
-                        >Extracting Named Actors from Text: Using Named Entity
-                        Recognition (NER) in Peace and Conflict Studies [Peace
-                        Analytics Series]. PeaceRep: The Peace and Conflict
-                        Resolution Evidence Platform, University of Edinburgh.</a
-                    >
-                </p>
-                <p>
-                    <strong>Elisa D’Amico</strong> (2024)
-                    <a
-                        style="color: #b6cee2;text-decoration: none;"
-                        href="https://peacerep.org/publication/semi-automated-coding-for-conflict-mediation-research-database-development/"
-                        >Semi-Automated Coding for Conflict Mediation Research:
-                        Database Development. Peace Analytics Series, University
-                        of Edinburgh: Peace and Conflict Resolution Evidence
-                        Platform: November 2024.
-                    </a>
-                </p>
-                <p>
-                    <strong>Kasia Houghton</strong> (2024).
-                    <a
-                        style="color: #b6cee2;text-decoration: none;"
-                        href="https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781003372011-6/competition-norms-kasia-houghton"
-                        >‘The Competition over Norms: The Case of the Syrian
-                        Conflict.’ In Benjamin Houghton and Kasia Houghton
-                        (eds.) China, Russia and the USA in the Middle East: The
-                        Contest for Supremacy. London: Routledge, 46-64.
-                    </a>
-                </p>
-                <p>
-                    <strong>Mateja Peter and Ruoxi Wang</strong> (2024)
-                    <a
-                        style="color: #b6cee2;text-decoration: none;"
-                        href="https://brill.com/view/journals/joup/27/1/article-p85_005.xml"
-                        >‘China’s Approach to Human Security within and outside
-                        UN Peacekeeping: Drawing Lessons from South Sudan.’
-                        Journal of International Peacekeeping, 27(1), 85-114.</a
-                    >
-                </p>
-                {#if pubToggle}
-                    <h3>2023</h3>
-                    <p>
-                        <strong>Mateja Peter and Kasia Houghton</strong> (2023)
-                        <a
-                            style="color: #b6cee2;text-decoration: none;"
-                            href="https://peacerep.org/publication/third-party-mediation-in-sudan-and-south-sudan-longer-term-trends/"
-                            >Congestion and Diversification of Third-Party
-                            Mediation in Sudan and South Sudan: First Look at
-                            some Longer-Term Trends. [Global Transitions
-                            Series]. PeaceRep: The Peace and Conflict Resolution
-                            Evidence Platform, University of Edinburgh.</a
-                        >
-                    </p>
-                    <p>
-                        <strong>Mateja Peter and Marcel Plichta</strong> (2023)
-                        <a
-                            style="color: #b6cee2;text-decoration: none;"
-                            href="https://peacerep.org/publication/china-russia-sudan-economic-military-engagement/"
-                            >China and Russia in Sudan: Surveying data on
-                            economic and military engagement. [Global
-                            Transitions Series]. PeaceRep: The Peace and
-                            Conflict Resolution Evidence Platform, University of
-                            Edinburgh.th Sudan.’ Journal of International
-                            Peacekeeping, 27(1), 85-114.</a
-                        >
-                    </p>
-                    <p>
-                        <strong>Sanja Badanjak</strong> (2023)
-                        <a
-                            style="color: #b6cee2;text-decoration: none;"
-                            href="https://peacerep.org/publication/third-parties-peace-agreements-data-trends/"
-                            >Third Parties in Peace Agreements: First Look at
-                            New Data and Key Trends. [Global Transitions
-                            Series]. PeaceRep: The Peace and Conflict Resolution
-                            Evidence Platform, University of Edinburgh.</a
-                        >
-                    </p>
-                    <p>
-                        <strong>Sanja Badanjak</strong> (2023)
-                        <a
-                            style="color: #b6cee2;text-decoration: none;"
-                            href="https://peacerep.org/publication/eu-external-action-development-spending-covid/"
-                            >EU External Action and Development Spending in a
-                            Time of Covid-19. [Covid-19 Series]. PeaceRep: The
-                            Peace and Conflict Resolution Evidence Platform,
-                            University of Edinburgh.</a
-                        >
-                    </p>
-                    <h3>2022</h3>
-                    <p>
-                        <strong>Mateja Peter and Haley Rice</strong> (2022)
-                        <a
-                            style="color: #b6cee2;text-decoration: none;"
-                            href="https://peacerep.org/publication/non-western-approaches-to-peacemaking-and-peacebuilding-state-of-the-art-and-an-agenda-for-research/"
-                            >Non-Western approaches to peacemaking and
-                            peacebuilding: State-of-the-art and an agenda for
-                            research. [Global Transitions Series]. PeaceRep: The
-                            Peace and Conflict Resolution Evidence Platform,
-                            University of Edinburgh.</a
-                        >
-                    </p>
-                    <h3>Global Transitions Series</h3>
-                    <p>
-                        As part of the PeaceRep consortium, the project also
-                        produces the <a
-                            style="text-decoration: none;"
-                            target="_blank"
-                            href="https://peacerep.org/research/geopolitical-transitions/"
-                            >Global Transitions</a
-                        > series, edited by Mateja Peter. This includes publications
-                        by the core team and further studies produced in the wider
-                        consortium.
-                    </p>
-                {/if}
-                <button id="read-more-btn-pub" on:click={togglePublication}>
-                    {pubToggle ? "Show Less" : "Read More"}
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section id="funding" aria-labelledby="funding-heading">
-        <h3 id="funding-heading" style="padding: 10px;">Funding</h3>
-        <div id="funding_content">
-            <p>
-                Our research is supported by the Peace and Conflict Resolution
-                Evidence Platform (PeaceRep), funded by UK International
-                Development from the UK government. However, the views expressed
-                are those of the authors and do not necessarily reflect the UK
-                government’s official policies. We receive additional support
-                from the Universities of St Andrews and Edinburgh.
-            </p>
-        </div>
-    </section>
-
-    <footer id="credit" style="background-color: #001c23;">
+    <footer id="credit">
         <p style="text-align: center;">
             Web and Visualization Development: <strong>
-                <a
-                    style="text-decoration: none;"
-                    href="https://tomasvancisin.co.uk/"
-                    target="_blank"
-                >
+                <a href="https://tomasvancisin.co.uk/" target="_blank">
                     Tomas Vancisin
                 </a>
             </strong>
+        </p>
+        <p style="text-align: center;">
+            &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
         </p>
     </footer>
 </div>
@@ -535,6 +293,7 @@
 
     .logos {
         gap: 30px;
+        padding-top: 30px;
     }
 
     img {
@@ -580,9 +339,9 @@
     }
 
     button:focus {
-        outline: 3px solid #005fcc; /* Add visible focus indicator */
-        outline-offset: 2px; /* Adds spacing around the outline */
-        position: relative; /* Ensures it’s not off-screen */
+        outline: 3px solid #005fcc;
+        outline-offset: 2px;
+        position: relative;
         z-index: 1;
     }
 
@@ -652,6 +411,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     #funding_content {
         position: relative;
         margin: auto;
@@ -664,7 +424,7 @@
         background-color: #001c23;
     }
     #people {
-        background-color: #003645;
+        background-color: #001c23;
     }
     #about {
         position: relative;
@@ -684,7 +444,7 @@
         margin: auto;
         width: 100%;
         padding: 10px;
-        background-color: #001c23;
+        background-color: #00303e;
         font-weight: 200;
     }
 
@@ -733,7 +493,7 @@
     }
 
     .image-container-people p {
-        margin: 10px 0 0;
+        margin: 0px 0 0;
         font-size: 13px;
         color: white;
         line-height: 1;
@@ -756,5 +516,16 @@
     #read-more-btn-pub:hover {
         background-color: rgb(78, 78, 78);
         color: white;
+    }
+    :global(a) {
+        color: rgb(215, 215, 215);
+        font-weight: 400;
+    }
+
+    :global(a:focus) {
+        outline: none; /* optional: removes default focus ring */
+        background-color: rgb(255, 255, 255); /* highlight background */
+        color: black; /* change text color */
+        border-radius: 2px; /* optional: rounded highlight */
     }
 </style>

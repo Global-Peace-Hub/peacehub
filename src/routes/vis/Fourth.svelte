@@ -41,7 +41,7 @@
 
 <!-- agreements per month -->
 <div class="agreement_per_month" bind:clientWidth={width}>
-    <h2>Agreements per Month</h2>
+    <h3>Agreements per Month</h3>
     <div class="legend">
         <div class="legend-item">
             <div class="color-box-2 red"></div>

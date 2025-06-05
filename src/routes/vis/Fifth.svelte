@@ -16,7 +16,7 @@
 
 <!-- peace agreements -->
 <div class="agreement_list" bind:clientWidth={width}>
-    <h2>List of Agreements</h2>
+    <h3>List of Agreements</h3>
     <div class="slider-container">
         <RangeSlider
             bind:values={selectedYearsAgt}
@@ -51,7 +51,7 @@
                         alt={"agreement number" + row.agmt_id_PAX}
                     >
                         <img
-                            alt="logo"
+                            alt="Agreement in PAX"
                             src="../pax.jpg"
                             style="height: 30px; margin-left: auto;"
                         />
@@ -59,7 +59,7 @@
                 {:else}
                     <img
                         src="../new.png"
-                        alt="logo"
+                        alt="Newly"
                         style="height: 30px; margin-left: auto;"
                     />
                 {/if}

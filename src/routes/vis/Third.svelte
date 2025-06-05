@@ -12,7 +12,7 @@
 
 <!-- top mediation locations -->
 <div class="mediation_location" bind:clientWidth={width}>
-    <h2>Mediation Locations</h2>
+    <h3>Mediation Locations</h3>
     <div class="location_map">
         <Heatmap {mediations} />
     </div>

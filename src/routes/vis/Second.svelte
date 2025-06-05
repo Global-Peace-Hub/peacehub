@@ -34,7 +34,7 @@
 
 <!-- unique actors -->
 <div class="unique_actors" bind:clientWidth={width}>
-    <h2>Unique Third-Party Actors per Month</h2>
+    <h3>Unique Third-Party Actors per Month</h3>
     <svg {width} {height}>
         <g transform={`translate(${margin.left}, ${margin.top})`}>
             <g

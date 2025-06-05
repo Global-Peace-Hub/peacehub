@@ -554,17 +554,41 @@
 
     // Path Data
     $: pathData = line(ucdp_final);
+
+    function scrollToSection(event) {
+        const sectionId = event.target.value;
+        if (sectionId) {
+            const el = document.querySelector(sectionId);
+            el?.scrollIntoView({ behavior: "smooth" });
+        }
+    }
 </script>
 
-<header>
-    <a href="#main" class="skip-link">Skip to main content</a>
-</header>
-
 <div class="wrapper" bind:clientWidth={width}>
+    <header>
+        <a href="#main" class="skip-link">Skip to main Site</a>
+        <p>
+            <a href="/" aria-label="Back to main site">← Back to Main Site</a>
+        </p>
+    </header>
+    <nav class="page-nav" aria-label="Page section navigation">
+        <label for="section-nav" class="sr-only">Jump to section</label>
+        <div class="dropdown-wrapper">
+            <select id="section-nav" on:change={scrollToSection}>
+                <option value="">Jump to...</option>
+                <option value="#mediation">Mediation</option>
+                <option value="#agreements">Agreements</option>
+                <option value="#processes">Processes</option>
+            </select>
+        </div>
+    </nav>
     <main id="main">
         <div class="header">
             <h1 style="font-size: 50px;">{country + " " + header_years}</h1>
         </div>
+
+        <h2 id="mediation">Mediation</h2>
+
         <!-- mediations per month -->
         <First
             {innerWidthAdjusted}
@@ -604,7 +628,29 @@
             {horizontal_yScale}
         />
 
-        <h1>Agreements</h1>
+        <!-- top mediators -->
+        <Sixth
+            {width}
+            {height}
+            {margin}
+            {top_ten_mediators}
+            {horizontal_yScale}
+            {horizontal_mediator_yScale}
+        />
+
+        <!-- types of mediators -->
+        <Seventh
+            {width}
+            {innerWidthAdjusted}
+            {height}
+            {nodes}
+            {margin}
+            {r_scale}
+            {categories}
+            {x_circle}
+        />
+
+        <h2 id="agreements">Agreements</h2>
 
         <!-- agreements per month -->
         <Fourth
@@ -620,31 +666,8 @@
         <!-- list of agreements -->
         <Fifth {width} {agreements} />
 
-        <h1>Mediation</h1>
-
-        <!-- top mediators -->
-        <Sixth
-            {width}
-            {height}
-            {margin}
-            {top_ten_mediators}
-            {horizontal_yScale}
-            {horizontal_mediator_yScale}
-        />
-        <!-- types of mediators -->
-        <Seventh
-            {width}
-            {innerWidthAdjusted}
-            {height}
-            {nodes}
-            {margin}
-            {r_scale}
-            {categories}
-            {x_circle}
-        />
-
         <!-- processes -->
-        <h1>Processes</h1>
+        <h2 id="processes">Processes</h2>
         <!-- <Eight {width} {fil_processes} {country} /> -->
 
         <!-- mediation timeline -->
@@ -661,9 +684,25 @@
             {abbreviations}
         />
     </main>
+    <footer>
+        <hr />
+        <p>&copy; {new Date().getFullYear()} PeaceHub. All rights reserved.</p>
+        <p>
+            <a href="/">← Back to Main Site</a>
+        </p>
+    </footer>
 </div>
 
 <style>
+    header {
+        padding: 5px;
+        text-align: left;
+    }
+
+    h2 {
+        padding-top: 40px;
+    }
+
     .skip-link {
         position: absolute;
         top: -40px;
@@ -687,16 +726,9 @@
     }
 
     h1 {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    .header {
-        max-width: calc(
-            100% - 100px
-        ); /* Ensures a margin of 50px on both sides */
-        margin: 0 auto;
-        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 5px;
     }
 
     :global(.rangeSlider) {
@@ -706,4 +738,52 @@
     :global(.pipVal) {
         color: white;
     }
+
+
+    /* Hide label visually, keep for screen readers */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .page-nav {
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .dropdown-wrapper {
+        display: inline-block;
+        position: relative;
+    }
+
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: #1f1f1f;
+        border: none;
+        padding: 0.5rem 2.5rem 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 3px;
+        cursor: pointer;
+        background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 1rem;
+        width: 165px;
+    }
+
+    select:focus {
+        border-color: #007acc;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.25);
+    }
+
 </style>

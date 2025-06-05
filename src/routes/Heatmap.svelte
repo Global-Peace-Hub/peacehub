@@ -130,7 +130,12 @@
     });
 </script>
 
-<div class="map-container" bind:clientHeight={height}>
+<div
+    class="map-container"
+    bind:clientHeight={height}
+    role="region"
+    aria-label="Interactive heatmap showing mediation locations"
+>
     <div id="map" bind:this={map}></div>
     {#if isOverlayVisible}
         <div class="overlay">
