@@ -45,6 +45,7 @@
 <!-- text circle packing -->
 <div class="actor_types" bind:clientWidth={width}>
     <h3>Actors Involved in Mediation & Mediation-Related Activities by Type</h3>
+    <p style="margin: 0; font-size: 14px">[The bigger the circle, the more involved the actor]</p>
     <svg {width} {height}>
         <g transform="translate({innerWidthAdjusted / 6 / 2 + margin.left}, 0)">
             {#each nodes as point}

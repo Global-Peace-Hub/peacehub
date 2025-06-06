@@ -27,12 +27,11 @@
     );
     $: uniqueYears = [...new Set(mediations_only.map((d) => d.Year))];
 
-
     $: xMed = d3
         .scaleBand()
         .domain(allYearMonthPairs) // Ensure all Year-Month pairs are included
         .range([margin.left, innerWidthAdjusted - margin.right])
-        .padding(0.1); 
+        .padding(0.1);
 
     $: yMed = d3
         .scaleBand()
@@ -196,7 +195,6 @@
         // });
     }
     $: console.log(selectedYears);
-    
 </script>
 
 <!-- actors and mediations over time -->
@@ -212,7 +210,7 @@
             pips
             range
             all="label"
-            ariaLabels={[selectedYears[0],selectedYears[1]]}
+            ariaLabels={[selectedYears[0], selectedYears[1]]}
         />
     </div>
     <!-- Dropdown List -->
@@ -308,6 +306,15 @@
             {/each}
         </g>
     </svg>
+
+    <div id="legend">
+        <div class="legend-title">Mediation Intensity</div>
+        <div class="heatmap-legend-bar"></div>
+        <div class="legend-labels">
+            <span>Low</span>
+            <span>High</span>
+        </div>
+    </div>
 </div>
 
 <style>
@@ -328,5 +335,35 @@
     .select_group {
         width: 90%;
         margin: 10px auto;
+    }
+
+    #legend {
+        font-family: "Montserrat";
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 12px;
+        z-index: 1;
+    }
+
+    .legend-title {
+        margin-bottom: 6px;
+        text-align: center;
+    }
+
+    .heatmap-legend-bar {
+        height: 10px;
+        width: 200px;
+        background: linear-gradient(
+            to right,
+            gray 50%,
+            white 100%
+        );
+    }
+
+    .legend-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px;
     }
 </style>

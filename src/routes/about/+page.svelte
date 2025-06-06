@@ -1,3 +1,16 @@
+<script>
+    let isMenuOpen = false;
+
+    function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    function scrollToSection(id) {
+        document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+        isMenuOpen = false; // close menu after selection on small screens
+    }
+</script>
+
 <div class="wrapper">
     <header>
         <p>
@@ -6,6 +19,35 @@
             >
         </p>
     </header>
+
+    <nav class="page-nav" aria-label="Page section navigation">
+        <button
+            class="burger"
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMenuOpen}
+            on:click={toggleMenu}
+        >
+            ☰
+        </button>
+
+        <div
+            class="button-nav"
+            class:open={isMenuOpen}
+            role="group"
+            aria-label="Jump to section"
+        >
+            <button type="button" on:click={() => scrollToSection("#about")}
+                >About</button
+            >
+            <button type="button" on:click={() => scrollToSection("#team")}
+                >Team</button
+            >
+            <button type="button" on:click={() => scrollToSection("#funding")}
+                >Funding</button
+            >
+        </div>
+    </nav>
+
     <section id="about" aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
         <div id="about_content">
@@ -213,9 +255,86 @@
 
 <style>
     header {
-        margin: auto;
-        padding: 20px;
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        text-align: left;
+        font-size: 14px;
+        z-index: 9;
+    }
+
+    .page-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* default for larger screens */
+        padding-top: 0;
+        padding-left: 50px;
         background-color: #001c23;
+        position: relative;
+    }
+
+    .burger {
+        display: none;
+        font-size: 26px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin: 10px 0;
+        padding: 5px 10px;
+    }
+
+    .button-nav {
+        display: flex;
+        gap: 4px;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button-nav button {
+        font-family: "Montserrat";
+        background-color: #003645;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .button-nav button:hover {
+        background-color: steelblue;
+    }
+
+    /* 🔽 Responsive burger behavior */
+    @media (max-width: 600px) {
+        .page-nav {
+            padding-left: 35px;
+        }
+
+        .burger {
+            display: block;
+        }
+
+        .button-nav {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            width: 50%;
+            padding-bottom: 10px;
+            z-index: 10;
+        }
+
+        .button-nav.open {
+            display: flex;
+        }
     }
 
     #about-heading,

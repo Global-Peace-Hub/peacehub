@@ -137,15 +137,6 @@
             <!-- Individual Buttons (Desktop) -->
             {#if !isSmallScreen}
                 <nav aria-label="Main Navigation">
-                    <!-- {#each sections as section}
-                        <button
-                            class="menu-button"
-                            on:click={() => goto("/about")}
-                            tabindex="0"
-                        >
-                            {section.name}
-                        </button>
-                    {/each} -->
                     <button
                         class="menu-button"
                         on:click={() => scrollToSection("home")}
@@ -332,7 +323,8 @@
 
     #navigation {
         position: absolute;
-        top: -2px;
+        top: 0px;
+        left: 50px;
         display: flex;
         align-items: center;
         gap: 3px;
@@ -348,18 +340,16 @@
     .menu-button {
         font-family: "Montserrat", sans-serif;
         background: #00303e;
-        border: 1px solid rgb(78, 78, 78);
+        border: none;
         border-radius: 2px;
-        padding: 5px;
-        width: 95px;
+        padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
         color: white;
     }
 
     .menu-button:hover {
-        background: rgb(78, 78, 78);
-        color: white;
+        background: steelblue;
     }
 
     .dropdown {
@@ -382,6 +372,9 @@
     }
 
     @media (max-width: 767px) {
+        #navigation {
+            left: 10px;
+        }
         .menu-button {
             display: none;
         }
@@ -391,54 +384,11 @@
         }
     }
 
-    #research,
-    #people,
-    #about {
-        position: relative;
-    }
-
-    #about_content {
-        position: relative;
-        margin: auto;
-        width: 70%;
-        padding-top: 100px;
-        padding-bottom: 120px;
-    }
-    .publication_content {
-        position: relative;
-        margin: auto;
-        width: 80%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    #funding_content {
-        position: relative;
-        margin: auto;
-        width: 65%;
-        padding-top: 40px;
-        padding-bottom: 80px;
-    }
-
-    #research {
-        background-color: #001c23;
-    }
     #people {
-        background-color: #001c23;
-    }
-    #about {
         position: relative;
         background-color: #001c23;
-        padding-bottom: 20px;
-        font-weight: 200;
     }
-    #publications {
-        position: relative;
-        margin: auto;
-        width: 80%;
-        padding: 20px;
-        font-weight: 200;
-    }
+
     #credit {
         position: relative;
         margin: auto;
@@ -499,24 +449,6 @@
         line-height: 1;
     }
 
-    /* Optional: Styling for the button */
-    #read-more-btn,
-    #read-more-btn-pub {
-        font-family: "Montserrat", sans-serif;
-        margin-top: 10px;
-        padding: 8px 16px;
-        background-color: #635c7e;
-        color: white;
-        border: none;
-        border-radius: 2px;
-        cursor: pointer;
-    }
-
-    #read-more-btn:hover,
-    #read-more-btn-pub:hover {
-        background-color: rgb(78, 78, 78);
-        color: white;
-    }
     :global(a) {
         color: rgb(215, 215, 215);
         font-weight: 400;

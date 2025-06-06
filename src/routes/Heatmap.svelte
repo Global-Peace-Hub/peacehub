@@ -136,10 +136,19 @@
     role="region"
     aria-label="Interactive heatmap showing mediation locations"
 >
+    <div id="legend">
+        <div class="legend-title">Mediation Intensity</div>
+        <div class="heatmap-legend-bar"></div>
+        <div class="legend-labels">
+            <span>Low</span>
+            <span>High</span>
+        </div>
+    </div>
     <div id="map" bind:this={map}></div>
     {#if isOverlayVisible}
         <div class="overlay">
-            <button class="remove-overlay" onclick={removeOverlay}>Zoom</button>
+            <button class="remove-overlay" on:click={removeOverlay}>Zoom</button
+            >
         </div>
     {/if}
 </div>
@@ -174,7 +183,7 @@
 
     .remove-overlay {
         position: absolute;
-        bottom: 0px;
+        top: 0px;
         width: 110px;
         height: 35px;
         border-radius: 3px;
@@ -190,5 +199,39 @@
     .remove-overlay:hover {
         cursor: pointer;
         background-color: #dc3939;
+    }
+
+    #legend {
+        font-family: "Montserrat";
+        position: absolute; /* or static if in a fixed panel */
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 12px;
+        z-index: 1;
+    }
+
+    .legend-title {
+        margin-bottom: 6px;
+        text-align: center;
+    }
+
+    .heatmap-legend-bar {
+        height: 12px;
+        width: 200px;
+        background: linear-gradient(
+            to right,
+            steelblue 40%,
+            gray 50%,
+            white 100%
+        );
+    }
+
+    .legend-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px;
     }
 </style>

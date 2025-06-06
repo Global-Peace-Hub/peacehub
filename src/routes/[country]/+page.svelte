@@ -60,6 +60,12 @@
 
     const darfur = ["Darfur", "El Fasher", "North Darfur", "Nyala"];
 
+    // navigation
+    let isMenuOpen = false;
+    function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+    }
+
     // Calculate dimensions reactively
     $: width = innerWidth; // Reactively bound to `clientWidth` for responsiveness
     $: innerHeight = height - margin.top - margin.bottom;
@@ -555,33 +561,49 @@
     // Path Data
     $: pathData = line(ucdp_final);
 
-    function scrollToSection(event) {
-        const sectionId = event.target.value;
-        if (sectionId) {
-            const el = document.querySelector(sectionId);
-            el?.scrollIntoView({ behavior: "smooth" });
-        }
+    function scrollToSection(id) {
+        document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+        isMenuOpen = false; // close menu after selection on small screens
     }
 </script>
 
 <div class="wrapper" bind:clientWidth={width}>
     <header>
-        <a href="#main" class="skip-link">Skip to main Site</a>
-        <p>
+        <p style="margin: 5px;">
             <a href="/" aria-label="Back to main site">← Back to Main Site</a>
         </p>
     </header>
+
     <nav class="page-nav" aria-label="Page section navigation">
-        <label for="section-nav" class="sr-only">Jump to section</label>
-        <div class="dropdown-wrapper">
-            <select id="section-nav" on:change={scrollToSection}>
-                <option value="">Jump to...</option>
-                <option value="#mediation">Mediation</option>
-                <option value="#agreements">Agreements</option>
-                <option value="#processes">Processes</option>
-            </select>
+        <button
+            class="burger"
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMenuOpen}
+            on:click={toggleMenu}
+        >
+            ☰
+        </button>
+
+        <div
+            class="button-nav"
+            class:open={isMenuOpen}
+            role="group"
+            aria-label="Jump to section"
+        >
+            <button type="button" on:click={() => scrollToSection("#mediation")}
+                >Mediation</button
+            >
+            <button
+                type="button"
+                on:click={() => scrollToSection("#agreements")}
+                >Agreements</button
+            >
+            <button type="button" on:click={() => scrollToSection("#processes")}
+                >Processes</button
+            >
         </div>
     </nav>
+
     <main id="main">
         <div class="header">
             <h1 style="font-size: 50px;">{country + " " + header_years}</h1>
@@ -685,7 +707,6 @@
         />
     </main>
     <footer>
-        <hr />
         <p>&copy; {new Date().getFullYear()} PeaceHub. All rights reserved.</p>
         <p>
             <a href="/">← Back to Main Site</a>
@@ -694,41 +715,28 @@
 </div>
 
 <style>
+    .wrapper {
+        width: calc(100% - 100px);
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 auto;
+    }
+
     header {
-        padding: 5px;
+        position: absolute;
+        top: 45px;
+        left: 5px;
         text-align: left;
+        font-size: 14px;
+        z-index: 9;
     }
 
     h2 {
         padding-top: 40px;
     }
 
-    .skip-link {
-        position: absolute;
-        top: -40px;
-        left: 10px;
-        background: #000;
-        color: #fff;
-        padding: 8px;
-        z-index: 100;
-        text-decoration: none;
-        font-size: 16px;
-    }
-
-    .skip-link:focus {
-        top: 10px;
-    }
-    .wrapper {
-        width: calc(100% - 100px); /* Ensures a margin of 50px on both sides */
-        box-sizing: border-box; /* Ensures padding and borders are included in the width */
-        text-align: center;
-        margin: 0 auto;
-    }
-
     h1 {
-        padding-top: 10px;
-        padding-bottom: 0px;
-        margin-bottom: 5px;
+        margin: 5px;
     }
 
     :global(.rangeSlider) {
@@ -739,51 +747,73 @@
         color: white;
     }
 
-
-    /* Hide label visually, keep for screen readers */
-    .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-    }
-
     .page-nav {
-        margin-bottom: 1rem;
-        text-align: left;
-    }
-
-    .dropdown-wrapper {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* default for larger screens */
+        padding-top: 0;
+        padding-left: 0px;
+        background-color: #003645;
         position: relative;
     }
 
-    select {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background-color: #1f1f1f;
+    .burger {
+        display: none;
+        font-size: 26px;
+        background: none;
         border: none;
-        padding: 0.5rem 2.5rem 0.5rem 1rem;
-        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+        margin: 10px 0;
+        padding: 5px 10px;
+    }
+
+    .button-nav {
+        display: flex;
+        gap: 4px;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button-nav button {
+        font-family: "Montserrat";
+        background-color: #001c23;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
         border-radius: 3px;
         cursor: pointer;
-        background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: right 0.75rem center;
-        background-size: 1rem;
-        width: 165px;
     }
 
-    select:focus {
-        border-color: #007acc;
-        outline: none;
-        box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.25);
+    .button-nav button:hover {
+        background-color: steelblue;
     }
 
+    /* 🔽 Responsive burger behavior */
+    @media (max-width: 600px) {
+        .burger {
+            display: block;
+        }
+
+        .button-nav {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            width: 50%;
+            padding-bottom: 10px;
+            z-index: 10;
+        }
+
+        .button-nav.open {
+            display: flex;
+        }
+    }
 </style>

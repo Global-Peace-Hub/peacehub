@@ -147,11 +147,9 @@
           document.body.appendChild(tooltip);
 
           map.on("mousemove", "countries_fill", (e) => {
-            map.getCanvas().style.cursor = "pointer";
-
-            if (e.features.length > 0) {
-              const countryName = e.features[0].properties.ADMIN;
-
+            const countryName = e.features[0].properties.ADMIN;
+            if (filteredCountries.includes(countryName)) {
+              map.getCanvas().style.cursor = "pointer";
               if (hoveredPolygonId !== null) {
                 map.setFeatureState(
                   { source: "countries", id: hoveredPolygonId },
@@ -165,18 +163,10 @@
                 { hover: true },
               );
 
-              // Check if country is in the list
-              if (!filteredCountries.includes(countryName)) {
-                tooltip.innerText = "Coming Soon";
-                tooltip.style.display = "block";
-                tooltip.style.left = `${e.originalEvent.pageX + 10}px`;
-                tooltip.style.top = `${e.originalEvent.pageY + 10}px`;
-              } else {
-                tooltip.innerText = "Explore";
-                tooltip.style.display = "block";
-                tooltip.style.left = `${e.originalEvent.pageX + 10}px`;
-                tooltip.style.top = `${e.originalEvent.pageY + 10}px`;
-              }
+              tooltip.innerText = "Explore " + countryName;
+              tooltip.style.display = "block";
+              tooltip.style.left = `${e.originalEvent.pageX + 10}px`;
+              tooltip.style.top = `${e.originalEvent.pageY + 10}px`;
             }
           });
 
@@ -196,9 +186,11 @@
 
           map.on("click", "countries_fill", (e) => {
             let clicked_country = e.features[0].properties.ADMIN;
-            // zoomToCountry(clicked_country);
-            subpage(clicked_country);
-            tooltip.style.display = "none";
+            if (filteredCountries.includes(clicked_country)) {
+              // zoomToCountry(clicked_country);
+              subpage(clicked_country);
+              tooltip.style.display = "none";
+            }
           });
 
           map.addSource("country-centroids", {
@@ -271,6 +263,16 @@
   role="region"
   aria-label="Interactive map showing countries studied by the PeaceHub project"
 >
+  <div id="legend">
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #598FBC;"></div>
+      <span>Analysis available</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #A8A8A8;"></div>
+      <span>Analysis pending</span>
+    </div>
+  </div>
   <div class="map" bind:this={map}></div>
   {#if isOverlayVisible}
     <div class="overlay">
@@ -325,5 +327,30 @@
   .remove-overlay:hover {
     cursor: pointer;
     background-color: #8f2121;
+  }
+
+  #legend {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 4px;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    z-index: 9;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
   }
 </style>
