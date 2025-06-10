@@ -311,7 +311,7 @@
     }
 
     /* 🔽 Responsive burger behavior */
-    @media (max-width: 600px) {
+    @media (max-width: 767px) {
         .page-nav {
             padding-left: 35px;
         }

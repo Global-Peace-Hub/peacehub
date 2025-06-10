@@ -795,7 +795,7 @@
     }
 
     /* 🔽 Responsive burger behavior */
-    @media (max-width: 600px) {
+    @media (max-width: 767px) {
         .burger {
             display: block;
         }

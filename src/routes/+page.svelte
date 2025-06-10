@@ -176,7 +176,7 @@
                         </li>
                     {/each} -->
                     <button
-                        style="background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
+                        style="border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
                         on:click={() => scrollToSection("home")}
                         class="menu-item"
                         tabindex="0"
@@ -184,7 +184,7 @@
                         Home
                     </button>
                     <button
-                        style="background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
+                        style="border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
                         on:click={() => goto("/about")}
                         class="menu-item"
                         tabindex="0"
@@ -192,7 +192,7 @@
                         About
                     </button>
                     <button
-                        style="background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
+                        style=" border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
                         on:click={() => goto("/research")}
                         class="menu-item"
                         tabindex="0"
@@ -354,27 +354,44 @@
 
     .dropdown {
         list-style: none;
+        font-size: 14px;
         position: absolute;
         background: black;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 10px;
-        top: 30px;
+        top: 20px;
         left: 5px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 4px;
     }
 
     .menu-icon {
         display: none;
         cursor: pointer;
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    .menu-item {
+        font-family: "Montserrat";
+        background-color: #003645;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 3px;
+        cursor: pointer;
     }
 
     @media (max-width: 767px) {
         #navigation {
-            left: 10px;
+            left: 20px;
+            top: 10px;
         }
+        
         .menu-button {
             display: none;
         }
