@@ -7,6 +7,7 @@
         sections,
         scrollToSection,
         images_ppl,
+        menuStructure,
     } from "../utils";
     import Map from "./Map.svelte";
 
@@ -116,11 +117,21 @@
     function togglePublication() {
         pubToggle = !pubToggle; // Toggle the content visibility
     }
+
+    function handleNav(path, scrollId) {
+        goto(path).then(() => {
+            if (scrollId) {
+                // Delay scroll to allow page to render
+                setTimeout(() => scrollToSection(scrollId), 100);
+            }
+        });
+    }
 </script>
 
 <div id="wrapper" bind:clientWidth={width}>
     <div id="home">
         <div id="navigation">
+            <!-- Burger icon -->
             <i
                 style="padding: 5px; cursor: pointer;"
                 class="fa fa-bars menu-icon"
@@ -129,83 +140,93 @@
                 aria-label="Toggle menu"
                 on:click={() => (isMenuOpen = !isMenuOpen)}
                 on:keydown={(event) => {
-                    if (event.key === "Enter" || event.key === " ") {
+                    if (event.key === "Enter" || event.key === " ")
                         isMenuOpen = !isMenuOpen;
-                    }
                 }}
             ></i>
-            <!-- Individual Buttons (Desktop) -->
+
+            <!-- Desktop Navigation -->
             {#if !isSmallScreen}
-                <nav aria-label="Main Navigation">
-                    <button
-                        class="menu-button"
-                        on:click={() => scrollToSection("home")}
-                        tabindex="0"
-                    >
-                        Home
-                    </button>
-                    <button
-                        class="menu-button"
-                        on:click={() => goto("/about")}
-                        tabindex="0"
-                    >
-                        About
-                    </button>
-                    <button
-                        class="menu-button"
-                        on:click={() => goto("/research")}
-                        tabindex="0"
-                    >
-                        Research
-                    </button>
-                </nav>
-            {/if}
-            <!-- Dropdown Menu (Mobile) -->
-            {#if isSmallScreen && isMenuOpen}
-                <ul class="dropdown">
-                    <!-- {#each sections as section}
-                        <li>
+                <nav
+                    aria-label="Main Navigation"
+                    style="display: flex; gap: 3px;"
+                >
+                    {#each menuStructure as item}
+                        {#if item.type === "scroll"}
                             <button
-                                style="background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
-                                on:click={() => scrollToSection(section.id)}
-                                class="menu-item"
+                                class="menu-button"
+                                on:click={() => goto("/")}
                                 tabindex="0"
                             >
-                                {section.name}
+                                {item.name}
                             </button>
+                        {:else}
+                            <div class="nav-item">
+                                <button class="menu-button" tabindex="0"
+                                    >{item.name}</button
+                                >
+                                <div class="dropdown">
+                                    {#each item.submenu as sub}
+                                        <button
+                                            class="menu-item"
+                                            on:click={() =>
+                                                handleNav(
+                                                    sub.target,
+                                                    sub.scrollId,
+                                                )}>{sub.name}</button
+                                        >
+                                    {/each}
+                                </div>
+                            </div>
+                        {/if}
+                    {/each}
+                </nav>
+            {/if}
+
+            <!-- Mobile Dropdown Menu -->
+            {#if isSmallScreen && isMenuOpen}
+                <ul
+                    class="dropdown"
+                    style="position: absolute; top: 20px; left: 0; z-index: 999; list-style: none;"
+                >
+                    {#each menuStructure as item}
+                        <li>
+                            {#if item.type === "scroll"}
+                                <button
+                                    class="menu-item"
+                                    on:click={() => goto("/")}
+                                    tabindex="0"
+                                >
+                                    {item.name}
+                                </button>
+                            {:else}
+                                <div style="margin-bottom: 10px;">
+                                    <div
+                                        style="color: white; font-weight: bold; padding: 5px 0;"
+                                    >
+                                        {item.name}
+                                    </div>
+                                    {#each item.submenu as sub}
+                                        <button
+                                            class="menu-item"
+                                            on:click={() =>
+                                                handleNav(
+                                                    sub.target,
+                                                    sub.scrollId,
+                                                )}>{sub.name}</button
+                                        >
+                                    {/each}
+                                </div>
+                            {/if}
                         </li>
-                    {/each} -->
-                    <button
-                        style="border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
-                        on:click={() => scrollToSection("home")}
-                        class="menu-item"
-                        tabindex="0"
-                    >
-                        Home
-                    </button>
-                    <button
-                        style="border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
-                        on:click={() => goto("/about")}
-                        class="menu-item"
-                        tabindex="0"
-                    >
-                        About
-                    </button>
-                    <button
-                        style=" border: none; cursor: pointer; font-family: 'Montserrat', sans-serif;"
-                        on:click={() => goto("/research")}
-                        class="menu-item"
-                        tabindex="0"
-                    >
-                        Research
-                    </button>
+                    {/each}
                 </ul>
             {/if}
         </div>
 
         <header>
             <h1 style="font-size: 45px; margin-bottom: 0px">Global PeaceHub</h1>
-            <h2 id="geopolitical-context">
+            <h2>
                 Understanding shifts in the geopolitical context of peace and
                 transition processes
             </h2>
@@ -297,6 +318,12 @@
         font-weight: 800;
     }
 
+    h2 {
+        color: white;
+        font-weight: 800;
+        font-size: 24px;
+    }
+
     h3 {
         color: white;
         font-weight: 500;
@@ -324,7 +351,7 @@
     #navigation {
         position: absolute;
         top: 0px;
-        left: 50px;
+        left: 0px;
         display: flex;
         align-items: center;
         gap: 3px;
@@ -346,30 +373,32 @@
         font-size: 16px;
         cursor: pointer;
         color: white;
+        position: relative;
     }
 
     .menu-button:hover {
         background: steelblue;
     }
 
-    .dropdown {
-        list-style: none;
-        font-size: 14px;
-        position: absolute;
-        background: black;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 10px;
-        top: 20px;
-        left: 5px;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
+    .nav-item {
+        position: relative;
     }
 
-    .menu-icon {
+    .dropdown {
         display: none;
-        cursor: pointer;
-        font-size: 22px;
+        position: absolute;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        left: 0px;
+        flex-direction: column;
+        gap: 4px;
+        border-radius: 4px;
+        z-index: 10;
+    }
+
+    /* Show dropdown on hover for desktop */
+    .nav-item:hover .dropdown {
+        display: flex;
     }
 
     .menu-item {
@@ -378,26 +407,45 @@
         border: none;
         color: white;
         padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
+        text-align: left;
+        font-size: 14px;
         border-radius: 3px;
         cursor: pointer;
+        white-space: nowrap;
+        width: 125px;
+    }
+
+    .menu-item:hover {
+        background-color: steelblue;
+    }
+
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+        font-size: 22px;
     }
 
     @media (max-width: 767px) {
         #navigation {
             left: 20px;
             top: 10px;
+            flex-direction: column;
+            align-items: flex-start;
         }
-        
+
         .menu-button {
             display: none;
         }
 
         .menu-icon {
             display: block;
+        }
+
+        .dropdown {
+            display: flex; /* visible via conditionals in Svelte */
+            position: static;
+            background: black;
+            top: 20px;
         }
     }
 

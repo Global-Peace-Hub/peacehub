@@ -62,8 +62,6 @@
 
   $: {
     if (all_polygons && map) {
-      console.log(all_polygons);
-
       // Ensure this block runs only after the map has fully loaded
       map.once("idle", () => {
         //add source

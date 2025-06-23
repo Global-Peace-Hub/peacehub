@@ -30,7 +30,7 @@
     $: xMed = d3
         .scaleBand()
         .domain(allYearMonthPairs) // Ensure all Year-Month pairs are included
-        .range([margin.left, innerWidthAdjusted - margin.right])
+        .range([margin.left, innerWidthAdjusted])
         .padding(0.1);
 
     $: yMed = d3
@@ -43,7 +43,7 @@
             // Create axis
             const yAxis = d3
                 .axisLeft(yMed)
-                .tickSize(-innerWidthAdjusted + margin.right * 3)
+                .tickSize(-innerWidthAdjusted + margin.right)
                 .tickFormat((d) => {
                     let countryName;
                     // Find matching appreciation object
@@ -328,7 +328,7 @@
         background-color: var(--bg-color, #001c23);
         padding: 20px;
         box-sizing: border-box;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
     .slider-container,

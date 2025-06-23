@@ -13,6 +13,7 @@
     import Seventh from "../vis/Seventh.svelte";
     // import Eight from "../vis/Eight.svelte";
     import Nine from "../vis/Nine.svelte";
+    import Navigation from "../Navigation.svelte";
 
     let manyBodyStrength = 2;
     let only_M = [];
@@ -49,7 +50,7 @@
         "other_state",
     ];
     let actorLookup;
-    let margin = { top: 20, right: 20, bottom: 20, left: 40 };
+    let margin = { top: 20, right: 80, bottom: 20, left: 80 };
     let innerWidth = 800; // Outer width of the container
     let height = 500; // Outer height of the container
     let historical_events;
@@ -507,7 +508,7 @@
     $: ucdp_xScale = d3
         .scaleBand()
         .domain(processedData.map((d) => `${d.year}-${d.month}`))
-        .range([0, innerWidthAdjusted - margin.right])
+        .range([0, innerWidthAdjusted])
         .padding(0.1);
 
     $: ucdp_yScale = d3
@@ -519,7 +520,7 @@
     $: xScale = d3
         .scaleBand()
         .domain(processedData.map((d) => `${d.year}-${d.month}`))
-        .range([0, innerWidthAdjusted - margin.right])
+        .range([0, innerWidthAdjusted])
         .padding(0.1);
 
     // Y Scale
@@ -568,48 +569,14 @@
 </script>
 
 <div class="wrapper" bind:clientWidth={width}>
-    <header>
-        <p style="margin: 5px;">
-            <a href="/" aria-label="Back to main site">← Back to Main Site</a>
-        </p>
-    </header>
-
-    <nav class="page-nav" aria-label="Page section navigation">
-        <button
-            class="burger"
-            aria-label="Toggle navigation menu"
-            aria-expanded={isMenuOpen}
-            on:click={toggleMenu}
-        >
-            ☰
-        </button>
-
-        <div
-            class="button-nav"
-            class:open={isMenuOpen}
-            role="group"
-            aria-label="Jump to section"
-        >
-            <button type="button" on:click={() => scrollToSection("#mediation")}
-                >Mediation</button
-            >
-            <button
-                type="button"
-                on:click={() => scrollToSection("#agreements")}
-                >Agreements</button
-            >
-            <button type="button" on:click={() => scrollToSection("#processes")}
-                >Processes</button
-            >
-        </div>
-    </nav>
+    <Navigation />
 
     <main id="main">
         <div class="header">
-            <h1 style="font-size: 50px;">{country + " " + header_years}</h1>
+            <h2 style="font-size: 30px;">{country + " " + header_years}</h2>
         </div>
 
-        <h2 id="mediation">Mediation</h2>
+        <!-- <h3 id="mediation" style="padding-left: 20px;">Mediation</h3> -->
 
         <!-- mediations per month -->
         <First
@@ -672,7 +639,7 @@
             {x_circle}
         />
 
-        <h2 id="agreements">Agreements</h2>
+        <!-- <h2 id="agreements">Agreements</h2> -->
 
         <!-- agreements per month -->
         <Fourth
@@ -689,7 +656,7 @@
         <Fifth {width} {agreements} />
 
         <!-- processes -->
-        <h2 id="processes">Processes</h2>
+        <!-- <h2 id="processes">Processes</h2> -->
         <!-- <Eight {width} {fil_processes} {country} /> -->
 
         <!-- mediation timeline -->
@@ -715,28 +682,9 @@
 </div>
 
 <style>
-    .wrapper {
-        width: calc(100% - 100px);
-        box-sizing: border-box;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    header {
-        position: absolute;
-        top: 45px;
-        left: 5px;
-        text-align: left;
-        font-size: 14px;
-        z-index: 9;
-    }
-
     h2 {
-        padding-top: 40px;
-    }
-
-    h1 {
-        margin: 5px;
+        padding: 40px;
+        text-align: center;
     }
 
     :global(.rangeSlider) {
@@ -747,73 +695,15 @@
         color: white;
     }
 
-    .page-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* default for larger screens */
-        padding-top: 0;
-        padding-left: 0px;
-        background-color: #003645;
-        position: relative;
-    }
-
-    .burger {
-        display: none;
-        font-size: 26px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin: 10px 0;
-        padding: 5px 10px;
-    }
-
-    .button-nav {
-        display: flex;
-        gap: 4px;
-        padding: 0;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .button-nav button {
-        font-family: "Montserrat";
-        background-color: #001c23;
-        border: none;
-        color: white;
-        padding: 10px 20px;
+    footer {
         text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 3px;
-        cursor: pointer;
+        background-color: #003645;
+        padding: 10px 0; /* add vertical padding */
+        margin: auto;
     }
 
-    .button-nav button:hover {
-        background-color: steelblue;
-    }
-
-    /* 🔽 Responsive burger behavior */
-    @media (max-width: 767px) {
-        .burger {
-            display: block;
-        }
-
-        .button-nav {
-            position: absolute;
-            top: 50px;
-            left: 10px;
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            width: 50%;
-            padding-bottom: 10px;
-            z-index: 10;
-        }
-
-        .button-nav.open {
-            display: flex;
-        }
+    a {
+        color: rgb(215, 215, 215);
+        font-weight: 400;
     }
 </style>

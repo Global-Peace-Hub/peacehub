@@ -85,7 +85,7 @@
         background-color: var(--bg-color, #001c23);
         padding: 20px;
         box-sizing: border-box;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
     .table {

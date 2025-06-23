@@ -84,7 +84,7 @@
             <g bind:this={yAxisGroup} transform={`translate(${0}, 0)`} />
             <g
                 bind:this={yUCDPAxisGroup}
-                transform={`translate(${innerWidthAdjusted - margin.right}, 0)`}
+                transform={`translate(${innerWidthAdjusted}, 0)`}
             />
 
             {#each processedData as d}
@@ -182,7 +182,7 @@
         background-color: var(--bg-color, #001c23);
         padding: 20px;
         box-sizing: border-box;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
     .legend {

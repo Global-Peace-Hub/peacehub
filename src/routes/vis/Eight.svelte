@@ -60,7 +60,7 @@ $: console.log(fil_processes);
         ); /* Allows easy customization of background */
         padding: 20px; /* Add padding for better visuals */
         box-sizing: border-box;
-        border-radius: 10px; /* Optional: Gives rounded corners */
+        /* border-radius: 10px;  */
     }
     .table {
         display: grid;

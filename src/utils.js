@@ -37,21 +37,62 @@ export let images = [
 ];
 
 export let images_ppl = [
-    { src: "./img/mateja.JPG", name: "Mateja Peter", position: "Research Lead" }, 
-    { src: "./img/sanja.jpg", name: "Sanja Badanjak",position: "Research Co-Lead" },
+    { src: "./img/mateja.JPG", name: "Mateja Peter", position: "Research Lead" },
+    { src: "./img/sanja.jpg", name: "Sanja Badanjak", position: "Research Co-Lead" },
     { src: "./img/elisa.jpg", name: "Elisa D'Amico", position: "Postdoc Researcher" },
     { src: "./img/kasia.jpg", name: "Kasia Houghton", position: "Postdoc Researcher" },
-    { src: "./img/niamh.jpg", name: "Niamh Henry", position: "Research Fellow"  },
+    { src: "./img/niamh.jpg", name: "Niamh Henry", position: "Research Fellow" },
     { src: "./img/tom-min.png", name: "Tomas Vancisin", position: "Research Associate" },
 ];
 
 // Dropdown options
 export const sections = [
     { id: "home", name: "Home" },
-    { id: "map", name: "VIS" },
     { id: "about", name: "About" },
-    { id: "people", name: "Team" },
     { id: "research", name: "Research" },
+    { id: "visualization", name: "Visualization" },
+    { id: "teaching", name: "Teaching" },
+];
+
+export const menuStructure = [
+    { name: "Home", type: "scroll", target: "home" },
+    {
+        name: "About",
+        submenu: [
+            { name: "Overview", target: "/about" },
+            { name: "Team", target: "/about", scrollId: "team" },
+            { name: "Funding", target: "/about", scrollId: "funding" },
+        ],
+    },
+    {
+        name: "Research",
+        submenu: [
+            { name: "Overview", target: "/research" },
+            {
+                name: "Publications",
+                target: "/research",
+                scrollId: "research",
+            },
+            // {
+            //     name: "Transition",
+            //     target: "/research",
+            //     scrollId: "transition",
+            // },
+        ],
+    },
+    {
+        name: "Visualization",
+        submenu: [
+            { name: "Thematic", target: "/visualization" },
+            { name: "Mediation", target: "/visualization", scrollId: "mediation" },
+        ],
+    },
+    {
+        name: "Teaching",
+        submenu: [
+            { name: "Overview", target: "/teaching" },
+        ],
+    },
 ];
 
 

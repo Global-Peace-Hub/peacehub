@@ -1,52 +1,9 @@
 <script>
-    let isMenuOpen = false;
-
-    function toggleMenu() {
-        isMenuOpen = !isMenuOpen;
-    }
-
-    function scrollToSection(id) {
-        document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
-        isMenuOpen = false; // close menu after selection on small screens
-    }
+    import Navigation from "../Navigation.svelte";
 </script>
 
 <div class="wrapper">
-    <header>
-        <p>
-            <a href="/" aria-label="Back to main site from Header"
-                >← Back to Main Site</a
-            >
-        </p>
-    </header>
-
-    <nav class="page-nav" aria-label="Page section navigation">
-        <button
-            class="burger"
-            aria-label="Toggle navigation menu"
-            aria-expanded={isMenuOpen}
-            on:click={toggleMenu}
-        >
-            ☰
-        </button>
-
-        <div
-            class="button-nav"
-            class:open={isMenuOpen}
-            role="group"
-            aria-label="Jump to section"
-        >
-            <button type="button" on:click={() => scrollToSection("#about")}
-                >About</button
-            >
-            <button type="button" on:click={() => scrollToSection("#team")}
-                >Team</button
-            >
-            <button type="button" on:click={() => scrollToSection("#funding")}
-                >Funding</button
-            >
-        </div>
-    </nav>
+    <Navigation />
 
     <section id="about" aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
@@ -67,6 +24,7 @@
                 the
                 <a
                     href="https://peacerep.org/research/geopolitical-transitions/"
+                    target="_blank"
                     >PeaceRep Global Transitions</a
                 >
                 series and is developing two complementary datasets:
@@ -188,39 +146,39 @@
                     <tr>
                         <td style="padding: 8px;">Dr Sarah Gharib Seif</td>
                         <td style="padding: 8px;">Analyst</td>
-                        <td style="padding: 8px;"></td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Louise Courbin</td>
                         <td style="padding: 8px;">Analyst</td>
-                        <td style="padding: 8px;"></td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Siheon Choi</td>
                         <td style="padding: 8px;">Analyst</td>
-                        <td style="padding: 8px;"></td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
 
                     <!-- Past Analysts -->
                     <tr>
                         <td style="padding: 8px;">Delia Burns</td>
                         <td style="padding: 8px;">Past Analyst</td>
-                        <td style="padding: 8px;"></td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Aarushi Sharma</td>
                         <td style="padding: 8px;">Past Analyst</td>
-                        <td style="padding: 8px;"></td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Haley Rice</td>
                         <td style="padding: 8px;">Past Analyst</td>
-                        <td style="padding: 8px;"></td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Marcel Plichta</td>
                         <td style="padding: 8px;">Past Analyst</td>
-                        <td style="padding: 8px;"></td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                 </tbody>
             </table>
@@ -254,87 +212,10 @@
 </div>
 
 <style>
-    header {
-        position: absolute;
-        top: 40px;
-        left: 50px;
-        text-align: left;
-        font-size: 14px;
-        z-index: 9;
-    }
-
-    .page-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* default for larger screens */
-        padding-top: 0;
-        padding-left: 50px;
-        background-color: #001c23;
-        position: relative;
-    }
-
-    .burger {
-        display: none;
-        font-size: 26px;
-        background: none;
-        border: none;
+    h2 {
         color: white;
-        cursor: pointer;
-        margin: 10px 0;
-        padding: 5px 10px;
-    }
-
-    .button-nav {
-        display: flex;
-        gap: 4px;
-        padding: 0;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .button-nav button {
-        font-family: "Montserrat";
-        background-color: #003645;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 3px;
-        cursor: pointer;
-    }
-
-    .button-nav button:hover {
-        background-color: steelblue;
-    }
-
-    /* 🔽 Responsive burger behavior */
-    @media (max-width: 767px) {
-        .page-nav {
-            padding-left: 35px;
-        }
-
-        .burger {
-            display: block;
-        }
-
-        .button-nav {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            width: 50%;
-            padding-bottom: 10px;
-            z-index: 10;
-        }
-
-        .button-nav.open {
-            display: flex;
-        }
+        font-weight: 800;
+        font-size: 24px;
     }
 
     #about-heading,
@@ -345,13 +226,15 @@
 
     #about {
         position: relative;
-        background-color: #001c23;
+        background-color: #003645;
         width: 100%;
         padding: 10px 0; /* add vertical padding */
         color: white;
     }
 
-    #about_content {
+    #about_content,
+    #team_content,
+    #funding_content {
         position: relative;
         margin: auto;
         width: 70%;
@@ -360,17 +243,10 @@
 
     #team {
         position: relative;
-        background-color: #003645;
+        background-color: #001c23;
         width: 100%;
         padding: 40px 0; /* add vertical padding */
         color: white;
-    }
-
-    #team_content {
-        position: relative;
-        margin: auto;
-        width: 70%;
-        padding: 20px;
     }
 
     #team_content table {
@@ -387,23 +263,21 @@
 
     #funding {
         position: relative;
-        background-color: #001c23;
+        background-color: #003645;
         width: 100%;
         padding: 40px 0; /* add vertical padding */
         color: white;
     }
 
-    #funding_content {
-        position: relative;
-        margin: auto;
-        width: 70%;
-        padding: 20px;
-    }
-
     footer {
         text-align: center;
-        background-color: #003645;
+        background-color: #001c23;
         padding: 10px 0; /* add vertical padding */
         margin: auto;
+    }
+
+    a {
+        color: rgb(215, 215, 215);
+        font-weight: 400;
     }
 </style>
