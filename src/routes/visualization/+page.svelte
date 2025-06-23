@@ -98,7 +98,7 @@
                     </div>
                     <div class="grid-item">
                         <div class="image-wrapper">
-                            <a href="/Lybia" rel="noopener noreferrer">
+                            <a href="/Libya" rel="noopener noreferrer">
                                 <img
                                     src="/libya.png"
                                     alt="Image of Lybian borders"
