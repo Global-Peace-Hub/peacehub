@@ -87,7 +87,7 @@
         let path = [
             "../data/mend_all_actors.csv",
             "../data/mena.csv",
-            "../data/mend_last_last_last.csv",
+            "../data/mend_2406.csv",
             "../data/ucdp_last_last.csv",
             "../data/processes.csv",
             "../data/countries.csv",
@@ -166,7 +166,27 @@
                     (d) => d.conflict_country === "Afghanistan",
                 );
                 ucdp = ucdp.filter((d) => d.country === "Afghanistan");
+            } else if (country == "Israel") {
+                header_years = "2023-2024";
+                mediations = mend.filter(
+                    (d) => d.conflict_country === "Israel",
+                );
+                ucdp = ucdp.filter((d) => d.country === "Israel");
             }
+
+            mediations.sort((a, b) => {
+                const yearA = parseInt(a.Year, 10);
+                const yearB = parseInt(b.Year, 10);
+
+                if (yearA !== yearB) {
+                    return yearA - yearB;
+                }
+
+                // If years are equal, compare months
+                const monthA = parseInt(a.Month, 10);
+                const monthB = parseInt(b.Month, 10);
+                return monthA - monthB;
+            });
         });
     });
 
@@ -361,6 +381,8 @@
             (d) => d.year,
             (d) => d.month,
         );
+
+        console.log(ucdp_group_date);
 
         // // Ensure all months are present
         // const filled_ucdp_group_date = ucdp_group_date.map(([year, months]) => {

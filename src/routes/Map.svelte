@@ -100,6 +100,8 @@
                   "steelblue",
                   "Yemen",
                   "steelblue",
+                  "Israel",
+                  "steelblue",
                   "#b3b3b3", // Default color for all other countries
                 ],
                 "fill-opacity": 0.9,
@@ -130,6 +132,7 @@
             "Afghanistan",
             "Yemen",
             "Syria",
+            "Israel"
           ];
 
           // Create a tooltip element

@@ -16,6 +16,9 @@
     export let pathData;
     export let ucdp_final = [];
 
+    // $: console.log(pathData);
+    
+
     let xAxisGroup;
     let yAxisGroup;
     let yUCDPAxisGroup;

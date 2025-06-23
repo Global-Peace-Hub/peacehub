@@ -156,20 +156,64 @@
         </div>
     </section>
 
-    <!-- <section id="transition" aria-labelledby="transition-heading">
-        <h2 id="transition-heading">Global Transition Series</h2>
-        <div id="transition_content">
+    <section id="data" aria-labelledby="data-heading">
+        <h2 id="data-heading">Datasets</h2>
+        <div id="data_content">
+            <h3>2025</h3>
             <p>
-                As part of the PeaceRep consortium, the project also produces
-                the <a
+                <a
+                    href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/S7NIZC"
                     target="_blank"
-                    href="https://peacerep.org/research/geopolitical-transitions/"
-                    >Global Transitions</a
-                > series, edited by Mateja Peter. This includes publications by the
-                core team and further studies produced in the wider consortium.
+                    >Replication Data for "The Dayton Peace Process: A Keyhole
+                    into Russian and Chinese Engagement with Liberal
+                    Peacebuilding"</a
+                >: Houghton, Kasia; Peter, Mateja. 2025. Replication Data for
+                "The Dayton Peace Process: A Keyhole into Russian and Chinese
+                Engagement with Liberal Peacebuilding". Harvard Dataverse, V1.
+                <a href="https://doi.org/10.7910/DVN/S7NIZC"
+                    >https://doi.org/10.7910/DVN/S7NIZC</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/I4NXPL"
+                    target="_blank"
+                    >Replication Data for: Private Goods for Peace – Economic
+                    Reintegration in Peace Agreements</a
+                >: D'Amico, Elisa; Melin, Molly; Sosa, Santiago. 2025.
+                Replication Data for: Private Goods for Peace – Economic
+                Reintegration in Peace Agreements. Harvard Dataverse, V1.
+                <a href="https://doi.org/10.7910/DVN/I4NXPL" target="_blank"
+                    >https://doi.org/10.7910/DVN/I4NXPL</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PYRHS6"
+                    target="_blank"
+                    >Mediation Event and Negotiators Database (MEND)</a
+                >: Peter, Mateja; Badanjak, Sanja; D'Amico, Elisa; Houghton,
+                Kasia. 2025. Mediation Event and Negotiators Database (MEND).
+                Harvard Dataverse, V1.
+                <a href="https://doi.org/10.7910/DVN/PYRHS6"
+                    >https://doi.org/10.7910/DVN/PYRHS6</a
+                >
+            </p>
+            <h3>2024</h3>
+            <p>
+                <a
+                    href="https://github.com/peacerep/paax_data/tree/main"
+                    target="_blank"
+                    >The Peace Agreement Actors Dataset (PAA-X)</a
+                >: Badanjak, Sanja and Henry, Niamh. 2024. The Peace Agreement
+                Actors Dataset (PAA-X). Version 0.1. PeaceRep, the University of
+                Edinburgh.
+                <a href="https://github.com/peacerep/paax_data/tree/main"
+                    >https://github.com/peacerep/paax_data/tree/main</a
+                >
             </p>
         </div>
-    </section> -->
+    </section>
     <footer>
         <p>
             &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
@@ -184,7 +228,7 @@
 
 <style>
     #research-heading,
-    #transition-heading {
+    #data-heading {
         text-align: center;
     }
 
@@ -197,14 +241,14 @@
     }
 
     .publication_content,
-    #transition_content {
+    #data_content {
         position: relative;
         margin: auto;
         width: 70%;
         padding: 20px;
     }
 
-    #transition {
+    #data {
         position: relative;
         background-color: #001c23;
         width: 100%;
@@ -214,7 +258,7 @@
 
     footer {
         text-align: center;
-        background-color: #001c23;
+        background-color: #003645;
         padding: 10px 0; /* add vertical padding */
         margin: auto;
     }

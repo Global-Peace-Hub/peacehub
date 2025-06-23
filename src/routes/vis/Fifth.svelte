@@ -12,6 +12,15 @@
         const year = +d.Year;
         return year >= selectedYearsAgt[0] && year <= selectedYearsAgt[1];
     });
+
+    const seen = new Set();
+
+    $: uniqueAgreements = filteredAgreements.filter((row) => {
+        const key = `${row.Day}-${row.Month}-${row.Year}-${row.agmt_name}-${row.third_party}-${row.groupings_mechanisms}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+    });
 </script>
 
 <!-- peace agreements -->
@@ -26,7 +35,7 @@
             pips
             range
             all="label"
-            ariaLabels={[selectedYearsAgt[0],selectedYearsAgt[1]]}
+            ariaLabels={[selectedYearsAgt[0], selectedYearsAgt[1]]}
         />
     </div>
     <div class="table">
@@ -37,7 +46,7 @@
         <div class="table_header">Grouping/Mechanism</div>
 
         <!-- Rows -->
-        {#each filteredAgreements as row}
+        {#each uniqueAgreements as row}
             <div>{row.Day + "/" + row.Month + "/" + row.Year}</div>
             <div
                 style="display: flex; justify-content: space-between; align-items: center;"

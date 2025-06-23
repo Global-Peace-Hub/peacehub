@@ -17,9 +17,13 @@
                     ensure that our work informs and inspires the next
                     generation of scholars and practitioners. Students benefit
                     from real-world insights, and in turn, their fresh
-                    perspectives enrich our research. Our team teaches across
-                    all levels—from undergraduate courses to PhD supervision—and
-                    is actively engaged in innovative approaches to teaching.
+                    perspectives enrich our research.
+                </p>
+
+                <p style="margin-left: 30px; margin-right: 30px;">
+                    Our team teaches across all levels—from undergraduate
+                    courses to PhD supervision—and is actively engaged in
+                    innovative approaches to teaching.
                 </p>
 
                 <p style="margin-left: 30px; margin-right: 30px;">
@@ -36,8 +40,11 @@
                     Event and Negotiators Database (MEND). VIPs are long-term, team-based
                     initiatives where undergraduate, master's, and PhD students collaborate
                     with faculty on real-world research and innovation challenges.
-                    In January 2026, Dr Sanja Badanjak will be teaching a new six-week
-                    online short course
+                </p>
+
+                <p style="margin-left: 30px; margin-right: 30px;">
+                    In January 2026, Dr Sanja Badanjak will be teaching a new
+                    six-week online short course
                     <a
                         href="https://peacerep.org/courses/peacetech-cpd-course/"
                         target="_blank">PeaceTech</a

@@ -73,11 +73,11 @@ export const menuStructure = [
                 target: "/research",
                 scrollId: "research",
             },
-            // {
-            //     name: "Transition",
-            //     target: "/research",
-            //     scrollId: "transition",
-            // },
+            {
+                name: "Data",
+                target: "/research",
+                scrollId: "data",
+            },
         ],
     },
     {
