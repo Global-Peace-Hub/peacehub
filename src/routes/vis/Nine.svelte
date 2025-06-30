@@ -30,7 +30,7 @@
     $: xMed = d3
         .scaleBand()
         .domain(allYearMonthPairs) // Ensure all Year-Month pairs are included
-        .range([margin.left, innerWidthAdjusted])
+        .range([margin.left/2, innerWidthAdjusted])
         .padding(0.1);
 
     $: yMed = d3
@@ -43,7 +43,7 @@
             // Create axis
             const yAxis = d3
                 .axisLeft(yMed)
-                .tickSize(-innerWidthAdjusted + margin.right)
+                .tickSize(-innerWidthAdjusted + margin.left/2)
                 .tickFormat((d) => {
                     let countryName;
                     // Find matching appreciation object
@@ -194,12 +194,11 @@
         //     return i;
         // });
     }
-    $: console.log(selectedYears);
 </script>
 
 <!-- actors and mediations over time -->
 <div class="actor_types">
-    <h3>Mediation Timeline</h3>
+    <h4>Mediation Timeline</h4>
     <!-- Slider UI -->
     <div class="slider-container">
         <RangeSlider
@@ -242,7 +241,7 @@
         <g transform={`translate(${margin.left}, ${margin.top})`}>
             <g
                 bind:this={yMedAxisGroup}
-                transform={`translate(${margin.left}, 0)`}
+                transform={`translate(${margin.left/2}, 0)`}
             />
             {#each uniqueYears as year}
                 <line
@@ -318,6 +317,9 @@
 </div>
 
 <style>
+    h4 {
+        font-size: 20px;
+    }
     .actor_types {
         max-width: 100%;
         margin: 20px auto;

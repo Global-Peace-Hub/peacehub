@@ -5,10 +5,10 @@
 <div class="wrapper">
     <Navigation />
     <section id="research" aria-labelledby="research-heading">
-        <h2 id="research-heading">Research</h2>
+        <h3 id="research-heading">Research</h3>
         <div id="publications">
             <div class="publication_content">
-                <h3>2025</h3>
+                <h4>2025</h4>
                 <p>
                     <strong>Niamh Henry and Tomas Vancisin</strong> (2025)
                     <a
@@ -36,7 +36,7 @@
                     > [Climate & Natural Resources Series]. PeaceRep: The Peace and
                     Conflict Resolution Evidence Platform, University of Edinburgh.
                 </p>
-                <h3>2024</h3>
+                <h4>2024</h4>
                 <p>
                     <strong>Mateja Peter</strong> (2024)
                     <a
@@ -102,7 +102,7 @@
                     >
                     Journal of International Peacekeeping, 27(1), 85-114.
                 </p>
-                <h3>2023</h3>
+                <h4>2023</h4>
                 <p>
                     <strong>Mateja Peter and Kasia Houghton</strong> (2023)
                     <a
@@ -141,7 +141,7 @@
                     > [Covid-19 Series]. PeaceRep: The Peace and Conflict Resolution
                     Evidence Platform, University of Edinburgh.
                 </p>
-                <h3>2022</h3>
+                <h4>2022</h4>
                 <p>
                     <strong>Mateja Peter and Haley Rice</strong> (2022)
                     <a
@@ -157,9 +157,9 @@
     </section>
 
     <section id="data" aria-labelledby="data-heading">
-        <h2 id="data-heading">Datasets</h2>
+        <h3 id="data-heading">Datasets</h3>
         <div id="data_content">
-            <h3>2025</h3>
+            <h4>2025</h4>
             <p>
                 <a
                     href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/S7NIZC"
@@ -199,7 +199,7 @@
                     >https://doi.org/10.7910/DVN/PYRHS6</a
                 >
             </p>
-            <h3>2024</h3>
+            <h4>2024</h4>
             <p>
                 <a
                     href="https://github.com/peacerep/paax_data/tree/main"
@@ -227,6 +227,11 @@
 </div>
 
 <style>
+    h3 {
+        color: white;
+        font-weight: 800;
+        font-size: 24px;
+    }
     #research-heading,
     #data-heading {
         text-align: center;
@@ -265,5 +270,12 @@
     a {
         color: rgb(215, 215, 215);
         font-weight: 400;
+    }
+
+    a:focus {
+        outline: none; /* optional: removes default focus ring */
+        background-color: rgb(255, 255, 255); /* highlight background */
+        color: black; /* change text color */
+        border-radius: 2px; /* optional: rounded highlight */
     }
 </style>

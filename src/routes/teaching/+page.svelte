@@ -6,7 +6,7 @@
     <Navigation />
 
     <section id="teaching" aria-labelledby="teaching-heading">
-        <h2 id="teaching-heading">Teaching</h2>
+        <h3 id="teaching-heading">Teaching</h3>
         <div id="overview">
             <div class="overview_content">
                 <p style="margin-left: 30px; margin-right: 30px;">
@@ -69,6 +69,12 @@
 </div>
 
 <style>
+    h3 {
+        color: white;
+        font-weight: 800;
+        font-size: 24px;
+    }
+
     #teaching-heading {
         text-align: center;
     }
@@ -97,5 +103,12 @@
     a {
         color: rgb(215, 215, 215);
         font-weight: 400;
+    }
+
+    a:focus {
+        outline: none; /* optional: removes default focus ring */
+        background-color: rgb(255, 255, 255); /* highlight background */
+        color: black; /* change text color */
+        border-radius: 2px; /* optional: rounded highlight */
     }
 </style>

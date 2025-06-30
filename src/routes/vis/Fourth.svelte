@@ -41,7 +41,7 @@
 
 <!-- agreements per month -->
 <div class="agreement_per_month" bind:clientWidth={width}>
-    <h3>Agreements per Month</h3>
+    <h4>Agreements per Month</h4>
     <div class="legend">
         <div class="legend-item">
             <div class="color-box-2 red"></div>
@@ -107,6 +107,9 @@
 </div>
 
 <style>
+    h4 {
+        font-size: 20px;
+    }
     .agreement_per_month {
         max-width: 100%;
         margin: 20px auto;

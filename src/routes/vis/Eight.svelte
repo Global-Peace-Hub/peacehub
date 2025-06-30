@@ -11,7 +11,7 @@ $: console.log(fil_processes);
 </script>
 
 <div class="agreement_list" bind:clientWidth={width}>
-    <h2>Key Processes</h2>
+    <h4>Key Processes</h4>
     <div class="table">
         <div class="table_header">Date</div>
         <div class="table_header">Name</div>
@@ -47,6 +47,9 @@ $: console.log(fil_processes);
 </div>
 
 <style>
+    h4 {
+        font-size: 20px;
+    }
     .agreement_list {
         max-width: 100%;
         margin: 20px auto; /* Adds spacing between sections */

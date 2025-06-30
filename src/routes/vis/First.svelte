@@ -62,7 +62,7 @@
 
 <!-- mediations per month -->
 <div class="mediation_type" bind:clientWidth={width}>
-    <h3>Mediation Events per Month</h3>
+    <h4>Mediation Events per Month</h4>
     <div class="legend">
         <div class="legend-item">
             <div class="color-box white"></div>
@@ -175,6 +175,9 @@
 </div>
 
 <style>
+    h4 {
+        font-size: 20px;
+    }
     .mediation_type {
         max-width: 100%;
         margin: 20px auto;

@@ -14,7 +14,7 @@
     $: yScale = d3
         .scaleLinear()
         .domain([0, 10 + Math.max(...result.map((d) => d.count))])
-        // .domain([0, 100])
+        // .domain([0, 130])
         .range([innerHeight, 0]);
 
     $: {
@@ -28,13 +28,22 @@
                     return `${month}/${year}`; // Format ticks as "MM/YYYY"
                 });
             d3.select(xAxisGroup).call(xAxis);
+
+            // axis.selectAll("path")
+            //     .style("stroke", "black");
+
+            // axis.selectAll("line")
+            //     .style("stroke", "black");
+
+            // axis.selectAll("text")
+            //     .style("fill", "black");
         }
     }
 </script>
 
 <!-- unique actors -->
 <div class="unique_actors" bind:clientWidth={width}>
-    <h3>Unique Third-Party Actors per Month</h3>
+    <h4>Unique Third-Party Actors per Month</h4>
     <svg {width} {height}>
         <g transform={`translate(${margin.left}, ${margin.top})`}>
             <g
@@ -73,7 +82,7 @@
                     x={xScale(`${d.year}-${d.month}`) + xScale.bandwidth() / 2}
                     y={yScale(d.count) - 10}
                     dy=".35em"
-                    font-size="10"
+                    font-size="12"
                     text-anchor="middle"
                     fill="white"
                 >
@@ -85,6 +94,9 @@
 </div>
 
 <style>
+    h4 {
+        font-size: 20px;
+    }
     .unique_actors {
         max-width: 100%;
         margin: 20px auto;

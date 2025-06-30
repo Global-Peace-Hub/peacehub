@@ -12,7 +12,7 @@
 
 <!-- top mediation locations -->
 <div class="mediation_location" bind:clientWidth={width}>
-    <h3>Mediation Locations</h3>
+    <h4>Mediation Locations</h4>
     <div class="location_map">
         <Heatmap {mediations} />
     </div>
@@ -48,6 +48,9 @@
 </div>
 
 <style>
+    h4 {
+        font-size: 20px;
+    }
     .mediation_location {
         max-width: 100%;
         margin: 20px auto;

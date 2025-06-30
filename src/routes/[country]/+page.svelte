@@ -1,6 +1,7 @@
 <script>
     export let data;
 
+    import Fuse from "fuse.js";
     import * as d3 from "d3";
     import { onMount } from "svelte";
     import { getCSV, getGeo, fillMissingMonths } from "../../utils.js";
@@ -87,7 +88,7 @@
         let path = [
             "../data/mend_all_actors.csv",
             "../data/mena.csv",
-            "../data/mend_2406.csv",
+            "../data/3006_mend.csv",
             "../data/ucdp_last_last.csv",
             "../data/processes.csv",
             "../data/countries.csv",
@@ -106,8 +107,10 @@
 
             if (country === "Sudan") {
                 header_years = "2018-2024";
+                // mediations = mend.filter((d) => d.Year === "2024");
                 mediations = mend.filter((d) => d.conflict_country === "Sudan");
                 ucdp = ucdp.filter((d) => d.country === "Sudan");
+                historical_events = [];
                 historical_events = [
                     {
                         name: "Ouster of Omar al-Bashir",
@@ -283,22 +286,14 @@
             return item;
         });
 
-        // finalData = finalData.filter(item => item.id !== "NM" && item.name !== " NM");
-
-        // FILTER TO 2023 and 2024
-        const filteredData = mediations;
-        // .filter(
-        //     (d) => d.Year === "2023" || d.Year === "2024",
-        // );
-
         // MEDIATION TYPES
-        only_M = filteredData.filter((d) => d.med_type === "M");
-        const only_MR = filteredData.filter((d) => d.med_type === "MR");
+        only_M = mediations.filter((d) => d.med_type === "M");
+        const only_MR = mediations.filter((d) => d.med_type === "MR");
 
         mediations_only = only_M;
 
         // AGREEMENTS
-        agreements = filteredData.filter((d) => d.agmt === "1");
+        agreements = mediations.filter((d) => d.agmt === "1");
         agreements_per_year = d3.groups(
             agreements,
             (d) => d.Year,
@@ -316,7 +311,7 @@
         let unknown_count = 0;
 
         const locationCounts = Object.values(
-            filteredData.reduce((acc, item) => {
+            mediations.reduce((acc, item) => {
                 let location = item["med_location - MULTISELECT"]; // Get location
                 let country = item["med_loc_cty"]; // Get country
 
@@ -382,8 +377,6 @@
             (d) => d.month,
         );
 
-        console.log(ucdp_group_date);
-
         // // Ensure all months are present
         // const filled_ucdp_group_date = ucdp_group_date.map(([year, months]) => {
         //     // Convert months to a Map for quick lookup
@@ -413,7 +406,7 @@
 
         // MEDIATIONS PER MONTH
         const groupedData = d3.groups(
-            filteredData,
+            mediations,
             (d) => d.Year,
             (d) => d.Month,
         );
@@ -471,6 +464,40 @@
                 test.push(mediator);
             });
         });
+
+        // wordcloud cleanup
+        // let test_2 = [];
+        // only_M.forEach((item) => {
+        //     const mediators_2 = item.individual_med_named.split(";");
+        //     mediators_2.forEach((mediator) => {
+        //         test_2.push(mediator);
+        //     });
+        // });
+
+        // let cleaned = test_2
+        //     .map((s) => s.trim()) // Remove spaces at start and end
+        //     .filter((s) => s !== ""); // Remove empty strings
+
+        // const aliases = {
+        //     "Anthony Blinken": "Antony Blinken",
+        //     "Mohamed bin Abdulrahman bin Jassim Al Thani":
+        //         "Mohammed bin Abdulrahman bin Jassim Al Thani",
+        //     "Mohammed Bin Abdulrahman Bin Jassim Al-Thani":
+        //         "Mohammed bin Abdulrahman bin Jassim Al Thani",
+        // };
+
+        // const unified = cleaned.map((name) => aliases[name] || name);
+        // const sorted = unified.slice().sort((a, b) => a.localeCompare(b));
+
+        // let wordcloud = sorted.reduce((acc, value) => {
+        //     acc[value] = (acc[value] || 0) + 1;
+        //     return acc;
+        // }, {});
+
+        // let sortedwordcloud = Object.entries(wordcloud).sort(
+        //     (a, b) => b[1] - a[1],
+        // );
+        // // .slice(0, 20);
 
         mediators = [...test];
         // Count mediators
@@ -595,7 +622,7 @@
 
     <main id="main">
         <div class="header">
-            <h2 style="font-size: 30px;">{country + " " + header_years}</h2>
+            <h3 style="font-size: 30px;">{country + " " + header_years}</h3>
         </div>
 
         <!-- <h3 id="mediation" style="padding-left: 20px;">Mediation</h3> -->
@@ -704,7 +731,7 @@
 </div>
 
 <style>
-    h2 {
+    h3 {
         padding: 40px;
         text-align: center;
     }
@@ -727,5 +754,12 @@
     a {
         color: rgb(215, 215, 215);
         font-weight: 400;
+    }
+
+    a:focus {
+        outline: none; /* optional: removes default focus ring */
+        background-color: rgb(255, 255, 255); /* highlight background */
+        color: black; /* change text color */
+        border-radius: 2px; /* optional: rounded highlight */
     }
 </style>

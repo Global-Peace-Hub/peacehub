@@ -7,7 +7,7 @@
     <Navigation />
 
     <section id="visualization" aria-labelledby="visualization-heading">
-        <h2 id="vis-heading">Thematic</h2>
+        <h3 id="vis-heading">Thematic</h3>
         <div id="vis">
             <div class="vis_content">
                 <div class="grid-container">
@@ -35,19 +35,20 @@
                                     href="https://tvancisin.github.io/peace_scroll/"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    aria-label="Interactive peace scroll visualization showing Russia and China as peace agreement signatories"
                                 >
                                     <img
                                         src="../rus_chi.png"
-                                        alt="Image 3 description"
+                                        alt="Image of Russian borders"
                                     />
+                                    <p
+                                        class="image-caption"
+                                        style="font-weight: 600; font-size: 16px"
+                                    >
+                                        Russia and China as Peace Agreements
+                                        Signatories
+                                    </p>
                                 </a>
-                                <p
-                                    class="image-caption"
-                                    style="font-weight: 600; font-size: 16px"
-                                >
-                                    Russia and China as Peace Agreements
-                                    Signatories
-                                </p>
                             </div>
                         </div>
                         <!-- <div class="grid-item">
@@ -66,86 +67,128 @@
     </section>
 
     <section id="mediation" aria-labelledby="mediation-heading">
-        <h2 id="mediation-cases-heading">Mediation Country Cases</h2>
+        <h3 id="mediation-cases-heading">Mediation Country Cases</h3>
         <div id="mediation">
             <div class="mediation_content">
                 <div class="mediation-grid">
                     <div class="grid-item">
                         <div class="image-wrapper">
-                            <a href="/Afghanistan" rel="noopener noreferrer">
+                            <a
+                                href="/Afghanistan"
+                                rel="noopener noreferrer"
+                                aria-label="Go to Afghanistan mediation page"
+                            >
                                 <img
                                     src="/afghanistan.png"
                                     alt="Image of Afghan borders"
                                 />
+                                <p
+                                    class="image-caption"
+                                    style="font-weight: 600;"
+                                >
+                                    Afghanistan
+                                </p>
                             </a>
-                            <p class="image-caption" style="font-weight: 600;">
-                                Afghanistan
-                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
                         <div class="image-wrapper">
-                            <a href="/Israel" rel="noopener noreferrer">
+                            <a
+                                href="/Israel"
+                                rel="noopener noreferrer"
+                                aria-label="Go to Israel mediation page"
+                            >
                                 <img
                                     src="/israel.png"
                                     alt="Image of Israeli borders"
                                 />
+                                <p
+                                    class="image-caption"
+                                    style="font-weight: 600;"
+                                >
+                                    Israel and Palestine
+                                </p>
                             </a>
-                            <p class="image-caption" style="font-weight: 600;">
-                                Israel and Palestine
-                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
                         <div class="image-wrapper">
-                            <a href="/Libya" rel="noopener noreferrer">
+                            <a
+                                href="/Libya"
+                                rel="noopener noreferrer"
+                                aria-label="Go to Libya mediation page"
+                            >
                                 <img
                                     src="/libya.png"
                                     alt="Image of Lybian borders"
                                 />
+                                <p
+                                    class="image-caption"
+                                    style="font-weight: 600;"
+                                >
+                                    Libya
+                                </p>
                             </a>
-                            <p class="image-caption" style="font-weight: 600;">
-                                Libya
-                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
                         <div class="image-wrapper">
-                            <a href="/Sudan" rel="noopener noreferrer">
+                            <a
+                                href="/Sudan"
+                                rel="noopener noreferrer"
+                                aria-label="Go to Sudan mediation page"
+                            >
                                 <img
                                     src="/sudan.png"
                                     alt="Image of Sudanese borders"
                                 />
+                                <p
+                                    class="image-caption"
+                                    style="font-weight: 600;"
+                                >
+                                    Sudan
+                                </p>
                             </a>
-                            <p class="image-caption" style="font-weight: 600;">
-                                Sudan
-                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
                         <div class="image-wrapper">
-                            <a href="/Syria" rel="noopener noreferrer">
+                            <a
+                                href="/Syria"
+                                rel="noopener noreferrer"
+                                aria-label="Go to Syria mediation page"
+                            >
                                 <img
                                     src="/syria.png"
                                     alt="Image of Syrian borders"
                                 />
+                                <p
+                                    class="image-caption"
+                                    style="font-weight: 600;"
+                                >
+                                    Syria
+                                </p>
                             </a>
-                            <p class="image-caption" style="font-weight: 600;">
-                                Syria
-                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
                         <div class="image-wrapper">
-                            <a href="/Yemen" rel="noopener noreferrer">
+                            <a
+                                href="/Yemen"
+                                rel="noopener noreferrer"
+                                aria-label="Go to Yemen mediation page"
+                            >
                                 <img
                                     src="/yemen.png"
                                     alt="Image of Yemeni borders"
                                 />
+                                <p
+                                    class="image-caption"
+                                    style="font-weight: 600;"
+                                >
+                                    Yemen
+                                </p>
                             </a>
-                            <p class="image-caption" style="font-weight: 600;">
-                                Yemen
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -165,6 +208,11 @@
 </div>
 
 <style>
+    h3 {
+        color: white;
+        font-weight: 800;
+        font-size: 24px;
+    }
     #vis-heading,
     #mediation-cases-heading {
         text-align: center;
@@ -287,5 +335,12 @@
     a {
         color: rgb(215, 215, 215);
         font-weight: 400;
+    }
+
+    a:focus {
+        outline: none; /* optional: removes default focus ring */
+        background-color: rgb(255, 255, 255); /* highlight background */
+        color: black; /* change text color */
+        border-radius: 2px; /* optional: rounded highlight */
     }
 </style>

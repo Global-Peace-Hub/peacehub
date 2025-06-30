@@ -6,7 +6,7 @@
     <Navigation />
 
     <section id="about" aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
+        <h3 id="about-heading">About</h3>
         <div id="about_content">
             <p id="first-paragraph" style="text-align: justify;">
                 Our research explores fragmentations in the global order and how
@@ -24,8 +24,7 @@
                 the
                 <a
                     href="https://peacerep.org/research/geopolitical-transitions/"
-                    target="_blank"
-                    >PeaceRep Global Transitions</a
+                    target="_blank">PeaceRep Global Transitions</a
                 >
                 series and is developing two complementary datasets:
                 <strong
@@ -83,7 +82,7 @@
     </section>
 
     <section id="team" aria-labelledby="team-heading">
-        <h2 id="team-heading">Team</h2>
+        <h3 id="team-heading">Team</h3>
         <div id="team_content" style="overflow-x: auto;">
             <table style="width: 100%; border-collapse: collapse;">
                 <thead>
@@ -186,7 +185,7 @@
     </section>
 
     <section id="funding" aria-labelledby="funding-heading">
-        <h2 id="funding-heading">Funding</h2>
+        <h3 id="funding-heading">Funding</h3>
         <div id="funding_content">
             <p>
                 Our research is supported by the Peace and Conflict Resolution
@@ -212,7 +211,7 @@
 </div>
 
 <style>
-    h2 {
+    h3 {
         color: white;
         font-weight: 800;
         font-size: 24px;
@@ -279,5 +278,12 @@
     a {
         color: rgb(215, 215, 215);
         font-weight: 400;
+    }
+
+    a:focus {
+        outline: none; /* optional: removes default focus ring */
+        background-color: rgb(255, 255, 255); /* highlight background */
+        color: black; /* change text color */
+        border-radius: 2px; /* optional: rounded highlight */
     }
 </style>

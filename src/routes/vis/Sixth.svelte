@@ -15,7 +15,7 @@
 
 <!-- top mediators -->
 <div class="mediators" bind:clientWidth={width}>
-    <h3>Top Mediators</h3>
+    <h4>Top Mediators</h4>
     <svg {width} {height}>
         <g transform={`translate(${margin.left}, ${margin.top})`}>
             {#each top_ten_mediators as mediator}
@@ -44,6 +44,9 @@
 </div>
 
 <style>
+    h4 {
+        font-size: 20px;
+    }
     .mediators {
         max-width: 100%;
         margin: 20px auto;
