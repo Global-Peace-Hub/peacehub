@@ -170,7 +170,7 @@
                 >: Houghton, Kasia; Peter, Mateja. 2025. Replication Data for
                 "The Dayton Peace Process: A Keyhole into Russian and Chinese
                 Engagement with Liberal Peacebuilding". Harvard Dataverse, V1.
-                <a href="https://doi.org/10.7910/DVN/S7NIZC"
+                <a href="https://doi.org/10.7910/DVN/S7NIZC" target="_blank"
                     >https://doi.org/10.7910/DVN/S7NIZC</a
                 >
             </p>
@@ -195,21 +195,21 @@
                 >: Peter, Mateja; Badanjak, Sanja; D'Amico, Elisa; Houghton,
                 Kasia. 2025. Mediation Event and Negotiators Database (MEND).
                 Harvard Dataverse, V1.
-                <a href="https://doi.org/10.7910/DVN/PYRHS6"
+                <a href="https://doi.org/10.7910/DVN/PYRHS6" target="_blank"
                     >https://doi.org/10.7910/DVN/PYRHS6</a
                 >
             </p>
             <h4>2024</h4>
             <p>
                 <a
-                    href="https://github.com/peacerep/paax_data/tree/main"
+                    href="https://datashare.ed.ac.uk/handle/10283/9003"
                     target="_blank"
                     >The Peace Agreement Actors Dataset (PAA-X)</a
                 >: Badanjak, Sanja and Henry, Niamh. 2024. The Peace Agreement
                 Actors Dataset (PAA-X). Version 0.1. PeaceRep, the University of
                 Edinburgh.
-                <a href="https://github.com/peacerep/paax_data/tree/main"
-                    >https://github.com/peacerep/paax_data/tree/main</a
+                <a href="https://datashare.ed.ac.uk/handle/10283/9003" target="_blank"
+                    >https://datashare.ed.ac.uk/handle/10283/9003</a
                 >
             </p>
         </div>

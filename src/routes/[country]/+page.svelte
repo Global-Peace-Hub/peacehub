@@ -88,7 +88,7 @@
         let path = [
             "../data/mend_all_actors.csv",
             "../data/mena.csv",
-            "../data/3006_mend.csv",
+            "../data/mend_0207.csv",
             "../data/ucdp_last_last.csv",
             "../data/processes.csv",
             "../data/countries.csv",
@@ -465,7 +465,7 @@
             });
         });
 
-        // wordcloud cleanup
+        // // wordcloud cleanup
         // let test_2 = [];
         // only_M.forEach((item) => {
         //     const mediators_2 = item.individual_med_named.split(";");
@@ -487,6 +487,10 @@
         // };
 
         // const unified = cleaned.map((name) => aliases[name] || name);
+
+        // const uniqueNames = [...new Set(unified)];
+        // console.log(uniqueNames);
+
         // const sorted = unified.slice().sort((a, b) => a.localeCompare(b));
 
         // let wordcloud = sorted.reduce((acc, value) => {
