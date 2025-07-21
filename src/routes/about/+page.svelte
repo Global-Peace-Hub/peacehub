@@ -8,7 +8,7 @@
     <section id="about" aria-labelledby="about-heading">
         <h3 id="about-heading">About</h3>
         <div id="about_content">
-            <p id="first-paragraph" style="text-align: justify;">
+            <p id="first-paragraph" style="margin-top: 0px">
                 Our research explores fragmentations in the global order and how
                 these impact peace and transition processes. We seek to better
                 understand why and how different third-party actors – state,
@@ -187,7 +187,7 @@
     <section id="funding" aria-labelledby="funding-heading">
         <h3 id="funding-heading">Funding</h3>
         <div id="funding_content">
-            <p>
+            <p style="margin-top: 0px">
                 Our research is supported by the Peace and Conflict Resolution
                 Evidence Platform (PeaceRep), funded by UK International
                 Development from the UK government. However, the views expressed
@@ -199,7 +199,7 @@
     </section>
 
     <footer>
-        <p>
+        <p style="padding-top: 20px;">
             &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
         </p>
         <p>
@@ -227,7 +227,6 @@
         position: relative;
         background-color: #003645;
         width: 100%;
-        padding: 10px 0; /* add vertical padding */
         color: white;
     }
 
@@ -236,16 +235,25 @@
     #funding_content {
         position: relative;
         margin: auto;
-        width: 70%;
+        width: 90%; /* Mobile default */
         padding: 20px;
+    }
+
+    @media (min-width: 600px) {
+        #about_content,
+        #team_content,
+        #funding_content {
+            width: 70%; /* Medium and up */
+        }
     }
 
     #team {
         position: relative;
         background-color: #001c23;
         width: 100%;
-        padding: 40px 0; /* add vertical padding */
+        padding-top: 20px;
         color: white;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     #team_content table {
@@ -264,15 +272,15 @@
         position: relative;
         background-color: #003645;
         width: 100%;
-        padding: 40px 0; /* add vertical padding */
         color: white;
     }
 
     footer {
         text-align: center;
         background-color: #001c23;
-        padding: 10px 0; /* add vertical padding */
         margin: auto;
+        padding-bottom: 10px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     a {

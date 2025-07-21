@@ -3,6 +3,7 @@ export function entries() {
     { country: "Libya" },
     { country: "Syria" },
     { country: "Yemen" },
+    { country: "Israel" },
     { country: "Afghanistan" },
     ];
 }

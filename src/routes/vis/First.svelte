@@ -17,7 +17,6 @@
     export let ucdp_final = [];
 
     // $: console.log(pathData);
-    
 
     let xAxisGroup;
     let yAxisGroup;
@@ -25,28 +24,51 @@
 
     $: {
         if (xAxisGroup) {
-            const tickValues = xScale.domain().filter((_, i) => i % 3 === 0); // Show every second tick
+            const domain = xScale.domain();
+            let tickValues;
+
+            if (width < 600) {
+                // Mobile: ~5 ticks
+                const step = Math.ceil(domain.length / 5);
+                tickValues = domain.filter((_, i) => i % step === 0);
+            } else if (width < 1200) {
+                // Medium screens: ~10 ticks
+                const step = Math.ceil(domain.length / 10);
+                tickValues = domain.filter((_, i) => i % step === 0);
+            } else {
+                // Large screens: every 3rd tick
+                tickValues = domain.filter((_, i) => i % 3 === 0);
+            }
+
             const xAxis = d3
                 .axisBottom(xScale)
-                .tickValues(tickValues) // Manually set which ticks to show
+                .tickValues(tickValues)
                 .tickFormat((d) => {
                     const [year, month] = d.split("-");
-                    return `${month}/${year}`; // Format as "MM/YYYY"
+                    return `${month}/${year}`;
                 });
 
             d3.select(xAxisGroup).call(xAxis);
         }
+
         if (yAxisGroup) {
             const yAxis = d3.axisLeft(yScale);
             d3.select(yAxisGroup).call(yAxis);
         }
+
         if (yUCDPAxisGroup) {
             const maxCount = Math.max(...ucdp_final.map((d) => d.best_count));
+            const screenWidth = width;
 
             const yAxis = d3
                 .axisRight(ucdp_yScale)
-                .ticks(3) // Limits to 3 ticks
-                .tickFormat(d3.format("d")); // Ensures whole numbers
+                .ticks(3)
+                .tickFormat((d) => {
+                    if (screenWidth < 600) {
+                        return `${(d / 1000).toFixed(1)}k`;
+                    }
+                    return d3.format("d")(d);
+                });
 
             d3.select(yUCDPAxisGroup)
                 .call(yAxis)
@@ -132,12 +154,13 @@
                     y2={innerHeight}
                     stroke="gray"
                     stroke-width="1"
+                    stroke-opacity="0.5"
                     stroke-dasharray="4 2"
                 />
                 <text
                     x={xScale(`${event.year}-${event.month}`)}
                     y={i * 20}
-                    fill="white"
+                    fill="gray"
                     text-anchor="middle"
                 >
                     {event.name}
@@ -154,17 +177,17 @@
             least two (local) conflict stakeholders, at least one of them
             needing to be a belligerent. <br /><br />
 
-            <strong>Mediation-related events</strong>:
-            non-coercive measures to facilitate the mediation. These measures
-            are aimed at (1) encouraging a conflict party or parties to come
-            to/continue with the negotiation; (2) expanding the range of actors
-            directly or indirectly included in the mediation; (3) coordinating
-            among third-parties; (4) monitoring and advising on implementation
-            as part of formal follow-up mechanisms.<br /><br />
+            <strong>Mediation-related events</strong>: non-coercive measures to
+            facilitate the mediation. These measures are aimed at (1)
+            encouraging a conflict party or parties to come to/continue with the
+            negotiation; (2) expanding the range of actors directly or
+            indirectly included in the mediation; (3) coordinating among
+            third-parties; (4) monitoring and advising on implementation as part
+            of formal follow-up mechanisms.<br /><br />
 
-            <strong>Best estimate of battle-related deaths</strong
-            >: the most reliable assessment of fatalities resulting directly
-            from combat between armed actors. Source:
+            <strong>Best estimate of battle-related deaths</strong>: the most
+            reliable assessment of fatalities resulting directly from combat
+            between armed actors. Source:
             <a
                 target="_blank"
                 href="https://ucdp.uu.se/downloads/index.html#ged_global"
@@ -178,6 +201,7 @@
     h4 {
         font-size: 20px;
     }
+
     .mediation_type {
         max-width: 100%;
         margin: 20px auto;
@@ -186,9 +210,8 @@
         justify-content: center;
         align-items: center;
         background-color: var(--bg-color, #001c23);
-        padding: 20px;
         box-sizing: border-box;
-        /* border-radius: 10px; */
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     .legend {

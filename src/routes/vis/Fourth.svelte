@@ -10,9 +10,30 @@
     export let agt_processed;
 
     let xAxisGroup2;
+    let radius;
+
     $: {
         if (xAxisGroup2) {
-            const tickValues = xScale.domain().filter((_, i) => i % 3 === 0); // Show every second tick
+            const domain = xScale.domain();
+            let tickValues;
+
+            if (width < 600) {
+                // Mobile: ~5 ticks
+                const step = Math.ceil(domain.length / 5);
+                tickValues = domain.filter((_, i) => i % step === 0);
+                radius = 2;
+            } else if (width < 1200) {
+                // Medium screens: ~10 ticks
+                const step = Math.ceil(domain.length / 10);
+                tickValues = domain.filter((_, i) => i % step === 0);
+                radius = 3;
+            } else {
+                // Large screens: every 3rd tick
+                tickValues = domain.filter((_, i) => i % 3 === 0);
+                radius = 5;
+            }
+
+            // const tickValues = xScale.domain().filter((_, i) => i % 3 === 0); // Show every second tick
             const xAxis2 = d3
                 .axisBottom(xScale)
                 .tickValues(tickValues)
@@ -76,12 +97,13 @@
                     y2={innerHeight - 110}
                     stroke="gray"
                     stroke-width="1"
+                    stroke-opacity="0.5"
                     stroke-dasharray="4 2"
                 />
                 <text
                     x={xScale(`${event.year}-${event.month}`)}
                     y={i * 20}
-                    fill="white"
+                    fill="gray"
                     text-anchor="middle"
                 >
                     {event.name}
@@ -89,17 +111,18 @@
             {/each}
             {#each agt_processed as d}
                 {#each d.count as item, i}
-                <circle
-                cx={xScale(`${d.year}-${d.month}`) + xScale.bandwidth() / 2}
-                cy={innerHeight - 110 - i * 13}
-                r={5}
-                fill={item.agmt_id_PAX === "" ? "red" : "steelblue"}
-                on:mouseover={(e) => showTooltip(e, item.agmt_name)}
-                on:mouseleave={hideTooltip}
-                on:focus={(e) => showTooltip(e, item.agmt_name)}
-                role="img"
-                aria-label={`Tooltip for ${item.agmt_name}`}
-            />
+                    <circle
+                        cx={xScale(`${d.year}-${d.month}`) +
+                            xScale.bandwidth() / 2}
+                        cy={innerHeight - 110 - i * 13}
+                        r={radius}
+                        fill={item.agmt_id_PAX === "" ? "red" : "steelblue"}
+                        on:mouseover={(e) => showTooltip(e, item.agmt_name)}
+                        on:mouseleave={hideTooltip}
+                        on:focus={(e) => showTooltip(e, item.agmt_name)}
+                        role="img"
+                        aria-label={`Tooltip for ${item.agmt_name}`}
+                    />
                 {/each}
             {/each}
         </g>
@@ -118,9 +141,9 @@
         justify-content: center;
         align-items: center;
         background-color: var(--bg-color, #001c23);
-        padding: 20px;
         box-sizing: border-box;
-        /* border-radius: 10px; */
+        padding-bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
     .legend {
         display: flex;

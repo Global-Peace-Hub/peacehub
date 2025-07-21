@@ -208,7 +208,9 @@
                 >: Badanjak, Sanja and Henry, Niamh. 2024. The Peace Agreement
                 Actors Dataset (PAA-X). Version 0.1. PeaceRep, the University of
                 Edinburgh.
-                <a href="https://datashare.ed.ac.uk/handle/10283/9003" target="_blank"
+                <a
+                    href="https://datashare.ed.ac.uk/handle/10283/9003"
+                    target="_blank"
                     >https://datashare.ed.ac.uk/handle/10283/9003</a
                 >
             </p>
@@ -241,7 +243,6 @@
         position: relative;
         background-color: #003645;
         width: 100%;
-        padding: 10px 0;
         color: white;
     }
 
@@ -249,16 +250,24 @@
     #data_content {
         position: relative;
         margin: auto;
-        width: 70%;
-        padding: 20px;
+        width: 90%;
+        padding-bottom: 40px;
+    }
+
+    @media (min-width: 600px) {
+        .publication_content,
+        #data_content {
+            width: 70%; /* Medium and up */
+        }
     }
 
     #data {
         position: relative;
         background-color: #001c23;
         width: 100%;
-        padding: 40px 0; /* add vertical padding */
+        padding-top: 10px;
         color: white;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     footer {

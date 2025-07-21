@@ -7,6 +7,7 @@
     let selectedYearsAgt = [2018, 2024];
     let minYear = 2018;
     let maxYear = 2024;
+    let img_height;
 
     $: filteredAgreements = agreements.filter((d) => {
         const year = +d.Year;
@@ -21,6 +22,14 @@
     //     seen.add(key);
     //     return true;
     // });
+
+    $: if (width < 600) {
+        img_height = "20px";
+    } else if (width < 1200) {
+        img_height = "25px";
+    } else {
+        img_height = "30px";
+    }
 </script>
 
 <!-- peace agreements -->
@@ -42,15 +51,17 @@
         <!-- Header -->
         <div class="table_header">Date</div>
         <div class="table_header">Name</div>
-        <div class="table_header">Third-Party Actors</div>
-        <div class="table_header">Grouping/Mechanism</div>
+        <div class="table_header">3rd-Party Actors</div>
+        <div class="table_header">Grouping</div>
 
         <!-- Rows -->
         {#each filteredAgreements as row}
-            <div>{row.Day + "/" + row.Month + "/" + row.Year}</div>
-            <div
-                style="display: flex; justify-content: space-between; align-items: center;"
-            >
+            <div class="date-wrap">
+                <span>{row.Day}/{row.Month}/</span><span class="year-break"
+                    >{row.Year}</span
+                >
+            </div>
+            <div style="display: flex; justify-content: space-between;">
                 <span style="text-align: left;">{row.agmt_name}</span>
                 {#if row.agmt_id_PAX !== ""}
                     <a
@@ -62,14 +73,14 @@
                         <img
                             alt="Agreement in PAX"
                             src="../pax.jpg"
-                            style="height: 30px; margin-left: auto;"
+                            style={`height: ${img_height}; margin-left: 2px;`}
                         />
                     </a>
                 {:else}
                     <img
                         alt="New agreement"
                         src="../new.png"
-                        style="height: 30px; margin-left: auto;"
+                        style={`height: ${img_height}; margin-left: 2px;`}
                     />
                 {/if}
             </div>
@@ -83,21 +94,22 @@
     h4 {
         font-size: 20px;
     }
+
     .slider-container {
         width: 90%;
         margin: 10px auto;
     }
+
     .agreement_list {
         max-width: 100%;
         margin: 20px auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         background-color: var(--bg-color, #001c23);
-        padding: 20px;
+        padding-bottom: 30px;
         box-sizing: border-box;
-        /* border-radius: 10px; */
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     .table {
@@ -105,9 +117,24 @@
         display: grid;
         grid-template-columns: 0.5fr 2fr 1fr 1fr;
         border: 1px solid #595959;
+        font-size: 14px; /* Default for large screens */
+        align-items: left;
     }
+
+    @media (max-width: 1199px) {
+        .table {
+            font-size: 12px; /* Medium screens */
+        }
+    }
+
+    @media (max-width: 600px) {
+        .table {
+            font-size: 10px; /* Mobile screens */
+        }
+    }
+
     .table div {
-        padding: 8px;
+        padding: 8px; /* Default for large screens */
         border: 1px solid #605f5f;
         text-align: left;
         word-break: break-word;
@@ -115,12 +142,30 @@
         white-space: normal;
     }
 
+    @media (max-width: 1199px) {
+        .table div {
+            padding: 4px; /* Medium screens */
+        }
+    }
+
+    @media (max-width: 600px) {
+        .table div {
+            padding: 2px; /* Mobile screens */
+        }
+    }
+
     .table div {
         word-break: break-word;
     }
 
-    .table div::before {
-        content: "\200B";
+    .year-break {
+        display: inline;
+    }
+
+    @media (max-width: 700px) {
+        .year-break {
+            display: block;
+        }
     }
 
     .table_header {

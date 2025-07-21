@@ -44,8 +44,12 @@
 
 <!-- text circle packing -->
 <div class="actor_types" bind:clientWidth={width}>
-    <h4>Actors Involved in Mediation & Mediation-Related Activities by Type</h4>
-    <p style="margin: 0; font-size: 14px">[The bigger the circle, the more involved the actor]</p>
+    <h4 style="text-align: center;">
+        Actors Involved in Mediation & Mediation-Related Activities by Type
+    </h4>
+    <p style="margin: 0; font-size: 14px; text-align: center">
+        [The bigger the circle, the more involved the actor]
+    </p>
     <svg {width} {height}>
         <g transform="translate({innerWidthAdjusted / 6 / 2 + margin.left}, 0)">
             {#each nodes as point}
@@ -79,35 +83,37 @@
                 {/if}
             {/each}
 
-            {#each categoryPositions as { category, x }}
-                <text
-                    {x}
-                    y={height - 20}
-                    text-anchor="middle"
-                    font-size="14"
-                    font-weight="600"
-                    fill="white"
-                >
-                    {#if category === "international"}
-                        <tspan {x} dy="-0.6em">International</tspan>
-                        <tspan {x} dy="1.2em">Organizations</tspan>
-                    {:else if category === "regional"}
-                        <tspan {x} dy="-0.6em">Regional</tspan>
-                        <tspan {x} dy="1.2em">Organizations</tspan>
-                    {:else if category === "neighbor"}
-                        <tspan {x} dy="-0.6em">Neighbour</tspan>
-                        <tspan {x} dy="1.2em">States</tspan>
-                    {:else if category === "mena"}
-                        <tspan {x} dy="-0.6em">MENA</tspan>
-                        <tspan {x} dy="1.2em">States</tspan>
-                    {:else if category === "other_state"}
-                        <tspan {x} dy="-0.6em">Other</tspan>
-                        <tspan {x} dy="1.2em">States</tspan>
-                    {:else}
-                        {category}
-                    {/if}
-                </text>
-            {/each}
+            {#if width >= 800}
+                {#each categoryPositions as { category, x }}
+                    <text
+                        {x}
+                        y={height - 20}
+                        text-anchor="middle"
+                        font-size="14"
+                        font-weight="600"
+                        fill="white"
+                    >
+                        {#if category === "international"}
+                            <tspan {x} dy="-0.6em">International</tspan>
+                            <tspan {x} dy="1.2em">Organizations</tspan>
+                        {:else if category === "regional"}
+                            <tspan {x} dy="-0.6em">Regional</tspan>
+                            <tspan {x} dy="1.2em">Organizations</tspan>
+                        {:else if category === "neighbor"}
+                            <tspan {x} dy="-0.6em">Neighbour</tspan>
+                            <tspan {x} dy="1.2em">States</tspan>
+                        {:else if category === "mena"}
+                            <tspan {x} dy="-0.6em">MENA</tspan>
+                            <tspan {x} dy="1.2em">States</tspan>
+                        {:else if category === "other_state"}
+                            <tspan {x} dy="-0.6em">Other</tspan>
+                            <tspan {x} dy="1.2em">States</tspan>
+                        {:else}
+                            {category}
+                        {/if}
+                    </text>
+                {/each}
+            {/if}
         </g>
     </svg>
 </div>
@@ -124,8 +130,8 @@
         justify-content: center;
         align-items: center;
         background-color: var(--bg-color, #001c23);
-        padding: 20px;
         box-sizing: border-box;
-        /* border-radius: 10px; */
+        padding-bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 </style>

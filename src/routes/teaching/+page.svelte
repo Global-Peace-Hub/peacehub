@@ -9,7 +9,7 @@
         <h3 id="teaching-heading">Teaching</h3>
         <div id="overview">
             <div class="overview_content">
-                <p style="margin-left: 30px; margin-right: 30px;">
+                <p>
                     This project is both a centre for cutting-edge research and
                     a vibrant learning environment. Our team is composed of
                     dedicated academics who bring their expertise directly into
@@ -20,13 +20,13 @@
                     perspectives enrich our research.
                 </p>
 
-                <p style="margin-left: 30px; margin-right: 30px;">
+                <p>
                     Our team teaches across all levels—from undergraduate
                     courses to PhD supervision—and is actively engaged in
                     innovative approaches to teaching.
                 </p>
 
-                <p style="margin-left: 30px; margin-right: 30px;">
+                <p>
                     In September 2025, we are launching a new module <a
                         href="https://www.st-andrews.ac.uk/education/vip/projects/peacehub/"
                         target="_blank">PeaceHub: Global Mediation Database</a
@@ -42,7 +42,7 @@
                     with faculty on real-world research and innovation challenges.
                 </p>
 
-                <p style="margin-left: 30px; margin-right: 30px;">
+                <p>
                     In January 2026, Dr Sanja Badanjak will be teaching a new
                     six-week online short course
                     <a
@@ -57,7 +57,7 @@
     </section>
 
     <footer>
-        <p>
+        <p style="padding-top: 20px;">
             &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
         </p>
         <p>
@@ -82,22 +82,28 @@
         position: relative;
         background-color: #003645;
         width: 100%;
-        padding: 10px 0; /* add vertical padding */
         color: white;
     }
 
     .overview_content {
         position: relative;
         margin: auto;
-        width: 70%;
-        padding: 20px;
+        width: 90%;
+        padding-bottom: 40px;
+    }
+
+    @media (min-width: 600px) {
+        .overview_content {
+            width: 70%;
+        }
     }
 
     footer {
         text-align: center;
         background-color: #001c23;
-        padding: 10px 0; /* add vertical padding */
         margin: auto;
+        padding-bottom: 10px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     a {

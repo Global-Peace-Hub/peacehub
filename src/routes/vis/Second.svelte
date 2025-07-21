@@ -10,6 +10,7 @@
     export let result = [];
 
     let xAxisGroup;
+    let font;
 
     $: yScale = d3
         .scaleLinear()
@@ -19,7 +20,24 @@
 
     $: {
         if (xAxisGroup) {
-            const tickValues = xScale.domain().filter((_, i) => i % 3 === 0); // Show every second tick
+            const domain = xScale.domain();
+            let tickValues;
+
+            if (width < 600) {
+                // Mobile: ~5 ticks
+                const step = Math.ceil(domain.length / 5);
+                tickValues = domain.filter((_, i) => i % step === 0);
+                font = 8;
+            } else if (width < 1200) {
+                // Medium screens: ~10 ticks
+                const step = Math.ceil(domain.length / 10);
+                tickValues = domain.filter((_, i) => i % step === 0);
+                font = 10;
+            } else {
+                // Large screens: every 3rd tick
+                tickValues = domain.filter((_, i) => i % 3 === 0);
+                font = 12;
+            }
             const xAxis = d3
                 .axisBottom(xScale)
                 .tickValues(tickValues) // Manually set which ticks to show
@@ -28,22 +46,13 @@
                     return `${month}/${year}`; // Format ticks as "MM/YYYY"
                 });
             d3.select(xAxisGroup).call(xAxis);
-
-            // axis.selectAll("path")
-            //     .style("stroke", "black");
-
-            // axis.selectAll("line")
-            //     .style("stroke", "black");
-
-            // axis.selectAll("text")
-            //     .style("fill", "black");
         }
     }
 </script>
 
 <!-- unique actors -->
 <div class="unique_actors" bind:clientWidth={width}>
-    <h4>Unique Third-Party Actors per Month</h4>
+    <h4 style="text-align: center;">Unique Third-Party Actors per Month</h4>
     <svg {width} {height}>
         <g transform={`translate(${margin.left}, ${margin.top})`}>
             <g
@@ -58,12 +67,13 @@
                     y2={innerHeight}
                     stroke="gray"
                     stroke-width="1"
+                    stroke-opacity="0.5"
                     stroke-dasharray="4 2"
                 />
                 <text
                     x={xScale(`${event.year}-${event.month}`)}
                     y={i * 20}
-                    fill="white"
+                    fill="gray"
                     text-anchor="middle"
                 >
                     {event.name}
@@ -78,11 +88,13 @@
                     fill="steelblue"
                     rx="2"
                 />
+            {/each}
+            {#each result as d}
                 <text
                     x={xScale(`${d.year}-${d.month}`) + xScale.bandwidth() / 2}
-                    y={yScale(d.count) - 10}
+                    y={yScale(d.count) - 8}
                     dy=".35em"
-                    font-size="12"
+                    font-size={font}
                     text-anchor="middle"
                     fill="white"
                 >
@@ -105,8 +117,8 @@
         justify-content: center;
         align-items: center;
         background-color: var(--bg-color, #001c23);
-        padding: 20px;
+        padding-bottom: 30px;
         box-sizing: border-box;
-        /* border-radius: 10px; */
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 </style>

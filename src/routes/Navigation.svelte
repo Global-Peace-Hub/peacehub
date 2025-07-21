@@ -127,7 +127,7 @@
 
     <header>
         <h1 style="font-size: 45px; margin-bottom: 0px">Global PeaceHub</h1>
-        <h2>
+        <h2 style="padding-left: 10px; padding-right: 10px">
             Understanding shifts in the geopolitical context of peace and
             transition processes
         </h2>
@@ -143,6 +143,7 @@
         align-content: center;
         text-align: center;
         background-color: #001c23;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     header {
@@ -159,8 +160,8 @@
 
     h2 {
         color: white;
-        font-weight: 800;
-        font-size: 24px;
+        font-weight: 500;
+        font-size: 22px;
     }
 
     #navigation {

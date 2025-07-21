@@ -19,6 +19,7 @@
     let maxYear = 2024;
     let selectedYears = [2018, 2024];
     let yMedAxisGroup;
+    let font_size;
 
     // MEDIATION TIMELINE
     $: years = [...new Set(mediations_only.map((d) => d.Year))]; // Extract unique years
@@ -30,7 +31,7 @@
     $: xMed = d3
         .scaleBand()
         .domain(allYearMonthPairs) // Ensure all Year-Month pairs are included
-        .range([margin.left/2, innerWidthAdjusted])
+        .range([margin.left / 2, innerWidthAdjusted])
         .padding(0.1);
 
     $: yMed = d3
@@ -43,7 +44,7 @@
             // Create axis
             const yAxis = d3
                 .axisLeft(yMed)
-                .tickSize(-innerWidthAdjusted + margin.left/2)
+                .tickSize(-innerWidthAdjusted + margin.left / 2)
                 .tickFormat((d) => {
                     let countryName;
                     // Find matching appreciation object
@@ -71,11 +72,21 @@
                 .attr("stroke", "#333333")
                 .attr("stroke-dasharray", "5,3");
 
+            if (width < 600) {
+                font_size = "6px";
+            } else {
+                font_size = "8px";
+            }
+
             // Style tick text
             d3.select(yMedAxisGroup)
                 .selectAll(".tick text")
-                .attr("font-size", "8")
+                .attr("font-size", font_size)
                 .attr("fill", "gray")
+                .attr("transform", "rotate(-30)") 
+                .style("text-anchor", "end") 
+                .attr("dx", "0.2em") 
+                .attr("dy", "0.3em")
                 .on("mouseover", function (event, d) {
                     handleTickHover(d, event); // Call function on hover
                 })
@@ -237,11 +248,11 @@
         </Select>
     </div> -->
 
-    <svg {width} {height}>
-        <g transform={`translate(${margin.left}, ${margin.top})`}>
+    <svg {width} height={height + 10}>
+        <g transform={`translate(${margin.left}, ${margin.top + 5})`}>
             <g
                 bind:this={yMedAxisGroup}
-                transform={`translate(${margin.left/2}, 0)`}
+                transform={`translate(${margin.left / 2}, 0)`}
             />
             {#each uniqueYears as year}
                 <line
@@ -328,9 +339,9 @@
         justify-content: center;
         align-items: center;
         background-color: var(--bg-color, #001c23);
-        padding: 20px;
+        padding-bottom: 20px;
         box-sizing: border-box;
-        /* border-radius: 10px; */
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     .slider-container,
@@ -356,11 +367,7 @@
     .heatmap-legend-bar {
         height: 10px;
         width: 200px;
-        background: linear-gradient(
-            to right,
-            gray 50%,
-            white 100%
-        );
+        background: linear-gradient(to right, gray 50%, white 100%);
     }
 
     .legend-labels {

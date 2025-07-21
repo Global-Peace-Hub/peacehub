@@ -10,7 +10,6 @@
         <h3 id="vis-heading">Thematic</h3>
         <div id="vis">
             <div class="vis_content">
-                <div class="grid-container">
                     <div class="grid-item">
                         <!-- <div class="image-wrapper">
                             <img
@@ -29,7 +28,7 @@
                             <p class="image-caption">Russia in Mediation</p>
                         </div>
                     </div> -->
-                        <div class="grid-item">
+                        <div class="grid-item" style="padding: 0px;">
                             <div class="image-wrapper">
                                 <a
                                     href="https://tvancisin.github.io/peace_scroll/"
@@ -61,135 +60,114 @@
                         </div>
                     </div> -->
                     </div>
-                </div>
             </div>
         </div>
     </section>
 
     <section id="mediation" aria-labelledby="mediation-heading">
         <h3 id="mediation-cases-heading">Mediation Country Cases</h3>
-        <div id="mediation">
-            <div class="mediation_content">
-                <div class="mediation-grid">
-                    <div class="grid-item">
-                        <div class="image-wrapper">
-                            <a
-                                href="/Afghanistan"
-                                rel="noopener noreferrer"
-                                aria-label="Go to Afghanistan mediation page"
-                            >
-                                <img
-                                    src="/afghanistan.png"
-                                    alt="Image of Afghan borders"
-                                />
-                                <p
-                                    class="image-caption"
-                                    style="font-weight: 600;"
-                                >
-                                    Afghanistan
-                                </p>
-                            </a>
-                        </div>
+        <div class="mediation_content">
+            <div class="mediation-grid">
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="/Afghanistan"
+                            rel="noopener noreferrer"
+                            aria-label="Go to Afghanistan mediation page"
+                        >
+                            <img
+                                src="/afghanistan.png"
+                                alt="Image of Afghan borders"
+                            />
+                            <p class="image-caption" style="font-weight: 600;">
+                                Afghanistan
+                            </p>
+                        </a>
                     </div>
-                    <div class="grid-item">
-                        <div class="image-wrapper">
-                            <a
-                                href="/Israel"
-                                rel="noopener noreferrer"
-                                aria-label="Go to Israel mediation page"
-                            >
-                                <img
-                                    src="/israel.png"
-                                    alt="Image of Israeli borders"
-                                />
-                                <p
-                                    class="image-caption"
-                                    style="font-weight: 600;"
-                                >
-                                    Israel and Palestine
-                                </p>
-                            </a>
-                        </div>
+                </div>
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="/Israel"
+                            rel="noopener noreferrer"
+                            aria-label="Go to Israel mediation page"
+                        >
+                            <img
+                                src="/israel.png"
+                                alt="Image of Israeli borders"
+                            />
+                            <p class="image-caption" style="font-weight: 600;">
+                                Israel and Palestine
+                            </p>
+                        </a>
                     </div>
-                    <div class="grid-item">
-                        <div class="image-wrapper">
-                            <a
-                                href="/Libya"
-                                rel="noopener noreferrer"
-                                aria-label="Go to Libya mediation page"
-                            >
-                                <img
-                                    src="/libya.png"
-                                    alt="Image of Lybian borders"
-                                />
-                                <p
-                                    class="image-caption"
-                                    style="font-weight: 600;"
-                                >
-                                    Libya
-                                </p>
-                            </a>
-                        </div>
+                </div>
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="/Libya"
+                            rel="noopener noreferrer"
+                            aria-label="Go to Libya mediation page"
+                        >
+                            <img
+                                src="/libya.png"
+                                alt="Image of Lybian borders"
+                            />
+                            <p class="image-caption" style="font-weight: 600;">
+                                Libya
+                            </p>
+                        </a>
                     </div>
-                    <div class="grid-item">
-                        <div class="image-wrapper">
-                            <a
-                                href="/Sudan"
-                                rel="noopener noreferrer"
-                                aria-label="Go to Sudan mediation page"
-                            >
-                                <img
-                                    src="/sudan.png"
-                                    alt="Image of Sudanese borders"
-                                />
-                                <p
-                                    class="image-caption"
-                                    style="font-weight: 600;"
-                                >
-                                    Sudan
-                                </p>
-                            </a>
-                        </div>
+                </div>
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="/Sudan"
+                            rel="noopener noreferrer"
+                            aria-label="Go to Sudan mediation page"
+                        >
+                            <img
+                                src="/sudan.png"
+                                alt="Image of Sudanese borders"
+                            />
+                            <p class="image-caption" style="font-weight: 600;">
+                                Sudan
+                            </p>
+                        </a>
                     </div>
-                    <div class="grid-item">
-                        <div class="image-wrapper">
-                            <a
-                                href="/Syria"
-                                rel="noopener noreferrer"
-                                aria-label="Go to Syria mediation page"
-                            >
-                                <img
-                                    src="/syria.png"
-                                    alt="Image of Syrian borders"
-                                />
-                                <p
-                                    class="image-caption"
-                                    style="font-weight: 600;"
-                                >
-                                    Syria
-                                </p>
-                            </a>
-                        </div>
+                </div>
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="/Syria"
+                            rel="noopener noreferrer"
+                            aria-label="Go to Syria mediation page"
+                        >
+                            <img
+                                src="/syria.png"
+                                alt="Image of Syrian borders"
+                            />
+                            <p class="image-caption" style="font-weight: 600;">
+                                Syria
+                            </p>
+                        </a>
                     </div>
-                    <div class="grid-item">
-                        <div class="image-wrapper">
-                            <a
-                                href="/Yemen"
-                                rel="noopener noreferrer"
-                                aria-label="Go to Yemen mediation page"
-                            >
-                                <img
-                                    src="/yemen.png"
-                                    alt="Image of Yemeni borders"
-                                />
-                                <p
-                                    class="image-caption"
-                                    style="font-weight: 600;"
-                                >
-                                    Yemen
-                                </p>
-                            </a>
-                        </div>
+                </div>
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="/Yemen"
+                            rel="noopener noreferrer"
+                            aria-label="Go to Yemen mediation page"
+                        >
+                            <img
+                                src="/yemen.png"
+                                alt="Image of Yemeni borders"
+                            />
+                            <p class="image-caption" style="font-weight: 600;">
+                                Yemen
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -213,15 +191,16 @@
         font-weight: 800;
         font-size: 24px;
     }
+
     #vis-heading,
     #mediation-cases-heading {
         text-align: center;
     }
+
     #visualization {
         position: relative;
         background-color: #003645;
         width: 100%;
-        padding: 10px 0; /* add vertical padding */
         color: white;
     }
 
@@ -231,6 +210,7 @@
         width: 100%;
         padding: 10px 0; /* add vertical padding */
         color: white;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     .mediation_content,
@@ -238,13 +218,7 @@
         position: relative;
         margin: auto;
         width: 70%;
-        padding: 20px;
-    }
-
-    .grid-container {
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr); */
-        gap: 25px;
+        padding-bottom: 40px;
     }
 
     .grid-item {
@@ -252,26 +226,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #002a35; /* optional background */
-        padding: 10px;
         border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .grid-item img {
         max-width: 100%;
         height: auto;
-        display: block;
         object-fit: contain;
         border-radius: 4px;
+        display: block;
     }
 
-    /* Responsive: stack in one column on small screens */
-    @media (max-width: 767px) {
-        .grid-container {
-            grid-template-columns: 1fr;
-        }
-    }
     .image-wrapper {
         text-align: center;
     }
@@ -289,37 +254,12 @@
         gap: 25px;
     }
 
-    .grid-item {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .image-wrapper {
-        text-align: center;
-    }
-
-    .grid-item img {
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-        border-radius: 4px;
-        display: block;
-    }
-
-    .image-caption {
-        margin-top: 10px;
-        font-size: 14px;
-        color: white;
-        font-family: "Montserrat", sans-serif;
-    }
-
     /* Responsive: 1 column on small screens */
     @media (max-width: 767px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+
         .mediation-grid {
             grid-template-columns: 1fr;
         }
@@ -328,7 +268,7 @@
     footer {
         text-align: center;
         background-color: #003645;
-        padding: 10px 0; /* add vertical padding */
+        padding: 10px 0;
         margin: auto;
     }
 
@@ -338,9 +278,9 @@
     }
 
     a:focus {
-        outline: none; /* optional: removes default focus ring */
-        background-color: rgb(255, 255, 255); /* highlight background */
-        color: black; /* change text color */
-        border-radius: 2px; /* optional: rounded highlight */
+        outline: none;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border-radius: 2px;
     }
 </style>

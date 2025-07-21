@@ -55,8 +55,7 @@
         justify-content: center;
         align-items: center;
         background-color: var(--bg-color, #001c23);
-        padding: 20px;
         box-sizing: border-box;
-        /* border-radius: 10px; */
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 </style>

@@ -226,7 +226,7 @@
 
         <header>
             <h1 style="font-size: 45px; margin-bottom: 0px">Global PeaceHub</h1>
-            <h2>
+            <h2 style="padding-left: 10px; padding-right: 10px">
                 Understanding shifts in the geopolitical context of peace and
                 transition processes
             </h2>
@@ -271,7 +271,7 @@
             {#each images_ppl as { src, name, position } (src)}
                 <div class="image-container-people">
                     <img
-                        style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);"
+                        style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); "
                         loading="lazy"
                         {src}
                         alt="PeaceHub team member"
@@ -285,14 +285,15 @@
     </section>
 
     <footer id="credit">
-        <p style="text-align: center;">
-            Web and Visualization Development: <strong>
+        <p style="text-align: center; margin-bottom: 5px">
+            Web and Visualization Development:<br />
+            <strong>
                 <a href="https://tomasvancisin.co.uk/" target="_blank">
                     Tomas Vancisin
                 </a>
             </strong>
         </p>
-        <p style="text-align: center;">
+        <p style="text-align: center; margin-top: 2px">
             &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
         </p>
     </footer>
@@ -305,12 +306,18 @@
 
     .logos {
         gap: 30px;
-        padding-top: 30px;
+        padding-top: 10px;
     }
 
-    img {
-        height: 60px;
+    .logos img {
+        height: 50px;
         margin-left: 30px;
+    }
+
+    @media (min-width: 600px) {
+        .logos img {
+            height: 60px;
+        }
     }
 
     h1 {
@@ -320,8 +327,8 @@
 
     h2 {
         color: white;
-        font-weight: 800;
-        font-size: 24px;
+        font-weight: 500;
+        font-size: 22px;
     }
 
     h3 {
@@ -339,6 +346,7 @@
         align-content: center;
         text-align: center;
         background-color: #001c23;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     main {
@@ -452,14 +460,13 @@
     #people {
         position: relative;
         background-color: #001c23;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     #credit {
         position: relative;
         margin: auto;
         width: 100%;
-        padding: 10px;
-        background-color: #00303e;
         font-weight: 200;
     }
 
@@ -497,14 +504,34 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media (min-width: 600px) {
+        .image-container-people {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .image-container-people {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
     }
 
     .image-container-people img {
         width: 100%;
         height: auto;
         border-radius: 3px;
+    }
+
+    @media (max-width: 1023px) {
+        .image-container-people img {
+            max-width: 230px;
+        }
     }
 
     .image-container-people p {
@@ -520,9 +547,9 @@
     }
 
     :global(a:focus) {
-        outline: none; /* optional: removes default focus ring */
-        background-color: rgb(255, 255, 255); /* highlight background */
-        color: black; /* change text color */
-        border-radius: 2px; /* optional: rounded highlight */
+        outline: none;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border-radius: 2px;
     }
 </style>

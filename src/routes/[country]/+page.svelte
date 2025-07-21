@@ -68,6 +68,15 @@
         isMenuOpen = !isMenuOpen;
     }
 
+    // Reactively update margin based on width
+    $: {
+        if (width < 600) {
+            margin = { top: 20, right: 32, bottom: 20, left: 27 };
+        } else {
+            margin = { top: 20, right: 80, bottom: 20, left: 80 };
+        }
+    }
+
     // Calculate dimensions reactively
     $: width = innerWidth; // Reactively bound to `clientWidth` for responsiveness
     $: innerHeight = height - margin.top - margin.bottom;
@@ -113,7 +122,7 @@
                 historical_events = [];
                 historical_events = [
                     {
-                        name: "Ouster of Omar al-Bashir",
+                        name: "al-Bashir Ousted",
                         year: "2019",
                         month: "4",
                     },
@@ -727,9 +736,13 @@
         />
     </main>
     <footer>
-        <p>&copy; {new Date().getFullYear()} PeaceHub. All rights reserved.</p>
         <p>
-            <a href="/">← Back to Main Site</a>
+            &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
+        </p>
+        <p>
+            <a href="/" aria-label="Back to main site from Footer"
+                >← Back to Main Site</a
+            >
         </p>
     </footer>
 </div>
@@ -751,7 +764,6 @@
     footer {
         text-align: center;
         background-color: #003645;
-        padding: 10px 0; /* add vertical padding */
         margin: auto;
     }
 
