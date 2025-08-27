@@ -635,7 +635,21 @@
 
     <main id="main">
         <div class="header">
-            <h3 style="font-size: 30px;">{country + " " + header_years}</h3>
+            <h3
+                style="font-size: 30px; margin-bottom: 0px; padding-bottom: 10px"
+            >
+                {country + " " + header_years}
+            </h3>
+        </div>
+        <div style="width: 80%; margin: auto">
+            <p style="text-align: center; margin-bottom: 50px">
+                <strong>Cite Data as:</strong> Peter, Mateja; Badanjak, Sanja;
+                D'Amico, Elisa; Houghton, Kasia, 2025,<br /> "Mediation Event
+                and Negotiators Database (MEND)", Harvard Dataverse, V1,
+                <a href="https://doi.org/10.7910/DVN/PYRHS6" target="_blank"
+                    >https://doi.org/10.7910/DVN/PYRHS6</a
+                >
+            </p>
         </div>
 
         <!-- <h3 id="mediation" style="padding-left: 20px;">Mediation</h3> -->

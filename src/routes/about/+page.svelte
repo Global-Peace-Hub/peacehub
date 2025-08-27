@@ -56,6 +56,14 @@
                 agreements supported by individual third parties.
             </p>
             <p style="margin-left: 30px; margin-right: 30px;">
+                <strong>Cite Data as:</strong> Badanjak, Sanja; Henry, Niamh.
+                (2025). Peace Agreement Actors Dataset (PAA-X), 1990-2023
+                [dataset]. University of Edinburgh. School of Law.
+                <a href="https://doi.org/10.7488/ds/7932" target="_blank"
+                    >https://doi.org/10.7488/ds/7932</a
+                >.
+            </p>
+            <p style="margin-left: 30px; margin-right: 30px;">
                 • <strong
                     >Mediation Event and Negotiators Database (MEND)</strong
                 > is a new and growing resource for researchers and practitioners
@@ -77,6 +85,14 @@
                 for the mapping of network dynamics between international and local
                 actors, and identification of the mediation conditions conducive
                 to the eventual signing of agreements.
+            </p>
+            <p style="margin-left: 30px; margin-right: 30px;">
+                <strong>Cite Data as:</strong> Peter, Mateja; Badanjak, Sanja;
+                D'Amico, Elisa; Houghton, Kasia, 2025, "Mediation Event and
+                Negotiators Database (MEND)", Harvard Dataverse, V1,
+                <a href="https://doi.org/10.7910/DVN/PYRHS6" target="_blank"
+                    >https://doi.org/10.7910/DVN/PYRHS6</a
+                >
             </p>
         </div>
     </section>

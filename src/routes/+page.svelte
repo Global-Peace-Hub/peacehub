@@ -285,13 +285,21 @@
     </section>
 
     <footer id="credit">
+        <div style="width: 80%; margin: auto">
+            <p style="text-align: center; margin-bottom: 5px">
+                <strong>Cite Data as:</strong> Peter, Mateja; Badanjak, Sanja;
+                D'Amico, Elisa; Houghton, Kasia, 2025,<br /> "Mediation Event
+                and Negotiators Database (MEND)", Harvard Dataverse, V1,<br />
+                <a href="https://doi.org/10.7910/DVN/PYRHS6" target="_blank"
+                    >https://doi.org/10.7910/DVN/PYRHS6</a
+                >
+            </p>
+        </div>
         <p style="text-align: center; margin-bottom: 5px">
-            Web and Visualization Development:<br />
-            <strong>
-                <a href="https://tomasvancisin.co.uk/" target="_blank">
-                    Tomas Vancisin
-                </a>
-            </strong>
+            <strong> Web and Visualization Development: </strong>
+            <a href="https://tomasvancisin.co.uk/" target="_blank">
+                Tomas Vancisin
+            </a>
         </p>
         <p style="text-align: center; margin-top: 2px">
             &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
