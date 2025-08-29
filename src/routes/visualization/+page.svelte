@@ -8,58 +8,72 @@
 
     <section id="visualization" aria-labelledby="visualization-heading">
         <h3 id="vis-heading">Thematic</h3>
-        <div id="vis">
+        <!-- <div id="vis">
             <div class="vis_content">
-                    <div class="grid-item">
-                        <!-- <div class="image-wrapper">
-                            <img
-                                src="../example.png"
-                                alt="Image 1 description"
-                            />
-                            <p class="image-caption">Geography of Mediation</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
+                <div class="grid-item">
+                    <div class="grid-item" style="padding: 0px;">
                         <div class="image-wrapper">
-                            <img
-                                src="../example.png"
-                                alt="Image 2 description"
-                            />
-                            <p class="image-caption">Russia in Mediation</p>
-                        </div>
-                    </div> -->
-                        <div class="grid-item" style="padding: 0px;">
-                            <div class="image-wrapper">
-                                <a
-                                    href="https://tvancisin.github.io/peace_scroll/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="Interactive peace scroll visualization showing Russia and China as peace agreement signatories"
+                            <a
+                                href="https://tvancisin.github.io/peace_scroll/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Interactive peace scroll visualization showing Russia and China as peace agreement signatories"
+                            >
+                                <img
+                                    src="../rus_chi.png"
+                                    alt="Image of Russian borders"
+                                />
+                                <p
+                                    class="image-caption"
+                                    style="font-weight: 600; font-size: 16px"
                                 >
-                                    <img
-                                        src="../rus_chi.png"
-                                        alt="Image of Russian borders"
-                                    />
-                                    <p
-                                        class="image-caption"
-                                        style="font-weight: 600; font-size: 16px"
-                                    >
-                                        Russia and China as Peace Agreements
-                                        Signatories
-                                    </p>
-                                </a>
-                            </div>
+                                    Russia and China as Peace Agreements
+                                    Signatories
+                                </p>
+                            </a>
                         </div>
-                        <!-- <div class="grid-item">
-                        <div class="image-wrapper">
-                            <img
-                                src="../example.png"
-                                alt="Image 4 description"
-                            />
-                            <p class="image-caption">Mediation in 2024</p>
-                        </div>
-                    </div> -->
                     </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="mediation_content">
+            <div class="mediation-grid">
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="https://tvancisin.github.io/peace_scroll/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Interactive peace scroll visualization showing Russia and China as peace agreement signatories"
+                        >
+                            <img
+                                src="../rus_chi.png"
+                                alt="Image of Russian borders"
+                            />
+                            <p class="image-caption" style="font-weight: 600;">
+                                Russia and China as Peace Agreements Signatories
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="https://tvancisin.github.io/elisa_damico/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Blog with visualizations focused on new insights in Geography and Conflict Mediation"
+                        >
+                            <img
+                                src="/elisa.png"
+                                alt="Map of the world with links between mediation locations and conflict location in Yemen."
+                            />
+                            <p class="image-caption" style="font-weight: 600;">
+                                New Insights on Geography in Conflict Mediation
+                            </p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
