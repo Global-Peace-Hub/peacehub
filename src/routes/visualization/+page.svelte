@@ -8,40 +8,12 @@
 
     <section id="visualization" aria-labelledby="visualization-heading">
         <h3 id="vis-heading">Thematic</h3>
-        <!-- <div id="vis">
-            <div class="vis_content">
-                <div class="grid-item">
-                    <div class="grid-item" style="padding: 0px;">
-                        <div class="image-wrapper">
-                            <a
-                                href="https://tvancisin.github.io/peace_scroll/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Interactive peace scroll visualization showing Russia and China as peace agreement signatories"
-                            >
-                                <img
-                                    src="../rus_chi.png"
-                                    alt="Image of Russian borders"
-                                />
-                                <p
-                                    class="image-caption"
-                                    style="font-weight: 600; font-size: 16px"
-                                >
-                                    Russia and China as Peace Agreements
-                                    Signatories
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="mediation_content">
             <div class="mediation-grid">
                 <div class="grid-item">
                     <div class="image-wrapper">
                         <a
-                            href="https://tvancisin.github.io/peace_scroll/"
+                            href="https://peace-scroll.onrender.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Interactive peace scroll visualization showing Russia and China as peace agreement signatories"
@@ -59,7 +31,7 @@
                 <div class="grid-item">
                     <div class="image-wrapper">
                         <a
-                            href="https://tvancisin.github.io/elisa_damico/"
+                            href="https://mediation-geography.onrender.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Blog with visualizations focused on new insights in Geography and Conflict Mediation"
