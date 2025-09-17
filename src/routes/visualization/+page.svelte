@@ -9,7 +9,7 @@
     <section id="visualization" aria-labelledby="visualization-heading">
         <h3 id="vis-heading">Thematic</h3>
         <div class="mediation_content">
-            <div class="mediation-grid">
+            <div class="mediation-grid-first">
                 <div class="grid-item">
                     <div class="image-wrapper">
                         <a
@@ -28,7 +28,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="grid-item">
+                <!-- <div class="grid-item">
                     <div class="image-wrapper">
                         <a
                             href="https://mediation-geography.onrender.com/"
@@ -45,7 +45,7 @@
                             </p>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -237,6 +237,12 @@
     .mediation-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .mediation-grid-first {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
 
