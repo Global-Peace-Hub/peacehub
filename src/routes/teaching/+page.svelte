@@ -93,22 +93,22 @@
                 <div class="grid-item">
                     <div class="image-wrapper">
                         <a
-                            href="/ptr1.pdf"
+                            href="../VIP_South_Sudan.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src="/g2.jpg" alt="South Sudan Poster" />
+                            <img src="/poster_1.jpg" alt="Mali Poster" />
                         </a>
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="image-wrapper">
                         <a
-                            href="/ptr2.pdf"
+                            href="../VIP_Mali.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src="/poster_2.jpg" alt="Mali Poster" />
+                            <img src="/poster_2.jpg" alt="South Sudan Poster" />
                         </a>
                     </div>
                 </div>

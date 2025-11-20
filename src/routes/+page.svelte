@@ -325,7 +325,7 @@
                 font-size:14px; font-weight:600; padding:5px; border-radius: 3px; 
                 background-color: black"
             >
-                ZOOM: <i>Ctrl + scroll</i>
+                ZOOM MAP: <i>Ctrl + scroll</i>
             </p>
         {/if}
         <Map
