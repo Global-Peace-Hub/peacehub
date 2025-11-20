@@ -29,7 +29,7 @@
                 radius = 3;
             } else {
                 // Large screens: every 3rd tick
-                tickValues = domain.filter((_, i) => i % 3 === 0);
+                tickValues = domain.filter((_, i) => i % 5 === 0);
                 radius = 5;
             }
 
@@ -41,7 +41,11 @@
                     const [year, month] = d.split("-");
                     return `${month}/${year}`; // Format ticks as "MM/YYYY"
                 });
-            d3.select(xAxisGroup2).call(xAxis2);
+            d3.select(xAxisGroup2)
+                .call(xAxis2)
+                .style("font-family", "Montserrat, sans-serif")
+                .style("font-weight", "600")
+                .style("font-size", "12px");
         }
     }
 
@@ -66,11 +70,11 @@
     <div class="legend">
         <div class="legend-item">
             <div class="color-box-2 red"></div>
-            <span>MEND</span>
+            <span style="font-weight: 600;">MEND</span>
         </div>
         <div class="legend-item">
             <div class="color-box-2 steelblue"></div>
-            <span>PA-X</span>
+            <span style="font-weight: 600;">PA-X</span>
         </div>
     </div>
     <!-- Tooltip -->

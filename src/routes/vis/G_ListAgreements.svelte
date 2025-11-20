@@ -88,6 +88,15 @@
             <div>{row.groupings_mechanisms}</div>
         {/each}
     </div>
+    <div class="citation">
+        <p style="font-weight: 800;">Cite This:</p>
+        Peter, Mateja; Badanjak, Sanja; D'Amico, Elisa; Houghton, Kasia, 2025,<i
+            >Mediation Event and Negotiators Database (MEND)</i
+        >, Harvard Dataverse, V1,
+        <a href="https://doi.org/10.7910/DVN/PYRHS6" target="_blank"
+            >https://doi.org/10.7910/DVN/PYRHS6</a
+        >
+    </div>
 </div>
 
 <style>
@@ -171,5 +180,14 @@
     .table_header {
         font-weight: bold;
         background-color: #424242;
+    }
+
+    .citation {
+        font-size: 18px;
+        width: 60%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #ffffff;
     }
 </style>

@@ -58,6 +58,22 @@
       maxZoom: 5,
       logoPosition: "bottom-right",
     });
+
+    map.on("wheel", (event) => {
+      if (event.originalEvent.ctrlKey) {
+        return;
+      }
+
+      if (event.originalEvent.metaKey) {
+        return;
+      }
+
+      if (event.originalEvent.altKey) {
+        return;
+      }
+
+      event.preventDefault();
+    });
   });
 
   $: {
@@ -132,7 +148,7 @@
             "Afghanistan",
             "Yemen",
             "Syria",
-            "Israel"
+            "Israel",
           ];
 
           // Create a tooltip element
@@ -275,13 +291,13 @@
     </div>
   </div>
   <div class="map" bind:this={map}></div>
-  {#if isOverlayVisible}
+  <!-- {#if isOverlayVisible}
     <div class="overlay">
       <button class="remove-overlay" on:click={removeOverlay}>
-        Click to Explore
+        Ctrl + Scroll to Zoom
       </button>
     </div>
-  {/if}
+  {/if} -->
 </div>
 
 <style>

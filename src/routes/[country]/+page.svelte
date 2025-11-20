@@ -5,16 +5,17 @@
     import * as d3 from "d3";
     import { onMount } from "svelte";
     import { getCSV, getGeo, fillMissingMonths } from "../../utils.js";
-    import First from "../vis/First.svelte";
-    import Second from "../vis/Second.svelte";
-    import Third from "../vis/Third.svelte";
-    import Fourth from "../vis/Fourth.svelte";
-    import Fifth from "../vis/Fifth.svelte";
-    import Sixth from "../vis/Sixth.svelte";
-    import Seventh from "../vis/Seventh.svelte";
-    // import Eight from "../vis/Eight.svelte";
-    import Nine from "../vis/Nine.svelte";
     import Navigation from "../Navigation.svelte";
+    import A_MediationPerMonth from "../vis/A_MediationPerMonth.svelte";
+    import B_UniqueThirdPerMonth from "../vis/B_UniqueThirdPerMonth.svelte";
+    import C_MediationLocations from "../vis/C_MediationLocations.svelte";
+    import D_TopMediators from "../vis/D_TopMediators.svelte";
+    import E_ActorsMMRType from "../vis/E_ActorsMMRType.svelte";
+    import F_AgreementsPerMonth from "../vis/F_AgreementsPerMonth.svelte";
+    import G_ListAgreements from "../vis/G_ListAgreements.svelte";
+    // internal vis
+    // import H_KeyProcesses from "../vis/H_KeyProcesses.svelte";
+    import I_RectTimeline from "../vis/I_RectTimeline.svelte";
 
     let manyBodyStrength = 2;
     let only_M = [];
@@ -73,7 +74,7 @@
         if (width < 600) {
             margin = { top: 20, right: 32, bottom: 20, left: 27 };
         } else {
-            margin = { top: 20, right: 80, bottom: 20, left: 80 };
+            margin = { top: 20, right: 100, bottom: 20, left: 100 };
         }
     }
 
@@ -640,10 +641,8 @@
             </h3>
         </div>
 
-        <!-- <h3 id="mediation" style="padding-left: 20px;">Mediation</h3> -->
-
         <!-- mediations per month -->
-        <First
+        <A_MediationPerMonth
             {innerWidthAdjusted}
             {innerHeight}
             {width}
@@ -659,8 +658,9 @@
             {pathData}
             {ucdp_final}
         />
+
         <!-- unique actors -->
-        <Second
+        <B_UniqueThirdPerMonth
             {width}
             {height}
             {innerHeight}
@@ -671,7 +671,7 @@
         />
 
         <!-- mediation locations -->
-        <Third
+        <C_MediationLocations
             {mediations}
             {width}
             {height}
@@ -682,7 +682,7 @@
         />
 
         <!-- top mediators -->
-        <Sixth
+        <D_TopMediators
             {width}
             {height}
             {margin}
@@ -692,7 +692,7 @@
         />
 
         <!-- types of mediators -->
-        <Seventh
+        <E_ActorsMMRType
             {width}
             {innerWidthAdjusted}
             {height}
@@ -703,10 +703,8 @@
             {x_circle}
         />
 
-        <!-- <h2 id="agreements">Agreements</h2> -->
-
         <!-- agreements per month -->
-        <Fourth
+        <F_AgreementsPerMonth
             {width}
             {height}
             {innerHeight}
@@ -717,14 +715,13 @@
         />
 
         <!-- list of agreements -->
-        <Fifth {width} {agreements} />
+        <G_ListAgreements {width} {agreements} />
 
         <!-- processes -->
-        <!-- <h2 id="processes">Processes</h2> -->
-        <!-- <Eight {width} {fil_processes} {country} /> -->
+        <!-- <H_KeyProcesses {width} {fil_processes} {country} /> -->
 
-        <!-- mediation timeline -->
-        <Nine
+        <!-- timeline -->
+        <!-- <I_RectTimeline
             {width}
             {height}
             {innerHeight}
@@ -735,7 +732,7 @@
             {only_M}
             {actorLookup}
             {abbreviations}
-        />
+        /> -->
     </main>
     <footer>
         <p>

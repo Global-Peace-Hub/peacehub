@@ -16,7 +16,7 @@
     let geo_labels;
     let showScrollToTop = false; // Visibility of the scroll-to-top button
     let isMenuOpen = false; // Toggle menu visibility
-    let isSmallScreen = false; // Check if screen size is small
+    let isSmallScreen = true; // Check if screen size is small
 
     // RESEARCH GALLERY
     let imageRowResearch;
@@ -86,13 +86,13 @@
             geo_labels = geo[1];
         });
 
-        checkScreenSize();
-        window.addEventListener("resize", checkScreenSize);
-
         // Disable automatic scroll restoration
         if ("scrollRestoration" in history) {
             history.scrollRestoration = "manual";
         }
+
+        checkScreenSize();
+        window.addEventListener("resize", checkScreenSize);
 
         // Scroll to top on page load
         window.scrollTo({ top: 0, behavior: "auto" });
@@ -107,6 +107,7 @@
             window.removeEventListener("resize", checkScreenSize);
         };
     });
+
     let contentVisible = false; // State to toggle content visibility
     let pubToggle = false; // State to toggle content visibility
 
@@ -317,6 +318,16 @@
         >
             Explore
         </h3>
+
+        {#if !isSmallScreen}
+            <p
+                style="position: absolute; right: 10px; 
+                font-size:14px; font-weight:600; padding:5px; border-radius: 3px; 
+                background-color: black"
+            >
+                ZOOM: <i>Ctrl + scroll</i>
+            </p>
+        {/if}
         <Map
             {all_polygons}
             {geo_labels}

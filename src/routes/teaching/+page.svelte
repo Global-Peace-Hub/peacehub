@@ -25,9 +25,10 @@
                     courses to PhD supervision—and is actively engaged in
                     innovative approaches to teaching.
                 </p>
-
-                <p>
-                    In September 2025, we are launching a new module <a
+                <p style="margin-left: 30px; margin-right: 30px;">
+                    <strong>•</strong> Since September 2025, Dr Mateja Peter is
+                    running a module
+                    <a
                         href="https://www.st-andrews.ac.uk/education/vip/projects/peacehub/"
                         target="_blank">PeaceHub: Global Mediation Database</a
                     >
@@ -36,15 +37,15 @@
                         href="https://www.st-andrews.ac.uk/education/vip/"
                         target="_blank">Vertically Integrated Project</a
                     >
-                    (VIP) and will involve students in the work on the new Mediation
+                    (VIP) and involves students in the work on the new Mediation
                     Event and Negotiators Database (MEND). VIPs are long-term, team-based
                     initiatives where undergraduate, master's, and PhD students collaborate
                     with faculty on real-world research and innovation challenges.
                 </p>
 
-                <p>
-                    In January 2026, Dr Sanja Badanjak will be teaching a new
-                    six-week online short course
+                <p style="margin-left: 30px; margin-right: 30px;">
+                    <strong>•</strong> In January 2026, Dr Sanja Badanjak will
+                    be teaching a new six-week online short course
                     <a
                         href="https://peacerep.org/courses/peacetech-cpd-course/"
                         target="_blank">PeaceTech</a
@@ -56,8 +57,67 @@
         </div>
     </section>
 
+    <section id="vip" aria-labelledby="vip-heading">
+        <h3 id="vip-heading">
+            Vertically Integrated Project: PeaceHub: Global Mediation Database
+        </h3>
+        <div id="vip-overview">
+            <div class="vip-overview_content">
+                <p>
+                    At the University of St Andrews, we run an innovative
+                    module, PeaceHub: Global Mediation Database, designed as a
+                    Vertically Integrated Project (VIP). Students work in small
+                    teams to research contemporary peace and mediation
+                    initiatives, gaining hands-on experience with the Mediation
+                    Event and Negotiators Database (MEND) and engaging in
+                    policy-focused research. Their contributions expand and
+                    strengthen this vital resource, supporting the research
+                    team’s ongoing work.
+                </p>
+                <br />
+                <h4>Academic year 2025/2026</h4>
+                <p>
+                    In the academic year 2025/26 students are working on
+                    conflict and mediation in South Sudan and Mali. Below
+                    posters represent a snapshot of group research undertaken on
+                    various dimensions of these conflicts. In addition to
+                    undertaking independent research, students also support the
+                    research team’s ongoing work on the Mediation Event and
+                    Negotiators Database (MEND).
+                </p>
+            </div>
+        </div>
+
+        <div class="mediation_content">
+            <div class="mediation-grid">
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="/ptr1.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src="/g2.jpg" alt="South Sudan Poster" />
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <a
+                            href="/ptr2.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src="/poster_2.jpg" alt="Mali Poster" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p style="padding-top: 20px;">
+        <p>
             &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
         </p>
         <p>
@@ -75,9 +135,11 @@
         font-size: 24px;
     }
 
-    #teaching-heading {
+    #teaching-heading,
+    #vip-heading {
         text-align: center;
     }
+
     #teaching {
         position: relative;
         background-color: #003645;
@@ -85,7 +147,17 @@
         color: white;
     }
 
-    .overview_content {
+    #vip {
+        position: relative;
+        background-color: #001c23;
+        width: 100%;
+        padding-top: 20px;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+    }
+
+    .overview_content,
+    .vip-overview_content {
         position: relative;
         margin: auto;
         width: 90%;
@@ -93,17 +165,17 @@
     }
 
     @media (min-width: 600px) {
-        .overview_content {
-            width: 70%;
+        .overview_content,
+        .vip-overview_content {
+            width: 55%;
         }
     }
 
     footer {
         text-align: center;
-        background-color: #001c23;
+        background-color: #003645;
+        padding: 10px 0;
         margin: auto;
-        padding-bottom: 10px;
-        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     a {
@@ -112,9 +184,70 @@
     }
 
     a:focus {
-        outline: none; /* optional: removes default focus ring */
-        background-color: rgb(255, 255, 255); /* highlight background */
-        color: black; /* change text color */
-        border-radius: 2px; /* optional: rounded highlight */
+        outline: none;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border-radius: 2px;
+    }
+
+    .mediation_content {
+        position: relative;
+        margin: auto;
+        width: 55%;
+        padding-bottom: 40px;
+    }
+
+    .grid-item img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 3px;
+        display: block;
+        transition: transform 0.25s ease;
+    }
+
+    .grid-item img:hover {
+        transform: scale(1.02);
+    }
+    .grid-item img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .image-wrapper {
+        text-align: center;
+    }
+
+    .image-caption {
+        margin-top: 10px;
+        font-size: 14px;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .mediation-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .mediation-grid-first {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+    /* Responsive: 1 column on small screens */
+    @media (max-width: 767px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+
+        .mediation-grid {
+            grid-template-columns: 1fr;
+        }
     }
 </style>

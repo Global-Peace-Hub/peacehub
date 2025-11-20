@@ -91,6 +91,7 @@ export const menuStructure = [
         name: "Teaching",
         submenu: [
             { name: "Overview", target: "/teaching" },
+            { name: "VIP", target: "/teaching", scrollId: "vip" },
         ],
     },
 ];

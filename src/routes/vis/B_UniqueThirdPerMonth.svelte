@@ -35,7 +35,7 @@
                 font = 10;
             } else {
                 // Large screens: every 3rd tick
-                tickValues = domain.filter((_, i) => i % 3 === 0);
+                tickValues = domain.filter((_, i) => i % 5 === 0);
                 font = 12;
             }
             const xAxis = d3
@@ -45,7 +45,10 @@
                     const [year, month] = d.split("-");
                     return `${month}/${year}`; // Format ticks as "MM/YYYY"
                 });
-            d3.select(xAxisGroup).call(xAxis);
+            d3.select(xAxisGroup).call(xAxis)
+                .style("font-family", "Montserrat, sans-serif")
+                .style("font-weight", "600")
+                .style("font-size", "12px");
         }
     }
 </script>
@@ -97,6 +100,7 @@
                     font-size={font}
                     text-anchor="middle"
                     fill="white"
+                    font-weight="600"
                 >
                     {d.count}</text
                 >

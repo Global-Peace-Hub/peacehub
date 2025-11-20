@@ -159,6 +159,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <p>
             &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
@@ -199,8 +200,7 @@
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
-    .mediation_content,
-    .vis_content {
+    .mediation_content {
         position: relative;
         margin: auto;
         width: 70%;
@@ -221,6 +221,12 @@
         object-fit: contain;
         border-radius: 4px;
         display: block;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+        transition: transform 0.25s ease;
+    }
+
+    .grid-item img:hover {
+        transform: scale(1.02);
     }
 
     .image-wrapper {

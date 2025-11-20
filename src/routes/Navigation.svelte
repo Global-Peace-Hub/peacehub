@@ -203,7 +203,7 @@
         align-content: center;
         text-align: center;
         background-color: #001c23;
-        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px;
     }
 
     header {

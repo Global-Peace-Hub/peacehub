@@ -64,6 +64,22 @@
             logoPosition: "bottom-right",
         });
 
+        map.on("wheel", (event) => {
+            if (event.originalEvent.ctrlKey) {
+                return;
+            }
+
+            if (event.originalEvent.metaKey) {
+                return;
+            }
+
+            if (event.originalEvent.altKey) {
+                return;
+            }
+
+            event.preventDefault();
+        });
+
         // Wait for the map to load before adding the heatmap
         map.on("load", () => {
             // Add the heatmap source
@@ -145,12 +161,15 @@
         </div>
     </div>
     <div id="map" bind:this={map}></div>
-    {#if isOverlayVisible}
+    <div class="zoom">
+        ZOOM: <i>Ctrl + scroll</i>
+    </div>
+    <!-- {#if isOverlayVisible}
         <div class="overlay">
             <button class="remove-overlay" on:click={removeOverlay}>Zoom</button
             >
         </div>
-    {/if}
+    {/if} -->
 </div>
 
 <style>
@@ -166,6 +185,13 @@
     #map {
         width: 100%;
         height: 100%;
+    }
+
+    .zoom {
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        font-weight: 600;;
     }
 
     .overlay {

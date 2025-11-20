@@ -37,7 +37,7 @@
                 tickValues = domain.filter((_, i) => i % step === 0);
             } else {
                 // Large screens: every 3rd tick
-                tickValues = domain.filter((_, i) => i % 3 === 0);
+                tickValues = domain.filter((_, i) => i % 5 === 0);
             }
 
             const xAxis = d3
@@ -48,12 +48,20 @@
                     return `${month}/${year}`;
                 });
 
-            d3.select(xAxisGroup).call(xAxis);
+            d3.select(xAxisGroup)
+                .call(xAxis)
+                .style("font-family", "Montserrat, sans-serif")
+                .style("font-weight", "600")
+                .style("font-size", "12px");
         }
 
         if (yAxisGroup) {
             const yAxis = d3.axisLeft(yScale);
-            d3.select(yAxisGroup).call(yAxis);
+            d3.select(yAxisGroup)
+                .call(yAxis)
+                .style("font-family", "Montserrat, sans-serif")
+                .style("font-weight", "600")
+                .style("font-size", "12px");
         }
 
         if (yUCDPAxisGroup) {
@@ -73,6 +81,9 @@
             d3.select(yUCDPAxisGroup)
                 .call(yAxis)
                 .selectAll("text")
+                .style("font-family", "Montserrat, sans-serif")
+                .style("font-weight", "600")
+                .style("font-size", "12px")
                 .style("fill", "red");
 
             d3.select(yUCDPAxisGroup)
@@ -88,15 +99,15 @@
     <div class="legend">
         <div class="legend-item">
             <div class="color-box white"></div>
-            <span>Mediation</span>
+            <span style="font-weight: 600;">Mediation</span>
         </div>
         <div class="legend-item">
             <div class="color-box steelblue"></div>
-            <span>Mediation-related</span>
+            <span style="font-weight: 600;">Mediation-related</span>
         </div>
         <div class="legend-item">
             <div class="red-line"></div>
-            <span>Battle-related deaths (UCDP)</span>
+            <span style="font-weight: 600;">Battle-related deaths (UCDP)</span>
         </div>
     </div>
 
