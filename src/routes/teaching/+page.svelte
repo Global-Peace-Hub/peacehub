@@ -221,33 +221,15 @@
         text-align: center;
     }
 
-    .image-caption {
-        margin-top: 10px;
-        font-size: 14px;
-        color: white;
-        font-family: "Montserrat", sans-serif;
-    }
-
     .mediation-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 2fr 1fr; /* left image bigger */
         gap: 25px;
     }
 
-    .mediation-grid-first {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 25px;
-    }
-
-    /* Responsive: 1 column on small screens */
     @media (max-width: 767px) {
-        .grid-container {
-            grid-template-columns: 1fr;
-        }
-
         .mediation-grid {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr; /* full width on mobile */
         }
     }
 </style>

@@ -98,6 +98,11 @@
         <h3 id="team-heading">Team</h3>
         <div id="team_content" style="overflow-x: auto;">
             <table style="width: 100%; border-collapse: collapse;">
+                <colgroup>
+                    <col style="width: 30%;" />
+                    <col style="width: 40%;" />
+                    <col style="width: 30%;" />
+                </colgroup>
                 <thead>
                     <tr>
                         <th
@@ -118,240 +123,106 @@
                     <tr>
                         <td style="padding: 8px;">Dr Mateja Peter</td>
                         <td style="padding: 8px;">Research Lead</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Dr Sanja Badanjak</td>
                         <td style="padding: 8px;">Research Co-Lead</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of Edinburgh Logo"
-                                src="../uoe_white.png"
-                            />
-                        </td>
+                        <td style="padding: 8px;">University of Edinburgh</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Dr Elisa D’Amico</td>
+                        <td style="padding: 8px;">MEND Data Manager</td>
                         <td style="padding: 8px;"
-                            >Post-doctoral Fellow and Data Manager</td
+                            >University College Dublin / University of St
+                            Andrews</td
                         >
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Dr Kasia Houghton</td>
                         <td style="padding: 8px;"
-                            >Post-doctoral Fellow and Analyst Coordinator</td
+                            >Research Fellow and MEND Analyst Coordinator</td
                         >
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Niamh Henry</td>
                         <td style="padding: 8px;"
                             >Research Fellow and Data Engineer</td
                         >
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of Edinburgh Logo"
-                                src="../uoe_white.png"
-                            />
-                        </td>
+                        <td style="padding: 8px;">University of Edinburgh</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Dr Tomas Vancisin</td>
                         <td style="padding: 8px;"
                             >Research Associate in Data Visualisation</td
                         >
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of Edinburgh Logo"
-                                src="../uoe_white.png"
-                            />
-                        </td>
+                        <td style="padding: 8px;">University of Edinburgh</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">Katelyn Nutley</td>
+                        <td style="padding: 8px;">MEND Data Officer</td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
 
                     <!-- Analysts -->
                     <tr>
                         <td style="padding: 8px;">Dr Sarah Gharib Seif</td>
-                        <td style="padding: 8px;">Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
+                        <td style="padding: 8px;">MEND Analyst</td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px;">Louise Courbin</td>
-                        <td style="padding: 8px;">Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
+                        <td style="padding: 8px;">MEND Analyst</td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
-                        <td style="padding: 8px;">Siheon Choi</td>
-                        <td style="padding: 8px;">Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-
-                    <!-- Junior Analysts -->
-                    <tr>
-                        <td style="padding: 8px;">Samvit Nagpal</td>
-                        <td style="padding: 8px;">Database Development</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
+                        <td style="padding: 8px;">Dr Siheon Choi</td>
+                        <td style="padding: 8px;">MEND Analyst</td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                     <tr>
-                        <td style="padding: 8px;">Liora Berg</td>
-                        <td style="padding: 8px;">Junior Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 8px;">Ava Byrne</td>
-                        <td style="padding: 8px;">Junior Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 8px;">Nicholas De Carvalho</td>
-                        <td style="padding: 8px;">Junior Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 8px;">Zoe Guidino</td>
-                        <td style="padding: 8px;">Junior Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 8px;">Alix Ramillon</td>
-                        <td style="padding: 8px;">Junior Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 8px;">Leah Rose</td>
-                        <td style="padding: 8px;">Junior Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-
-                    <!-- Past Analysts -->
-                    <tr>
-                        <td style="padding: 8px;">Delia Burns</td>
-                        <td style="padding: 8px;">Past Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 8px;">Aarushi Sharma</td>
-                        <td style="padding: 8px;">Past Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 8px;">Haley Rice</td>
-                        <td style="padding: 8px;">Past Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 8px;">Marcel Plichta</td>
-                        <td style="padding: 8px;">Past Analyst</td>
-                        <td style="padding: 8px;">
-                            <img
-                                class="uni"
-                                alt="University of St Andrews Logo"
-                                src="../uosa.png"
-                            />
-                        </td>
+                        <td style="padding: 8px;">Dr Benjamin Houghton</td>
+                        <td style="padding: 8px;">MEND Analyst</td>
+                        <td style="padding: 8px;">University of St Andrews</td>
                     </tr>
                 </tbody>
-                <br />
             </table>
+
+            <br /><br /><br />
+
+            <table style="width: 100%; border-collapse: collapse;">
+                <colgroup>
+                    <col style="width: 30%;" />
+                    <col style="width: 40%;" />
+                    <col style="width: 30%;" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px;"
+                            ><strong>MEND Junior Analysts</strong></td
+                        >
+                        <td style="padding: 8px;">
+                            Liora Berg, Ava Byrne, Nicholas De Carvalho, Zoe
+                            Guidino, Samvit Nagpal, Alix Ramillon, Leah Rose
+                        </td>
+                        <td style="padding: 8px;">University of St Andrews</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;"
+                            ><strong>Past Analysts</strong></td
+                        >
+                        <td style="padding: 8px;">
+                            Delia Burns, Aarushu Sharma, Haley Rice, Marcel
+                            Plichta
+                        </td>
+                        <td style="padding: 8px;">University of St Andrews</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br />
+            <br />
         </div>
     </section>
 
@@ -472,17 +343,5 @@
         height: auto;
         margin: 10px auto;
         margin-top: 50px;
-    }
-    .uni {
-        height: auto;
-        max-height: 40px;
-        margin: 0px;
-    }
-
-    /* Small screens */
-    @media (max-width: 715px) {
-        .uni {
-            max-height: 25px; /* smaller max height on small screens */
-        }
     }
 </style>
