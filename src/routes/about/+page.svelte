@@ -241,7 +241,7 @@
     </section>
 
     <footer>
-        <p style="padding-top: 20px;">
+        <p>
             &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
         </p>
         <p>
@@ -257,6 +257,7 @@
         color: white;
         font-weight: 800;
         font-size: 24px;
+        margin: 0 0 20px 0; 
     }
 
     #about-heading,
@@ -265,11 +266,11 @@
         text-align: center;
     }
 
-    #about {
+    section {
         position: relative;
-        background-color: #003645;
         width: 100%;
         color: white;
+        padding: 40px 0; 
     }
 
     #about_content,
@@ -277,24 +278,20 @@
     #funding_content {
         position: relative;
         margin: auto;
-        width: 90%; /* Mobile default */
-        padding: 20px;
+        width: 90%;
+        padding: 0 10px 10px 10px; 
     }
 
     @media (min-width: 600px) {
         #about_content,
         #team_content,
         #funding_content {
-            width: 55%; /* Medium and up */
+            width: 55%;
         }
     }
 
     #team {
-        position: relative;
         background-color: #001c23;
-        width: 100%;
-        padding-top: 20px;
-        color: white;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
@@ -310,38 +307,30 @@
         border-bottom: 1px solid #575757;
     }
 
-    #funding {
-        position: relative;
-        background-color: #003645;
-        width: 100%;
-        color: white;
-    }
-
-    footer {
-        text-align: center;
-        background-color: #001c23;
-        margin: auto;
-        padding-bottom: 10px;
-        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
-    }
-
     a {
         color: rgb(215, 215, 215);
         font-weight: 400;
     }
 
     a:focus {
-        outline: none; /* optional: removes default focus ring */
-        background-color: rgb(255, 255, 255); /* highlight background */
-        color: black; /* change text color */
-        border-radius: 2px; /* optional: rounded highlight */
+        outline: none;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border-radius: 2px;
     }
 
     img {
         display: block;
         max-width: 200px;
         height: auto;
-        margin: 10px auto;
-        margin-top: 50px;
+        margin: 40px auto 20px auto;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #001c23;
+        margin: auto;
+        padding: 5px 0;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 </style>

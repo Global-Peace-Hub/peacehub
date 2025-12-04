@@ -197,7 +197,7 @@
 
     <section id="data" aria-labelledby="data-heading">
         <h3 id="data-heading">Datasets</h3>
-        <div id="data_content">
+        <div class="data_content">
             <p>
                 <a
                     href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PYRHS6"
@@ -271,30 +271,38 @@
         color: white;
         font-weight: 800;
         font-size: 24px;
+        margin: 0 0 20px 0;
     }
+
     #research-heading,
     #data-heading {
         text-align: center;
     }
 
+    section {
+        position: relative;
+        width: 100%;
+        color: white;
+        padding: 40px 0;
+    }
+
     #research {
         position: relative;
-        background-color: #003645;
         width: 100%;
         color: white;
     }
 
     .publication_content,
-    #data_content {
+    .data_content {
         position: relative;
         margin: auto;
         width: 90%;
-        padding-bottom: 40px;
+        padding: 0 10px 10px 10px; 
     }
 
     @media (min-width: 600px) {
         .publication_content,
-        #data_content {
+        .data_content {
             width: 55%; /* Medium and up */
         }
     }
@@ -303,17 +311,10 @@
         position: relative;
         background-color: #001c23;
         width: 100%;
-        padding-top: 10px;
         color: white;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
-    footer {
-        text-align: center;
-        background-color: #003645;
-        padding: 10px 0; /* add vertical padding */
-        margin: auto;
-    }
     a {
         color: rgb(215, 215, 215);
         font-weight: 400;
@@ -324,5 +325,12 @@
         background-color: rgb(255, 255, 255); /* highlight background */
         color: black; /* change text color */
         border-radius: 2px; /* optional: rounded highlight */
+    }
+
+    footer {
+        text-align: center;
+        background-color: #003645;
+        padding: 5px 0;
+        margin: auto;
     }
 </style>

@@ -137,18 +137,19 @@
     h4 {
         font-size: 20px;
     }
+
     .agreement_per_month {
         max-width: 100%;
-        margin: 20px auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--bg-color, #001c23);
+        background-color: #001c23;
         box-sizing: border-box;
-        padding-bottom: 30px;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+        padding-bottom: 20px;
     }
+
     .legend {
         display: flex;
         align-items: center;

@@ -89,8 +89,8 @@
         {/each}
     </div>
     <div class="citation">
-        <p style="font-weight: 800;">Cite This:</p>
-        Peter, Mateja; Badanjak, Sanja; D'Amico, Elisa; Houghton, Kasia, 2025,<i
+        <p style="font-weight: 800;">Cite:</p>
+        Peter, Mateja; Badanjak, Sanja; D'Amico, Elisa; Houghton, Kasia, 2025, <i
             >Mediation Event and Negotiators Database (MEND)</i
         >, Harvard Dataverse, V1,
         <a href="https://doi.org/10.7910/DVN/PYRHS6" target="_blank"
@@ -111,14 +111,14 @@
 
     .agreement_list {
         max-width: 100%;
-        margin: 20px auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        background-color: var(--bg-color, #001c23);
-        padding-bottom: 30px;
+        background-color: #001c23;
         box-sizing: border-box;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+        padding-bottom: 20px;
     }
 
     .table {
@@ -185,7 +185,7 @@
     .citation {
         font-size: 18px;
         width: 60%;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 40px;
         text-align: center;
         color: #ffffff;

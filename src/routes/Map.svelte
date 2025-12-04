@@ -41,10 +41,6 @@
     isOverlayVisible = false;
   }
 
-  // $effect(() => {
-  //   console.log(all_polygons);
-  // });
-
   onMount(() => {
     mapboxgl.accessToken =
       "pk.eyJ1Ijoic2FzaGFnYXJpYmFsZHkiLCJhIjoiY2xyajRlczBlMDhqMTJpcXF3dHJhdTVsNyJ9.P_6mX_qbcbxLDS1o_SxpFg";
@@ -53,7 +49,7 @@
       container: map,
       attributionControl: false,
       style: "mapbox://styles/sashagaribaldy/cm4aigyc400qc01s6bzp76jjf",
-      center: [10, 15],
+      center: [10, 14],
       zoom: 1.5,
       projection: "naturalEarth",
       maxZoom: 5,
@@ -304,13 +300,16 @@
   aria-label="Interactive map showing countries studied by the PeaceHub project"
 >
   <div id="legend">
+    <div class="legend-title">Analysis</div>
+
     <div class="legend-item">
-      <div class="legend-color" style="background-color: #598FBC;"></div>
-      <span>Analysis available</span>
+      <div class="legend-color" style="background-color: #588EBB; margin-bottom: 5px;"></div>
+      <span>Available</span>
     </div>
+
     <div class="legend-item">
-      <div class="legend-color" style="background-color: #A8A8A8;"></div>
-      <span>Analysis pending</span>
+      <div class="legend-color" style="background-color: #BABABA;"></div>
+      <span>Pending</span>
     </div>
   </div>
   <div class="map" bind:this={map}></div>
@@ -338,7 +337,7 @@
     height: 100%;
   }
 
-  .overlay {
+  /* .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -367,30 +366,38 @@
   .remove-overlay:hover {
     cursor: pointer;
     background-color: #8f2121;
-  }
+  } */
 
   #legend {
     position: absolute;
     bottom: 5px;
     left: 5px;
     border-radius: 4px;
-    padding: 10px;
-    height: 50px;
-    width: 150px;
+    padding: 8px;
+    padding-left: 15px;
     background-color: black;
     z-index: 9;
+    width: 120px;
+  }
+
+  .legend-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white; /* assuming dark background */
   }
 
   .legend-item {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
     font-size: 14px;
+    color: white;
   }
 
   .legend-color {
-    width: 20px;
+    width: 30px;
     height: 20px;
+    border-radius: 2px;
     margin-right: 8px;
   }
 </style>

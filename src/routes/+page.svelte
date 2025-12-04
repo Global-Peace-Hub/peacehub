@@ -345,7 +345,7 @@
             {#each images_ppl as { src, name, position } (src)}
                 <div class="image-container-people">
                     <img
-                        style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); "
+                        style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); "
                         loading="lazy"
                         {src}
                         alt="PeaceHub team member"
@@ -359,13 +359,13 @@
     </section>
 
     <footer id="credit">
-        <p style="text-align: center; margin-bottom: 5px">
+        <p>
             <strong> Web and Visualization Development: </strong>
             <a href="https://tomasvancisin.co.uk/" target="_blank">
                 Tomas Vancisin
             </a>
         </p>
-        <p style="text-align: center; margin-top: 2px">
+        <p>
             &copy; {new Date().getFullYear()} PeaceHub. All rights reserved.
         </p>
     </footer>
@@ -444,7 +444,6 @@
         border-radius: 3px;
         background-color: #000000;
         transform: translateY(-120%);
-        transition: transform 0.4s ease;
         z-index: 999;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
@@ -684,5 +683,11 @@
         background-color: rgb(255, 255, 255);
         color: black;
         border-radius: 2px;
+    }
+
+    footer {
+        text-align: center;
+        margin: auto;
+        padding: 5px 0;
     }
 </style>

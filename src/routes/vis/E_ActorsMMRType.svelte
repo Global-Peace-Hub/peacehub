@@ -42,7 +42,6 @@
     }
 </script>
 
-<!-- text circle packing -->
 <div class="actor_types" bind:clientWidth={width}>
     <h4 style="text-align: center;">
         Actors Involved in Mediation & Mediation-Related Activities by Type
@@ -122,16 +121,16 @@
     h4 {
         font-size: 20px;
     }
+
     .actor_types {
         max-width: 100%;
-        margin: 20px auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--bg-color, #001c23);
+        background-color: #001c23;
         box-sizing: border-box;
-        padding-bottom: 30px;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+        padding-bottom: 20px;
     }
 </style>

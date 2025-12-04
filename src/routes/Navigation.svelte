@@ -258,7 +258,6 @@
         border-radius: 3px;
         background-color: #000000;
         transform: translateY(-120%);
-        transition: transform 0.4s ease;
         z-index: 999;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }

@@ -133,6 +133,7 @@
         color: white;
         font-weight: 800;
         font-size: 24px;
+        margin: 0 0 20px 0; 
     }
 
     #teaching-heading,
@@ -140,41 +141,42 @@
         text-align: center;
     }
 
-    #teaching {
+    section {
         position: relative;
-        background-color: #003645;
         width: 100%;
         color: white;
+        padding: 40px 0; 
     }
 
     #vip {
         position: relative;
         background-color: #001c23;
         width: 100%;
-        padding-top: 20px;
+        padding: 40px 0; 
         color: white;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
 
     .overview_content,
-    .vip-overview_content {
+    .vip-overview_content,
+    #vip-heading {
         position: relative;
         margin: auto;
         width: 90%;
-        padding-bottom: 40px;
+        padding: 0 10px 10px 10px; 
     }
 
     @media (min-width: 600px) {
         .overview_content,
-        .vip-overview_content {
+        .vip-overview_content,
+        #vip-heading {
             width: 55%;
         }
     }
 
     footer {
         text-align: center;
-        background-color: #003645;
-        padding: 10px 0;
+        padding: 5px 0;
         margin: auto;
     }
 

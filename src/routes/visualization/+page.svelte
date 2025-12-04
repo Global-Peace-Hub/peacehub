@@ -177,6 +177,7 @@
         color: white;
         font-weight: 800;
         font-size: 24px;
+        margin: 0 0 20px 0;
     }
 
     #vis-heading,
@@ -184,18 +185,18 @@
         text-align: center;
     }
 
-    #visualization {
+    section {
         position: relative;
-        background-color: #003645;
         width: 100%;
         color: white;
+        padding: 40px 0;
     }
 
     #mediation {
         position: relative;
         background-color: #001c23;
         width: 100%;
-        padding: 10px 0; /* add vertical padding */
+        padding: 40px 0;
         color: white;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     }
@@ -263,13 +264,6 @@
         }
     }
 
-    footer {
-        text-align: center;
-        background-color: #003645;
-        padding: 10px 0;
-        margin: auto;
-    }
-
     a {
         color: rgb(215, 215, 215);
         font-weight: 400;
@@ -280,5 +274,11 @@
         background-color: rgb(255, 255, 255);
         color: black;
         border-radius: 2px;
+    }
+
+    footer {
+        text-align: center;
+        margin: auto;
+        padding: 5px 0;
     }
 </style>

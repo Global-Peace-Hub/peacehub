@@ -45,7 +45,8 @@
                     const [year, month] = d.split("-");
                     return `${month}/${year}`; // Format ticks as "MM/YYYY"
                 });
-            d3.select(xAxisGroup).call(xAxis)
+            d3.select(xAxisGroup)
+                .call(xAxis)
                 .style("font-family", "Montserrat, sans-serif")
                 .style("font-weight", "600")
                 .style("font-size", "12px");
@@ -115,14 +116,13 @@
     }
     .unique_actors {
         max-width: 100%;
-        margin: 20px auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--bg-color, #001c23);
-        padding-bottom: 30px;
+        background-color: #001c23;
         box-sizing: border-box;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+        padding-bottom: 20px;
     }
 </style>

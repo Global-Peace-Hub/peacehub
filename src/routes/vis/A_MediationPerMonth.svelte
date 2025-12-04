@@ -215,14 +215,14 @@
 
     .mediation_type {
         max-width: 100%;
-        margin: 20px auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--bg-color, #001c23);
+        background-color: #001c23;
         box-sizing: border-box;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+        padding-bottom: 20px;
     }
 
     .legend {
@@ -265,10 +265,19 @@
 
     .text {
         max-width: 800px;
-        margin: 20px auto;
-        padding: 10px;
         line-height: 1.2;
-        font-weight: 300;
         text-align: left;
+    }
+
+    a {
+        color: rgb(215, 215, 215);
+        font-weight: 400;
+    }
+
+    a:focus {
+        outline: none; /* optional: removes default focus ring */
+        background-color: rgb(255, 255, 255); /* highlight background */
+        color: black; /* change text color */
+        border-radius: 2px; /* optional: rounded highlight */
     }
 </style>

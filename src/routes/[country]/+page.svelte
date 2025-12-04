@@ -387,20 +387,6 @@
             (d) => d.month,
         );
 
-        // // Ensure all months are present
-        // const filled_ucdp_group_date = ucdp_group_date.map(([year, months]) => {
-        //     // Convert months to a Map for quick lookup
-        //     const monthMap = new Map(months);
-
-        //     // Create an array with all 12 months
-        //     const fullMonths = Array.from({ length: 12 }, (_, i) => {
-        //         const month = (i + 1).toString(); // Convert 1-12 to string (if needed)
-        //         return [month, monthMap.get(month) || []]; // Use existing data or empty array
-        //     });
-
-        //     return [year, fullMonths];
-        // });
-
         // formatted ucdp data
         ucdp_group_date.forEach(([year, months]) => {
             months.forEach(([month, count]) => {
@@ -474,44 +460,6 @@
                 test.push(mediator);
             });
         });
-
-        // // wordcloud cleanup
-        // let test_2 = [];
-        // only_M.forEach((item) => {
-        //     const mediators_2 = item.individual_med_named.split(";");
-        //     mediators_2.forEach((mediator) => {
-        //         test_2.push(mediator);
-        //     });
-        // });
-
-        // let cleaned = test_2
-        //     .map((s) => s.trim()) // Remove spaces at start and end
-        //     .filter((s) => s !== ""); // Remove empty strings
-
-        // const aliases = {
-        //     "Anthony Blinken": "Antony Blinken",
-        //     "Mohamed bin Abdulrahman bin Jassim Al Thani":
-        //         "Mohammed bin Abdulrahman bin Jassim Al Thani",
-        //     "Mohammed Bin Abdulrahman Bin Jassim Al-Thani":
-        //         "Mohammed bin Abdulrahman bin Jassim Al Thani",
-        // };
-
-        // const unified = cleaned.map((name) => aliases[name] || name);
-
-        // const uniqueNames = [...new Set(unified)];
-        // console.log(uniqueNames);
-
-        // const sorted = unified.slice().sort((a, b) => a.localeCompare(b));
-
-        // let wordcloud = sorted.reduce((acc, value) => {
-        //     acc[value] = (acc[value] || 0) + 1;
-        //     return acc;
-        // }, {});
-
-        // let sortedwordcloud = Object.entries(wordcloud).sort(
-        //     (a, b) => b[1] - a[1],
-        // );
-        // // .slice(0, 20);
 
         mediators = [...test];
         // Count mediators
@@ -659,6 +607,9 @@
             {ucdp_final}
         />
 
+        <br />
+        <br />
+
         <!-- unique actors -->
         <B_UniqueThirdPerMonth
             {width}
@@ -669,6 +620,9 @@
             {historical_events}
             {result}
         />
+
+        <br />
+        <br />
 
         <!-- mediation locations -->
         <C_MediationLocations
@@ -681,6 +635,9 @@
             {horizontal_yScale}
         />
 
+        <br />
+        <br />
+
         <!-- top mediators -->
         <D_TopMediators
             {width}
@@ -690,6 +647,9 @@
             {horizontal_yScale}
             {horizontal_mediator_yScale}
         />
+
+        <br />
+        <br />
 
         <!-- types of mediators -->
         <E_ActorsMMRType
@@ -703,6 +663,9 @@
             {x_circle}
         />
 
+        <br />
+        <br />
+
         <!-- agreements per month -->
         <F_AgreementsPerMonth
             {width}
@@ -713,6 +676,9 @@
             {xScale}
             {agt_processed}
         />
+
+        <br />
+        <br />
 
         <!-- list of agreements -->
         <G_ListAgreements {width} {agreements} />
@@ -748,8 +714,14 @@
 
 <style>
     h3 {
-        padding: 40px;
         text-align: center;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        color: white;
+        padding: 40px 0;
     }
 
     :global(.rangeSlider) {
@@ -758,12 +730,6 @@
 
     :global(.pipVal) {
         color: white;
-    }
-
-    footer {
-        text-align: center;
-        background-color: #003645;
-        margin: auto;
     }
 
     a {
@@ -776,5 +742,11 @@
         background-color: rgb(255, 255, 255); /* highlight background */
         color: black; /* change text color */
         border-radius: 2px; /* optional: rounded highlight */
+    }
+
+    footer {
+        text-align: center;
+        margin: auto;
+        padding: 5px 0;
     }
 </style>
