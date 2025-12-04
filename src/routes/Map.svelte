@@ -48,6 +48,7 @@
   onMount(() => {
     mapboxgl.accessToken =
       "pk.eyJ1Ijoic2FzaGFnYXJpYmFsZHkiLCJhIjoiY2xyajRlczBlMDhqMTJpcXF3dHJhdTVsNyJ9.P_6mX_qbcbxLDS1o_SxpFg";
+    // Create map
     map = new mapboxgl.Map({
       container: map,
       attributionControl: false,
@@ -59,20 +60,42 @@
       logoPosition: "bottom-right",
     });
 
+    // -----------------------------
+    // MOBILE / TOUCH ZOOM SETTINGS
+    // -----------------------------
+
+    // Disable all touch zoom/rotate
+    map.touchZoomRotate.disable();
+
+    // Re-enable pinch gesture only (two fingers)
+    map.touchZoomRotate.enable({
+      pinch: true,
+    });
+
+    // -----------------------------
+    // DESKTOP SCROLL ZOOM SETTINGS
+    // -----------------------------
+
+    // Disable scroll zoom by default
+    map.scrollZoom.disable();
+
+    // Smooth toggle wheel handler
     map.on("wheel", (event) => {
-      if (event.originalEvent.ctrlKey) {
-        return;
-      }
+      const zoomHandler = map.scrollZoom;
+      const { ctrlKey, metaKey, altKey } = event.originalEvent;
 
-      if (event.originalEvent.metaKey) {
-        return;
+      if (ctrlKey || metaKey || altKey) {
+        // Enable scroll zoom if not enabled
+        if (!zoomHandler.isEnabled()) {
+          zoomHandler.enable();
+        }
+      } else {
+        // Disable scroll zoom if not disabled
+        if (zoomHandler.isEnabled()) {
+          zoomHandler.disable();
+        }
+        event.preventDefault();
       }
-
-      if (event.originalEvent.altKey) {
-        return;
-      }
-
-      event.preventDefault();
     });
   });
 
