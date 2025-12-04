@@ -55,44 +55,6 @@
       maxZoom: 5,
       logoPosition: "bottom-right",
     });
-
-    // -----------------------------
-    // MOBILE / TOUCH ZOOM SETTINGS
-    // -----------------------------
-
-    // Disable all touch zoom/rotate
-    map.touchZoomRotate.disable();
-
-    // Re-enable pinch gesture only (two fingers)
-    map.touchZoomRotate.enable({
-      pinch: true,
-    });
-
-    // -----------------------------
-    // DESKTOP SCROLL ZOOM SETTINGS
-    // -----------------------------
-
-    // Disable scroll zoom by default
-    map.scrollZoom.disable();
-
-    // Smooth toggle wheel handler
-    map.on("wheel", (event) => {
-      const zoomHandler = map.scrollZoom;
-      const { ctrlKey, metaKey, altKey } = event.originalEvent;
-
-      if (ctrlKey || metaKey || altKey) {
-        // Enable scroll zoom if not enabled
-        if (!zoomHandler.isEnabled()) {
-          zoomHandler.enable();
-        }
-      } else {
-        // Disable scroll zoom if not disabled
-        if (zoomHandler.isEnabled()) {
-          zoomHandler.disable();
-        }
-        event.preventDefault();
-      }
-    });
   });
 
   $: {
@@ -303,7 +265,10 @@
     <div class="legend-title">Analysis</div>
 
     <div class="legend-item">
-      <div class="legend-color" style="background-color: #588EBB; margin-bottom: 5px;"></div>
+      <div
+        class="legend-color"
+        style="background-color: #588EBB; margin-bottom: 5px;"
+      ></div>
       <span>Available</span>
     </div>
 
@@ -312,14 +277,15 @@
       <span>Pending</span>
     </div>
   </div>
+
   <div class="map" bind:this={map}></div>
-  <!-- {#if isOverlayVisible}
+  {#if isOverlayVisible}
     <div class="overlay">
       <button class="remove-overlay" on:click={removeOverlay}>
-        Ctrl + Scroll to Zoom
+        Click to Explore
       </button>
     </div>
-  {/if} -->
+  {/if}
 </div>
 
 <style>
@@ -337,7 +303,7 @@
     height: 100%;
   }
 
-  /* .overlay {
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -366,7 +332,7 @@
   .remove-overlay:hover {
     cursor: pointer;
     background-color: #8f2121;
-  } */
+  }
 
   #legend {
     position: absolute;

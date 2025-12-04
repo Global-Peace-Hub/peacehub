@@ -319,7 +319,7 @@
             Explore
         </h3>
 
-        {#if !isSmallScreen}
+        <!-- {#if !isSmallScreen}
             <p
                 style="position: absolute; right: 10px; 
                 font-size:14px; font-weight:600; padding:5px; border-radius: 3px; 
@@ -327,7 +327,7 @@
             >
                 ZOOM MAP: <i>Ctrl + scroll</i>
             </p>
-        {/if}
+        {/if} -->
         <Map
             {all_polygons}
             {geo_labels}
