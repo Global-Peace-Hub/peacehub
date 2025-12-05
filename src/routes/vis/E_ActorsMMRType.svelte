@@ -44,7 +44,7 @@
 
 <div class="actor_types" bind:clientWidth={width}>
     <h4 style="text-align: center;">
-        Actors Involved in Mediation & Mediation-Related Activities by Type
+        Actors Involved in Mediation & Mediation-Related Activities
     </h4>
     <p style="margin: 0; font-size: 14px; text-align: center">
         [The bigger the circle, the more involved the actor]
@@ -61,26 +61,26 @@
                     ><title>{point.name}</title>
                 </circle>
             {/each}
-{#each nodes as point}
-    {#if r_scale(point.value) > 20}
-        {#await Promise.resolve(splitText(point.name, 10)) then lines}
-            <text
-                x={point.x}
-                y={point.y - (lines.length - 1) * 6}
-                font-size="12"
-                text-anchor="middle"
-                font-weight="500"
-                fill="white"
-            >
-                {#each lines as line, i}
-                    <tspan x={point.x} dy={i === 0 ? "0" : "1.2em"}>
-                        {line}
-                    </tspan>
-                {/each}
-            </text>
-        {/await}
-    {/if}
-{/each}
+            {#each nodes as point}
+                {#if r_scale(point.value) > 15}
+                    {#await Promise.resolve(splitText(point.name, 10)) then lines}
+                        <text
+                            x={point.x}
+                            y={point.y - (lines.length - 1) * 6}
+                            font-size="12"
+                            text-anchor="middle"
+                            font-weight="500"
+                            fill="white"
+                        >
+                            {#each lines as line, i}
+                                <tspan x={point.x} dy={i === 0 ? "0" : "1.2em"}>
+                                    {line}
+                                </tspan>
+                            {/each}
+                        </text>
+                    {/await}
+                {/if}
+            {/each}
 
             <!-- {#if width >= 800}
                 {#each categoryPositions as { category, x }}
