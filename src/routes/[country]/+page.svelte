@@ -7,9 +7,9 @@
     import { getCSV, getGeo, fillMissingMonths } from "../../utils.js";
     import Navigation from "../Navigation.svelte";
     import A_MediationPerMonth from "../vis/A_MediationPerMonth.svelte";
-    import B_UniqueThirdPerMonth from "../vis/B_UniqueThirdPerMonth.svelte";
-    import C_MediationLocations from "../vis/C_MediationLocations.svelte";
-    import D_TopMediators from "../vis/D_TopMediators.svelte";
+    import B_MediationLocations from "../vis/B_MediationLocations.svelte";
+    import C_UniqueThirdPerMonth from "../vis/C_UniqueThirdPerMonth.svelte";
+    // import D_TopMediators from "../vis/D_TopMediators.svelte";
     import E_ActorsMMRType from "../vis/E_ActorsMMRType.svelte";
     import F_AgreementsPerMonth from "../vis/F_AgreementsPerMonth.svelte";
     import G_ListAgreements from "../vis/G_ListAgreements.svelte";
@@ -489,7 +489,7 @@
     $: r_scale = d3
         .scaleLinear()
         .domain([0, d3.max(finalData, (d) => d.value) + 10])
-        .range([3, 60]);
+        .range([5, 70]);
 
     $: filteredArray = finalData.filter((item) => item.category !== "other");
 
@@ -500,14 +500,15 @@
     $: {
         simulation.nodes(initialNodes);
         simulation
-            .force("x", d3.forceX((d) => x_circle(d.category)).strength(0.3)) // Increase strength
+            // .force("x", d3.forceX((d) => x_circle(d.category)).strength(0.3)) // position by category
+            .force("x", d3.forceX(innerWidthAdjusted/ 2).strength(0.25)) // Add a X-force to help centering
             .force("y", d3.forceY(height / 2).strength(0.2)) // Add a Y-force to help centering
             .force("charge", d3.forceManyBody().strength(manyBodyStrength))
             .force(
                 "collision",
                 d3.forceCollide((d) => r_scale(d[rKey]) + nodeStrokeWidth / 2),
             )
-            .alpha(1)
+            .alpha(0.2)
             .restart();
     }
 
@@ -610,22 +611,8 @@
         <br />
         <br />
 
-        <!-- unique actors -->
-        <B_UniqueThirdPerMonth
-            {width}
-            {height}
-            {innerHeight}
-            {margin}
-            {xScale}
-            {historical_events}
-            {result}
-        />
-
-        <br />
-        <br />
-
         <!-- mediation locations -->
-        <C_MediationLocations
+        <B_MediationLocations
             {mediations}
             {width}
             {height}
@@ -638,14 +625,15 @@
         <br />
         <br />
 
-        <!-- top mediators -->
-        <D_TopMediators
+        <!-- unique actors -->
+        <C_UniqueThirdPerMonth
             {width}
             {height}
+            {innerHeight}
             {margin}
-            {top_ten_mediators}
-            {horizontal_yScale}
-            {horizontal_mediator_yScale}
+            {xScale}
+            {historical_events}
+            {result}
         />
 
         <br />

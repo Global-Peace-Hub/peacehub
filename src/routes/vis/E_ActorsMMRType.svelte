@@ -50,7 +50,7 @@
         [The bigger the circle, the more involved the actor]
     </p>
     <svg {width} {height}>
-        <g transform="translate({innerWidthAdjusted / 6 / 2 + margin.left}, 0)">
+        <g transform="translate({margin.left}, 0)">
             {#each nodes as point}
                 <circle
                     class="node"
@@ -61,28 +61,28 @@
                     ><title>{point.name}</title>
                 </circle>
             {/each}
-            {#each nodes as point}
-                {#if point.value > 15}
-                    {#await Promise.resolve(splitText(point.name, 10)) then lines}
-                        <text
-                            x={point.x}
-                            y={point.y - (lines.length - 1) * 6}
-                            font-size="12"
-                            text-anchor="middle"
-                            font-weight="500"
-                            fill="white"
-                        >
-                            {#each lines as line, i}
-                                <tspan x={point.x} dy={i === 0 ? "0" : "1.2em"}
-                                    >{line}</tspan
-                                >
-                            {/each}
-                        </text>
-                    {/await}
-                {/if}
-            {/each}
+{#each nodes as point}
+    {#if r_scale(point.value) > 20}
+        {#await Promise.resolve(splitText(point.name, 10)) then lines}
+            <text
+                x={point.x}
+                y={point.y - (lines.length - 1) * 6}
+                font-size="12"
+                text-anchor="middle"
+                font-weight="500"
+                fill="white"
+            >
+                {#each lines as line, i}
+                    <tspan x={point.x} dy={i === 0 ? "0" : "1.2em"}>
+                        {line}
+                    </tspan>
+                {/each}
+            </text>
+        {/await}
+    {/if}
+{/each}
 
-            {#if width >= 800}
+            <!-- {#if width >= 800}
                 {#each categoryPositions as { category, x }}
                     <text
                         {x}
@@ -112,7 +112,7 @@
                         {/if}
                     </text>
                 {/each}
-            {/if}
+            {/if} -->
         </g>
     </svg>
 </div>
