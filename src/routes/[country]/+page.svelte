@@ -17,11 +17,8 @@
     // import H_KeyProcesses from "../vis/H_KeyProcesses.svelte";
     import I_RectTimeline from "../vis/I_RectTimeline.svelte";
 
-    let manyBodyStrength = 2;
+    let def_data = [];
     let only_M = [];
-    let nodeStrokeWidth = 1;
-    let rKey = "value";
-    let finalData = [];
     let country = data.country;
     let mena;
     let mediations;
@@ -200,9 +197,11 @@
                 const monthB = parseInt(b.Month, 10);
                 return monthA - monthB;
             });
+            def_data = mediations;
         });
     });
 
+    let mediationOptions = [];
     // once data is loaded, create subsets for each section
     $: if (
         country &&
@@ -211,90 +210,15 @@
         mena?.length > 0 &&
         ucdp?.length > 0
     ) {
-        //// ACTOR TYPES
-        const thirdPartyCounts = {};
+        let m_mr_grouping = d3.groups(mediations, (d) => d.med_type);
+        let mGroup = m_mr_grouping.find((r) => r[0] === "M")?.[1] ?? [];
+        let mrGroup = m_mr_grouping.find((r) => r[0] === "MR")?.[1] ?? [];
+        let allGroup = [...mGroup, ...mrGroup]; // merged
 
-        // Iterate through the array
-        mediations.forEach((entry) => {
-            // Split IDs if multiple exist
-            const ids = entry.third_party_id_GLOPAD.split(";");
-            ids.forEach((id) => {
-                thirdPartyCounts[id] = (thirdPartyCounts[id] || 0) + 1;
-            });
-        });
-
-        // Convert the result into the required format
-        let resultz = Object.entries(thirdPartyCounts).map(([id, value]) => ({
-            id,
-            value,
-        }));
-
-        const updatedIdValues = resultz.map((item) => {
-            const match = actors.find((actor) => actor.GLOPAD_ID === item.id);
-            return { ...item, name: match ? match.ActorName : item.id };
-        });
-
-        // Create a lookup map for faster access
-        actorLookup = new Map(
-            abbreviations.map((actor) => [actor.id_paax, actor.actor_name]),
-        );
-
-        // Replace mediatorIDs with corresponding ActorNames, keeping the ID if not found
-        resultz = updatedIdValues;
-
-        // Create a lookup table from actors
-        const categoryLookup = actors.reduce((acc, actor) => {
-            acc[actor.GLOPAD_ID] =
-                actor.actor_classification_glopad || "Unknown";
-            return acc;
-        }, {});
-
-        // Map over the data array and add the category field
-        const resultWithCategory = resultz.map((entry) => ({
-            ...entry,
-            category: categoryLookup[entry.id] || "Unknown",
-        }));
-
-        // Convert data2 into a Set for quick lookup
-        const neighborIds = new Set(neighbor.map((item) => item.id));
-
-        // Update data1 based on conditions
-        const updatedData1 = resultWithCategory.map((item) => {
-            if (item.category === "Country/State" && neighborIds.has(item.id)) {
-                return { ...item, category: "neighbor" };
-            }
-            return item;
-        });
-
-        // Create a Set of MENA region IDs for quick lookup
-        const menaIds = new Set(mena.map((item) => item.id_paax));
-
-        // Update data1 based on conditions
-        const updatedData2 = updatedData1.map((item) => {
-            if (item.category === "Country/State") {
-                return {
-                    ...item,
-                    category: menaIds.has(item.id) ? "mena" : "other_state",
-                };
-            }
-            return item;
-        });
-
-        finalData = updatedData2.map((item) => {
-            if (item.category === "International IGO") {
-                return { ...item, category: "international" };
-            } else if (item.category === "Regional IGO") {
-                return { ...item, category: "regional" };
-            } else if (
-                item.category === "Unknown" ||
-                item.category === "Civil Society" ||
-                item.category === "Other"
-            ) {
-                return { ...item, category: "other" };
-            }
-
-            return item;
-        });
+        mediationOptions = [
+            ["All", allGroup],
+            ...m_mr_grouping.filter((r) => r[0] === "M" || r[0] === "MR"),
+        ];
 
         // MEDIATION TYPES
         only_M = mediations.filter((d) => d.med_type === "M");
@@ -480,42 +404,6 @@
         top_ten_mediators = updatedIdCounts;
     }
 
-    // SCALES
-    $: x_circle = d3
-        .scaleOrdinal()
-        .domain(categories)
-        .range(d3.range(0, innerWidthAdjusted, innerWidthAdjusted / 5));
-
-    $: r_scale = d3
-        .scaleLinear()
-        .domain([0, d3.max(finalData, (d) => d.value) + 10])
-        .range([5, 70]);
-
-    $: filteredArray = finalData.filter((item) => item.category !== "other");
-
-    // MEDIATOR TYPES
-    $: initialNodes = filteredArray.map((d) => ({ ...d }));
-    $: simulation = d3.forceSimulation(initialNodes);
-    $: nodes = [];
-    $: {
-        simulation.nodes(initialNodes);
-        simulation
-            // .force("x", d3.forceX((d) => x_circle(d.category)).strength(0.3)) // position by category
-            .force("x", d3.forceX(innerWidthAdjusted/ 2).strength(0.25)) // Add a X-force to help centering
-            .force("y", d3.forceY(height / 2).strength(0.2)) // Add a Y-force to help centering
-            .force("charge", d3.forceManyBody().strength(manyBodyStrength))
-            .force(
-                "collision",
-                d3.forceCollide((d) => r_scale(d[rKey]) + nodeStrokeWidth / 2),
-            )
-            .alpha(0.2)
-            .restart();
-    }
-
-    $: simulation.on("tick", () => {
-        nodes = simulation.nodes();
-    });
-
     // UCDP XScale
     $: ucdp_xScale = d3
         .scaleBand()
@@ -641,14 +529,17 @@
 
         <!-- types of mediators -->
         <E_ActorsMMRType
+            {def_data}
+            {mediations}
+            {actors}
+            {neighbor}
+            {mediationOptions}
+            {mena}
             {width}
             {innerWidthAdjusted}
             {height}
-            {nodes}
             {margin}
-            {r_scale}
             {categories}
-            {x_circle}
         />
 
         <br />
