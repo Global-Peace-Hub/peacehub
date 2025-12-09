@@ -9,18 +9,18 @@
     let maxYear = 2024;
     let img_height;
 
-    $: filteredAgreements = agreements.filter((d) => {
-        const year = +d.Year;
-        return year >= selectedYearsAgt[0] && year <= selectedYearsAgt[1];
-    });
-
     const seen = new Set();
 
-    $: uniqueAgreements = filteredAgreements.filter((row) => {
+    $: uniqueAgreements = agreements.filter((row) => {
         const key = `${row.Day}-${row.Month}-${row.Year}-${row.agmt_name}`;
         if (seen.has(key)) return false;
         seen.add(key);
         return true;
+    });
+
+    $: filteredAgreements = uniqueAgreements.filter((d) => {
+        const year = +d.Year;
+        return year >= selectedYearsAgt[0] && year <= selectedYearsAgt[1];
     });
 
     $: if (width < 600) {
@@ -55,7 +55,7 @@
         <div class="table_header">Grouping</div>
 
         <!-- Rows -->
-        {#each uniqueAgreements as row}
+        {#each filteredAgreements as row}
             <div class="date-wrap">
                 <span>{row.Day}/{row.Month}/</span><span class="year-break"
                     >{row.Year}</span
