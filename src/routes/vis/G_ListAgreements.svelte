@@ -14,14 +14,14 @@
         return year >= selectedYearsAgt[0] && year <= selectedYearsAgt[1];
     });
 
-    // const seen = new Set();
+    const seen = new Set();
 
-    // $: uniqueAgreements = filteredAgreements.filter((row) => {
-    //     const key = `${row.Day}-${row.Month}-${row.Year}-${row.agmt_name}-${row.third_party}-${row.groupings_mechanisms}`;
-    //     if (seen.has(key)) return false;
-    //     seen.add(key);
-    //     return true;
-    // });
+    $: uniqueAgreements = filteredAgreements.filter((row) => {
+        const key = `${row.Day}-${row.Month}-${row.Year}-${row.agmt_name}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+    });
 
     $: if (width < 600) {
         img_height = "20px";
@@ -55,7 +55,7 @@
         <div class="table_header">Grouping</div>
 
         <!-- Rows -->
-        {#each filteredAgreements as row}
+        {#each uniqueAgreements as row}
             <div class="date-wrap">
                 <span>{row.Day}/{row.Month}/</span><span class="year-break"
                     >{row.Year}</span
