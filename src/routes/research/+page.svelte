@@ -10,6 +10,24 @@
             <div class="publication_content">
                 <h4>2025</h4>
                 <p>
+                    <strong
+                        >Sara Hellmüller, Fanny Badache, Corinne Bara, Richard
+                        Caplan, Cedric de Coning, Marco Donati, Allard Duursma,
+                        Tânia Felicio, Ibrahim Fraihat, Courtney J Fung, Monica
+                        Herz, Annika Hilding Norberg, Tetsuro Iji, Ferdinand
+                        Kwaku Danso, Mateja Peter, Margaux Pinaud, Lisa Reefke,
+                        Bilal Salaymeh, Ekaterina Stepanova, Maximilian Stoller,
+                        Shuhrat Sulaymanov, Stephanie Williams, Xinyu Yuan</strong
+                    >
+                    (2025)
+                    <a
+                        href="https://academic.oup.com/ia/advance-article/doi/10.1093/ia/iiaf190/8355991"
+                        target="_blank"
+                        >Rethinking UN peace and security engagements in a
+                        changing world.</a
+                    > International Affairs, online first.
+                </p>
+                <p>
                     <strong>Mateja Peter</strong> (2025)
                     <a
                         href="https://era.ed.ac.uk/handle/1842/43662"
@@ -297,7 +315,7 @@
         position: relative;
         margin: auto;
         width: 90%;
-        padding: 0 10px 10px 10px; 
+        padding: 0 10px 10px 10px;
     }
 
     @media (min-width: 600px) {

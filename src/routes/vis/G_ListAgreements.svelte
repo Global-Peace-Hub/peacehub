@@ -52,7 +52,7 @@
         <div class="table_header">Date</div>
         <div class="table_header">Name</div>
         <div class="table_header">3rd-Party Actors</div>
-        <div class="table_header">Grouping</div>
+        <!-- <div class="table_header">Grouping</div> -->
 
         <!-- Rows -->
         {#each filteredAgreements as row}
@@ -85,7 +85,7 @@
                 {/if}
             </div>
             <div>{row.third_party}</div>
-            <div>{row.groupings_mechanisms}</div>
+            <!-- <div>{row.groupings_mechanisms}</div> -->
         {/each}
     </div>
     <div class="citation">
@@ -124,7 +124,7 @@
     .table {
         width: 90%;
         display: grid;
-        grid-template-columns: 0.5fr 2fr 1fr 1fr;
+        grid-template-columns: 0.5fr 2fr 1fr;
         border: 1px solid #595959;
         font-size: 14px; /* Default for large screens */
         align-items: left;
