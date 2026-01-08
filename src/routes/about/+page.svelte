@@ -213,7 +213,7 @@
                             ><strong>Past Analysts</strong></td
                         >
                         <td style="padding: 8px;">
-                            Delia Burns, Aarushu Sharma, Haley Rice, Marcel
+                            Delia Burns, Aarushi Sharma, Haley Rice, Marcel
                             Plichta
                         </td>
                         <td style="padding: 8px;">University of St Andrews</td>
