@@ -30,6 +30,7 @@
     let mediations_only = [];
     let processedData = [];
     let ucdp_final = [];
+    let ucdp_plot = [];
     let processedM = [];
     let result = [];
     let agreements = [];
@@ -86,9 +87,8 @@
         const json_path = "../data/neighbors.json";
         getGeo(json_path).then((data) => {
             let neighbors = data;
-            neighbor = neighbors.filter(
-                (c) => c.conflict_country === country,
-            )[0].borders;
+            const match = neighbors.find((c) => c.conflict_country === country);
+            neighbor = match ? match.borders : [];
         });
 
         // LOAD MEND
@@ -101,6 +101,7 @@
             "../data/countries.csv",
             "../data/actors_abbr.csv",
             "../data/groups_last_last.csv",
+            "../data/historical_events.csv",
         ];
         getCSV(path).then((glopad) => {
             actors = glopad[0];
@@ -111,77 +112,26 @@
             countries = glopad[5];
             abbreviations = glopad[6];
             all_processes = glopad[7];
+            let hist_events = glopad[8];
 
+            // Filter data for this country
+            mediations = mend.filter((d) => d.conflict_country && d.conflict_country.includes(country));
+            ucdp = ucdp.filter((d) => d.country === country);
+
+            // Auto-detect year range from mediation data
+            const minYear = d3.min(mediations, (d) => +d.Year);
+            const maxYear = d3.max(mediations, (d) => +d.Year);
+            header_years = minYear === maxYear ? `${minYear}` : `${minYear}-${maxYear}`;
+
+            // Filter from CSVs
+            historical_events = hist_events.filter((d) => d.country === country);
+            fil_processes = all_processes.filter(
+                (d) => d.conflict_country === country && d.important == "1",
+            );
+
+            // Sudan uses the full processes list
             if (country === "Sudan") {
-                header_years = "2018-2024";
-                // mediations = mend.filter((d) => d.Year === "2024");
-                mediations = mend.filter((d) => d.conflict_country === "Sudan");
-                ucdp = ucdp.filter((d) => d.country === "Sudan");
-                historical_events = [];
-                historical_events = [
-                    {
-                        name: "al-Bashir Ousted",
-                        year: "2019",
-                        month: "4",
-                    },
-                    {
-                        name: "Coup",
-                        year: "2021",
-                        month: "10",
-                    },
-                    {
-                        name: "Civil War",
-                        year: "2023",
-                        month: "4",
-                    },
-                ];
                 fil_processes = processes;
-                // fil_processes = all_processes.filter(
-                //     (d) => d.conflict_country === "Sudan" && d.important == "1",
-                // );
-            } else if (country === "Libya") {
-                header_years = "2023-2024";
-                mediations = mend.filter((d) => d.conflict_country === "Libya");
-                ucdp = ucdp.filter((d) => d.country === "Libya");
-                historical_events = [];
-                fil_processes = all_processes.filter(
-                    (d) => d.conflict_country === "Libya" && d.important == "1",
-                );
-            } else if (country === "Syria") {
-                header_years = "2023-2024";
-                mediations = mend.filter((d) => d.conflict_country === "Syria");
-                ucdp = ucdp.filter((d) => d.country === "Syria");
-                historical_events = [
-                    {
-                        name: "Reinstated in the Arab League",
-                        year: "2023",
-                        month: "7",
-                    },
-                    {
-                        name: "Assad's Ouster",
-                        year: "2024",
-                        month: "12",
-                    },
-                ];
-                fil_processes = all_processes.filter(
-                    (d) => d.conflict_country === "Syria" && d.important == "1",
-                );
-            } else if (country == "Yemen") {
-                header_years = "2018-2024";
-                mediations = mend.filter((d) => d.conflict_country === "Yemen");
-                ucdp = ucdp.filter((d) => d.country === "Yemen");
-            } else if (country == "Afghanistan") {
-                header_years = "2023-2024";
-                mediations = mend.filter(
-                    (d) => d.conflict_country === "Afghanistan",
-                );
-                ucdp = ucdp.filter((d) => d.country === "Afghanistan");
-            } else if (country == "Israel") {
-                header_years = "2023-2024";
-                mediations = mend.filter(
-                    (d) => d.conflict_country === "Israel",
-                );
-                ucdp = ucdp.filter((d) => d.country === "Israel");
             }
 
             mediations.sort((a, b) => {
@@ -246,12 +196,20 @@
 
         const locationCounts = Object.values(
             mediations.reduce((acc, item) => {
-                let location = item["med_location - MULTISELECT"]; // Get location
+                let rawLocation = item["med_location - MULTISELECT"]; // Get location
                 let country = item["med_loc_cty"]; // Get country
 
-                if (location) {
-                    if (location.includes("Virtual")) {
+                if (rawLocation) {
+                    // Split "City, Country" format — use city as location, rest as country
+                    let parts = rawLocation.split(",").map((s) => s.trim());
+                    let location = parts[0];
+                    if (parts.length > 1) {
+                        country = parts.slice(1).join(", ");
+                    }
+
+                    if (rawLocation.includes("Virtual")) {
                         location = "Virtual";
+                        country = "Virtual";
                     }
 
                     if (!acc[location]) {
@@ -340,6 +298,10 @@
 
         processedData = fillMissingMonths(processedData);
 
+        // Filter UCDP to only months within the mediation data range for plotting
+        const medMonths = new Set(processedData.map((d) => `${d.year}-${d.month}`));
+        ucdp_plot = ucdp_final.filter((d) => medMonths.has(`${d.year}-${d.month}`));
+
         // only M
         const only_m_grouped = d3.groups(
             only_M,
@@ -356,10 +318,10 @@
 
         // UNIQUE ACTORS PER MONTH
         result = processedData.map((item) => {
-            // Extract all third_party_id_GLOPAD values for the current month
+            // Extract all third_party_id_MEND values for the current month
             const allIds = item.count.flatMap((entry) =>
-                entry.third_party_id_GLOPAD
-                    ? entry.third_party_id_GLOPAD
+                entry.third_party_id_MEND
+                    ? entry.third_party_id_MEND
                           .split(";")
                           .map((id) => id.trim())
                     : [],
@@ -379,7 +341,7 @@
         // MEDIATORS
         let test = [];
         only_M.forEach((item) => {
-            const mediators = item.third_party_id_GLOPAD.split(";");
+            const mediators = item.third_party_id_MEND.split(";");
             mediators.forEach((mediator) => {
                 test.push(mediator);
             });
@@ -413,7 +375,7 @@
 
     $: ucdp_yScale = d3
         .scaleLinear()
-        .domain([0, Math.max(...ucdp_final.map((d) => d.best_count))])
+        .domain([0, Math.max(...ucdp_plot.map((d) => d.best_count))])
         .range([innerHeight, 0]);
 
     // X Scale
@@ -460,7 +422,7 @@
         .curve(d3.curveMonotoneX); // Smooth curve
 
     // Path Data
-    $: pathData = line(ucdp_final);
+    $: pathData = line(ucdp_plot);
 
     function scrollToSection(id) {
         document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
@@ -493,7 +455,7 @@
             {processedData}
             {processedM}
             {pathData}
-            {ucdp_final}
+            {ucdp_plot}
         />
 
         <br />
