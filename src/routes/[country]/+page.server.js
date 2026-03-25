@@ -5,9 +5,6 @@ export function entries() {
     { country: "Yemen" },
     { country: "Israel" },
     { country: "Afghanistan" },
-    { country: "Myanmar" },
-    { country: "Mali" },
-    { country: "South Sudan" },
     ];
 }
 

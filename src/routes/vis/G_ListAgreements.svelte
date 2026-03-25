@@ -4,10 +4,9 @@
     export let width;
     export let agreements;
 
-    $: minYear = agreements.length > 0 ? Math.min(...agreements.map((d) => +d.Year)) : 2018;
-    $: maxYear = agreements.length > 0 ? Math.max(...agreements.map((d) => +d.Year)) : 2025;
-    let selectedYearsAgt = [2018, 2025];
-    $: selectedYearsAgt = [minYear, maxYear];
+    let selectedYearsAgt = [2018, 2024];
+    let minYear = 2018;
+    let maxYear = 2024;
     let img_height;
 
     const seen = new Set();

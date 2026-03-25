@@ -277,7 +277,7 @@
                 </g>
             {/each}
             {#each mediations_only as d, i}
-                {#each d.third_party_id_MEND
+                {#each d.third_party_id_GLOPAD
                     .split(";")
                     .filter((m) => m.trim() !== "") as mediator}
                     <rect

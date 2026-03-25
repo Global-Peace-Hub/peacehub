@@ -14,7 +14,7 @@
     export let processedData;
     export let processedM;
     export let pathData;
-    export let ucdp_plot = [];
+    export let ucdp_final = [];
 
     // $: console.log(pathData);
 
@@ -65,7 +65,7 @@
         }
 
         if (yUCDPAxisGroup) {
-            const maxCount = Math.max(...ucdp_plot.map((d) => d.best_count));
+            const maxCount = Math.max(...ucdp_final.map((d) => d.best_count));
             const screenWidth = width;
 
             const yAxis = d3
@@ -147,7 +147,7 @@
 
             <path d={pathData} fill="none" stroke="red" stroke-width="2" />
 
-            {#each ucdp_plot as d}
+            {#each ucdp_final as d}
                 <circle
                     cx={ucdp_xScale(`${d.year}-${d.month}`) +
                         ucdp_xScale.bandwidth() / 2}
