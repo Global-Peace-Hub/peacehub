@@ -59,7 +59,7 @@
         }));
 
         const updatedIdValues = resultz.map((item) => {
-            const match = actors.find((actor) => actor.GLOPAD_ID === item.id);
+            const match = actors.find((actor) => actor.MEND_ID === item.id);
             return { ...item, name: match ? match.ActorName : item.id };
         });
 
@@ -73,8 +73,8 @@
 
         // Create a lookup table from actors
         const categoryLookup = actors.reduce((acc, actor) => {
-            acc[actor.GLOPAD_ID] =
-                actor.actor_classification_glopad || "Unknown";
+            acc[actor.MEND_ID] =
+                actor.actor_classification || "Unknown";
             return acc;
         }, {});
 

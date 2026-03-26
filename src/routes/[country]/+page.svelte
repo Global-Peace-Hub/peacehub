@@ -359,7 +359,7 @@
             .slice(0, 10);
 
         const updatedIdCounts = top_ten_mediators.map(([id, count]) => {
-            const match = actors.find((actor) => actor.GLOPAD_ID === id);
+            const match = actors.find((actor) => actor.MEND_ID === id);
             return [match ? match.ActorName : id, count];
         });
 

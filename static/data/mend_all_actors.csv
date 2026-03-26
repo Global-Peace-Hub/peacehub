@@ -1,1195 +1,1218 @@
-GLOPAD_ID,PAAX_ID,ActorName,GW_ID,actor_classification,actor_classification_glopad,alt_name,alt_id
-CON_0,CON_0,Bosnia and Herzegovina,346,Country/State,Country/State,,
-CON_1,CON_1,Croatia,344,Country/State,Country/State,,
-CON_10,CON_10,Netherlands,210,Country/State,Country/State,,
-CON_11,CON_11,Canada,20,Country/State,Country/State,,
-CON_12,CON_12,Malaysia,820,Country/State,Country/State,,
-CON_13,CON_13,Namibia,565,Country/State,Country/State,,
-CON_139,CON_139,Italy,325,Country/State,Country/State,,
-CON_14,CON_14,Slovenia,317,Country/State,Country/State,,
-CON_142,CON_142,Niger,436,Country/State,Country/State,,
-CON_146,CON_146,Nepal,790,Country/State,Country/State,,
-CON_15,CON_15,Brazil,140,Country/State,Country/State,,
-CON_157,CON_157,Chad,483,Country/State,Country/State,,
-CON_158,CON_158,Sudan,625,Country/State,Country/State,,
-CON_159,CON_159,Ethiopia,530,Country/State,Country/State,,
-CON_16,CON_16,Gambia,420,Country/State,Country/State,,
-CON_160,CON_160,Philippines,840,Country/State,Country/State,,
-CON_162,CON_162,Indonesia,850,Country/State,Country/State,,
-CON_169,CON_169,Ireland,205,Country/State,Country/State,,
-CON_17,CON_17,Gabon,481,Country/State,Country/State,,
-CON_171,CON_171,Finland,375,Country/State,Country/State,,
-CON_172,CON_172,Kenya,501,Country/State,Country/State,,
-CON_173,CON_173,South Sudan,626,Country/State,Country/State,,
-CON_174,CON_174,Chama Cha Mapinduzi,510,Country/State,Country/State,,
-CON_174,CON_174,Tanzania,510,Country/State,Country/State,,
-CON_176,CON_176,Uganda,500,Country/State,Country/State,,
-CON_177,CON_177,Chile,155,Country/State,Country/State,,
-CON_178,CON_178,Peru,135,Country/State,Country/State,,
-CON_179,CON_179,Ecuador,130,Country/State,Country/State,,
-CON_18,CON_18,Bahrain,692,Country/State,Country/State,,
-CON_181,CON_181,Colombia,100,Country/State,Country/State,,
-CON_19,CON_19,UK,200,Country/State,Country/State,,
-CON_19,CON_19,United Kingdom,200,Country/State,Country/State,,
-CON_2,CON_2,Germany,255,Country/State,Country/State,,
-CON_20,CON_20,China,710,Country/State,Country/State,,
-CON_202,CON_202,Switzerland,225,Country/State,Country/State,,
-CON_203,CON_203,Cuba,40,Country/State,Country/State,,
-CON_21,CON_21,Russia,365,Country/State,Country/State,,
-CON_22,CON_22,Yugoslavia,345,Country/State,Country/State,,
-CON_221,CON_221,South Africa,560,Country/State,Country/State,,
-CON_228,CON_228,Morocco,600,Country/State,Country/State,,
-CON_247,CON_247,Cambodia,811,Country/State,Country/State,,
-CON_248,CON_248,Djibouti,522,Country/State,Country/State,,
-CON_253,CON_253,Burundi,516,Country/State,Country/State,,
-CON_255,CON_255,Algeria,615,Country/State,Country/State,,
-CON_259,CON_259,Portugal,235,Country/State,Country/State,,
-CON_260,CON_260,Angola,540,Country/State,Country/State,,
-CON_264,CON_264,"Congo, Democratic Republic of the",490,Country/State,Country/State,,
-CON_264,CON_264,DRC,490,Country/State,Country/State,,
-CON_267,CON_267,Botswana,571,Country/State,Country/State,,
-CON_268,CON_268,Mexico,70,Country/State,Country/State,,
-CON_272,CON_272,Eritrea,531,Country/State,Country/State,,
-CON_273,CON_273,North Korea,731,Country/State,Country/State,,
-CON_276,CON_276,New Zealand,920,Country/State,Country/State,,
-CON_277,CON_277,Australia,900,Country/State,Country/State,,
-CON_278,CON_278,Vanuatu,935,Country/State,Country/State,,
-CON_279,CON_279,Solomon Islands,940,Country/State,Country/State,,
-CON_280,CON_280,Tonga,953,Country/State,Country/State,,
-CON_281,CON_281,Fiji,950,Country/State,Country/State,,
-CON_282,CON_282,Papua New Guinea,910,Country/State,Country/State,,
-CON_285,CON_285,Libya,620,Country/State,Country/State,,
-CON_287,CON_287,Bangladesh,771,Country/State,Country/State,,
-CON_288,CON_288,Afghanistan,700,Country/State,Country/State,,
-CON_289,CON_289,Iran (Islamic Republic of),630,Country/State,Country/State,,
-CON_290,CON_290,Cameroon,471,Country/State,Country/State,,
-CON_292,CON_292,Brunei,835,Country/State,Country/State,,
-CON_294,CON_294,Japan,740,Country/State,Country/State,,
-CON_295,CON_295,Thailand,800,Country/State,Country/State,,
-CON_296,CON_296,Singapore,830,Country/State,Country/State,,
-CON_297,CON_297,Vietnam,816,Country/State,Country/State,,
-CON_298,CON_298,Laos,812,Country/State,Country/State,,
-CON_3,CON_3,United States,2,Country/State,Country/State,,
-CON_300,CON_300,El Salvador,92,Country/State,Country/State,,
-CON_301,CON_301,Sri Lanka,780,Country/State,Country/State,,
-CON_304,CON_304,Yemen,678,Country/State,Country/State,,
-CON_306,CON_306,Guatemala ,90,Country/State,Country/State,,
-CON_316,CON_316,Venezuela,101,Country/State,Country/State,,
-CON_335,CON_335,Zambia,551,Country/State,Country/State,,
-CON_339,CON_339,Rwanda,517,Country/State,Country/State,,
-CON_348,CON_348,Serbia,340,Country/State,Country/State,,
-CON_350,CON_350,Zimbabwe,552,Country/State,Country/State,,
-CON_353,CON_353,S√£o Tom√© and Pr√≠ncipe,403,Country/State,Country/State,,
-CON_354,CON_354,Cape Verde,402,Country/State,Country/State,,
-CON_358,CON_358,Somalia,520,Country/State,Country/State,,
-CON_387,CON_387,Mauritania,435,Country/State,Country/State,,
-CON_392,CON_392,Malawi,553,Country/State,Country/State,,
-CON_394,CON_394,Romania,360,Country/State,Country/State,,
-CON_395,CON_395,Pakistan,770,Country/State,Country/State,,
-CON_397,CON_397,Nicaragua,93,Country/State,Country/State,,
-CON_399,CON_399,East Timor,860,Country/State,Country/State,,
-CON_4,CON_4,Spain,230,Country/State,Country/State,,
-CON_41,CON_41,Benin,434,Country/State,Country/State,,
-CON_419,CON_419,Saudi Arabia,670,Country/State,Country/State,,
-CON_42,CON_42,Congo,484,Country/State,Country/State,,
-CON_44,CON_44,Guinea ,438,Country/State,Country/State,,
-CON_441,CON_441,Belgium,211,Country/State,Country/State,,
-CON_45,CON_45,Georgia,372,Country/State,Country/State,,
-CON_458,CON_458,South Korea,732,Country/State,Country/State,,
-CON_481,CON_481,Madagascar,580,Country/State,Country/State,,
-CON_482,CON_482,Mauritius,590,Country/State,Country/State,,
-CON_485,CON_485,Comoros,581,Country/State,Country/State,,
-CON_486,CON_486,Qatar,694,Country/State,Country/State,,
-CON_52,CON_52,Ukraine,369,Country/State,Country/State,,
-CON_521,CON_521,Lesotho,570,Country/State,Country/State,,
-CON_54,CON_54,Uzbekistan,704,Country/State,Country/State,,
-CON_55,CON_55,Kyrgyzstan,703,Country/State,Country/State,,
-CON_551,CON_551,Myanmar,775,Country/State,Country/State,,
-CON_56,CON_56,Kazakhstan,705,Country/State,Country/State,,
-CON_562,CON_562,Turkey,640,Country/State,Country/State,,
-CON_563,CON_563,Kuwait,692,Country/State,Country/State,,
-CON_57,CON_57,Turkmenistan,701,Country/State,Country/State,,
-CON_58,CON_58,Belarus,370,Country/State,Country/State,,
-CON_585,CON_585,Costa Rica,94,Country/State,Country/State,,
-CON_587,CON_587,Albania,339,Country/State,Country/State,,
-CON_588,CON_588,Austria,305,Country/State,Country/State,,
-CON_589,CON_589,Bulgaria,355,Country/State,Country/State,,
-CON_59,CON_59,Azerbaijan,373,Country/State,Country/State,,
-CON_590,CON_590,Tunisia,616,Country/State,Country/State,,
-CON_591,CON_591,UAE,696,Country/State,Country/State,,
-CON_591,CON_591,United Arab Emirates,696,Country/State,Country/State,,
-CON_592,CON_592,Slovakia,317,Country/State,Country/State,,
-CON_593,CON_593,Sweden,380,Country/State,Country/State,,
-CON_594,CON_594,Uruguay,165,Country/State,Country/State,,
-CON_6,CON_6,Central African Republic,482,Country/State,Country/State,,
-CON_60,CON_60,Moldova,359,Country/State,Country/State,,
-CON_601,CON_601,Iceland,385,Country/State,Country/State,,
-CON_602,CON_602,Hungary,310,Country/State,Country/State,,
-CON_603,CON_603,Poland,290,Country/State,Country/State,,
-CON_604,CON_604,Denmark,390,Country/State,Country/State,,
-CON_605,CON_605,Estonia,366,Country/State,Country/State,,
-CON_606,CON_606,Oman,698,Country/State,Country/State,,
-CON_607,CON_607,Montenegro,341,Country/State,Country/State,,
-CON_608,CON_608,Mongolia,712,Country/State,Country/State,,
-CON_609,CON_609,Cyprus,352,Country/State,Country/State,,
-CON_61,CON_61,Armenia,371,Country/State,Country/State,,
-CON_610,CON_610,North Macedonia,343,Country/State,Country/State,,
-CON_611,CON_611,Luxembourg,215,Country/State,Country/State,,
-CON_612,CON_612,Lithuania,368,Country/State,Country/State,,
-CON_613,CON_613,Liechtenstein,223,Country/State,Country/State,,
-CON_614,CON_614,Malta,338,Country/State,Country/State,,
-CON_615,CON_615,Latvia,367,Country/State,Country/State,,
-CON_62,CON_62,Tajikistan,702,Country/State,Country/State,,
-CON_621,CON_621,Honduras,91,Country/State,Country/State,,
-CON_636,CON_636,Greece,350,Country/State,Country/State,,
-CON_637,CON_637,Czechia,316,Country/State,Country/State,,
-CON_641,CON_641,Seychelles,591,Country/State,Country/State,,
-CON_669,CON_669,Vatican City,,Country/State,Country/State,,
-CON_67,CON_67,Haiti,41,Country/State,Country/State,,
-CON_670,CON_670,Panama,95,Country/State,Country/State,,
-CON_7,CON_7,France,220,Country/State,Country/State,,
-CON_70,CON_70,India,750,Country/State,Country/State,,
-CON_75,CON_75,Iraq,645,Country/State,Country/State,,
-CON_76,CON_76,Israel,666,Country/State,Country/State,,
-CON_77,CON_77,Syria,,Country/State,Country/State,,
-CON_77,CON_77,Syrian Arab Republic,,Country/State,Country/State,,
-CON_78,CON_78,Jordan,663,Country/State,Country/State,,
-CON_79,CON_79,Lebanon,660,Country/State,Country/State,,
-CON_81,CON_81,Norway,385,Country/State,Country/State,,
-CON_82,CON_82,Egypt,651,Country/State,Country/State,,
-CON_83,CON_83,Liberia,450,Country/State,Country/State,,
-CON_85,CON_85,Togo,461,Country/State,Country/State,,
-CON_86,CON_86,Burkina Faso,439,Country/State,Country/State,,
-CON_88,CON_88,C√¥te d‚ÄôIvoire,437,Country/State,Country/State,,
-CON_9,CON_9,Argentina,160,Country/State,Country/State,,
-CON_90,CON_90,Nigeria,475,Country/State,Country/State,,
-CON_91,CON_91,Guinea-Bissau,404,Country/State,Country/State,,
-CON_92,CON_92,Senegal,433,Country/State,Country/State,,
-CON_93,CON_93,Mali,432,Country/State,Country/State,,
-CON_930,CON_930,Equatorial Guinea,411,Country/State,Country/State,,
-CON_94,CON_94,Ghana,452,Country/State,Country/State,,
-CON_97,CON_97,Mozambique,541,Country/State,Country/State,,
-CON_99,CON_99,Sierra Leone,451,Country/State,Country/State,,
-CON_289,CON_289,Iran,630,Country/State,Country/State,,
-ENT_1099,ENT_1099,Nagaland,750,Entity,Entity,,
-ENT_1102,ENT_1102,South West State,520,Entity,Entity,,
-ENT_1103,ENT_1103,Hirshabelle,520,Entity,Entity,,
-ENT_1104,ENT_1104,Banaadir,520,Entity,Entity,,
-ENT_1133,ENT_1133,Oromia region,530,Entity,Entity,,
-ENT_1160,ENT_1160,Ngazidja,581,Entity,Entity,,
-ENT_1161,ENT_1161,Mwali,581,Entity,Entity,,
-ENT_1163,ENT_1163,Maguindanao ,840,Entity,Entity,,
-ENT_1173,ENT_1173,Nagorno-Karabakh,373,Entity,Entity,,
-ENT_1174,ENT_1174,Krajina,,Entity,Entity,,
-ENT_1247,ENT_1247,Chin State,775,Entity,Entity,,
-ENT_1268,ENT_1268,ARMM,840,Entity,Entity,,
-ENT_1268,ENT_1268,Autonomous Region in Muslim Mindanao,840,Entity,Entity,,
-ENT_1280,ENT_1280,"Lone District, Ifugao",840,Entity,Entity,,
-ENT_1281,ENT_1281,Apayao Province,840,Entity,Entity,,
-ENT_1307,ENT_1307,Darfur,625,Entity,Entity,,
-ENT_1324,ENT_1324,South-West State of Somalia,520,Entity,Entity,,
-ENT_1328,ENT_1328,Unity State,625,Entity,Entity,,
-ENT_1329,ENT_1329,Northern Bahr El-Gazal State,625,Entity,Entity,,
-ENT_170,ENT_170,NI,200,Entity,Entity,,
-ENT_170,ENT_170,Northern Ireland,200,Entity,Entity,,
-ENT_213,ENT_213,Bophuthatswana Govt,560,Entity,Entity,,
-ENT_215,ENT_215,Venda Govt,560,Entity,Entity,,
-ENT_216,ENT_216,Transkei Govt,560,Entity,Entity,,
-ENT_275,ENT_275,Chechen Republic,365,Entity,Entity,,
-ENT_286,ENT_286,Chittagong Hill Tracts,771,Entity,Entity,,
-ENT_341,ENT_341,Bougainville Interim Provincial Government,910,Entity,Entity,,
-ENT_345,ENT_345,Bougainville Transitional Government,910,Entity,Entity,,
-ENT_356,ENT_356,Bougainville,910,Entity,Entity,,
-ENT_409,ENT_409,Guadalcanal Province,940,Entity,Entity,,
-ENT_411,ENT_411,Choiseul Province,940,Entity,Entity,,
-ENT_412,ENT_412,Central Islands Province,940,Entity,Entity,,
-ENT_413,ENT_413,Malaita Province,940,Entity,Entity,,
-ENT_418,ENT_418,Kosovo,347,Entity,Entity,,
-ENT_46,ENT_46,Abkhazia,372,Entity,Entity,,
-ENT_47,ENT_47,North Caucasian,365,Entity,Entity,,
-ENT_484,ENT_484,Anjouan,581,Entity,Entity,,
-ENT_487,ENT_487,Tripura,750,Entity,Entity,,
-ENT_497,ENT_497,Kurdistan,,Entity,Entity,,
-ENT_534,ENT_534,Puntland,520,Entity,Entity,,
-ENT_550,ENT_550,Wa Special Region,775,Entity,Entity,,
-ENT_561,ENT_561,Galmudug,520,Entity,Entity,,
-ENT_633,ENT_633,Baku community,910,Entity,Entity,,
-ENT_634,ENT_634,North Ossetia,365,Entity,Entity,,
-ENT_635,ENT_635,South Ossetia,365,Entity,Entity,,
-ENT_682,ENT_682,Czechoslovakia,315,Entity,Entity,,
-ENT_69,ENT_69,Assam,750,Entity,Entity,,
-ENT_707,ENT_707,West Bengal,750,Entity,Entity,,
-ENT_720,ENT_720,Luhansk People Republic,369,Entity,Entity,,
-ENT_721,ENT_721,Donetsk People Republic,369,Entity,Entity,,
-ENT_739,ENT_739,Palestine,667,Entity,Entity,,
-ENT_74,ENT_74,Mizoram,750,Entity,Entity,,
-ENT_808,ENT_808,"Shakai, District Wana",770,Entity,Entity,,
-ENT_809,ENT_809,South Wazirstan Agency,770,Entity,Entity,,
-ENT_811,ENT_811,Isperka,770,Entity,Entity,,
-ENT_812,ENT_812,Musa Khel,770,Entity,Entity,,
-ENT_835,ENT_835,Jubbaland,520,Entity,Entity,,
-ENT_857,ENT_857,Warsangali ,520,Entity,Entity,,
-ENT_858,ENT_858,Habr Je'lo,520,Entity,Entity,,
-ENT_859,ENT_859,Dhulbahante,520,Entity,Entity,,
-ENT_860,ENT_860,Ogeyslabe,520,Entity,Entity,,
-ENT_861,ENT_861,Habar Yoonis,520,Entity,Entity,,
-ENT_862,ENT_862,Moheli,581,Entity,Entity,,
-ENT_863,ENT_863,Blue Nile,625,Entity,Entity,,
-ENT_864,ENT_864,Abyei,625,Entity,Entity,,
-ENT_865,ENT_865,Southern Kordofan,625,Entity,Entity,,
-ENT_900,ENT_900,Transdniestria,359,Entity,Entity,,
-ENT_961,ENT_961,Belgrade,340,Entity,Entity,,
-ENT_962,ENT_962,Pristina,347,Entity,Entity,,
-ENT_967,ENT_967,Assam Government,750,Entity,Entity,,
-ENT_970,ENT_970,Ituri,490,Entity,Entity,,
-ENT_986,ENT_986,Autonomous Bougainville Government,910,Entity,Entity,,
-GOV_1140,GOV_1140,Medell√≠n,100,Government,Government,,
-GOV_1141,GOV_1141,Antioquia,100,Government,Government,,
-GOV_1183,GOV_1183,Jema'a LGA,475,Government,Government,,
-GOV_1184,GOV_1184,Kachia LGA,475,Government,Government,,
-GOV_1185,GOV_1185,Kaura LGA,475,Government,Government,,
-GOV_1186,GOV_1186,Sanga LGA,475,Government,Government,,
-GOV_1187,GOV_1187,Zangon-Kataf LGA,475,Government,Government,,
-GOV_1301,GOV_1301,KAAC,750,Government,Government,,
-GOV_1301,GOV_1301,Karbi Anglong Autonomous Council,750,Government,Government,,
-IGO_1006,IGO_1006,EC,,IGO,IGO,,
-IGO_1006,IGO_1006,European Council,,IGO,IGO,,
-IGO_1070,IGO_1070,CBLT,,IGO,IGO,,
-IGO_1070,IGO_1070,Lake Chad Basin Commission,,IGO,IGO,,
-IGO_1118,IGO_1118,EACRF,,IGO,IGO,,
-IGO_1118,IGO_1118,East African Community Regional Force,,IGO,IGO,,
-IGO_1137,IGO_1137,United Nations Verification and Inspection Commission (UNVIC),,IGO,IGO,,
-IGO_1137,IGO_1137,UNVIC,,IGO,IGO,,
-IGO_1139,IGO_1139,SAARC,,IGO,IGO,,
-IGO_1139,IGO_1139,South Asian Association for Regional Cooperation,,IGO,IGO,,
-IGO_1191,IGO_1191,BINUCA,,IGO,IGO,,
-IGO_1191,IGO_1191,United Nations Integrated Peacebuilding Office in the Central African Republic (BINUCA),,IGO,IGO,,
-IGO_1219,IGO_1219,REFAMP,580,IGO,IGO,,
-IGO_1219,IGO_1219,Reseau des femmes Africaines Ministres et Parlementaires section Madagascar,580,IGO,IGO,,
-IGO_1283,IGO_1283,MICOPAX,,IGO,IGO,,
-IGO_1283,IGO_1283,Mission for the Consolidation of Peace in Central African Republic,,IGO,IGO,,
-IGO_226,IGO_226,OIC,,IGO,IGO,,
-IGO_226,IGO_226,Organisation of Islamic Cooperation,,IGO,IGO,,
-IGO_250,IGO_250,World Peace Council,,IGO,IGO,,
-IGO_250,IGO_250,WPC,,IGO,IGO,,
-IGO_274,IGO_274,United Nations Observer Mission in Bougainville (UNOMB),,IGO,IGO,,
-IGO_274,IGO_274,UNOMB,,IGO,IGO,,
-IGO_312,IGO_312,IGAD,,IGO,IGO,,
-IGO_312,IGO_312,Intergovernmental Authority on Development,,IGO,IGO,,
-IGO_315,IGO_315,UN General Assembly,,IGO,IGO,,
-IGO_315,IGO_315,UNGA,,IGO,IGO,,
-IGO_338,IGO_338,La Francophonie,,IGO,IGO,,
-IGO_338,IGO_338,OIF,,IGO,IGO,,
-IGO_346,IGO_346,Arab League ,,IGO,IGO,,
-IGO_346,IGO_346,League of Arab States,,IGO,IGO,,
-IGO_346,IGO_346,LOAS,,IGO,IGO,,
-IGO_347,IGO_347,NAM,,IGO,IGO,,
-IGO_347,IGO_347,Nonaligned Movement,,IGO,IGO,,
-IGO_349,IGO_349,SADC,,IGO,IGO,,
-IGO_349,IGO_349,Southern African Development Community,,IGO,IGO,,
-IGO_352,IGO_352,Community of Portuguese-Speaking Countries,,IGO,IGO,,
-IGO_352,IGO_352,CPLP,,IGO,IGO,,
-IGO_355,IGO_355,United Nations Protection Force (UNPROFOR),,IGO,IGO,,
-IGO_355,IGO_355,UNPROFOR,,IGO,IGO,,
-IGO_386,IGO_386,UN Secretary General,,IGO,IGO,,
-IGO_386,IGO_386,UNSG,,IGO,IGO,,
-IGO_391,IGO_391,UN Secretariat,,IGO,IGO,,
-IGO_391,IGO_391,United Nations Secretariat,,IGO,IGO,,
-IGO_405,IGO_405,United Nations Mission in Bosnia and Herzegovina (UNMIBH),,IGO,IGO,,
-IGO_405,IGO_405,UNMIBH,,IGO,IGO,,
-IGO_406,IGO_406,NATO,,IGO,IGO,,
-IGO_406,IGO_406,North Atlantic Treaty Organization,,IGO,IGO,,
-IGO_410,IGO_410,Commonwealth,,IGO,IGO,,
-IGO_410,IGO_410,Commonwealth of Nations,,IGO,IGO,,
-IGO_43,IGO_43,OAU,,IGO,IGO,,
-IGO_43,IGO_43,Organization of African Unity,,IGO,IGO,,
-IGO_436,IGO_436,EU Commission,,IGO,IGO,,
-IGO_436,IGO_436,European Commission,,IGO,IGO,,
-IGO_437,IGO_437,WB,,IGO,IGO,,
-IGO_437,IGO_437,World Bank,,IGO,IGO,,
-IGO_438,IGO_438,IMF,,IGO,IGO,,
-IGO_438,IGO_438,International Monetary Fund,,IGO,IGO,,
-IGO_439,IGO_439,AFDB,,IGO,IGO,,
-IGO_439,IGO_439,African Development Bank,,IGO,IGO,,
-IGO_440,IGO_440,UNHRC,,IGO,IGO,,
-IGO_440,IGO_440,United Nations Human Rights Council,,IGO,IGO,,
-IGO_454,IGO_454,United Nations Mission of Observers in Tajikistan (UNMOT),,IGO,IGO,,
-IGO_454,IGO_454,UNMOT,,IGO,IGO,,
-IGO_459,IGO_459,UNICEF,,IGO,IGO,,
-IGO_459,IGO_459,United Nations Children's Fund,,IGO,IGO,,
-IGO_48,IGO_48,Conference on Security and Cooperation in Europe,,IGO,IGO,,
-IGO_48,IGO_48,CSCE,,IGO,IGO,,
-IGO_480,IGO_480,United Nations Observer Mission in Georgia (UNOMIG),,IGO,IGO,,
-IGO_480,IGO_480,UNOMIG,,IGO,IGO,,
-IGO_483,IGO_483,COI,,IGO,IGO,,
-IGO_483,IGO_483,Indian Ocean Commission,,IGO,IGO,,
-IGO_49,IGO_49,UN,,IGO,IGO,,
-IGO_49,IGO_49,United Nations (General),,IGO,IGO,,
-IGO_491,IGO_491,CEMAC,,IGO,IGO,,
-IGO_491,IGO_491,Economic and Monetary Community of Central Africa,,IGO,IGO,,
-IGO_493,IGO_493,ICGLR,,IGO,IGO,,
-IGO_493,IGO_493,International Conference on the Great Lakes Region,,IGO,IGO,,
-IGO_5,IGO_5,EU,,IGO,IGO,,
-IGO_5,IGO_5,European Union,,IGO,IGO,,
-IGO_50,IGO_50,Organization for Security and Cooperation in Europe,,IGO,IGO,,
-IGO_50,IGO_50,OSCE,,IGO,IGO,,
-IGO_53,IGO_53,CIS,,IGO,IGO,,
-IGO_53,IGO_53,Commonwealth of Independent States,,IGO,IGO,,
-IGO_535,IGO_535,EAC,,IGO,IGO,,
-IGO_535,IGO_535,East African Community,,IGO,IGO,,
-IGO_536,IGO_536,United Nations Political Office for Somalia (UNPOS),,IGO,IGO,,
-IGO_536,IGO_536,UNPOS,,IGO,IGO,,
-IGO_540,IGO_540,GCC,,IGO,IGO,,
-IGO_540,IGO_540,Gulf Cooperation Council,,IGO,IGO,,
-IGO_542,IGO_542,Community of Sahel-Saharan States,,IGO,IGO,,
-IGO_570,IGO_570,MINUSMA,,IGO,IGO,,
-IGO_570,IGO_570,United Nations Multidimensional Integrated Stabilization Mission in Mali (MINUSMA),,IGO,IGO,,
-IGO_586,IGO_586,SCO,,IGO,IGO,,
-IGO_586,IGO_586,Shanghai Cooperation Organization,,IGO,IGO,,
-IGO_596,IGO_596,ISDB,,IGO,IGO,,
-IGO_596,IGO_596,Islamic Development Bank,,IGO,IGO,,
-IGO_597,IGO_597,ECO,,IGO,IGO,,
-IGO_597,IGO_597,Economic Cooperation Organization,,IGO,IGO,,
-IGO_598,IGO_598,Collective Security Treaty Organization,,IGO,IGO,,
-IGO_598,IGO_598,CSTO,,IGO,IGO,,
-IGO_599,IGO_599,CICA,,IGO,IGO,,
-IGO_599,IGO_599,Conference on Interaction and Confidence-Building Measures in Asia (CICA),,IGO,IGO,,
-IGO_600,IGO_600,ADB,,IGO,IGO,,
-IGO_600,IGO_600,Asian Development Bank,,IGO,IGO,,
-IGO_616,IGO_616,UNISFA,,IGO,IGO,,
-IGO_616,IGO_616,United Nations Interim Security Force for Abyei (UNISFA),,IGO,IGO,,
-IGO_624,IGO_624,MONUC,,IGO,IGO,,
-IGO_624,IGO_624,United Nations Mission in the Democratic Republic of the Congo (MONUC),,IGO,IGO,,
-IGO_63,IGO_63,CIS Peacekeeping Force,,IGO,IGO,,
-IGO_63,IGO_63,CIS-PKF,,IGO,IGO,,
-IGO_638,IGO_638,EBRD,,IGO,IGO,,
-IGO_638,IGO_638,European Bank for Reconstruction and Development,,IGO,IGO,,
-IGO_639,IGO_639,COE,,IGO,IGO,,
-IGO_639,IGO_639,Council of Europe,,IGO,IGO,,
-IGO_64,IGO_64,UNDP,,IGO,IGO,,
-IGO_64,IGO_64,United Nations Development Programme,,IGO,IGO,,
-IGO_640,IGO_640,Office of the United Nations High Commissioner for Human Rights,,IGO,IGO,,
-IGO_640,IGO_640,UNHCHR,,IGO,IGO,,
-IGO_65,IGO_65,High Commission for Refugees,,IGO,IGO,,
-IGO_65,IGO_65,UNHCR,,IGO,IGO,,
-IGO_652,IGO_652,UNAMSIL,,IGO,IGO,,
-IGO_652,IGO_652,United Nations Mission in Sierra Leone (UNAMSIL),,IGO,IGO,,
-IGO_672,IGO_672,UN Office on Drugs and Crimes,,IGO,IGO,,
-IGO_672,IGO_672,UNODC,,IGO,IGO,,
-IGO_673,IGO_673,WFP,,IGO,IGO,,
-IGO_673,IGO_673,World Food Program,,IGO,IGO,,
-IGO_674,IGO_674,UNFPA,,IGO,IGO,,
-IGO_674,IGO_674,United Nations Population Fund,,IGO,IGO,,
-IGO_675,IGO_675,International Organization for Migration,,IGO,IGO,,
-IGO_675,IGO_675,IOM,,IGO,IGO,,
-IGO_676,IGO_676,FAO,,IGO,IGO,,
-IGO_676,IGO_676,Food and Agriculture Organization,,IGO,IGO,,
-IGO_677,IGO_677,WHO,,IGO,IGO,,
-IGO_677,IGO_677,World Health Organization,,IGO,IGO,,
-IGO_678,IGO_678,UNESCO,,IGO,IGO,,
-IGO_678,IGO_678,"United Nations Educational, Scientific and Cultural Organization",,IGO,IGO,,
-IGO_679,IGO_679,IFAD,,IGO,IGO,,
-IGO_679,IGO_679,International Fund for Agricultural Development (IFAD),,IGO,IGO,,
-IGO_68,IGO_68,OAS,,IGO,IGO,,
-IGO_68,IGO_68,Organization of American States,,IGO,IGO,,
-IGO_680,IGO_680,APO,,IGO,IGO,,
-IGO_680,IGO_680,Asian Productivity Organization,,IGO,IGO,,
-IGO_681,IGO_681,MIGA,,IGO,IGO,,
-IGO_681,IGO_681,Multilateral Investment Guarantee Agency (MIGA),,IGO,IGO,,
-IGO_750,IGO_750,United Nations Support Mission in Libya (UNSMIL),,IGO,IGO,,
-IGO_750,IGO_750,UNSMIL,,IGO,IGO,,
-IGO_795,IGO_795,UNCRO,,IGO,IGO,,
-IGO_795,IGO_795,United Nations Confidence Restoration Operation (UNCRO),,IGO,IGO,,
-IGO_8,IGO_8,UN Security Council,,IGO,IGO,,
-IGO_8,IGO_8,UNSC,,IGO,IGO,,
-IGO_831,IGO_831,United Nations Mission in South Sudan (UNMISS),,IGO,IGO,,
-IGO_831,IGO_831,UNMISS,,IGO,IGO,,
-IGO_854,IGO_854,United Nations Mission in Sudan (UNMIS),,IGO,IGO,,
-IGO_854,IGO_854,UNMIS,,IGO,IGO,,
-IGO_87,IGO_87,African Union,,IGO,IGO,,
-IGO_87,IGO_87,AU,,IGO,IGO,,
-IGO_89,IGO_89,Economic Community of West African States,,IGO,IGO,,
-IGO_89,IGO_89,ECOWAS,,IGO,IGO,,
-IGO_892,IGO_892,MINUSCA,,IGO,IGO,,
-IGO_892,IGO_892,United Nations Multidimensional Integrated Stabilization Mission in the Central African Republic (MINUSCA),,IGO,IGO,,
-IGO_913,IGO_913,ECCAS,,IGO,IGO,,
-IGO_913,IGO_913,Economic Community of Central African States,,IGO,IGO,,
-IGO_950,IGO_950,African Union-United Nations Hybrid Operation in Darfur (UNAMID),,IGO,IGO,,
-IGO_950,IGO_950,UNAMID,,IGO,IGO,,
-IGO_972,IGO_972,MONUSCO,,IGO,IGO,,
-IGO_972,IGO_972,United Nations Organization Stabilization Mission in the Democratic Republic of the Congo (MONUSCO),,IGO,IGO,,
-IGO_985,IGO_985,EFTA,,IGO,IGO,,
-IGO_985,IGO_985,European Free Trade Association,,IGO,IGO,,
-IGO_990,IGO_990,Office of the Special Envoy of the Secretary-General for Yemen (OSESG-Yemen),,IGO,IGO,,
-IGO_990,IGO_990,OSESG-Yemen,,IGO,IGO,,
-NGO_1012,NGO_1012,Ara Pacis Initiatives for Peace Onlus,325,NGO,NGO,,
-NGO_102,NGO_102,Amnistiaren Aldeko Batzordeak,230,NGO,NGO,,
-NGO_1028,NGO_1028,Muslim Community,482,NGO,NGO,,
-NGO_1029,NGO_1029,Islamic Community,482,NGO,NGO,,
-NGO_103,NGO_103,Senideak,230,NGO,NGO,,
-NGO_1030,NGO_1030,Bishops of Central African Republic,482,NGO,NGO,,
-NGO_1031,NGO_1031,Alliance of the Evangelicals of CAR,482,NGO,NGO,,
-NGO_1032,NGO_1032,Pan-African Union of the Young,482,NGO,NGO,,
-NGO_1034,NGO_1034,Ambassadors of Peace,482,NGO,NGO,,
-NGO_104,NGO_104,Bakea Orain (Peace Now),230,NGO,NGO,,
-NGO_105,NGO_105,Gernika Batzordea,230,NGO,NGO,,
-NGO_106,NGO_106,Egizan,230,NGO,NGO,,
-NGO_107,NGO_107,Herria 2000 Eliza¬†(aldizkaria),230,NGO,NGO,,
-NGO_1075,NGO_1075,Gender Empowerment for South Sudan Organisation,626,NGO,NGO,,
-NGO_1076,NGO_1076,Representative of Women Group-WES,626,NGO,NGO,,
-NGO_1076,NGO_1076,WES,626,NGO,NGO,,
-NGO_1077,NGO_1077,Women Leaders Advisory Committee,482,NGO,NGO,,
-NGO_1078,NGO_1078,Women's Association,516,NGO,NGO,,
-NGO_108,NGO_108,Hiru,230,NGO,NGO,,
-NGO_1082,NGO_1082,Press Union of Liberia,450,NGO,NGO,,
-NGO_1082,NGO_1082,PUL,450,NGO,NGO,,
-NGO_1083,NGO_1083,National Medical and Dental Association of Liberia,450,NGO,NGO,,
-NGO_1083,NGO_1083,NMDAL,450,NGO,NGO,,
-NGO_1084,NGO_1084,MOJA,450,NGO,NGO,,
-NGO_1084,NGO_1084,Movement for Justice in Africa,450,NGO,NGO,,
-NGO_1085,NGO_1085,Federation of Liberia Youth,450,NGO,NGO,,
-NGO_1085,NGO_1085,FLY,450,NGO,NGO,,
-NGO_1086,NGO_1086,LCC,450,NGO,NGO,,
-NGO_1086,NGO_1086,Liberian Council of Churches,450,NGO,NGO,,
-NGO_1087,NGO_1087,MCL,450,NGO,NGO,,
-NGO_1087,NGO_1087,Muslim Council of Liberia,450,NGO,NGO,,
-NGO_1088,NGO_1088,WODAL,450,NGO,NGO,,
-NGO_1088,NGO_1088,Women Development Association of Liberia,450,NGO,NGO,,
-NGO_109,NGO_109,Auto-Determinazioren Bilzarrak,230,NGO,NGO,,
-NGO_1095,NGO_1095,Rome Group,700,NGO,NGO,,
-NGO_110,NGO_110,Elkarri,230,NGO,NGO,,
-NGO_111,NGO_111,Ezker Sindikalaren Konbergentzia¬†,230,NGO,NGO,,
-NGO_112,NGO_112,STEE-ELIAS,230,NGO,NGO,,
-NGO_1121,NGO_1121,Naga Civil Society Organisation,750,NGO,NGO,,
-NGO_1122,NGO_1122,Church Forums (Nagaland),750,NGO,NGO,,
-NGO_113,NGO_113,Ezker Sindikalaren Koordinakundea-Coordinadora Unitaria de Izquierda Sindical,230,NGO,NGO,,
-NGO_1178,NGO_1178,Balay Mindanaw Foundation Inc.,840,NGO,NGO,,
-NGO_1180,NGO_1180,Muslim Community Leader,541,NGO,NGO,,
-NGO_1182,NGO_1182,Caucanos for Peace,100,NGO,NGO,,
-NGO_119,NGO_119,Eusko Langileen Alkartasuna,230,NGO,NGO,,
-NGO_1193,NGO_1193,Indigenous peoples representatives,100,NGO,NGO,,
-NGO_120,NGO_120,Langile¬†Abertzaleen¬†Batzordeak,230,NGO,NGO,,
-NGO_1200,NGO_1200,Acces Zon'olombelona,580,NGO,NGO,,
-NGO_1205,NGO_1205,CCOC,580,NGO,NGO,,
-NGO_1205,NGO_1205,Colectif des Citoyens et des Organisations Citoyennes,580,NGO,NGO,,
-NGO_1206,NGO_1206,CDE,580,NGO,NGO,,
-NGO_1206,NGO_1206,Club Developpement et Ethique¬†,580,NGO,NGO,,
-NGO_1208,NGO_1208,CNPC,580,NGO,NGO,,
-NGO_1208,NGO_1208,Consortium National pour la participation Citoyenne,580,NGO,NGO,,
-NGO_121,NGO_121,Euskal Herriko Nekazarien Elkartasuna,230,NGO,NGO,,
-NGO_1215,NGO_1215,PFNOSCM,580,NGO,NGO,,
-NGO_1215,NGO_1215,Plateforme Nationale des Organisations de la Soci√©t√© Civile de Madagascar,580,NGO,NGO,,
-NGO_1220,NGO_1220,R√©seau pour l‚Äô√©radication de la violence ,580,NGO,NGO,,
-NGO_1220,NGO_1220,REV ,580,NGO,NGO,,
-NGO_1224,NGO_1224,F√©d√©ration Mini√®re de Madagasca,580,NGO,NGO,,
-NGO_1224,NGO_1224,FEDMINES/EMIR,580,NGO,NGO,,
-NGO_1226,NGO_1226,GESCI,580,NGO,NGO,,
-NGO_1226,NGO_1226,Groupement des Entit√©s de la Soci√©t√© Civile pour la d√©fense de la d√©mocratie et des valeurs r√©publicaines,580,NGO,NGO,,
-NGO_1228,NGO_1228,KMF/CNOE-Education¬†des¬†citoyens,580,NGO,NGO,,
-NGO_1230,NGO_1230,MAMPAFI,580,NGO,NGO,,
-NGO_1230,NGO_1230,MAMPAFI/Malagsy mpandala Fihavanana,580,NGO,NGO,,
-NGO_1232,NGO_1232,FAWE,,NGO,NGO,,
-NGO_1232,NGO_1232,Forum for African Women Educationalists,,NGO,NGO,,
-NGO_1234,NGO_1234,Syndicat des fonctionnaires,580,NGO,NGO,,
-NGO_1236,NGO_1236,VMLF,580,NGO,NGO,,
-NGO_1236,NGO_1236,Vondrona Miralenta ho an'ny fampandrosoana,580,NGO,NGO,,
-NGO_1238,NGO_1238,Jeune Patronat de Madagascar,580,NGO,NGO,,
-NGO_1239,NGO_1239,Plateforme Nationale des Jeunes pour les Developpement,580,NGO,NGO,,
-NGO_1240,NGO_1240,Conference des Travailleurs de Madagascar,580,NGO,NGO,,
-NGO_1240,NGO_1240,CTM,580,NGO,NGO,,
-NGO_1241,NGO_1241,Sendika Revolisakonera Malagasy,580,NGO,NGO,,
-NGO_1241,NGO_1241,SEREMA,580,NGO,NGO,,
-NGO_1242,NGO_1242,F√©d√©ration des Syndicats de Travailleurs de Madagascar,580,NGO,NGO,,
-NGO_1242,NGO_1242,FISEMARE,580,NGO,NGO,,
-NGO_1243,NGO_1243,GEM,580,NGO,NGO,,
-NGO_1243,NGO_1243,Groupements des Entreprises de Madagascar,580,NGO,NGO,,
-NGO_1244,NGO_1244,FIV.MPA.MA,580,NGO,NGO,,
-NGO_1244,NGO_1244,Fivondronan‚Äôny Mpandraharaha Malagasy,580,NGO,NGO,,
-NGO_1245,NGO_1245,Federation de Hoteliers et Restaurateurs de Madagascar,580,NGO,NGO,,
-NGO_1245,NGO_1245,FHORM,580,NGO,NGO,,
-NGO_1251,NGO_1251,Elders of North Waziristan of Utmanzai,770,NGO,NGO,,
-NGO_1254,NGO_1254,FENALCO National Merchants/Traders federation,100,NGO,NGO,,
-NGO_1256,NGO_1256,Anglican Church of Southern Africa,541,NGO,NGO,,
-NGO_1257,NGO_1257,United Methodist Church,541,NGO,NGO,,
-NGO_1259,NGO_1259,Trade Union and Professional Associations Representatives,625,NGO,NGO,,
-NGO_1264,NGO_1264,Eminent Personalities,626,NGO,NGO,,
-NGO_1282,NGO_1282,Bahrain Chamber of Commerce and Industry,692,NGO,NGO,,
-NGO_1291,NGO_1291,CNJ,482,NGO,NGO,,
-NGO_1291,NGO_1291,National Youth Council,482,NGO,NGO,,
-NGO_1294,NGO_1294,National Confederation of Farmers and Breeders,482,NGO,NGO,,
-NGO_1295,NGO_1295,Inter-NGO Council in the Central African Republic,482,NGO,NGO,,
-NGO_1296,NGO_1296,Internally Displaced Persons,482,NGO,NGO,,
-NGO_1297,NGO_1297,Communities at Risk,482,NGO,NGO,,
-NGO_1298,NGO_1298,CDC,482,NGO,NGO,,
-NGO_1298,NGO_1298,Collective of the Central African Diaspora,482,NGO,NGO,,
-NGO_1311,NGO_1311,Youth Groups,615,NGO,NGO,,
-NGO_1312,NGO_1312,Unions,615,NGO,NGO,,
-NGO_1322,NGO_1322,Traditional Authority,626,NGO,NGO,,
-NGO_1323,NGO_1323,Faith-based Council,626,NGO,NGO,,
-NGO_1340,NGO_1340,Kamantan,475,NGO,NGO,,
-NGO_1341,NGO_1341,Ikulu,475,NGO,NGO,,
-NGO_1342,NGO_1342,Hausa,475,NGO,NGO,,
-NGO_1343,NGO_1343,Fulani,475,NGO,NGO,,
-NGO_1344,NGO_1344,Bajju,475,NGO,NGO,,
-NGO_1345,NGO_1345,Atyap,475,NGO,NGO,,
-NGO_1346,NGO_1346,Numana,475,NGO,NGO,,
-NGO_1348,NGO_1348,Ninzo,475,NGO,NGO,,
-NGO_1349,NGO_1349,Mada,475,NGO,NGO,,
-NGO_1350,NGO_1350,Gwandara,475,NGO,NGO,,
-NGO_1351,NGO_1351,Ayu,475,NGO,NGO,,
-NGO_1352,NGO_1352,Atakar,475,NGO,NGO,,
-NGO_1353,NGO_1353,Kagoro,475,NGO,NGO,,
-NGO_1354,NGO_1354,Moro'a,475,NGO,NGO,,
-NGO_1355,NGO_1355,Kuturmi,475,NGO,NGO,,
-NGO_1356,NGO_1356,Jaba,475,NGO,NGO,,
-NGO_1357,NGO_1357,Adara,475,NGO,NGO,,
-NGO_1358,NGO_1358,Kaninkon,475,NGO,NGO,,
-NGO_1359,NGO_1359,Fantsuwan,475,NGO,NGO,,
-NGO_164,NGO_164,Centre for Humanitarian Dialogue,,NGO,NGO,,
-NGO_164,NGO_164,HD,,NGO,NGO,,
-NGO_184,NGO_184,Episcopal Conference of Colombia,100,NGO,NGO,,
-NGO_186,NGO_186,Church Representative,100,NGO,NGO,,
-NGO_192,NGO_192,World Council of Indigenous Peoples,,NGO,NGO,,
-NGO_193,NGO_193,Spanish Human Rights Association,230,NGO,NGO,,
-NGO_201,NGO_201,ICRC,,NGO,NGO,,
-NGO_201,NGO_201,International Committee of the Red Cross,,NGO,NGO,,
-NGO_270,NGO_270,Cardinal Miguel Obando Bravo,93,NGO,NGO,,
-NGO_344,NGO_344,Bougainville Women,910,NGO,NGO,,
-NGO_388,NGO_388,Shi'a,,NGO,NGO,,
-NGO_389,NGO_389,Sunni,,NGO,NGO,,
-NGO_390,NGO_390,Turkmen,,NGO,NGO,,
-NGO_416,NGO_416,Forces Vives of the Nation ,490,NGO,NGO,,
-NGO_423,NGO_423,OFCA,482,NGO,NGO,,
-NGO_425,NGO_425,Trade Unions,482,NGO,NGO,,
-NGO_428,NGO_428,FNEC,482,NGO,NGO,,
-NGO_429,NGO_429,KOLI-OUALI GALA,482,NGO,NGO,,
-NGO_433,NGO_433,Central African Islamic community,,NGO,NGO,,
-NGO_434,NGO_434,Evangelical Baptist Church in the Central African Republic,482,NGO,NGO,,
-NGO_450,NGO_450,"Human rights, justice and democracy groups",482,NGO,NGO,,
-NGO_451,NGO_451,Religious Denominations,482,NGO,NGO,,
-NGO_453,NGO_453,Aga Khan Foundation,,NGO,NGO,,
-NGO_457,NGO_457,San Miguel Community,70,NGO,NGO,,
-NGO_502,NGO_502,Episcopal Conference of Guatemala,90,NGO,NGO,,
-NGO_508,NGO_508,Afghan Refugees,700,NGO,NGO,,
-NGO_595,NGO_595,Aga Khan Development Network,,NGO,NGO,,
-NGO_703,NGO_703,African Female Ministers and Parliamentarians Network,461,NGO,NGO,,
-NGO_704,NGO_704,"Group for Reflexion and Action on Women, Democracy and Development",461,NGO,NGO,,
-NGO_712,NGO_712,Episcopal Conference of Angola and Sao Tome,,NGO,NGO,,
-NGO_713,NGO_713,Council of Christian Churches of Angola,540,NGO,NGO,,
-NGO_714,NGO_714,Inter-Ecclesiastical Council for Peace in Angol,540,NGO,NGO,,
-NGO_719,NGO_719,Eminent Personalities Representative,626,NGO,NGO,,
-NGO_838,NGO_838,Malteser International,,NGO,NGO,,
-NGO_848,NGO_848,Christian Council of Lesotho,570,NGO,NGO,,
-NGO_849,NGO_849,Lesotho Council of NGOs,570,NGO,NGO,,
-NGO_885,NGO_885,Coordination des Organizations des Musulmans Centrafricains,,NGO,NGO,,
-NGO_919,NGO_919,Youth Representative,626,NGO,NGO,,
-NGO_95,NGO_95,Community of Sant' Egidio,,NGO,NGO,,
-NGO_956,NGO_956,Medical Professionals,678,NGO,NGO,,
-NGO_96,NGO_96,Catholic Church,,NGO,NGO,,
-NGO_973,NGO_973,ACIAR,490,NGO,NGO,,
-NGO_977,NGO_977,South Kivu Civil Society,490,NGO,NGO,,
-NGP_1233,NGP_1233,SOS Aux Victimes de Non Droit,580,NGP,NGP,,
-OTH_1009,OTH_1009,Ad Hoc Joint Action Group,840,Other,Other,,
-OTH_1009,OTH_1009,AHJAG,840,Other,Other,,
-OTH_101,OTH_101,GOGOA,230,Other,Other,,
-OTH_1010,OTH_1010,Philippines National Police,840,Other,Other,,
-OTH_1010,OTH_1010,PNP,840,Other,Other,,
-OTH_1011,OTH_1011,IMT,840,Other,Other,,
-OTH_1011,OTH_1011,International Monitoring Team,840,Other,Other,,
-OTH_1016,OTH_1016,Elder/Community Leader,626,Other,Other,,
-OTH_1018,OTH_1018,Committee 7 + 7,626,Other,Other,,
-OTH_1020,OTH_1020,Cooperative for Development of the Congo Church,490,Other,Other,,
-OTH_1021,OTH_1021,Group and Village Leaders,490,Other,Other,,
-OTH_1024,OTH_1024,"Office of the Presidential Adviser on Peace, Reconciliation and Unity",840,Other,Other,,
-OTH_1024,OTH_1024,OPAPRU,840,Other,Other,,
-OTH_1071,OTH_1071,Advisory Committee of the Libyan Political Dialogue Forum,620,Other,Other,,
-OTH_1071,OTH_1071,LPDF,620,Other,Other,,
-OTH_1072,OTH_1072,Ceasefire Supervisory Board,750,Other,Other,,
-OTH_1072,OTH_1072,CFSB,750,Other,Other,,
-OTH_1120,OTH_1120,NNPG,750,Other,Other,,
-OTH_1120,OTH_1120,Working Committee of National Naga Political Groups,750,Other,Other,,
-OTH_1143,OTH_1143,National Peace Committee,100,Other,Other,,
-OTH_1151,OTH_1151,Monitoring Commission of the Douala Appeal ,484,Other,Other,,
-OTH_1152,OTH_1152,Gaddafi International Foundation for Charitable Associations,,Other,Other,,
-OTH_1152,OTH_1152,GIFCA,,Other,Other,,
-OTH_1153,OTH_1153,High Representative for Bosnia and Herzegovina,,Other,Other,,
-OTH_1154,OTH_1154,International Police Task Force,346,Other,Other,,
-OTH_1154,OTH_1154,IPTF,346,Other,Other,,
-OTH_1155,OTH_1155,Peace Monitoring Group,910,Other,Other,,
-OTH_1156,OTH_1156,Leitana Council of Elders,910,Other,Other,,
-OTH_1175,OTH_1175,EBO,,Other,Other,,
-OTH_1175,OTH_1175,Euro-Burma Office,,Other,Other,,
-OTH_1176,OTH_1176,PCG,775,Other,Other,,
-OTH_1176,OTH_1176,Peace-Talk Creation Group,775,Other,Other,,
-OTH_1203,OTH_1203,T√©l√©vision Malagasy,580,Other,Other,,
-OTH_1203,OTH_1203,TVM,580,Other,Other,,
-OTH_1207,OTH_1207,CMRT,580,Other,Other,,
-OTH_1207,OTH_1207,Congres Malgache de la Route et des Transports ,580,Other,Other,,
-OTH_1246,OTH_1246,Malagasy Political Stakeholders,580,Other,Other,,
-OTH_1253,OTH_1253,Constituent Assembly of Colombia,100,Other,Other,,
-OTH_1258,OTH_1258,Independent,,Other,Other,,
-OTH_1267,OTH_1267,MILF Peace Panel,840,Other,Other,,
-OTH_1269,OTH_1269,National Security Council,840,Other,Other,,
-OTH_1269,OTH_1269,NSC,840,Other,Other,,
-OTH_1271,OTH_1271,Standing Committee of the Horn,,Other,Other,,
-OTH_1272,OTH_1272,Episcopalian Conference of Germany and Colombia,,Other,Other,,
-OTH_1274,OTH_1274,Joint Peacekeeping Force (JPKF),372,Other,Other,,
-OTH_1274,OTH_1274,JPKF,372,Other,Other,,
-OTH_1275,OTH_1275,"Albanian ethnic community (Presevo, Bujanovac and Medvedja)",340,Other,Other,,
-OTH_1276,OTH_1276,Exploratory Commission for Peace,100,Other,Other,,
-OTH_1277,OTH_1277,Darfur Movements,625,Other,Other,,
-OTH_1288,OTH_1288,ACDP,482,Other,Other,,
-OTH_1288,OTH_1288,Citizen Alternative for Democracy and Peace,482,Other,Other,,
-OTH_1292,OTH_1292,HCC,482,Other,Other,,
-OTH_1292,OTH_1292,High Council for Communication,482,Other,Other,,
-OTH_1300,OTH_1300,National Security Service,626,Other,Other,,
-OTH_1300,OTH_1300,NSS,626,Other,Other,,
-OTH_1304,OTH_1304,SLM-TC,625,Other,Other,,
-OTH_1304,OTH_1304,Sudan Liberation Movement - Transitional Council,625,Other,Other,,
-OTH_1308,OTH_1308,Leading personalities of the Darfur Movements,625,Other,Other,,
-OTH_1309,OTH_1309,Darfur Stakeholders,625,Other,Other,,
-OTH_1326,OTH_1326,National Stakeholders,482,Other,Other,,
-OTH_1327,OTH_1327,Police and National Security,625,Other,Other,,
-OTH_1330,OTH_1330,Joint Defense Council,625,Other,Other,,
-OTH_1339,OTH_1339,College of Chiefs,570,Other,Other,,
-OTH_165,OTH_165,Aceh Police,850,Other,Other,,
-OTH_166,OTH_166,Joint Committee on Humanitarian Action,850,Other,Other,,
-OTH_167,OTH_167,Joint Committee on Security Modalities,850,Other,Other,,
-OTH_199,OTH_199,Socialist International,,Other,Other,,
-OTH_206,OTH_206,International Community,,Other,Other,,
-OTH_231,OTH_231,Liberia National Conference,450,Other,Other,,
-OTH_284,OTH_284,USAID,2,Other,Other,,
-OTH_303,OTH_303,Presidential Council,678,Other,Other,,
-OTH_337,OTH_337,Mwalimu Nyerere Foundation,,Other,Other,,
-OTH_340,OTH_340,National Reconciliation Commission,90,Other,Other,,
-OTH_360,OTH_360,Political and Diplomatic Commission,90,Other,Other,,
-OTH_371,OTH_371,Inter-religious Council for Liberia,450,Other,Other,,
-OTH_372,OTH_372,Mano River Women Peace Network,450,Other,Other,,
-OTH_375,OTH_375,Liberia Leadership Forum,450,Other,Other,,
-OTH_384,OTH_384,Liberian Bar Association,450,Other,Other,,
-OTH_385,OTH_385,Liberians in Diaspora,450,Other,Other,,
-OTH_398,OTH_398,East Timor Police Force,860,Other,Other,,
-OTH_463,OTH_463,South Sudan Independents Group,626,Other,Other,,
-OTH_466,OTH_466,Liberia Council,450,Other,Other,,
-OTH_474,OTH_474,Philippine Peace Center,840,Other,Other,,
-OTH_475,OTH_475,International Negotiations Network (INN),,Other,Other,,
-OTH_477,OTH_477,International Monitoring Committee,482,Other,Other,,
-OTH_503,OTH_503,National Reconciliation Commission (CNR),90,Other,Other,,
-OTH_510,OTH_510,National Consultative Peace Jirga (NCPJ),700,Other,Other,,
-OTH_514,OTH_514,Interim Transitional National Council,620,Other,Other,,
-OTH_529,OTH_529,National Independent,570,Other,Other,,
-OTH_539,OTH_539,National Council,678,Other,Other,,
-OTH_556,OTH_556,Mon State Level Peace-Making Group,775,Other,Other,,
-OTH_557,OTH_557,Karen State-Level Peace-Making Team,775,Other,Other,,
-OTH_560,OTH_560,Rakhine State Government Peace-Making Group,775,Other,Other,,
-OTH_566,OTH_566,Jubba Interim Administration,520,Other,Other,,
-OTH_617,OTH_617,Cordillera Bodong Administration,840,Other,Other,,
-OTH_642,OTH_642,Interim Political Authority,570,Other,Other,,
-OTH_654,OTH_654,GRP Peace Panel,840,Other,Other,,
-OTH_663,OTH_663,Hope for Peace and Freedom,100,Other,Other,,
-OTH_664,OTH_664,Peace Facilitation Commission,100,Other,Other,,
-OTH_666,OTH_666,Facilitating and Verification Commission,100,Other,Other,,
-OTH_671,OTH_671,Central Bank of Sri Lanka,780,Other,Other,,
-OTH_686,OTH_686,Monitoring Team of Security Modality,850,Other,Other,,
-OTH_690,OTH_690,National Organizations,615,Other,Other,,
-OTH_708,OTH_708,Darjeeling Gorkha Hill Council,750,Other,Other,,
-OTH_71,OTH_71,BPAC,750,Other,Other,,
-OTH_710,OTH_710,Union Peace Working Committee,775,Other,Other,,
-OTH_715,OTH_715,Cabinda Forum for Dialogue,540,Other,Other,,
-OTH_72,OTH_72,ABSU,750,Other,Other,,
-OTH_72,OTH_72,All Bodo Students Union,750,Other,Other,,
-OTH_725,OTH_725,General National Congress,620,Other,Other,,
-OTH_726,OTH_726,National Transitional Council,620,Other,Other,,
-OTH_727,OTH_727,House of Representatives,620,Other,Other,,
-OTH_730,OTH_730,Tribal Leaders,620,Other,Other,,
-OTH_735,OTH_735,Preparatory Committee for National Dialogue,678,Other,Other,,
-OTH_745,OTH_745,Media,692,Other,Other,,
-OTH_748,OTH_748,Governing Council,645,Other,Other,,
-OTH_749,OTH_749,Coalition Provisional Authority,,Other,Other,,
-OTH_791,OTH_791,Arbitration Commission of the Conference on Yugoslavia,,Other,Other,,
-OTH_794,OTH_794,Local Authorities,340,Other,Other,,
-OTH_817,OTH_817,Union Peace-Making Working Committee,775,Other,Other,,
-OTH_820,OTH_820,Karen State Peace Making Group,775,Other,Other,,
-OTH_827,OTH_827,Union Peacemaking Working Committee,775,Other,Other,,
-OTH_834,OTH_834,CDAC,775,Other,Other,,
-OTH_834,OTH_834,State Central Committee for Drug Abuse Control (CDAC),775,Other,Other,,
-OTH_836,OTH_836,Exchange Comisssion,346,Other,Other,,
-OTH_837,OTH_837,International Conference on the Former Yugoslavia,,Other,Other,,
-OTH_839,OTH_839,National Transition Council,482,Other,Other,,
-OTH_853,OTH_853,Guadalcanal Provincial Government,940,Other,Other,,
-OTH_856,OTH_856,Joint Control Commission (JCC),365,Other,Other,,
-OTH_871,OTH_871,Karbi Students Union,750,Other,Other,,
-OTH_872,OTH_872,ASDC,750,Other,Other,,
-OTH_873,OTH_873,North Cachatr Hills Student Federation,750,Other,Other,,
-OTH_874,OTH_874,Dimasa Student's Union,750,Other,Other,,
-OTH_895,OTH_895,Front for the Respect of the Constitution,490,Other,Other,,
-OTH_898,OTH_898,Guinea - Opposition Party,438,Other,Other,,
-OTH_914,OTH_914,Transitional Government,482,Other,Other,,
-OTH_925,OTH_925,Congress of Syrian National Dialogue,652,Other,Other,,
-OTH_927,OTH_927,National Committee Prisoners Affairs & Missing Persons,678,Other,Other,,
-OTH_928,OTH_928,Foundation and Representative Prisoners Affairs & Missing Persons of the Arab Coalition ,678,Other,Other,,
-OTH_929,OTH_929,High Council of State,620,Other,Other,,
-OTH_934,OTH_934,Transitional Military Council,625,Other,Other,,
-OTH_952,OTH_952,Bodoland Territorial Council,750,Other,Other,,
-OTH_953,OTH_953,United Bodo People's Organization,750,Other,Other,,
-OTH_968,OTH_968,Transitional Sovereignty Council,625,Other,Other,,
-OTH_969,OTH_969,Libyan Political Dialogue Forum,620,Other,Other,,
-OTH_981,OTH_981,"Commission for Support of the Community Awareness, Disarmament, Demobilisation and Reintegration Process (CIAP-DDRC)",490,Other,Other,,
-OTH_983,OTH_983,Association for Integrated Community Development (ADCI),490,Other,Other,,
-OTH_984,OTH_984,SFCG ‚Äì Consortium Maji ya Amani,490,Other,Other,,
-POL_1000,POL_1000,Movement of Democratic Action,346,Political,Political,,
-POL_1000,POL_1000,PDA,346,Political,Political,,
-POL_1001,POL_1001,United Srpska,346,Political,Political,,
-POL_1001,POL_1001,US,346,Political,Political,,
-POL_1002,POL_1002,Independent Bloc,346,Political,Political,,
-POL_1002,POL_1002,NB,346,Political,Political,,
-POL_1003,POL_1003,Alliance of Independent Social Democrats,346,Political,Political,,
-POL_1003,POL_1003,SNSD,346,Political,Political,,
-POL_1004,POL_1004,African Party for Radical Transformation and Integration of States,482,Political,Political,,
-POL_1004,POL_1004,PATRIE,482,Political,Political,,
-POL_1005,POL_1005,National Party for a New Central Africa,482,Political,Political,,
-POL_1005,POL_1005,PNCN,482,Political,Political,,
-POL_1007,POL_1007,Party of Democratic Action,346,Political,Political,,
-POL_1007,POL_1007,SDA,346,Political,Political,,
-POL_1025,POL_1025,MCU,482,Political,Political,,
-POL_1025,POL_1025,United Hearts Movement,482,Political,Political,,
-POL_1026,POL_1026,BTK,482,Political,Political,,
-POL_1026,POL_1026,Centrafrique pour nous tous,482,Political,Political,,
-POL_1027,POL_1027,Truth and Justice,482,Political,Political,,
-POL_1074,POL_1074,NI Women's Coalition,,Political,Political,,
-POL_1074,POL_1074,NIWC,,Political,Political,,
-POL_1115,POL_1115,PDM,626,Political,Political,,
-POL_1115,POL_1115,People's Democratic Movement,626,Political,Political,,
-POL_1119,POL_1119,Nationalist Socialist Council of Nagalim/Government of the People's Republic of Nagalim,750,Political,Political,,
-POL_1119,POL_1119,NSCN/GPRN,750,Political,Political,,
-POL_114,POL_114,AB,230,Political,Political,,
-POL_114,POL_114,National Unity,230,Political,Political,,
-POL_115,POL_115,Partido Nacionalista Vasco,230,Political,Political,,
-POL_115,POL_115,PNV,230,Political,Political,,
-POL_116,POL_116,EA,230,Political,Political,,
-POL_116,POL_116,Eusko Alkartasuna,230,Political,Political,,
-POL_117,POL_117,IU,230,Political,Political,,
-POL_117,POL_117,Izquierda Unida,230,Political,Political,,
-POL_1179,POL_1179,FNJ,581,Political,Political,,
-POL_1179,POL_1179,National Front for Justice ,581,Political,Political,,
-POL_1181,POL_1181,Serbian Democratic Party,346,Political,Political,,
-POL_1198,POL_1198,LEADER-Fanilo,580,Political,Political,,
-POL_1199,POL_1199,Malagasy Tonga Saina,580,Political,Political,,
-POL_1199,POL_1199,MTS,580,Political,Political,,
-POL_1201,POL_1201,AKFM-Fanavoazana ,580,Political,Political,,
-POL_1201,POL_1201,Congress Party for Malagasy Independence ‚Äì Renewal,580,Political,Political,,
-POL_1202,POL_1202,AME,580,Political,Political,,
-POL_1202,POL_1202,Antoko Miombona Ezaka¬†,580,Political,Political,,
-POL_1204,POL_1204,Asa Vita no Ifampitsarana,580,Political,Political,,
-POL_1204,POL_1204,AVI,580,Political,Political,,
-POL_1209,POL_1209,MAVANA,580,Political,Political,,
-POL_1209,POL_1209,MAVANA/Forces pour le Changement,580,Political,Political,,
-POL_1210,POL_1210,MONIMA,580,Political,Political,,
-POL_1210,POL_1210,MONIMA/Forces pour le Changement,580,Political,Political,,
-POL_1211,POL_1211,AKFM,580,Political,Political,,
-POL_1211,POL_1211,Parti du Congres de l'Independance de Madagascar,580,Political,Political,,
-POL_1212,POL_1212,Parti FANARENANA,580,Political,Political,,
-POL_1214,POL_1214,Parti fort Democratique de Madagascar,580,Political,Political,,
-POL_1214,POL_1214,PFDM,580,Political,Political,,
-POL_1216,POL_1216,Democratic Party for Union in Madagascar¬†,580,Political,Political,,
-POL_1216,POL_1216,PSDUM,580,Political,Political,,
-POL_1217,POL_1217,Renewal of the Social Democratic Party,580,Political,Political,,
-POL_1217,POL_1217,RPSD,580,Political,Political,,
-POL_1218,POL_1218,Rassemblement des d√©mocrates musulmans de Madagascar Renouveau,580,Political,Political,,
-POL_1218,POL_1218,RDMMR,580,Political,Political,,
-POL_122,POL_122,BATZARRE ZUTIK,230,Political,Political,,
-POL_122,POL_122,BATZARRE ZUTIK (Batzarre),230,Political,Political,,
-POL_1221,POL_1221,sofema,580,Political,Political,,
-POL_1221,POL_1221,Solidarit√© des F√©d√©ralistes de Madagascar,580,Political,Political,,
-POL_1222,POL_1222,DHD,580,Political,Political,,
-POL_1222,POL_1222,Droits Humains et D√©mocratie,580,Political,Political,,
-POL_1223,POL_1223,Forces pour le Changement,580,Political,Political,,
-POL_1225,POL_1225,Femmes legalistes de la mouvance Ravalomanana,580,Political,Political,,
-POL_1227,POL_1227,GLM,580,Political,Political,,
-POL_1227,POL_1227,Groupement Liberal de Madagascar,580,Political,Political,,
-POL_1229,POL_1229,Malagsy Miara-Mandroso Aron'ny Demokrasia,580,Political,Political,,
-POL_1229,POL_1229,MAMIMAD,580,Political,Political,,
-POL_1231,POL_1231,KMD,580,Political,Political,,
-POL_1231,POL_1231,Komity Miaro ny Demokrasia,580,Political,Political,,
-POL_1235,POL_1235,VITM,580,Political,Political,,
-POL_1235,POL_1235,Vonjy Iray Tsy Mivaky,580,Political,Political,,
-POL_1248,POL_1248,S√≠ Colombia,100,Political,Political,,
-POL_1249,POL_1249,Colombian Liberal Party,100,Political,Political,,
-POL_1249,POL_1249,PLC,100,Political,Political,,
-POL_1255,POL_1255,FRELIMO,541,Political,Political,,
-POL_1284,POL_1284,ANC,775,Political,Political,,
-POL_1284,POL_1284,Arakan National Council,775,Political,Political,,
-POL_1285,POL_1285,Palaung State Liberation Front,775,Political,Political,,
-POL_1285,POL_1285,PSLF,775,Political,Political,,
-POL_1286,POL_1286,Wa National Organisation,775,Political,Political,,
-POL_1286,POL_1286,WNA,775,Political,Political,,
-POL_130,POL_130,United Somali Party,520,Political,Political,,
-POL_1325,POL_1325,La Mouvance,438,Political,Political,,
-POL_1333,POL_1333,Democratic Opposition,482,Political,Political,,
-POL_1360,POL_1360,Communist Party of the Philippines,840,Political,Political,,
-POL_145,POL_145,Communist Party of Nepal (Maoist Centre),790,Political,Political,,
-POL_145,POL_145,CPN (Maoist),790,Political,Political,,
-POL_147,POL_147,Communist Party of Nepal (Unified Marxist‚ÄìLeninist),790,Political,Political,,
-POL_147,POL_147,CPN (UML),790,Political,Political,,
-POL_148,POL_148,Nepali Congress,790,Political,Political,,
-POL_149,POL_149,Nepal Sadbhavana Party,790,Political,Political,,
-POL_150,POL_150,Nepal Majdoor Kisan Party,790,Political,Political,,
-POL_151,POL_151,People's Front Nepal,790,Political,Political,,
-POL_153,POL_153,Nepal Socialist Party,790,Political,Political,,
-POL_154,POL_154,Nepal¬†Workers' and Peasants' Party,790,Political,Political,,
-POL_187,POL_187,Spanish Socialist Workers Party,230,Political,Political,,
-POL_191,POL_191,Political Parties,100,Political,Political,,
-POL_194,POL_194,Revolutionary Worker‚Äôs Party,100,Political,Political,,
-POL_208,POL_208,Solidarity,560,Political,Political,,
-POL_209,POL_209,SA Communist Party,560,Political,Political,,
-POL_210,POL_210,Inkatha Freedom Party,560,Political,Political,,
-POL_211,POL_211,United People's Front,560,Political,Political,,
-POL_212,POL_212,Democratic Party,560,Political,Political,,
-POL_214,POL_214,Ximoko Progressive Party,560,Political,Political,,
-POL_217,POL_217,Dikwankwetla Party,560,Political,Political,,
-POL_218,POL_218,Intando Yesizwe Party,560,Political,Political,,
-POL_219,POL_219,Inyandza National Movement,560,Political,Political,,
-POL_220,POL_220,Labour Party SA,560,Political,Political,,
-POL_222,POL_222,African National Congress,560,Political,Political,,
-POL_222,POL_222,ANC,560,Political,Political,,
-POL_223,POL_223,Natal / Tvl Indian Congress,560,Political,Political,,
-POL_224,POL_224,National Party,560,Political,Political,,
-POL_225,POL_225,National People's Party,560,Political,Political,,
-POL_23,POL_23,PGP,481,Political,Political,,
-POL_23,POL_23,Progress Party of Gabon,481,Political,Political,,
-POL_236,POL_236,MFA,437,Political,Political,,
-POL_236,POL_236,Movement of the Forces of the Future,437,Political,Political,,
-POL_239,POL_239,Ivorian Workers' Party,437,Political,Political,,
-POL_239,POL_239,PIT,437,Political,Political,,
-POL_24,POL_24,MESP,481,Political,Political,,
-POL_24,POL_24,People‚Äôs Socialist Emancipation Movement,481,Political,Political,,
-POL_242,POL_242,UDCPI,437,Political,Political,,
-POL_242,POL_242,Union for Democracy and Peace in¬†Ivory Coast,437,Political,Political,,
-POL_243,POL_243,Democratic Party of Ivory Coast ‚Äì African Democratic Rally,437,Political,Political,,
-POL_243,POL_243,PDCI-RDA,437,Political,Political,,
-POL_245,POL_245,Citizens' Democratic Union,437,Political,Political,,
-POL_245,POL_245,UDCY,437,Political,Political,,
-POL_246,POL_246,FUNCINPEC,811,Political,Political,,
-POL_25,POL_25,African Forum for Reconstruction,481,Political,Political,,
-POL_25,POL_25,FAR,481,Political,Political,,
-POL_26,POL_26,MORENA,481,Political,Political,,
-POL_26,POL_26,National Recovery Movement,481,Political,Political,,
-POL_27,POL_27,ADERE,481,Political,Political,,
-POL_27,POL_27,Democratic & Republican Alliance,481,Political,Political,,
-POL_28,POL_28,Independent Centre Party of Gabon,481,Political,Political,,
-POL_28,POL_28,PGCI,481,Political,Political,,
-POL_29,POL_29,CDJ,481,Political,Political,,
-POL_29,POL_29,Democratic Justice Congress,481,Political,Political,,
-POL_30,POL_30,Democratic Party of Gabon,481,Political,Political,,
-POL_30,POL_30,PDG,481,Political,Political,,
-POL_305,POL_305,Democratic Kampuchea,811,Political,Political,,
-POL_31,POL_31,PSD,481,Political,Political,,
-POL_31,POL_31,Social Democratic Party,481,Political,Political,,
-POL_310,POL_310,Yemeni Socialist Party,678,Political,Political,,
-POL_310,POL_310,YSP,678,Political,Political,,
-POL_311,POL_311,General People's Congress,678,Political,Political,,
-POL_311,POL_311,GPC,678,Political,Political,,
-POL_319,POL_319,Independent Labor Party,516,Political,Political,,
-POL_319,POL_319,PIT,516,Political,Political,,
-POL_32,POL_32,PUP-CRISE,481,Political,Political,,
-POL_32,POL_32,United People‚Äôs Party,481,Political,Political,,
-POL_320,POL_320,Union for National Progress,516,Political,Political,,
-POL_320,POL_320,UPRONA,516,Political,Political,,
-POL_321,POL_321,FRODEBU,516,Political,Political,,
-POL_321,POL_321,Front for Democracy in Burundi,516,Political,Political,,
-POL_322,POL_322,Rally for the People of Burundi,516,Political,Political,,
-POL_322,POL_322,RPB,516,Political,Political,,
-POL_323,POL_323,ANADDE,516,Political,Political,,
-POL_323,POL_323,National Alliance for Law and Economic Development,516,Political,Political,,
-POL_325,POL_325,Inkinzo,516,Political,Political,,
-POL_325,POL_325,Pan Africanist Socialist Movement-Inkinzo,516,Political,Political,,
-POL_326,POL_326,People's Party,516,Political,Political,,
-POL_326,POL_326,PP,516,Political,Political,,
-POL_327,POL_327,Liberal Party,516,Political,Political,,
-POL_327,POL_327,PL,516,Political,Political,,
-POL_328,POL_328,RADDES,516,Political,Political,,
-POL_328,POL_328,Rally for Democracy and Economic and Social Development,516,Political,Political,,
-POL_329,POL_329,Alliance of the Valiant,516,Political,Political,,
-POL_329,POL_329,AV-INTWARI,516,Political,Political,,
-POL_33,POL_33,CLR,481,Political,Political,,
-POL_33,POL_33,Liberal Reform Convention,481,Political,Political,,
-POL_330,POL_330,Palipehutu,516,Political,Political,,
-POL_331,POL_331,People's Reconciliation Party,516,Political,Political,,
-POL_331,POL_331,PRP,516,Political,Political,,
-POL_332,POL_332,PARENA,516,Political,Political,,
-POL_332,POL_332,Party for National Recovery,516,Political,Political,,
-POL_334,POL_334,ABASA,516,Political,Political,,
-POL_334,POL_334,Burundo-African Alliance for Salvation,516,Political,Political,,
-POL_34,POL_34,National Assembly of Foresters,481,Political,Political,,
-POL_34,POL_34,RNB,481,Political,Political,,
-POL_342,POL_342,Bougainville Peoples Congress,910,Political,Political,,
-POL_35,POL_35,Gabon People‚Äôs Union,481,Political,Political,,
-POL_35,POL_35,UPG,481,Political,Political,,
-POL_362,POL_362,Liberia National Union,450,Political,Political,,
-POL_363,POL_363,Equal Rights Party,450,Political,Political,,
-POL_364,POL_364,United People's Party,450,Political,Political,,
-POL_365,POL_365,True Whig Party,450,Political,Political,,
-POL_366,POL_366,All-Liberian Coalition Party,450,Political,Political,,
-POL_367,POL_367,Reformation Alliance Party,450,Political,Political,,
-POL_368,POL_368,Progressive Peoples Party,450,Political,Political,,
-POL_369,POL_369,National Reform Party,450,Political,Political,,
-POL_37,POL_37,PARI,481,Political,Political,,
-POL_37,POL_37,Radical Independent Republican Party,481,Political,Political,,
-POL_370,POL_370,Free Democracy Party,450,Political,Political,,
-POL_373,POL_373,New Deal Movement,450,Political,Political,,
-POL_374,POL_374,National Democratic Party,450,Political,Political,,
-POL_376,POL_376,Liberian Action Party,450,Political,Political,,
-POL_378,POL_378,People's Democratic Party,450,Political,Political,,
-POL_379,POL_379,National Patriotic Party,450,Political,Political,,
-POL_38,POL_38,APSG,481,Political,Political,,
-POL_38,POL_38,Gabon Association for Socialism,481,Political,Political,,
-POL_380,POL_380,Unity Party,450,Political,Political,,
-POL_381,POL_381,Liberians People's Party,450,Political,Political,,
-POL_382,POL_382,Labor Party,450,Political,Political,,
-POL_383,POL_383,Liberia Unification Party,450,Political,Political,,
-POL_39,POL_39,PUP,481,Political,Political,,
-POL_39,POL_39,Unity People‚Äôs Party,481,Political,Political,,
-POL_396,POL_396,Democratic Party of¬†Ivory Coast,437,Political,Political,,
-POL_396,POL_396,PDCI,437,Political,Political,,
-POL_40,POL_40,Socialist Union of Gabon,481,Political,Political,,
-POL_40,POL_40,USG,481,Political,Political,,
-POL_401,POL_401,Pro-Integration Party,860,Political,Political,,
-POL_403,POL_403,Democratic Party of Albanians,339,Political,Political,,
-POL_404,POL_404,Social Democratic Union of Macedonia,343,Political,Political,,
-POL_422,POL_422,MLPC,482,Political,Political,,
-POL_422,POL_422,Movement for the Liberation of the Central African People,482,Political,Political,,
-POL_424,POL_424,Movement for Democracy and Development,482,Political,Political,,
-POL_426,POL_426,Alliance for Democracy and Progress,482,Political,Political,,
-POL_427,POL_427,Civic Forum,482,Political,Political,,
-POL_432,POL_432,Patritotic Front for Progress,482,Political,Political,,
-POL_442,POL_442,Harkat-e-Inquilab-e-Islami,700,Political,Political,,
-POL_443,POL_443,Hezbe Wahdat,700,Political,Political,,
-POL_444,POL_444,Etelaf-e Milli,700,Political,Political,,
-POL_445,POL_445,Jamayat-E-Islami,700,Political,Political,,
-POL_445,POL_445,Jamiat,700,Political,Political,,
-POL_446,POL_446,Ittehad-e-Islami,700,Political,Political,,
-POL_448,POL_448,National Islamic Front of Afghanistan,700,Political,Political,,
-POL_449,POL_449,Central African Democratic Rally,482,Political,Political,,
-POL_449,POL_449,RDC,482,Political,Political,,
-POL_464,POL_464,South Sudan United Democratic Front,626,Political,Political,,
-POL_464,POL_464,UDSF,626,Political,Political,,
-POL_467,POL_467,SDLP,,Political,Political,,
-POL_467,POL_467,Social Democratic Labour Party,,Political,Political,,
-POL_468,POL_468,Progressive Unionist Party,,Political,Political,,
-POL_468,POL_468,PUP,,Political,Political,,
-POL_469,POL_469,UDP,,Political,Political,,
-POL_469,POL_469,Ulster Democratic Party,,Political,Political,,
-POL_470,POL_470,Ulster Unionist Party,,Political,Political,,
-POL_470,POL_470,UUP,,Political,Political,,
-POL_471,POL_471,NI Labour Coalition,,Political,Political,,
-POL_472,POL_472,SF,,Political,Political,,
-POL_472,POL_472,Sinn Fein,,Political,Political,,
-POL_473,POL_473,AP,,Political,Political,,
-POL_473,POL_473,The Alliance Party of Northern Ireland,,Political,Political,,
-POL_499,POL_499,Orange Democratic Movement,501,Political,Political,,
-POL_501,POL_501,FAN,90,Political,Political,,
-POL_501,POL_501,National Advancement Front Party,90,Political,Political,,
-POL_504,POL_504,MAS,90,Political,Political,,
-POL_504,POL_504,Solidarity Action Movement,90,Political,Political,,
-POL_505,POL_505,MLN,90,Political,Political,,
-POL_505,POL_505,National Liberation Movement,90,Political,Political,,
-POL_506,POL_506,National Renewal Party,90,Political,Political,,
-POL_506,POL_506,PNR,90,Political,Political,,
-POL_507,POL_507,PSD,90,Political,Political,,
-POL_507,POL_507,Socialist Party,90,Political,Political,,
-POL_515,POL_515,The Future Movement,660,Political,Political,,
-POL_517,POL_517,Progressive Socialist Party,660,Political,Political,,
-POL_518,POL_518,Syrian Social Nationalist Party,652,Political,Political,,
-POL_519,POL_519,Lebanese Democrat Party,660,Political,Political,,
-POL_520,POL_520,Amal Movement,660,Political,Political,,
-POL_522,POL_522,Marematlou Freedom Party,570,Political,Political,,
-POL_523,POL_523,Lesotho Workers Party,570,Political,Political,,
-POL_524,POL_524,All Basotho Convention,570,Political,Political,,
-POL_525,POL_525,Lesotho People's Congress,570,Political,Political,,
-POL_526,POL_526,Batotho National Party,570,Political,Political,,
-POL_527,POL_527,Popular Front for Democracy,570,Political,Political,,
-POL_528,POL_528,Basotho Democratic National Party,570,Political,Political,,
-POL_530,POL_530,Basotho Batho Democratic Party,570,Political,Political,,
-POL_531,POL_531,Unified Communist Party of Nepal,790,Political,Political,,
-POL_538,POL_538,National Congress Party,625,Political,Political,,
-POL_547,POL_547,National Movement,483,Political,Political,,
-POL_548,POL_548,Democratic Unionist Party,,Political,Political,,
-POL_548,POL_548,DUP,,Political,Political,,
-POL_559,POL_559,Rakhine State Liberation Party,775,Political,Political,,
-POL_559,POL_559,RSLP,775,Political,Political,,
-POL_578,POL_578,Zimbabwe African National Union ‚Äì Patriotic Front,552,Political,Political,,
-POL_579,POL_579,Movement for Democratic Change,552,Political,Political,,
-POL_581,POL_581,All Political Parties Conference,626,Political,Political,,
-POL_581,POL_581,APPC,626,Political,Political,,
-POL_584,POL_584,Action Committee for Renewal,461,Political,Political,,
-POL_584,POL_584,CAR,461,Political,Political,,
-POL_643,POL_643,FLN,615,Political,Political,,
-POL_643,POL_643,National Liberation Front,615,Political,Political,,
-POL_644,POL_644,FFS,615,Political,Political,,
-POL_644,POL_644,Socialist Forces Front,615,Political,Political,,
-POL_645,POL_645,MDA,615,Political,Political,,
-POL_645,POL_645,Movement for Democracy in Algeria,615,Political,Political,,
-POL_646,POL_646,PT,615,Political,Political,,
-POL_646,POL_646,Workers Party,615,Political,Political,,
-POL_655,POL_655,National Democratic Alliance,625,Political,Political,,
-POL_659,POL_659,Communist Party of Colombia (Marxist‚ÄìLeninist),100,Political,Political,,
-POL_661,POL_661,National Salvation Movement,100,Political,Political,,
-POL_662,POL_662,Colombian Conservative Party,100,Political,Political,,
-POL_693,POL_693,PAD,461,Political,Political,,
-POL_693,POL_693,Party of the pure-Action on Development,461,Political,Political,,
-POL_694,POL_694,UDS,461,Political,Political,,
-POL_694,POL_694,Union for the Democracy and Solidarity,461,Political,Political,,
-POL_695,POL_695,Democratic party pure Unite,461,Political,Political,,
-POL_695,POL_695,PDU,461,Political,Political,,
-POL_696,POL_696,Party for Democracy and Renewal,461,Political,Political,,
-POL_696,POL_696,PDR,461,Political,Political,,
-POL_697,POL_697,Togolese Union for Democracy,461,Political,Political,,
-POL_697,POL_697,UTD,461,Political,Political,,
-POL_698,POL_698,Convention African Peoples Democratic,461,Political,Political,,
-POL_698,POL_698,FDC,461,Political,Political,,
-POL_702,POL_702,CPP,461,Political,Political,,
-POL_702,POL_702,Panafrican Patriotic Convention,461,Political,Political,,
-POL_705,POL_705,CDPA,461,Political,Political,,
-POL_705,POL_705,Democratic Convention of African People,461,Political,Political,,
-POL_736,POL_736,Yemeni Congregation for Reform,678,Political,Political,,
-POL_737,POL_737,Solidarity Council and the Freedom Bloc,678,Political,Political,,
-POL_738,POL_738,Al - Haqq,678,Political,Political,,
-POL_743,POL_743,Political Societies,692,Political,Political,,
-POL_798,POL_798,National League for Democracy,775,Political,Political,,
-POL_798,POL_798,NLD,775,Political,Political,,
-POL_799,POL_799,Nationalities Brotherhood Federation,775,Political,Political,,
-POL_799,POL_799,NBF,775,Political,Political,,
-POL_800,POL_800,FDA,775,Political,Political,,
-POL_800,POL_800,Federal Democracy Alliance,775,Political,Political,,
-POL_801,POL_801,UNA,775,Political,Political,,
-POL_801,POL_801,United Nationalities Alliance,775,Political,Political,,
-POL_802,POL_802,National Unity Party,775,Political,Political,,
-POL_802,POL_802,NUP,775,Political,Political,,
-POL_803,POL_803,Union Solidarity and Development Party,775,Political,Political,,
-POL_803,POL_803,USDP,775,Political,Political,,
-POL_833,POL_833,Croatian Democratic Union,344,Political,Political,,
-POL_840,POL_840,National Independent Party,570,Political,Political,,
-POL_841,POL_841,Democratic Congress,570,Political,Political,,
-POL_842,POL_842,Basotho National African Congress,570,Political,Political,,
-POL_843,POL_843,Basotho Congress Party,570,Political,Political,,
-POL_844,POL_844,African Unity Movement,570,Political,Political,,
-POL_845,POL_845,All Democratic Cooperation,570,Political,Political,,
-POL_846,POL_846,Basotho National Party,570,Political,Political,,
-POL_847,POL_847,Lesotho Congress for Democracy,570,Political,Political,,
-POL_850,POL_850,Basutoland Congress Party,570,Political,Political,,
-POL_866,POL_866,Terai Madhesh Loktantrik Party,790,Political,Political,,
-POL_867,POL_867,Madhesi Janadhikar Forum,790,Political,Political,,
-POL_868,POL_868,National¬†Umma Party,625,Political,Political,,
-POL_877,POL_877,Arab Baath Socialist Party,652,Political,Political,,
-POL_878,POL_878,Union of Popular Forces,678,Political,Political,,
-POL_879,POL_879,Al-Rashad Union,678,Political,Political,,
-POL_880,POL_880,Popular Unificationist Nasserite Organization,678,Political,Political,,
-POL_881,POL_881,Unionist Union Party,678,Political,Political,,
-POL_882,POL_882,Justice and Construction Party,678,Political,Political,,
-POL_883,POL_883,Patriotic Union of Kurdistan,645,Political,Political,,
-POL_886,POL_886,KNK,482,Political,Political,,
-POL_886,POL_886,Kwa Na Kwa,482,Political,Political,,
-POL_887,POL_887,Rally for the Republic,482,Political,Political,,
-POL_887,POL_887,RPR,482,Political,Political,,
-POL_888,POL_888,Union for Central African Renewal,482,Political,Political,,
-POL_888,POL_888,URCA,482,Political,Political,,
-POL_893,POL_893,Political Opposition,490,Political,Political,,
-POL_916,POL_916,Political Parties Representatives,775,Political,Political,,
-POL_920,POL_920,United Democratic Salvation Front,626,Political,Political,,
-POL_922,POL_922,United Sudan African Party,626,Political,Political,,
-POL_923,POL_923,United Democratic Party,626,Political,Political,,
-POL_957,POL_957,Political Parties Group,775,Political,Political,,
-POL_994,POL_994,NiP,346,Political,Political,,
-POL_994,POL_994,People and Justice,346,Political,Political,,
-POL_996,POL_996,NES,346,Political,Political,,
-POL_996,POL_996,People's European Union of Bosnia and Herzegovina,346,Political,Political,,
-POL_997,POL_997,SDP,346,Political,Political,,
-POL_997,POL_997,Social Democratic Party of Bosnia and Herzegovina,346,Political,Political,,
-POL_998,POL_998,NS,346,Political,Political,,
-POL_998,POL_998,Our Party,346,Political,Political,,
-POL_999,POL_999,Democratic Front,346,Political,Political,,
-POL_999,POL_999,DF,346,Political,Political,,
-MEND-1,,Accord,,,,,
-MEND-10,,Berghof Foundation,,,,,
-MEND-11,,Bhutan,760,,,,
-MEND-12,,Bolivia,145,,,,
-MEND-13,,Carter Center,,,,,
-MEND-14,,Diplomatic Community,,,,,
-MEND-15,,Dominica,54,,,,
-MEND-16,,Dominican Republic,42,,,,
-MEND-17,,DPPA,,,,,
-MEND-18,,Eswatini (formerly Swaziland),572,,,,
-MEND-19,,Grenada,55,,,,
-MEND-2,,African Council for Religious Leaders Religions for Peace,,,,,
-MEND-20,,Guyana,110,,,,
-MEND-21,,High-Level Independent Panel on Security and Development of the Sahel,,,,,
-MEND-22,,Human Rights Research Society in Norway,,,,,
-MEND-23,,ICC,,,,,
-MEND-24,,International Rescue Committee,,,,,
-MEND-25,,Ivory Coast (Côte d'Ivoire),437,,,,
-MEND-26,,Jamaica,51,,,,
-MEND-27,,Kiribati,942,,,,
-MEND-28,,Maldives,781,,,,
-MEND-29,,Marshall Islands,944,,,,
-MEND-3,,Antigua and Barbuda,32,,,,
-MEND-30,,Micronesia,945,,,,
-MEND-31,,NAM,,,,,
-MEND-31,,Non-Aligned Movement (Uganda),,,,,
-MEND-32,,Nauru,941,,,,
-MEND-33,,Norwegian Refugee Council,,,,,
-MEND-34,,OCHA,,,,,
-MEND-34,,United Nations Office for the Coordination of Humanitarian Affairs,,,,,
-MEND-35,,OPCW,,,,,
-MEND-35,,Organisation for the Prohibition of Chemical Weapons,,,,,
-MEND-36,,Palestine Committee in Asian Parliamentary Assembly,,,,,
-MEND-37,,Paraguay,150,,,,
-MEND-38,,Public International Law & Policy Group,,,,,
-MEND-39,,Qatar Fund for Development,694,,,,
-MEND-4,,APA,,,,,
-MEND-4,,Asian Parliamentary Assembly,,,,,
-MEND-40,,Qatar Red Crescent Society,694,,,,
-MEND-41,,Saint Kitts and Nevis,56,,,,
-MEND-42,,Saint Lucia,57,,,,
-MEND-43,,Saint Vincent and the Grenadines,58,,,,
-MEND-44,,Samoa,990,,,,
-MEND-45,,Sao Tome and Principe,404,,,,
-MEND-46,,Save the Children,,,,,
-MEND-47,,SFCG Consortium Maji ya Amani,,,,,
-MEND-48,,South Sri Lanka*,780,,,,
-MEND-49,,Suriname,115,,,,
-MEND-5,,Arab Development Bank,,,,,
-MEND-50,,Trinidad and Tobago,52,,,,
-MEND-51,,UN Committee on the Admission of New Members,,,,,
-MEND-52,,UN Truce Supervision Organization,,,,,
-MEND-53,,UNAMA,,,,,
-MEND-53,,United Nations Assistance Mission in Afghanistan,,,,,
-MEND-54,,UNCT,,,,,
-MEND-55,,UNESCO,,,,,
-MEND-56,,UNFPA,,,,,
-MEND-57,,UNIFIL,,,,,
-MEND-57,,United Nations Interim Force in Lebanon,,,,,
-MEND-58,,UNITAMS,,,,,
-MEND-58,,United Nations Integrated Transition Assistance Mission in Sudan,,,,,
-MEND-59,,United Nations Mission to support the Hodeidah Agreement,,,,,
-MEND-59,,UNMHA,,,,,
-MEND-6,,ASEAN,,,,,
-MEND-6,,Association of Southeast Asian Nations,,,,,
-MEND-60,,United Nations Office for Project Services,,,,,
-MEND-60,,UNOPS,,,,,
-MEND-61,,United Nations Relief and Works Agency for Palestine Refugees in the Near East,,,,,
-MEND-61,,UNRWA,,,,,
-MEND-62,,United Nations Special Coordinator for the Levant,,,,,
-MEND-62,,UNSCOL,,,,,
-MEND-63,,UNSCO,,,,,
-MEND-64,,US Special Envoy for Yemen,,,,,
-MEND-65,,World Council of Churches,,,,,
-MEND-66,,South Asian Strategic Stability Institute (SASSI) University,,,,,
-MEND-67,,Centre for Strategic and International Studies,,,,,
-MEND-68,,Arab Economic Unity Council,,,,,
-MEND-69,,Geneva Centre for Security Sector Governance,,,,,
-MEND-7,,Bahamas,31,,,,
-MEND-70,,National Council on US-Libyan Relations,,,,,
-MEND-71,,American Chamber of Commerce in Libya,,,,,
-MEND-72,,UN Sanctions Committee ,,,,,
-MEND-8,,Barbados,53,,,,
-MEND-9,,Belize,80,,,,
+MEND_ID,PAAX_ID,GW_ID,ActorName,actor_classification_mend,actor_classification
+CON_0,CON_0,346,Bosnia and Herzegovina,CON,Country/State
+CON_1,CON_1,344,Croatia,CON,Country/State
+CON_10,CON_10,210,Netherlands,CON,Country/State
+CON_11,CON_11,20,Canada,CON,Country/State
+CON_12,CON_12,820,Malaysia,CON,Country/State
+CON_13,CON_13,565,Namibia,CON,Country/State
+CON_139,CON_139,325,Italy,CON,Country/State
+CON_14,CON_14,317,Slovenia,CON,Country/State
+CON_142,CON_142,436,Niger,CON,Country/State
+CON_146,CON_146,790,Nepal,CON,Country/State
+CON_15,CON_15,140,Brazil,CON,Country/State
+CON_157,CON_157,483,Chad,CON,Country/State
+CON_158,CON_158,625,Sudan,CON,Country/State
+CON_159,CON_159,530,Ethiopia,CON,Country/State
+CON_16,CON_16,420,Gambia,CON,Country/State
+CON_160,CON_160,840,Philippines,CON,Country/State
+CON_162,CON_162,850,Indonesia,CON,Country/State
+CON_169,CON_169,205,Ireland,CON,Country/State
+CON_17,CON_17,481,Gabon,CON,Country/State
+CON_171,CON_171,375,Finland,CON,Country/State
+CON_172,CON_172,501,Kenya,CON,Country/State
+CON_173,CON_173,626,South Sudan,CON,Country/State
+CON_174,CON_174,510,Chama Cha Mapinduzi,CON,Country/State
+CON_174,CON_174,510,Tanzania,CON,Country/State
+CON_176,CON_176,500,Uganda,CON,Country/State
+CON_177,CON_177,155,Chile,CON,Country/State
+CON_178,CON_178,135,Peru,CON,Country/State
+CON_179,CON_179,130,Ecuador,CON,Country/State
+CON_18,CON_18,692,Bahrain,CON,Country/State
+CON_181,CON_181,100,Colombia,CON,Country/State
+CON_19,CON_19,200,UK,CON,Country/State
+CON_19,CON_19,200,United Kingdom,CON,Country/State
+CON_2,CON_2,255,Germany,CON,Country/State
+CON_20,CON_20,710,China,CON,Country/State
+CON_202,CON_202,225,Switzerland,CON,Country/State
+CON_203,CON_203,40,Cuba,CON,Country/State
+CON_21,CON_21,365,Russia,CON,Country/State
+CON_22,CON_22,345,Yugoslavia,CON,Country/State
+CON_221,CON_221,560,South Africa,CON,Country/State
+CON_228,CON_228,600,Morocco,CON,Country/State
+CON_247,CON_247,811,Cambodia,CON,Country/State
+CON_248,CON_248,522,Djibouti,CON,Country/State
+CON_253,CON_253,516,Burundi,CON,Country/State
+CON_255,CON_255,615,Algeria,CON,Country/State
+CON_259,CON_259,235,Portugal,CON,Country/State
+CON_260,CON_260,540,Angola,CON,Country/State
+CON_264,CON_264,490,"Congo, Democratic Republic of the",CON,Country/State
+CON_264,CON_264,490,DRC,CON,Country/State
+CON_267,CON_267,571,Botswana,CON,Country/State
+CON_268,CON_268,70,Mexico,CON,Country/State
+CON_272,CON_272,531,Eritrea,CON,Country/State
+CON_273,CON_273,731,North Korea,CON,Country/State
+CON_276,CON_276,920,New Zealand,CON,Country/State
+CON_277,CON_277,900,Australia,CON,Country/State
+CON_278,CON_278,935,Vanuatu,CON,Country/State
+CON_279,CON_279,940,Solomon Islands,CON,Country/State
+CON_280,CON_280,953,Tonga,CON,Country/State
+CON_281,CON_281,950,Fiji,CON,Country/State
+CON_282,CON_282,910,Papua New Guinea,CON,Country/State
+CON_285,CON_285,620,Libya,CON,Country/State
+CON_287,CON_287,771,Bangladesh,CON,Country/State
+CON_288,CON_288,700,Afghanistan,CON,Country/State
+CON_289,CON_289,630,Iran (Islamic Republic of),CON,Country/State
+CON_290,CON_290,471,Cameroon,CON,Country/State
+CON_292,CON_292,835,Brunei,CON,Country/State
+CON_294,CON_294,740,Japan,CON,Country/State
+CON_295,CON_295,800,Thailand,CON,Country/State
+CON_296,CON_296,830,Singapore,CON,Country/State
+CON_297,CON_297,816,Vietnam,CON,Country/State
+CON_298,CON_298,812,Laos,CON,Country/State
+CON_3,CON_3,2,United States,CON,Country/State
+CON_300,CON_300,92,El Salvador,CON,Country/State
+CON_301,CON_301,780,Sri Lanka,CON,Country/State
+CON_304,CON_304,678,Yemen,CON,Country/State
+CON_306,CON_306,90,Guatemala ,CON,Country/State
+CON_316,CON_316,101,Venezuela,CON,Country/State
+CON_335,CON_335,551,Zambia,CON,Country/State
+CON_339,CON_339,517,Rwanda,CON,Country/State
+CON_348,CON_348,340,Serbia,CON,Country/State
+CON_350,CON_350,552,Zimbabwe,CON,Country/State
+CON_353,CON_353,403,SÃ£o TomÃ© and PrÃ­ncipe,CON,Country/State
+CON_354,CON_354,402,Cape Verde,CON,Country/State
+CON_358,CON_358,520,Somalia,CON,Country/State
+CON_387,CON_387,435,Mauritania,CON,Country/State
+CON_392,CON_392,553,Malawi,CON,Country/State
+CON_394,CON_394,360,Romania,CON,Country/State
+CON_395,CON_395,770,Pakistan,CON,Country/State
+CON_397,CON_397,93,Nicaragua,CON,Country/State
+CON_399,CON_399,860,East Timor,CON,Country/State
+CON_4,CON_4,230,Spain,CON,Country/State
+CON_41,CON_41,434,Benin,CON,Country/State
+CON_419,CON_419,670,Saudi Arabia,CON,Country/State
+CON_42,CON_42,484,Congo,CON,Country/State
+CON_44,CON_44,438,Guinea ,CON,Country/State
+CON_441,CON_441,211,Belgium,CON,Country/State
+CON_45,CON_45,372,Georgia,CON,Country/State
+CON_458,CON_458,732,South Korea,CON,Country/State
+CON_481,CON_481,580,Madagascar,CON,Country/State
+CON_482,CON_482,590,Mauritius,CON,Country/State
+CON_485,CON_485,581,Comoros,CON,Country/State
+CON_486,CON_486,694,Qatar,CON,Country/State
+CON_52,CON_52,369,Ukraine,CON,Country/State
+CON_521,CON_521,570,Lesotho,CON,Country/State
+CON_54,CON_54,704,Uzbekistan,CON,Country/State
+CON_55,CON_55,703,Kyrgyzstan,CON,Country/State
+CON_551,CON_551,775,Myanmar,CON,Country/State
+CON_56,CON_56,705,Kazakhstan,CON,Country/State
+CON_562,CON_562,640,Turkey,CON,Country/State
+CON_563,CON_563,692,Kuwait,CON,Country/State
+CON_57,CON_57,701,Turkmenistan,CON,Country/State
+CON_58,CON_58,370,Belarus,CON,Country/State
+CON_585,CON_585,94,Costa Rica,CON,Country/State
+CON_587,CON_587,339,Albania,CON,Country/State
+CON_588,CON_588,305,Austria,CON,Country/State
+CON_589,CON_589,355,Bulgaria,CON,Country/State
+CON_59,CON_59,373,Azerbaijan,CON,Country/State
+CON_590,CON_590,616,Tunisia,CON,Country/State
+CON_591,CON_591,696,UAE,CON,Country/State
+CON_591,CON_591,696,United Arab Emirates,CON,Country/State
+CON_592,CON_592,317,Slovakia,CON,Country/State
+CON_593,CON_593,380,Sweden,CON,Country/State
+CON_594,CON_594,165,Uruguay,CON,Country/State
+CON_6,CON_6,482,Central African Republic,CON,Country/State
+CON_60,CON_60,359,Moldova,CON,Country/State
+CON_601,CON_601,385,Iceland,CON,Country/State
+CON_602,CON_602,310,Hungary,CON,Country/State
+CON_603,CON_603,290,Poland,CON,Country/State
+CON_604,CON_604,390,Denmark,CON,Country/State
+CON_605,CON_605,366,Estonia,CON,Country/State
+CON_606,CON_606,698,Oman,CON,Country/State
+CON_607,CON_607,341,Montenegro,CON,Country/State
+CON_608,CON_608,712,Mongolia,CON,Country/State
+CON_609,CON_609,352,Cyprus,CON,Country/State
+CON_61,CON_61,371,Armenia,CON,Country/State
+CON_610,CON_610,343,North Macedonia,CON,Country/State
+CON_611,CON_611,215,Luxembourg,CON,Country/State
+CON_612,CON_612,368,Lithuania,CON,Country/State
+CON_613,CON_613,223,Liechtenstein,CON,Country/State
+CON_614,CON_614,338,Malta,CON,Country/State
+CON_615,CON_615,367,Latvia,CON,Country/State
+CON_62,CON_62,702,Tajikistan,CON,Country/State
+CON_621,CON_621,91,Honduras,CON,Country/State
+CON_636,CON_636,350,Greece,CON,Country/State
+CON_637,CON_637,316,Czechia,CON,Country/State
+CON_641,CON_641,591,Seychelles,CON,Country/State
+CON_669,CON_669,,Vatican City,CON,Country/State
+CON_67,CON_67,41,Haiti,CON,Country/State
+CON_670,CON_670,95,Panama,CON,Country/State
+CON_7,CON_7,220,France,CON,Country/State
+CON_70,CON_70,750,India,CON,Country/State
+CON_75,CON_75,645,Iraq,CON,Country/State
+CON_76,CON_76,666,Israel,CON,Country/State
+CON_77,CON_77,,Syria,CON,Country/State
+CON_77,CON_77,,Syrian Arab Republic,CON,Country/State
+CON_78,CON_78,663,Jordan,CON,Country/State
+CON_79,CON_79,660,Lebanon,CON,Country/State
+CON_81,CON_81,385,Norway,CON,Country/State
+CON_82,CON_82,651,Egypt,CON,Country/State
+CON_83,CON_83,450,Liberia,CON,Country/State
+CON_85,CON_85,461,Togo,CON,Country/State
+CON_86,CON_86,439,Burkina Faso,CON,Country/State
+CON_88,CON_88,437,CÃ´te dâIvoire,CON,Country/State
+CON_9,CON_9,160,Argentina,CON,Country/State
+CON_90,CON_90,475,Nigeria,CON,Country/State
+CON_91,CON_91,404,Guinea-Bissau,CON,Country/State
+CON_92,CON_92,433,Senegal,CON,Country/State
+CON_93,CON_93,432,Mali,CON,Country/State
+CON_930,CON_930,411,Equatorial Guinea,CON,Country/State
+CON_94,CON_94,452,Ghana,CON,Country/State
+CON_97,CON_97,541,Mozambique,CON,Country/State
+CON_99,CON_99,451,Sierra Leone,CON,Country/State
+ENT_1099,ENT_1099,750,Nagaland,ENT,Entity
+ENT_1102,ENT_1102,520,South West State,ENT,Entity
+ENT_1103,ENT_1103,520,Hirshabelle,ENT,Entity
+ENT_1104,ENT_1104,520,Banaadir,ENT,Entity
+ENT_1133,ENT_1133,530,Oromia region,ENT,Entity
+ENT_1160,ENT_1160,581,Ngazidja,ENT,Entity
+ENT_1161,ENT_1161,581,Mwali,ENT,Entity
+ENT_1163,ENT_1163,840,Maguindanao ,ENT,Entity
+ENT_1173,ENT_1173,373,Nagorno-Karabakh,ENT,Entity
+ENT_1174,ENT_1174,,Krajina,ENT,Entity
+ENT_1247,ENT_1247,775,Chin State,ENT,Entity
+ENT_1268,ENT_1268,840,ARMM,ENT,Entity
+ENT_1268,ENT_1268,840,Autonomous Region in Muslim Mindanao,ENT,Entity
+ENT_1280,ENT_1280,840,"Lone District, Ifugao",ENT,Entity
+ENT_1281,ENT_1281,840,Apayao Province,ENT,Entity
+ENT_1307,ENT_1307,625,Darfur,ENT,Entity
+ENT_1324,ENT_1324,520,South-West State of Somalia,ENT,Entity
+ENT_1328,ENT_1328,625,Unity State,ENT,Entity
+ENT_1329,ENT_1329,625,Northern Bahr El-Gazal State,ENT,Entity
+ENT_170,ENT_170,200,NI,ENT,Entity
+ENT_170,ENT_170,200,Northern Ireland,ENT,Entity
+ENT_213,ENT_213,560,Bophuthatswana Govt,ENT,Entity
+ENT_215,ENT_215,560,Venda Govt,ENT,Entity
+ENT_216,ENT_216,560,Transkei Govt,ENT,Entity
+ENT_275,ENT_275,365,Chechen Republic,ENT,Entity
+ENT_286,ENT_286,771,Chittagong Hill Tracts,ENT,Entity
+ENT_341,ENT_341,910,Bougainville Interim Provincial Government,ENT,Entity
+ENT_345,ENT_345,910,Bougainville Transitional Government,ENT,Entity
+ENT_356,ENT_356,910,Bougainville,ENT,Entity
+ENT_409,ENT_409,940,Guadalcanal Province,ENT,Entity
+ENT_411,ENT_411,940,Choiseul Province,ENT,Entity
+ENT_412,ENT_412,940,Central Islands Province,ENT,Entity
+ENT_413,ENT_413,940,Malaita Province,ENT,Entity
+ENT_418,ENT_418,347,Kosovo,ENT,Entity
+ENT_46,ENT_46,372,Abkhazia,ENT,Entity
+ENT_47,ENT_47,365,North Caucasian,ENT,Entity
+ENT_484,ENT_484,581,Anjouan,ENT,Entity
+ENT_487,ENT_487,750,Tripura,ENT,Entity
+ENT_497,ENT_497,,Kurdistan,ENT,Entity
+ENT_534,ENT_534,520,Puntland,ENT,Entity
+ENT_550,ENT_550,775,Wa Special Region,ENT,Entity
+ENT_561,ENT_561,520,Galmudug,ENT,Entity
+ENT_633,ENT_633,910,Baku community,ENT,Entity
+ENT_634,ENT_634,365,North Ossetia,ENT,Entity
+ENT_635,ENT_635,365,South Ossetia,ENT,Entity
+ENT_682,ENT_682,315,Czechoslovakia,ENT,Entity
+ENT_69,ENT_69,750,Assam,ENT,Entity
+ENT_707,ENT_707,750,West Bengal,ENT,Entity
+ENT_720,ENT_720,369,Luhansk People Republic,ENT,Entity
+ENT_721,ENT_721,369,Donetsk People Republic,ENT,Entity
+ENT_739,ENT_739,667,Palestine,ENT,Entity
+ENT_74,ENT_74,750,Mizoram,ENT,Entity
+ENT_808,ENT_808,770,"Shakai, District Wana",ENT,Entity
+ENT_809,ENT_809,770,South Wazirstan Agency,ENT,Entity
+ENT_811,ENT_811,770,Isperka,ENT,Entity
+ENT_812,ENT_812,770,Musa Khel,ENT,Entity
+ENT_835,ENT_835,520,Jubbaland,ENT,Entity
+ENT_857,ENT_857,520,Warsangali ,ENT,Entity
+ENT_858,ENT_858,520,Habr Je'lo,ENT,Entity
+ENT_859,ENT_859,520,Dhulbahante,ENT,Entity
+ENT_860,ENT_860,520,Ogeyslabe,ENT,Entity
+ENT_861,ENT_861,520,Habar Yoonis,ENT,Entity
+ENT_862,ENT_862,581,Moheli,ENT,Entity
+ENT_863,ENT_863,625,Blue Nile,ENT,Entity
+ENT_864,ENT_864,625,Abyei,ENT,Entity
+ENT_865,ENT_865,625,Southern Kordofan,ENT,Entity
+ENT_900,ENT_900,359,Transdniestria,ENT,Entity
+ENT_961,ENT_961,340,Belgrade,ENT,Entity
+ENT_962,ENT_962,347,Pristina,ENT,Entity
+ENT_967,ENT_967,750,Assam Government,ENT,Entity
+ENT_970,ENT_970,490,Ituri,ENT,Entity
+ENT_986,ENT_986,910,Autonomous Bougainville Government,ENT,Entity
+GOV_1140,GOV_1140,100,MedellÃ­n,GOV,Government
+GOV_1141,GOV_1141,100,Antioquia,GOV,Government
+GOV_1183,GOV_1183,475,Jema'a LGA,GOV,Government
+GOV_1184,GOV_1184,475,Kachia LGA,GOV,Government
+GOV_1185,GOV_1185,475,Kaura LGA,GOV,Government
+GOV_1186,GOV_1186,475,Sanga LGA,GOV,Government
+GOV_1187,GOV_1187,475,Zangon-Kataf LGA,GOV,Government
+GOV_1301,GOV_1301,750,KAAC,GOV,Government
+GOV_1301,GOV_1301,750,Karbi Anglong Autonomous Council,GOV,Government
+IGO_1006,IGO_1006,,EC,IGO,IGO
+IGO_1006,IGO_1006,,European Council,IGO,IGO
+IGO_1070,IGO_1070,,CBLT,IGO,IGO
+IGO_1070,IGO_1070,,Lake Chad Basin Commission,IGO,IGO
+IGO_1118,IGO_1118,,EACRF,IGO,IGO
+IGO_1118,IGO_1118,,East African Community Regional Force,IGO,IGO
+IGO_1137,IGO_1137,,United Nations Verification and Inspection Commission (UNVIC),IGO,IGO
+IGO_1137,IGO_1137,,UNVIC,IGO,IGO
+IGO_1139,IGO_1139,,SAARC,IGO,IGO
+IGO_1139,IGO_1139,,South Asian Association for Regional Cooperation,IGO,IGO
+IGO_1191,IGO_1191,,BINUCA,IGO,IGO
+IGO_1191,IGO_1191,,United Nations Integrated Peacebuilding Office in the Central African Republic (BINUCA),IGO,IGO
+IGO_1219,IGO_1219,580,REFAMP,IGO,IGO
+IGO_1219,IGO_1219,580,Reseau des femmes Africaines Ministres et Parlementaires section Madagascar,IGO,IGO
+IGO_1283,IGO_1283,,MICOPAX,IGO,IGO
+IGO_1283,IGO_1283,,Mission for the Consolidation of Peace in Central African Republic,IGO,IGO
+IGO_226,IGO_226,,OIC,IGO,IGO
+IGO_226,IGO_226,,Organisation of Islamic Cooperation,IGO,IGO
+IGO_250,IGO_250,,World Peace Council,IGO,IGO
+IGO_250,IGO_250,,WPC,IGO,IGO
+IGO_274,IGO_274,,United Nations Observer Mission in Bougainville (UNOMB),IGO,IGO
+IGO_274,IGO_274,,UNOMB,IGO,IGO
+IGO_312,IGO_312,,IGAD,IGO,IGO
+IGO_312,IGO_312,,Intergovernmental Authority on Development,IGO,IGO
+IGO_315,IGO_315,,UN General Assembly,IGO,IGO
+IGO_315,IGO_315,,UNGA,IGO,IGO
+IGO_338,IGO_338,,La Francophonie,IGO,IGO
+IGO_338,IGO_338,,OIF,IGO,IGO
+IGO_346,IGO_346,,Arab League ,IGO,IGO
+IGO_346,IGO_346,,League of Arab States,IGO,IGO
+IGO_346,IGO_346,,LOAS,IGO,IGO
+IGO_347,IGO_347,,NAM,IGO,IGO
+IGO_347,IGO_347,,Nonaligned Movement,IGO,IGO
+IGO_349,IGO_349,,SADC,IGO,IGO
+IGO_349,IGO_349,,Southern African Development Community,IGO,IGO
+IGO_352,IGO_352,,Community of Portuguese-Speaking Countries,IGO,IGO
+IGO_352,IGO_352,,CPLP,IGO,IGO
+IGO_355,IGO_355,,United Nations Protection Force (UNPROFOR),IGO,IGO
+IGO_355,IGO_355,,UNPROFOR,IGO,IGO
+IGO_386,IGO_386,,UN Secretary General,IGO,IGO
+IGO_386,IGO_386,,UNSG,IGO,IGO
+IGO_391,IGO_391,,UN Secretariat,IGO,IGO
+IGO_391,IGO_391,,United Nations Secretariat,IGO,IGO
+IGO_405,IGO_405,,United Nations Mission in Bosnia and Herzegovina (UNMIBH),IGO,IGO
+IGO_405,IGO_405,,UNMIBH,IGO,IGO
+IGO_406,IGO_406,,NATO,IGO,IGO
+IGO_406,IGO_406,,North Atlantic Treaty Organization,IGO,IGO
+IGO_410,IGO_410,,Commonwealth,IGO,IGO
+IGO_410,IGO_410,,Commonwealth of Nations,IGO,IGO
+IGO_43,IGO_43,,OAU,IGO,IGO
+IGO_43,IGO_43,,Organization of African Unity,IGO,IGO
+IGO_436,IGO_436,,EU Commission,IGO,IGO
+IGO_436,IGO_436,,European Commission,IGO,IGO
+IGO_437,IGO_437,,WB,IGO,IGO
+IGO_437,IGO_437,,World Bank,IGO,IGO
+IGO_438,IGO_438,,IMF,IGO,IGO
+IGO_438,IGO_438,,International Monetary Fund,IGO,IGO
+IGO_439,IGO_439,,AFDB,IGO,IGO
+IGO_439,IGO_439,,African Development Bank,IGO,IGO
+IGO_440,IGO_440,,UNHRC,IGO,IGO
+IGO_440,IGO_440,,United Nations Human Rights Council,IGO,IGO
+IGO_454,IGO_454,,United Nations Mission of Observers in Tajikistan (UNMOT),IGO,IGO
+IGO_454,IGO_454,,UNMOT,IGO,IGO
+IGO_459,IGO_459,,UNICEF,IGO,IGO
+IGO_459,IGO_459,,United Nations Children's Fund,IGO,IGO
+IGO_48,IGO_48,,Conference on Security and Cooperation in Europe,IGO,IGO
+IGO_48,IGO_48,,CSCE,IGO,IGO
+IGO_480,IGO_480,,United Nations Observer Mission in Georgia (UNOMIG),IGO,IGO
+IGO_480,IGO_480,,UNOMIG,IGO,IGO
+IGO_483,IGO_483,,COI,IGO,IGO
+IGO_483,IGO_483,,Indian Ocean Commission,IGO,IGO
+IGO_49,IGO_49,,UN,IGO,IGO
+IGO_49,IGO_49,,United Nations (General),IGO,IGO
+IGO_491,IGO_491,,CEMAC,IGO,IGO
+IGO_491,IGO_491,,Economic and Monetary Community of Central Africa,IGO,IGO
+IGO_493,IGO_493,,ICGLR,IGO,IGO
+IGO_493,IGO_493,,International Conference on the Great Lakes Region,IGO,IGO
+IGO_5,IGO_5,,EU,IGO,IGO
+IGO_5,IGO_5,,European Union,IGO,IGO
+IGO_50,IGO_50,,Organization for Security and Cooperation in Europe,IGO,IGO
+IGO_50,IGO_50,,OSCE,IGO,IGO
+IGO_53,IGO_53,,CIS,IGO,IGO
+IGO_53,IGO_53,,Commonwealth of Independent States,IGO,IGO
+IGO_535,IGO_535,,EAC,IGO,IGO
+IGO_535,IGO_535,,East African Community,IGO,IGO
+IGO_536,IGO_536,,United Nations Political Office for Somalia (UNPOS),IGO,IGO
+IGO_536,IGO_536,,UNPOS,IGO,IGO
+IGO_540,IGO_540,,GCC,IGO,IGO
+IGO_540,IGO_540,,Gulf Cooperation Council,IGO,IGO
+IGO_542,IGO_542,,Community of Sahel-Saharan States,IGO,IGO
+IGO_570,IGO_570,,MINUSMA,IGO,IGO
+IGO_570,IGO_570,,United Nations Multidimensional Integrated Stabilization Mission in Mali (MINUSMA),IGO,IGO
+IGO_586,IGO_586,,SCO,IGO,IGO
+IGO_586,IGO_586,,Shanghai Cooperation Organization,IGO,IGO
+IGO_596,IGO_596,,ISDB,IGO,IGO
+IGO_596,IGO_596,,Islamic Development Bank,IGO,IGO
+IGO_597,IGO_597,,ECO,IGO,IGO
+IGO_597,IGO_597,,Economic Cooperation Organization,IGO,IGO
+IGO_598,IGO_598,,Collective Security Treaty Organization,IGO,IGO
+IGO_598,IGO_598,,CSTO,IGO,IGO
+IGO_599,IGO_599,,CICA,IGO,IGO
+IGO_599,IGO_599,,Conference on Interaction and Confidence-Building Measures in Asia (CICA),IGO,IGO
+IGO_600,IGO_600,,ADB,IGO,IGO
+IGO_600,IGO_600,,Asian Development Bank,IGO,IGO
+IGO_616,IGO_616,,UNISFA,IGO,IGO
+IGO_616,IGO_616,,United Nations Interim Security Force for Abyei (UNISFA),IGO,IGO
+IGO_624,IGO_624,,MONUC,IGO,IGO
+IGO_624,IGO_624,,United Nations Mission in the Democratic Republic of the Congo (MONUC),IGO,IGO
+IGO_63,IGO_63,,CIS Peacekeeping Force,IGO,IGO
+IGO_63,IGO_63,,CIS-PKF,IGO,IGO
+IGO_638,IGO_638,,EBRD,IGO,IGO
+IGO_638,IGO_638,,European Bank for Reconstruction and Development,IGO,IGO
+IGO_639,IGO_639,,COE,IGO,IGO
+IGO_639,IGO_639,,Council of Europe,IGO,IGO
+IGO_64,IGO_64,,UNDP,IGO,IGO
+IGO_64,IGO_64,,United Nations Development Programme,IGO,IGO
+IGO_640,IGO_640,,Office of the United Nations High Commissioner for Human Rights,IGO,IGO
+IGO_640,IGO_640,,UNHCHR,IGO,IGO
+IGO_65,IGO_65,,High Commission for Refugees,IGO,IGO
+IGO_65,IGO_65,,UNHCR,IGO,IGO
+IGO_652,IGO_652,,UNAMSIL,IGO,IGO
+IGO_652,IGO_652,,United Nations Mission in Sierra Leone (UNAMSIL),IGO,IGO
+IGO_672,IGO_672,,UN Office on Drugs and Crimes,IGO,IGO
+IGO_672,IGO_672,,UNODC,IGO,IGO
+IGO_673,IGO_673,,WFP,IGO,IGO
+IGO_673,IGO_673,,World Food Program,IGO,IGO
+IGO_674,IGO_674,,UNFPA,IGO,IGO
+IGO_674,IGO_674,,United Nations Population Fund,IGO,IGO
+IGO_675,IGO_675,,International Organization for Migration,IGO,IGO
+IGO_675,IGO_675,,IOM,IGO,IGO
+IGO_676,IGO_676,,FAO,IGO,IGO
+IGO_676,IGO_676,,Food and Agriculture Organization,IGO,IGO
+IGO_677,IGO_677,,WHO,IGO,IGO
+IGO_677,IGO_677,,World Health Organization,IGO,IGO
+IGO_678,IGO_678,,UNESCO,IGO,IGO
+IGO_678,IGO_678,,"United Nations Educational, Scientific and Cultural Organization",IGO,IGO
+IGO_679,IGO_679,,IFAD,IGO,IGO
+IGO_679,IGO_679,,International Fund for Agricultural Development (IFAD),IGO,IGO
+IGO_68,IGO_68,,OAS,IGO,IGO
+IGO_68,IGO_68,,Organization of American States,IGO,IGO
+IGO_680,IGO_680,,APO,IGO,IGO
+IGO_680,IGO_680,,Asian Productivity Organization,IGO,IGO
+IGO_681,IGO_681,,MIGA,IGO,IGO
+IGO_681,IGO_681,,Multilateral Investment Guarantee Agency (MIGA),IGO,IGO
+IGO_750,IGO_750,,United Nations Support Mission in Libya (UNSMIL),IGO,IGO
+IGO_750,IGO_750,,UNSMIL,IGO,IGO
+IGO_795,IGO_795,,UNCRO,IGO,IGO
+IGO_795,IGO_795,,United Nations Confidence Restoration Operation (UNCRO),IGO,IGO
+IGO_8,IGO_8,,UN Security Council,IGO,IGO
+IGO_8,IGO_8,,UNSC,IGO,IGO
+IGO_831,IGO_831,,United Nations Mission in South Sudan (UNMISS),IGO,IGO
+IGO_831,IGO_831,,UNMISS,IGO,IGO
+IGO_854,IGO_854,,United Nations Mission in Sudan (UNMIS),IGO,IGO
+IGO_854,IGO_854,,UNMIS,IGO,IGO
+IGO_87,IGO_87,,African Union,IGO,IGO
+IGO_87,IGO_87,,AU,IGO,IGO
+IGO_89,IGO_89,,Economic Community of West African States,IGO,IGO
+IGO_89,IGO_89,,ECOWAS,IGO,IGO
+IGO_892,IGO_892,,MINUSCA,IGO,IGO
+IGO_892,IGO_892,,United Nations Multidimensional Integrated Stabilization Mission in the Central African Republic (MINUSCA),IGO,IGO
+IGO_913,IGO_913,,ECCAS,IGO,IGO
+IGO_913,IGO_913,,Economic Community of Central African States,IGO,IGO
+IGO_950,IGO_950,,African Union-United Nations Hybrid Operation in Darfur (UNAMID),IGO,IGO
+IGO_950,IGO_950,,UNAMID,IGO,IGO
+IGO_972,IGO_972,,MONUSCO,IGO,IGO
+IGO_972,IGO_972,,United Nations Organization Stabilization Mission in the Democratic Republic of the Congo (MONUSCO),IGO,IGO
+IGO_985,IGO_985,,EFTA,IGO,IGO
+IGO_985,IGO_985,,European Free Trade Association,IGO,IGO
+IGO_990,IGO_990,,Office of the Special Envoy of the Secretary-General for Yemen (OSESG-Yemen),IGO,IGO
+IGO_990,IGO_990,,OSESG-Yemen,IGO,IGO
+MEND-1,,,Accord,,
+MEND-10,,,Berghof Foundation,,
+MEND-11,,760,Bhutan,,
+MEND-12,,145,Bolivia,,
+MEND-13,,,Carter Center,,
+MEND-14,,,Diplomatic Community,,
+MEND-15,,54,Dominica,,
+MEND-16,,42,Dominican Republic,,
+MEND-17,,,DPPA,,
+MEND-18,,572,Eswatini (formerly Swaziland),,
+MEND-19,,55,Grenada,,
+MEND-2,,,African Council for Religious Leaders Religions for Peace,,
+MEND-20,,110,Guyana,,
+MEND-21,,,High-Level Independent Panel on Security and Development of the Sahel,,
+MEND-22,,,Human Rights Research Society in Norway,,
+MEND-23,,,ICC,,
+MEND-24,,,International Rescue Committee,,
+MEND-25,,437,Ivory Coast (Cte d'Ivoire),,
+MEND-26,,51,Jamaica,,
+MEND-27,,942,Kiribati,,
+MEND-28,,781,Maldives,,
+MEND-29,,944,Marshall Islands,,
+MEND-3,,32,Antigua and Barbuda,,
+MEND-30,,945,Micronesia,,
+MEND-31,,,NAM,,
+MEND-31,,,Non-Aligned Movement (Uganda),,
+MEND-32,,941,Nauru,,
+MEND-33,,,Norwegian Refugee Council,,
+MEND-34,,,OCHA,,
+MEND-34,,,United Nations Office for the Coordination of Humanitarian Affairs,,
+MEND-35,,,OPCW,,
+MEND-35,,,Organisation for the Prohibition of Chemical Weapons,,
+MEND-36,,,Palestine Committee in Asian Parliamentary Assembly,,
+MEND-37,,150,Paraguay,,
+MEND-38,,,Public International Law & Policy Group,,
+MEND-39,,694,Qatar Fund for Development,,
+MEND-4,,,APA,,
+MEND-4,,,Asian Parliamentary Assembly,,
+MEND-40,,694,Qatar Red Crescent Society,,
+MEND-41,,56,Saint Kitts and Nevis,,
+MEND-42,,57,Saint Lucia,,
+MEND-43,,58,Saint Vincent and the Grenadines,,
+MEND-44,,990,Samoa,,
+MEND-45,,404,Sao Tome and Principe,,
+MEND-46,,,Save the Children,,
+MEND-47,,,SFCG Consortium Maji ya Amani,,
+MEND-48,,780,South Sri Lanka*,,
+MEND-49,,115,Suriname,,
+MEND-5,,,Arab Development Bank,,
+MEND-50,,52,Trinidad and Tobago,,
+MEND-51,,,UN Committee on the Admission of New Members,,
+MEND-52,,,UN Truce Supervision Organization,,
+MEND-53,,,UNAMA,,
+MEND-53,,,United Nations Assistance Mission in Afghanistan,,
+MEND-54,,,UNCT,,
+MEND-55,,,UNESCO,,
+MEND-56,,,UNFPA,,
+MEND-57,,,UNIFIL,,
+MEND-57,,,United Nations Interim Force in Lebanon,,
+MEND-58,,,UNITAMS,,
+MEND-58,,,United Nations Integrated Transition Assistance Mission in Sudan,,
+MEND-59,,,United Nations Mission to support the Hodeidah Agreement,,
+MEND-59,,,UNMHA,,
+MEND-6,,,ASEAN,,
+MEND-6,,,Association of Southeast Asian Nations,,
+MEND-60,,,United Nations Office for Project Services,,
+MEND-60,,,UNOPS,,
+MEND-61,,,United Nations Relief and Works Agency for Palestine Refugees in the Near East,,
+MEND-61,,,UNRWA,,
+MEND-62,,,United Nations Special Coordinator for the Levant,,
+MEND-62,,,UNSCOL,,
+MEND-63,,,UNSCO,,
+MEND-64,,,US Special Envoy for Yemen,,
+MEND-65,,,World Council of Churches,,
+MEND-66,,,South Asian Strategic Stability Institute (SASSI) University,,
+MEND-67,,,Centre for Strategic and International Studies,,
+MEND-68,,,Arab Economic Unity Council,,
+MEND-69,,,Geneva Centre for Security Sector Governance,,
+MEND-7,,31,Bahamas,,
+MEND-70,,,National Council on US-Libyan Relations,,
+MEND-71,,,American Chamber of Commerce in Libya,,
+MEND-72,,,UN Sanctions Committee ,,
+MEND-73,,,Arab Coordination Group,,
+MEND-74,,,World Jewish Congress,,
+MEND-75,,,European Syriac Union,,
+MEND-8,,53,Barbados,,
+MEND-9,,80,Belize,,
+NGO_1012,NGO_1012,325,Ara Pacis Initiatives for Peace Onlus,NGO,NGO
+NGO_102,NGO_102,230,Amnistiaren Aldeko Batzordeak,NGO,NGO
+NGO_1028,NGO_1028,482,Muslim Community,NGO,NGO
+NGO_1029,NGO_1029,482,Islamic Community,NGO,NGO
+NGO_103,NGO_103,230,Senideak,NGO,NGO
+NGO_1030,NGO_1030,482,Bishops of Central African Republic,NGO,NGO
+NGO_1031,NGO_1031,482,Alliance of the Evangelicals of CAR,NGO,NGO
+NGO_1032,NGO_1032,482,Pan-African Union of the Young,NGO,NGO
+NGO_1034,NGO_1034,482,Ambassadors of Peace,NGO,NGO
+NGO_104,NGO_104,230,Bakea Orain (Peace Now),NGO,NGO
+NGO_105,NGO_105,230,Gernika Batzordea,NGO,NGO
+NGO_106,NGO_106,230,Egizan,NGO,NGO
+NGO_107,NGO_107,230,Herria 2000 ElizaÂ (aldizkaria),NGO,NGO
+NGO_1075,NGO_1075,626,Gender Empowerment for South Sudan Organisation,NGO,NGO
+NGO_1076,NGO_1076,626,Representative of Women Group-WES,NGO,NGO
+NGO_1076,NGO_1076,626,WES,NGO,NGO
+NGO_1077,NGO_1077,482,Women Leaders Advisory Committee,NGO,NGO
+NGO_1078,NGO_1078,516,Women's Association,NGO,NGO
+NGO_108,NGO_108,230,Hiru,NGO,NGO
+NGO_1082,NGO_1082,450,Press Union of Liberia,NGO,NGO
+NGO_1082,NGO_1082,450,PUL,NGO,NGO
+NGO_1083,NGO_1083,450,National Medical and Dental Association of Liberia,NGO,NGO
+NGO_1083,NGO_1083,450,NMDAL,NGO,NGO
+NGO_1084,NGO_1084,450,MOJA,NGO,NGO
+NGO_1084,NGO_1084,450,Movement for Justice in Africa,NGO,NGO
+NGO_1085,NGO_1085,450,Federation of Liberia Youth,NGO,NGO
+NGO_1085,NGO_1085,450,FLY,NGO,NGO
+NGO_1086,NGO_1086,450,LCC,NGO,NGO
+NGO_1086,NGO_1086,450,Liberian Council of Churches,NGO,NGO
+NGO_1087,NGO_1087,450,MCL,NGO,NGO
+NGO_1087,NGO_1087,450,Muslim Council of Liberia,NGO,NGO
+NGO_1088,NGO_1088,450,WODAL,NGO,NGO
+NGO_1088,NGO_1088,450,Women Development Association of Liberia,NGO,NGO
+NGO_109,NGO_109,230,Auto-Determinazioren Bilzarrak,NGO,NGO
+NGO_1095,NGO_1095,700,Rome Group,NGO,NGO
+NGO_110,NGO_110,230,Elkarri,NGO,NGO
+NGO_111,NGO_111,230,Ezker Sindikalaren KonbergentziaÂ ,NGO,NGO
+NGO_112,NGO_112,230,STEE-ELIAS,NGO,NGO
+NGO_1121,NGO_1121,750,Naga Civil Society Organisation,NGO,NGO
+NGO_1122,NGO_1122,750,Church Forums (Nagaland),NGO,NGO
+NGO_113,NGO_113,230,Ezker Sindikalaren Koordinakundea-Coordinadora Unitaria de Izquierda Sindical,NGO,NGO
+NGO_1178,NGO_1178,840,Balay Mindanaw Foundation Inc.,NGO,NGO
+NGO_1180,NGO_1180,541,Muslim Community Leader,NGO,NGO
+NGO_1182,NGO_1182,100,Caucanos for Peace,NGO,NGO
+NGO_119,NGO_119,230,Eusko Langileen Alkartasuna,NGO,NGO
+NGO_1193,NGO_1193,100,Indigenous peoples representatives,NGO,NGO
+NGO_120,NGO_120,230,LangileÂ AbertzaleenÂ Batzordeak,NGO,NGO
+NGO_1200,NGO_1200,580,Acces Zon'olombelona,NGO,NGO
+NGO_1205,NGO_1205,580,CCOC,NGO,NGO
+NGO_1205,NGO_1205,580,Colectif des Citoyens et des Organisations Citoyennes,NGO,NGO
+NGO_1206,NGO_1206,580,CDE,NGO,NGO
+NGO_1206,NGO_1206,580,Club Developpement et EthiqueÂ ,NGO,NGO
+NGO_1208,NGO_1208,580,CNPC,NGO,NGO
+NGO_1208,NGO_1208,580,Consortium National pour la participation Citoyenne,NGO,NGO
+NGO_121,NGO_121,230,Euskal Herriko Nekazarien Elkartasuna,NGO,NGO
+NGO_1215,NGO_1215,580,PFNOSCM,NGO,NGO
+NGO_1215,NGO_1215,580,Plateforme Nationale des Organisations de la SociÃ©tÃ© Civile de Madagascar,NGO,NGO
+NGO_1220,NGO_1220,580,RÃ©seau pour lâÃ©radication de la violence ,NGO,NGO
+NGO_1220,NGO_1220,580,REV ,NGO,NGO
+NGO_1224,NGO_1224,580,FÃ©dÃ©ration MiniÃ¨re de Madagasca,NGO,NGO
+NGO_1224,NGO_1224,580,FEDMINES/EMIR,NGO,NGO
+NGO_1226,NGO_1226,580,GESCI,NGO,NGO
+NGO_1226,NGO_1226,580,Groupement des EntitÃ©s de la SociÃ©tÃ© Civile pour la dÃ©fense de la dÃ©mocratie et des valeurs rÃ©publicaines,NGO,NGO
+NGO_1228,NGO_1228,580,KMF/CNOE-EducationÂ desÂ citoyens,NGO,NGO
+NGO_1230,NGO_1230,580,MAMPAFI,NGO,NGO
+NGO_1230,NGO_1230,580,MAMPAFI/Malagsy mpandala Fihavanana,NGO,NGO
+NGO_1232,NGO_1232,,FAWE,NGO,NGO
+NGO_1232,NGO_1232,,Forum for African Women Educationalists,NGO,NGO
+NGO_1234,NGO_1234,580,Syndicat des fonctionnaires,NGO,NGO
+NGO_1236,NGO_1236,580,VMLF,NGO,NGO
+NGO_1236,NGO_1236,580,Vondrona Miralenta ho an'ny fampandrosoana,NGO,NGO
+NGO_1238,NGO_1238,580,Jeune Patronat de Madagascar,NGO,NGO
+NGO_1239,NGO_1239,580,Plateforme Nationale des Jeunes pour les Developpement,NGO,NGO
+NGO_1240,NGO_1240,580,Conference des Travailleurs de Madagascar,NGO,NGO
+NGO_1240,NGO_1240,580,CTM,NGO,NGO
+NGO_1241,NGO_1241,580,Sendika Revolisakonera Malagasy,NGO,NGO
+NGO_1241,NGO_1241,580,SEREMA,NGO,NGO
+NGO_1242,NGO_1242,580,FÃ©dÃ©ration des Syndicats de Travailleurs de Madagascar,NGO,NGO
+NGO_1242,NGO_1242,580,FISEMARE,NGO,NGO
+NGO_1243,NGO_1243,580,GEM,NGO,NGO
+NGO_1243,NGO_1243,580,Groupements des Entreprises de Madagascar,NGO,NGO
+NGO_1244,NGO_1244,580,FIV.MPA.MA,NGO,NGO
+NGO_1244,NGO_1244,580,Fivondronanâny Mpandraharaha Malagasy,NGO,NGO
+NGO_1245,NGO_1245,580,Federation de Hoteliers et Restaurateurs de Madagascar,NGO,NGO
+NGO_1245,NGO_1245,580,FHORM,NGO,NGO
+NGO_1251,NGO_1251,770,Elders of North Waziristan of Utmanzai,NGO,NGO
+NGO_1254,NGO_1254,100,FENALCO National Merchants/Traders federation,NGO,NGO
+NGO_1256,NGO_1256,541,Anglican Church of Southern Africa,NGO,NGO
+NGO_1257,NGO_1257,541,United Methodist Church,NGO,NGO
+NGO_1259,NGO_1259,625,Trade Union and Professional Associations Representatives,NGO,NGO
+NGO_1264,NGO_1264,626,Eminent Personalities,NGO,NGO
+NGO_1282,NGO_1282,692,Bahrain Chamber of Commerce and Industry,NGO,NGO
+NGO_1291,NGO_1291,482,CNJ,NGO,NGO
+NGO_1291,NGO_1291,482,National Youth Council,NGO,NGO
+NGO_1294,NGO_1294,482,National Confederation of Farmers and Breeders,NGO,NGO
+NGO_1295,NGO_1295,482,Inter-NGO Council in the Central African Republic,NGO,NGO
+NGO_1296,NGO_1296,482,Internally Displaced Persons,NGO,NGO
+NGO_1297,NGO_1297,482,Communities at Risk,NGO,NGO
+NGO_1298,NGO_1298,482,CDC,NGO,NGO
+NGO_1298,NGO_1298,482,Collective of the Central African Diaspora,NGO,NGO
+NGO_1311,NGO_1311,615,Youth Groups,NGO,NGO
+NGO_1312,NGO_1312,615,Unions,NGO,NGO
+NGO_1322,NGO_1322,626,Traditional Authority,NGO,NGO
+NGO_1323,NGO_1323,626,Faith-based Council,NGO,NGO
+NGO_1340,NGO_1340,475,Kamantan,NGO,NGO
+NGO_1341,NGO_1341,475,Ikulu,NGO,NGO
+NGO_1342,NGO_1342,475,Hausa,NGO,NGO
+NGO_1343,NGO_1343,475,Fulani,NGO,NGO
+NGO_1344,NGO_1344,475,Bajju,NGO,NGO
+NGO_1345,NGO_1345,475,Atyap,NGO,NGO
+NGO_1346,NGO_1346,475,Numana,NGO,NGO
+NGO_1348,NGO_1348,475,Ninzo,NGO,NGO
+NGO_1349,NGO_1349,475,Mada,NGO,NGO
+NGO_1350,NGO_1350,475,Gwandara,NGO,NGO
+NGO_1351,NGO_1351,475,Ayu,NGO,NGO
+NGO_1352,NGO_1352,475,Atakar,NGO,NGO
+NGO_1353,NGO_1353,475,Kagoro,NGO,NGO
+NGO_1354,NGO_1354,475,Moro'a,NGO,NGO
+NGO_1355,NGO_1355,475,Kuturmi,NGO,NGO
+NGO_1356,NGO_1356,475,Jaba,NGO,NGO
+NGO_1357,NGO_1357,475,Adara,NGO,NGO
+NGO_1358,NGO_1358,475,Kaninkon,NGO,NGO
+NGO_1359,NGO_1359,475,Fantsuwan,NGO,NGO
+NGO_164,NGO_164,,Centre for Humanitarian Dialogue,NGO,NGO
+NGO_164,NGO_164,,HD,NGO,NGO
+NGO_184,NGO_184,100,Episcopal Conference of Colombia,NGO,NGO
+NGO_186,NGO_186,100,Church Representative,NGO,NGO
+NGO_192,NGO_192,,World Council of Indigenous Peoples,NGO,NGO
+NGO_193,NGO_193,230,Spanish Human Rights Association,NGO,NGO
+NGO_201,NGO_201,,ICRC,NGO,NGO
+NGO_201,NGO_201,,International Committee of the Red Cross,NGO,NGO
+NGO_270,NGO_270,93,Cardinal Miguel Obando Bravo,NGO,NGO
+NGO_344,NGO_344,910,Bougainville Women,NGO,NGO
+NGO_388,NGO_388,,Shi'a,NGO,NGO
+NGO_389,NGO_389,,Sunni,NGO,NGO
+NGO_390,NGO_390,,Turkmen,NGO,NGO
+NGO_416,NGO_416,490,Forces Vives of the Nation ,NGO,NGO
+NGO_423,NGO_423,482,OFCA,NGO,NGO
+NGO_425,NGO_425,482,Trade Unions,NGO,NGO
+NGO_428,NGO_428,482,FNEC,NGO,NGO
+NGO_429,NGO_429,482,KOLI-OUALI GALA,NGO,NGO
+NGO_433,NGO_433,,Central African Islamic community,NGO,NGO
+NGO_434,NGO_434,482,Evangelical Baptist Church in the Central African Republic,NGO,NGO
+NGO_450,NGO_450,482,"Human rights, justice and democracy groups",NGO,NGO
+NGO_451,NGO_451,482,Religious Denominations,NGO,NGO
+NGO_453,NGO_453,,Aga Khan Foundation,NGO,NGO
+NGO_457,NGO_457,70,San Miguel Community,NGO,NGO
+NGO_502,NGO_502,90,Episcopal Conference of Guatemala,NGO,NGO
+NGO_508,NGO_508,700,Afghan Refugees,NGO,NGO
+NGO_595,NGO_595,,Aga Khan Development Network,NGO,NGO
+NGO_703,NGO_703,461,African Female Ministers and Parliamentarians Network,NGO,NGO
+NGO_704,NGO_704,461,"Group for Reflexion and Action on Women, Democracy and Development",NGO,NGO
+NGO_712,NGO_712,,Episcopal Conference of Angola and Sao Tome,NGO,NGO
+NGO_713,NGO_713,540,Council of Christian Churches of Angola,NGO,NGO
+NGO_714,NGO_714,540,Inter-Ecclesiastical Council for Peace in Angol,NGO,NGO
+NGO_719,NGO_719,626,Eminent Personalities Representative,NGO,NGO
+NGO_838,NGO_838,,Malteser International,NGO,NGO
+NGO_848,NGO_848,570,Christian Council of Lesotho,NGO,NGO
+NGO_849,NGO_849,570,Lesotho Council of NGOs,NGO,NGO
+NGO_885,NGO_885,,Coordination des Organizations des Musulmans Centrafricains,NGO,NGO
+NGO_919,NGO_919,626,Youth Representative,NGO,NGO
+NGO_95,NGO_95,,Community of Sant' Egidio,NGO,NGO
+NGO_956,NGO_956,678,Medical Professionals,NGO,NGO
+NGO_96,NGO_96,,Catholic Church,NGO,NGO
+NGO_973,NGO_973,490,ACIAR,NGO,NGO
+NGO_977,NGO_977,490,South Kivu Civil Society,NGO,NGO
+NGP_1233,NGP_1233,580,SOS Aux Victimes de Non Droit,NGP,NGP
+OTH_1009,OTH_1009,840,Ad Hoc Joint Action Group,OTH,OTH
+OTH_1009,OTH_1009,840,AHJAG,OTH,OTH
+OTH_101,OTH_101,230,GOGOA,OTH,OTH
+OTH_1010,OTH_1010,840,Philippines National Police,OTH,OTH
+OTH_1010,OTH_1010,840,PNP,OTH,OTH
+OTH_1011,OTH_1011,840,IMT,OTH,OTH
+OTH_1011,OTH_1011,840,International Monitoring Team,OTH,OTH
+OTH_1016,OTH_1016,626,Elder/Community Leader,OTH,OTH
+OTH_1018,OTH_1018,626,Committee 7 + 7,OTH,OTH
+OTH_1020,OTH_1020,490,Cooperative for Development of the Congo Church,OTH,OTH
+OTH_1021,OTH_1021,490,Group and Village Leaders,OTH,OTH
+OTH_1024,OTH_1024,840,"Office of the Presidential Adviser on Peace, Reconciliation and Unity",OTH,OTH
+OTH_1024,OTH_1024,840,OPAPRU,OTH,OTH
+OTH_1071,OTH_1071,620,Advisory Committee of the Libyan Political Dialogue Forum,OTH,OTH
+OTH_1071,OTH_1071,620,LPDF,OTH,OTH
+OTH_1072,OTH_1072,750,Ceasefire Supervisory Board,OTH,OTH
+OTH_1072,OTH_1072,750,CFSB,OTH,OTH
+OTH_1120,OTH_1120,750,NNPG,OTH,OTH
+OTH_1120,OTH_1120,750,Working Committee of National Naga Political Groups,OTH,OTH
+OTH_1143,OTH_1143,100,National Peace Committee,OTH,OTH
+OTH_1151,OTH_1151,484,Monitoring Commission of the Douala Appeal ,OTH,OTH
+OTH_1152,OTH_1152,,Gaddafi International Foundation for Charitable Associations,OTH,OTH
+OTH_1152,OTH_1152,,GIFCA,OTH,OTH
+OTH_1153,OTH_1153,,High Representative for Bosnia and Herzegovina,OTH,OTH
+OTH_1154,OTH_1154,346,International Police Task Force,OTH,OTH
+OTH_1154,OTH_1154,346,IPTF,OTH,OTH
+OTH_1155,OTH_1155,910,Peace Monitoring Group,OTH,OTH
+OTH_1156,OTH_1156,910,Leitana Council of Elders,OTH,OTH
+OTH_1175,OTH_1175,,EBO,OTH,OTH
+OTH_1175,OTH_1175,,Euro-Burma Office,OTH,OTH
+OTH_1176,OTH_1176,775,PCG,OTH,OTH
+OTH_1176,OTH_1176,775,Peace-Talk Creation Group,OTH,OTH
+OTH_1203,OTH_1203,580,TÃ©lÃ©vision Malagasy,OTH,OTH
+OTH_1203,OTH_1203,580,TVM,OTH,OTH
+OTH_1207,OTH_1207,580,CMRT,OTH,OTH
+OTH_1207,OTH_1207,580,Congres Malgache de la Route et des Transports ,OTH,OTH
+OTH_1246,OTH_1246,580,Malagasy Political Stakeholders,OTH,OTH
+OTH_1253,OTH_1253,100,Constituent Assembly of Colombia,OTH,OTH
+OTH_1258,OTH_1258,,Independent,OTH,OTH
+OTH_1267,OTH_1267,840,MILF Peace Panel,OTH,OTH
+OTH_1269,OTH_1269,840,National Security Council,OTH,OTH
+OTH_1269,OTH_1269,840,NSC,OTH,OTH
+OTH_1271,OTH_1271,,Standing Committee of the Horn,OTH,OTH
+OTH_1272,OTH_1272,,Episcopalian Conference of Germany and Colombia,OTH,OTH
+OTH_1274,OTH_1274,372,Joint Peacekeeping Force (JPKF),OTH,OTH
+OTH_1274,OTH_1274,372,JPKF,OTH,OTH
+OTH_1275,OTH_1275,340,"Albanian ethnic community (Presevo, Bujanovac and Medvedja)",OTH,OTH
+OTH_1276,OTH_1276,100,Exploratory Commission for Peace,OTH,OTH
+OTH_1277,OTH_1277,625,Darfur Movements,OTH,OTH
+OTH_1288,OTH_1288,482,ACDP,OTH,OTH
+OTH_1288,OTH_1288,482,Citizen Alternative for Democracy and Peace,OTH,OTH
+OTH_1292,OTH_1292,482,HCC,OTH,OTH
+OTH_1292,OTH_1292,482,High Council for Communication,OTH,OTH
+OTH_1300,OTH_1300,626,National Security Service,OTH,OTH
+OTH_1300,OTH_1300,626,NSS,OTH,OTH
+OTH_1304,OTH_1304,625,SLM-TC,OTH,OTH
+OTH_1304,OTH_1304,625,Sudan Liberation Movement - Transitional Council,OTH,OTH
+OTH_1308,OTH_1308,625,Leading personalities of the Darfur Movements,OTH,OTH
+OTH_1309,OTH_1309,625,Darfur Stakeholders,OTH,OTH
+OTH_1326,OTH_1326,482,National Stakeholders,OTH,OTH
+OTH_1327,OTH_1327,625,Police and National Security,OTH,OTH
+OTH_1330,OTH_1330,625,Joint Defense Council,OTH,OTH
+OTH_1339,OTH_1339,570,College of Chiefs,OTH,OTH
+OTH_165,OTH_165,850,Aceh Police,OTH,OTH
+OTH_166,OTH_166,850,Joint Committee on Humanitarian Action,OTH,OTH
+OTH_167,OTH_167,850,Joint Committee on Security Modalities,OTH,OTH
+OTH_199,OTH_199,,Socialist International,OTH,OTH
+OTH_206,OTH_206,,International Community,OTH,OTH
+OTH_231,OTH_231,450,Liberia National Conference,OTH,OTH
+OTH_284,OTH_284,2,USAID,OTH,OTH
+OTH_303,OTH_303,678,Presidential Council,OTH,OTH
+OTH_337,OTH_337,,Mwalimu Nyerere Foundation,OTH,OTH
+OTH_340,OTH_340,90,National Reconciliation Commission,OTH,OTH
+OTH_360,OTH_360,90,Political and Diplomatic Commission,OTH,OTH
+OTH_371,OTH_371,450,Inter-religious Council for Liberia,OTH,OTH
+OTH_372,OTH_372,450,Mano River Women Peace Network,OTH,OTH
+OTH_375,OTH_375,450,Liberia Leadership Forum,OTH,OTH
+OTH_384,OTH_384,450,Liberian Bar Association,OTH,OTH
+OTH_385,OTH_385,450,Liberians in Diaspora,OTH,OTH
+OTH_398,OTH_398,860,East Timor Police Force,OTH,OTH
+OTH_463,OTH_463,626,South Sudan Independents Group,OTH,OTH
+OTH_466,OTH_466,450,Liberia Council,OTH,OTH
+OTH_474,OTH_474,840,Philippine Peace Center,OTH,OTH
+OTH_475,OTH_475,,International Negotiations Network (INN),OTH,OTH
+OTH_477,OTH_477,482,International Monitoring Committee,OTH,OTH
+OTH_503,OTH_503,90,National Reconciliation Commission (CNR),OTH,OTH
+OTH_510,OTH_510,700,National Consultative Peace Jirga (NCPJ),OTH,OTH
+OTH_514,OTH_514,620,Interim Transitional National Council,OTH,OTH
+OTH_529,OTH_529,570,National Independent,OTH,OTH
+OTH_539,OTH_539,678,National Council,OTH,OTH
+OTH_556,OTH_556,775,Mon State Level Peace-Making Group,OTH,OTH
+OTH_557,OTH_557,775,Karen State-Level Peace-Making Team,OTH,OTH
+OTH_560,OTH_560,775,Rakhine State Government Peace-Making Group,OTH,OTH
+OTH_566,OTH_566,520,Jubba Interim Administration,OTH,OTH
+OTH_617,OTH_617,840,Cordillera Bodong Administration,OTH,OTH
+OTH_642,OTH_642,570,Interim Political Authority,OTH,OTH
+OTH_654,OTH_654,840,GRP Peace Panel,OTH,OTH
+OTH_663,OTH_663,100,Hope for Peace and Freedom,OTH,OTH
+OTH_664,OTH_664,100,Peace Facilitation Commission,OTH,OTH
+OTH_666,OTH_666,100,Facilitating and Verification Commission,OTH,OTH
+OTH_671,OTH_671,780,Central Bank of Sri Lanka,OTH,OTH
+OTH_686,OTH_686,850,Monitoring Team of Security Modality,OTH,OTH
+OTH_690,OTH_690,615,National Organizations,OTH,OTH
+OTH_708,OTH_708,750,Darjeeling Gorkha Hill Council,OTH,OTH
+OTH_71,OTH_71,750,BPAC,OTH,OTH
+OTH_710,OTH_710,775,Union Peace Working Committee,OTH,OTH
+OTH_715,OTH_715,540,Cabinda Forum for Dialogue,OTH,OTH
+OTH_72,OTH_72,750,ABSU,OTH,OTH
+OTH_72,OTH_72,750,All Bodo Students Union,OTH,OTH
+OTH_725,OTH_725,620,General National Congress,OTH,OTH
+OTH_726,OTH_726,620,National Transitional Council,OTH,OTH
+OTH_727,OTH_727,620,House of Representatives,OTH,OTH
+OTH_730,OTH_730,620,Tribal Leaders,OTH,OTH
+OTH_735,OTH_735,678,Preparatory Committee for National Dialogue,OTH,OTH
+OTH_745,OTH_745,692,Media,OTH,OTH
+OTH_748,OTH_748,645,Governing Council,OTH,OTH
+OTH_749,OTH_749,,Coalition Provisional Authority,OTH,OTH
+OTH_791,OTH_791,,Arbitration Commission of the Conference on Yugoslavia,OTH,OTH
+OTH_794,OTH_794,340,Local Authorities,OTH,OTH
+OTH_817,OTH_817,775,Union Peace-Making Working Committee,OTH,OTH
+OTH_820,OTH_820,775,Karen State Peace Making Group,OTH,OTH
+OTH_827,OTH_827,775,Union Peacemaking Working Committee,OTH,OTH
+OTH_834,OTH_834,775,CDAC,OTH,OTH
+OTH_834,OTH_834,775,State Central Committee for Drug Abuse Control (CDAC),OTH,OTH
+OTH_836,OTH_836,346,Exchange Comisssion,OTH,OTH
+OTH_837,OTH_837,,International Conference on the Former Yugoslavia,OTH,OTH
+OTH_839,OTH_839,482,National Transition Council,OTH,OTH
+OTH_853,OTH_853,940,Guadalcanal Provincial Government,OTH,OTH
+OTH_856,OTH_856,365,Joint Control Commission (JCC),OTH,OTH
+OTH_871,OTH_871,750,Karbi Students Union,OTH,OTH
+OTH_872,OTH_872,750,ASDC,OTH,OTH
+OTH_873,OTH_873,750,North Cachatr Hills Student Federation,OTH,OTH
+OTH_874,OTH_874,750,Dimasa Student's Union,OTH,OTH
+OTH_895,OTH_895,490,Front for the Respect of the Constitution,OTH,OTH
+OTH_898,OTH_898,438,Guinea - Opposition Party,OTH,OTH
+OTH_914,OTH_914,482,Transitional Government,OTH,OTH
+OTH_925,OTH_925,652,Congress of Syrian National Dialogue,OTH,OTH
+OTH_927,OTH_927,678,National Committee Prisoners Affairs & Missing Persons,OTH,OTH
+OTH_928,OTH_928,678,Foundation and Representative Prisoners Affairs & Missing Persons of the Arab Coalition ,OTH,OTH
+OTH_929,OTH_929,620,High Council of State,OTH,OTH
+OTH_934,OTH_934,625,Transitional Military Council,OTH,OTH
+OTH_952,OTH_952,750,Bodoland Territorial Council,OTH,OTH
+OTH_953,OTH_953,750,United Bodo People's Organization,OTH,OTH
+OTH_968,OTH_968,625,Transitional Sovereignty Council,OTH,OTH
+OTH_969,OTH_969,620,Libyan Political Dialogue Forum,OTH,OTH
+OTH_981,OTH_981,490,"Commission for Support of the Community Awareness, Disarmament, Demobilisation and Reintegration Process (CIAP-DDRC)",OTH,OTH
+OTH_983,OTH_983,490,Association for Integrated Community Development (ADCI),OTH,OTH
+OTH_984,OTH_984,490,SFCG â Consortium Maji ya Amani,OTH,OTH
+POL_1000,POL_1000,346,Movement of Democratic Action,POL,POL
+POL_1000,POL_1000,346,PDA,POL,POL
+POL_1001,POL_1001,346,United Srpska,POL,POL
+POL_1001,POL_1001,346,US,POL,POL
+POL_1002,POL_1002,346,Independent Bloc,POL,POL
+POL_1002,POL_1002,346,NB,POL,POL
+POL_1003,POL_1003,346,Alliance of Independent Social Democrats,POL,POL
+POL_1003,POL_1003,346,SNSD,POL,POL
+POL_1004,POL_1004,482,African Party for Radical Transformation and Integration of States,POL,POL
+POL_1004,POL_1004,482,PATRIE,POL,POL
+POL_1005,POL_1005,482,National Party for a New Central Africa,POL,POL
+POL_1005,POL_1005,482,PNCN,POL,POL
+POL_1007,POL_1007,346,Party of Democratic Action,POL,POL
+POL_1007,POL_1007,346,SDA,POL,POL
+POL_1025,POL_1025,482,MCU,POL,POL
+POL_1025,POL_1025,482,United Hearts Movement,POL,POL
+POL_1026,POL_1026,482,BTK,POL,POL
+POL_1026,POL_1026,482,Centrafrique pour nous tous,POL,POL
+POL_1027,POL_1027,482,Truth and Justice,POL,POL
+POL_1074,POL_1074,,NI Women's Coalition,POL,POL
+POL_1074,POL_1074,,NIWC,POL,POL
+POL_1115,POL_1115,626,PDM,POL,POL
+POL_1115,POL_1115,626,People's Democratic Movement,POL,POL
+POL_1119,POL_1119,750,Nationalist Socialist Council of Nagalim/Government of the People's Republic of Nagalim,POL,POL
+POL_1119,POL_1119,750,NSCN/GPRN,POL,POL
+POL_114,POL_114,230,AB,POL,POL
+POL_114,POL_114,230,National Unity,POL,POL
+POL_115,POL_115,230,Partido Nacionalista Vasco,POL,POL
+POL_115,POL_115,230,PNV,POL,POL
+POL_116,POL_116,230,EA,POL,POL
+POL_116,POL_116,230,Eusko Alkartasuna,POL,POL
+POL_117,POL_117,230,IU,POL,POL
+POL_117,POL_117,230,Izquierda Unida,POL,POL
+POL_1179,POL_1179,581,FNJ,POL,POL
+POL_1179,POL_1179,581,National Front for Justice ,POL,POL
+POL_1181,POL_1181,346,Serbian Democratic Party,POL,POL
+POL_1198,POL_1198,580,LEADER-Fanilo,POL,POL
+POL_1199,POL_1199,580,Malagasy Tonga Saina,POL,POL
+POL_1199,POL_1199,580,MTS,POL,POL
+POL_1201,POL_1201,580,AKFM-Fanavoazana ,POL,POL
+POL_1201,POL_1201,580,Congress Party for Malagasy Independence â Renewal,POL,POL
+POL_1202,POL_1202,580,AME,POL,POL
+POL_1202,POL_1202,580,Antoko Miombona EzakaÂ ,POL,POL
+POL_1204,POL_1204,580,Asa Vita no Ifampitsarana,POL,POL
+POL_1204,POL_1204,580,AVI,POL,POL
+POL_1209,POL_1209,580,MAVANA,POL,POL
+POL_1209,POL_1209,580,MAVANA/Forces pour le Changement,POL,POL
+POL_1210,POL_1210,580,MONIMA,POL,POL
+POL_1210,POL_1210,580,MONIMA/Forces pour le Changement,POL,POL
+POL_1211,POL_1211,580,AKFM,POL,POL
+POL_1211,POL_1211,580,Parti du Congres de l'Independance de Madagascar,POL,POL
+POL_1212,POL_1212,580,Parti FANARENANA,POL,POL
+POL_1214,POL_1214,580,Parti fort Democratique de Madagascar,POL,POL
+POL_1214,POL_1214,580,PFDM,POL,POL
+POL_1216,POL_1216,580,Democratic Party for Union in MadagascarÂ ,POL,POL
+POL_1216,POL_1216,580,PSDUM,POL,POL
+POL_1217,POL_1217,580,Renewal of the Social Democratic Party,POL,POL
+POL_1217,POL_1217,580,RPSD,POL,POL
+POL_1218,POL_1218,580,Rassemblement des dÃ©mocrates musulmans de Madagascar Renouveau,POL,POL
+POL_1218,POL_1218,580,RDMMR,POL,POL
+POL_122,POL_122,230,BATZARRE ZUTIK,POL,POL
+POL_122,POL_122,230,BATZARRE ZUTIK (Batzarre),POL,POL
+POL_1221,POL_1221,580,sofema,POL,POL
+POL_1221,POL_1221,580,SolidaritÃ© des FÃ©dÃ©ralistes de Madagascar,POL,POL
+POL_1222,POL_1222,580,DHD,POL,POL
+POL_1222,POL_1222,580,Droits Humains et DÃ©mocratie,POL,POL
+POL_1223,POL_1223,580,Forces pour le Changement,POL,POL
+POL_1225,POL_1225,580,Femmes legalistes de la mouvance Ravalomanana,POL,POL
+POL_1227,POL_1227,580,GLM,POL,POL
+POL_1227,POL_1227,580,Groupement Liberal de Madagascar,POL,POL
+POL_1229,POL_1229,580,Malagsy Miara-Mandroso Aron'ny Demokrasia,POL,POL
+POL_1229,POL_1229,580,MAMIMAD,POL,POL
+POL_1231,POL_1231,580,KMD,POL,POL
+POL_1231,POL_1231,580,Komity Miaro ny Demokrasia,POL,POL
+POL_1235,POL_1235,580,VITM,POL,POL
+POL_1235,POL_1235,580,Vonjy Iray Tsy Mivaky,POL,POL
+POL_1248,POL_1248,100,SÃ­ Colombia,POL,POL
+POL_1249,POL_1249,100,Colombian Liberal Party,POL,POL
+POL_1249,POL_1249,100,PLC,POL,POL
+POL_1255,POL_1255,541,FRELIMO,POL,POL
+POL_1284,POL_1284,775,ANC,POL,POL
+POL_1284,POL_1284,775,Arakan National Council,POL,POL
+POL_1285,POL_1285,775,Palaung State Liberation Front,POL,POL
+POL_1285,POL_1285,775,PSLF,POL,POL
+POL_1286,POL_1286,775,Wa National Organisation,POL,POL
+POL_1286,POL_1286,775,WNA,POL,POL
+POL_130,POL_130,520,United Somali Party,POL,POL
+POL_1325,POL_1325,438,La Mouvance,POL,POL
+POL_1333,POL_1333,482,Democratic Opposition,POL,POL
+POL_1360,POL_1360,840,Communist Party of the Philippines,POL,POL
+POL_145,POL_145,790,Communist Party of Nepal (Maoist Centre),POL,POL
+POL_145,POL_145,790,CPN (Maoist),POL,POL
+POL_147,POL_147,790,Communist Party of Nepal (Unified MarxistâLeninist),POL,POL
+POL_147,POL_147,790,CPN (UML),POL,POL
+POL_148,POL_148,790,Nepali Congress,POL,POL
+POL_149,POL_149,790,Nepal Sadbhavana Party,POL,POL
+POL_150,POL_150,790,Nepal Majdoor Kisan Party,POL,POL
+POL_151,POL_151,790,People's Front Nepal,POL,POL
+POL_153,POL_153,790,Nepal Socialist Party,POL,POL
+POL_154,POL_154,790,NepalÂ Workers' and Peasants' Party,POL,POL
+POL_187,POL_187,230,Spanish Socialist Workers Party,POL,POL
+POL_191,POL_191,100,Political Parties,POL,POL
+POL_194,POL_194,100,Revolutionary Workerâs Party,POL,POL
+POL_208,POL_208,560,Solidarity,POL,POL
+POL_209,POL_209,560,SA Communist Party,POL,POL
+POL_210,POL_210,560,Inkatha Freedom Party,POL,POL
+POL_211,POL_211,560,United People's Front,POL,POL
+POL_212,POL_212,560,Democratic Party,POL,POL
+POL_214,POL_214,560,Ximoko Progressive Party,POL,POL
+POL_217,POL_217,560,Dikwankwetla Party,POL,POL
+POL_218,POL_218,560,Intando Yesizwe Party,POL,POL
+POL_219,POL_219,560,Inyandza National Movement,POL,POL
+POL_220,POL_220,560,Labour Party SA,POL,POL
+POL_222,POL_222,560,African National Congress,POL,POL
+POL_222,POL_222,560,ANC,POL,POL
+POL_223,POL_223,560,Natal / Tvl Indian Congress,POL,POL
+POL_224,POL_224,560,National Party,POL,POL
+POL_225,POL_225,560,National People's Party,POL,POL
+POL_23,POL_23,481,PGP,POL,POL
+POL_23,POL_23,481,Progress Party of Gabon,POL,POL
+POL_236,POL_236,437,MFA,POL,POL
+POL_236,POL_236,437,Movement of the Forces of the Future,POL,POL
+POL_239,POL_239,437,Ivorian Workers' Party,POL,POL
+POL_239,POL_239,437,PIT,POL,POL
+POL_24,POL_24,481,MESP,POL,POL
+POL_24,POL_24,481,Peopleâs Socialist Emancipation Movement,POL,POL
+POL_242,POL_242,437,UDCPI,POL,POL
+POL_242,POL_242,437,Union for Democracy and Peace inÂ Ivory Coast,POL,POL
+POL_243,POL_243,437,Democratic Party of Ivory Coast â African Democratic Rally,POL,POL
+POL_243,POL_243,437,PDCI-RDA,POL,POL
+POL_245,POL_245,437,Citizens' Democratic Union,POL,POL
+POL_245,POL_245,437,UDCY,POL,POL
+POL_246,POL_246,811,FUNCINPEC,POL,POL
+POL_25,POL_25,481,African Forum for Reconstruction,POL,POL
+POL_25,POL_25,481,FAR,POL,POL
+POL_26,POL_26,481,MORENA,POL,POL
+POL_26,POL_26,481,National Recovery Movement,POL,POL
+POL_27,POL_27,481,ADERE,POL,POL
+POL_27,POL_27,481,Democratic & Republican Alliance,POL,POL
+POL_28,POL_28,481,Independent Centre Party of Gabon,POL,POL
+POL_28,POL_28,481,PGCI,POL,POL
+POL_29,POL_29,481,CDJ,POL,POL
+POL_29,POL_29,481,Democratic Justice Congress,POL,POL
+POL_30,POL_30,481,Democratic Party of Gabon,POL,POL
+POL_30,POL_30,481,PDG,POL,POL
+POL_305,POL_305,811,Democratic Kampuchea,POL,POL
+POL_31,POL_31,481,PSD,POL,POL
+POL_31,POL_31,481,Social Democratic Party,POL,POL
+POL_310,POL_310,678,Yemeni Socialist Party,POL,POL
+POL_310,POL_310,678,YSP,POL,POL
+POL_311,POL_311,678,General People's Congress,POL,POL
+POL_311,POL_311,678,GPC,POL,POL
+POL_319,POL_319,516,Independent Labor Party,POL,POL
+POL_319,POL_319,516,PIT,POL,POL
+POL_32,POL_32,481,PUP-CRISE,POL,POL
+POL_32,POL_32,481,United Peopleâs Party,POL,POL
+POL_320,POL_320,516,Union for National Progress,POL,POL
+POL_320,POL_320,516,UPRONA,POL,POL
+POL_321,POL_321,516,FRODEBU,POL,POL
+POL_321,POL_321,516,Front for Democracy in Burundi,POL,POL
+POL_322,POL_322,516,Rally for the People of Burundi,POL,POL
+POL_322,POL_322,516,RPB,POL,POL
+POL_323,POL_323,516,ANADDE,POL,POL
+POL_323,POL_323,516,National Alliance for Law and Economic Development,POL,POL
+POL_325,POL_325,516,Inkinzo,POL,POL
+POL_325,POL_325,516,Pan Africanist Socialist Movement-Inkinzo,POL,POL
+POL_326,POL_326,516,People's Party,POL,POL
+POL_326,POL_326,516,PP,POL,POL
+POL_327,POL_327,516,Liberal Party,POL,POL
+POL_327,POL_327,516,PL,POL,POL
+POL_328,POL_328,516,RADDES,POL,POL
+POL_328,POL_328,516,Rally for Democracy and Economic and Social Development,POL,POL
+POL_329,POL_329,516,Alliance of the Valiant,POL,POL
+POL_329,POL_329,516,AV-INTWARI,POL,POL
+POL_33,POL_33,481,CLR,POL,POL
+POL_33,POL_33,481,Liberal Reform Convention,POL,POL
+POL_330,POL_330,516,Palipehutu,POL,POL
+POL_331,POL_331,516,People's Reconciliation Party,POL,POL
+POL_331,POL_331,516,PRP,POL,POL
+POL_332,POL_332,516,PARENA,POL,POL
+POL_332,POL_332,516,Party for National Recovery,POL,POL
+POL_334,POL_334,516,ABASA,POL,POL
+POL_334,POL_334,516,Burundo-African Alliance for Salvation,POL,POL
+POL_34,POL_34,481,National Assembly of Foresters,POL,POL
+POL_34,POL_34,481,RNB,POL,POL
+POL_342,POL_342,910,Bougainville Peoples Congress,POL,POL
+POL_35,POL_35,481,Gabon Peopleâs Union,POL,POL
+POL_35,POL_35,481,UPG,POL,POL
+POL_362,POL_362,450,Liberia National Union,POL,POL
+POL_363,POL_363,450,Equal Rights Party,POL,POL
+POL_364,POL_364,450,United People's Party,POL,POL
+POL_365,POL_365,450,True Whig Party,POL,POL
+POL_366,POL_366,450,All-Liberian Coalition Party,POL,POL
+POL_367,POL_367,450,Reformation Alliance Party,POL,POL
+POL_368,POL_368,450,Progressive Peoples Party,POL,POL
+POL_369,POL_369,450,National Reform Party,POL,POL
+POL_37,POL_37,481,PARI,POL,POL
+POL_37,POL_37,481,Radical Independent Republican Party,POL,POL
+POL_370,POL_370,450,Free Democracy Party,POL,POL
+POL_373,POL_373,450,New Deal Movement,POL,POL
+POL_374,POL_374,450,National Democratic Party,POL,POL
+POL_376,POL_376,450,Liberian Action Party,POL,POL
+POL_378,POL_378,450,People's Democratic Party,POL,POL
+POL_379,POL_379,450,National Patriotic Party,POL,POL
+POL_38,POL_38,481,APSG,POL,POL
+POL_38,POL_38,481,Gabon Association for Socialism,POL,POL
+POL_380,POL_380,450,Unity Party,POL,POL
+POL_381,POL_381,450,Liberians People's Party,POL,POL
+POL_382,POL_382,450,Labor Party,POL,POL
+POL_383,POL_383,450,Liberia Unification Party,POL,POL
+POL_39,POL_39,481,PUP,POL,POL
+POL_39,POL_39,481,Unity Peopleâs Party,POL,POL
+POL_396,POL_396,437,Democratic Party ofÂ Ivory Coast,POL,POL
+POL_396,POL_396,437,PDCI,POL,POL
+POL_40,POL_40,481,Socialist Union of Gabon,POL,POL
+POL_40,POL_40,481,USG,POL,POL
+POL_401,POL_401,860,Pro-Integration Party,POL,POL
+POL_403,POL_403,339,Democratic Party of Albanians,POL,POL
+POL_404,POL_404,343,Social Democratic Union of Macedonia,POL,POL
+POL_422,POL_422,482,MLPC,POL,POL
+POL_422,POL_422,482,Movement for the Liberation of the Central African People,POL,POL
+POL_424,POL_424,482,Movement for Democracy and Development,POL,POL
+POL_426,POL_426,482,Alliance for Democracy and Progress,POL,POL
+POL_427,POL_427,482,Civic Forum,POL,POL
+POL_432,POL_432,482,Patritotic Front for Progress,POL,POL
+POL_442,POL_442,700,Harkat-e-Inquilab-e-Islami,POL,POL
+POL_443,POL_443,700,Hezbe Wahdat,POL,POL
+POL_444,POL_444,700,Etelaf-e Milli,POL,POL
+POL_445,POL_445,700,Jamayat-E-Islami,POL,POL
+POL_445,POL_445,700,Jamiat,POL,POL
+POL_446,POL_446,700,Ittehad-e-Islami,POL,POL
+POL_448,POL_448,700,National Islamic Front of Afghanistan,POL,POL
+POL_449,POL_449,482,Central African Democratic Rally,POL,POL
+POL_449,POL_449,482,RDC,POL,POL
+POL_464,POL_464,626,South Sudan United Democratic Front,POL,POL
+POL_464,POL_464,626,UDSF,POL,POL
+POL_467,POL_467,,SDLP,POL,POL
+POL_467,POL_467,,Social Democratic Labour Party,POL,POL
+POL_468,POL_468,,Progressive Unionist Party,POL,POL
+POL_468,POL_468,,PUP,POL,POL
+POL_469,POL_469,,UDP,POL,POL
+POL_469,POL_469,,Ulster Democratic Party,POL,POL
+POL_470,POL_470,,Ulster Unionist Party,POL,POL
+POL_470,POL_470,,UUP,POL,POL
+POL_471,POL_471,,NI Labour Coalition,POL,POL
+POL_472,POL_472,,SF,POL,POL
+POL_472,POL_472,,Sinn Fein,POL,POL
+POL_473,POL_473,,AP,POL,POL
+POL_473,POL_473,,The Alliance Party of Northern Ireland,POL,POL
+POL_499,POL_499,501,Orange Democratic Movement,POL,POL
+POL_501,POL_501,90,FAN,POL,POL
+POL_501,POL_501,90,National Advancement Front Party,POL,POL
+POL_504,POL_504,90,MAS,POL,POL
+POL_504,POL_504,90,Solidarity Action Movement,POL,POL
+POL_505,POL_505,90,MLN,POL,POL
+POL_505,POL_505,90,National Liberation Movement,POL,POL
+POL_506,POL_506,90,National Renewal Party,POL,POL
+POL_506,POL_506,90,PNR,POL,POL
+POL_507,POL_507,90,PSD,POL,POL
+POL_507,POL_507,90,Socialist Party,POL,POL
+POL_515,POL_515,660,The Future Movement,POL,POL
+POL_517,POL_517,660,Progressive Socialist Party,POL,POL
+POL_518,POL_518,652,Syrian Social Nationalist Party,POL,POL
+POL_519,POL_519,660,Lebanese Democrat Party,POL,POL
+POL_520,POL_520,660,Amal Movement,POL,POL
+POL_522,POL_522,570,Marematlou Freedom Party,POL,POL
+POL_523,POL_523,570,Lesotho Workers Party,POL,POL
+POL_524,POL_524,570,All Basotho Convention,POL,POL
+POL_525,POL_525,570,Lesotho People's Congress,POL,POL
+POL_526,POL_526,570,Batotho National Party,POL,POL
+POL_527,POL_527,570,Popular Front for Democracy,POL,POL
+POL_528,POL_528,570,Basotho Democratic National Party,POL,POL
+POL_530,POL_530,570,Basotho Batho Democratic Party,POL,POL
+POL_531,POL_531,790,Unified Communist Party of Nepal,POL,POL
+POL_538,POL_538,625,National Congress Party,POL,POL
+POL_547,POL_547,483,National Movement,POL,POL
+POL_548,POL_548,,Democratic Unionist Party,POL,POL
+POL_548,POL_548,,DUP,POL,POL
+POL_559,POL_559,775,Rakhine State Liberation Party,POL,POL
+POL_559,POL_559,775,RSLP,POL,POL
+POL_578,POL_578,552,Zimbabwe African National Union â Patriotic Front,POL,POL
+POL_579,POL_579,552,Movement for Democratic Change,POL,POL
+POL_581,POL_581,626,All Political Parties Conference,POL,POL
+POL_581,POL_581,626,APPC,POL,POL
+POL_584,POL_584,461,Action Committee for Renewal,POL,POL
+POL_584,POL_584,461,CAR,POL,POL
+POL_643,POL_643,615,FLN,POL,POL
+POL_643,POL_643,615,National Liberation Front,POL,POL
+POL_644,POL_644,615,FFS,POL,POL
+POL_644,POL_644,615,Socialist Forces Front,POL,POL
+POL_645,POL_645,615,MDA,POL,POL
+POL_645,POL_645,615,Movement for Democracy in Algeria,POL,POL
+POL_646,POL_646,615,PT,POL,POL
+POL_646,POL_646,615,Workers Party,POL,POL
+POL_655,POL_655,625,National Democratic Alliance,POL,POL
+POL_659,POL_659,100,Communist Party of Colombia (MarxistâLeninist),POL,POL
+POL_661,POL_661,100,National Salvation Movement,POL,POL
+POL_662,POL_662,100,Colombian Conservative Party,POL,POL
+POL_693,POL_693,461,PAD,POL,POL
+POL_693,POL_693,461,Party of the pure-Action on Development,POL,POL
+POL_694,POL_694,461,UDS,POL,POL
+POL_694,POL_694,461,Union for the Democracy and Solidarity,POL,POL
+POL_695,POL_695,461,Democratic party pure Unite,POL,POL
+POL_695,POL_695,461,PDU,POL,POL
+POL_696,POL_696,461,Party for Democracy and Renewal,POL,POL
+POL_696,POL_696,461,PDR,POL,POL
+POL_697,POL_697,461,Togolese Union for Democracy,POL,POL
+POL_697,POL_697,461,UTD,POL,POL
+POL_698,POL_698,461,Convention African Peoples Democratic,POL,POL
+POL_698,POL_698,461,FDC,POL,POL
+POL_702,POL_702,461,CPP,POL,POL
+POL_702,POL_702,461,Panafrican Patriotic Convention,POL,POL
+POL_705,POL_705,461,CDPA,POL,POL
+POL_705,POL_705,461,Democratic Convention of African People,POL,POL
+POL_736,POL_736,678,Yemeni Congregation for Reform,POL,POL
+POL_737,POL_737,678,Solidarity Council and the Freedom Bloc,POL,POL
+POL_738,POL_738,678,Al - Haqq,POL,POL
+POL_743,POL_743,692,Political Societies,POL,POL
+POL_798,POL_798,775,National League for Democracy,POL,POL
+POL_798,POL_798,775,NLD,POL,POL
+POL_799,POL_799,775,Nationalities Brotherhood Federation,POL,POL
+POL_799,POL_799,775,NBF,POL,POL
+POL_800,POL_800,775,FDA,POL,POL
+POL_800,POL_800,775,Federal Democracy Alliance,POL,POL
+POL_801,POL_801,775,UNA,POL,POL
+POL_801,POL_801,775,United Nationalities Alliance,POL,POL
+POL_802,POL_802,775,National Unity Party,POL,POL
+POL_802,POL_802,775,NUP,POL,POL
+POL_803,POL_803,775,Union Solidarity and Development Party,POL,POL
+POL_803,POL_803,775,USDP,POL,POL
+POL_833,POL_833,344,Croatian Democratic Union,POL,POL
+POL_840,POL_840,570,National Independent Party,POL,POL
+POL_841,POL_841,570,Democratic Congress,POL,POL
+POL_842,POL_842,570,Basotho National African Congress,POL,POL
+POL_843,POL_843,570,Basotho Congress Party,POL,POL
+POL_844,POL_844,570,African Unity Movement,POL,POL
+POL_845,POL_845,570,All Democratic Cooperation,POL,POL
+POL_846,POL_846,570,Basotho National Party,POL,POL
+POL_847,POL_847,570,Lesotho Congress for Democracy,POL,POL
+POL_850,POL_850,570,Basutoland Congress Party,POL,POL
+POL_866,POL_866,790,Terai Madhesh Loktantrik Party,POL,POL
+POL_867,POL_867,790,Madhesi Janadhikar Forum,POL,POL
+POL_868,POL_868,625,NationalÂ Umma Party,POL,POL
+POL_877,POL_877,652,Arab Baath Socialist Party,POL,POL
+POL_878,POL_878,678,Union of Popular Forces,POL,POL
+POL_879,POL_879,678,Al-Rashad Union,POL,POL
+POL_880,POL_880,678,Popular Unificationist Nasserite Organization,POL,POL
+POL_881,POL_881,678,Unionist Union Party,POL,POL
+POL_882,POL_882,678,Justice and Construction Party,POL,POL
+POL_883,POL_883,645,Patriotic Union of Kurdistan,POL,POL
+POL_886,POL_886,482,KNK,POL,POL
+POL_886,POL_886,482,Kwa Na Kwa,POL,POL
+POL_887,POL_887,482,Rally for the Republic,POL,POL
+POL_887,POL_887,482,RPR,POL,POL
+POL_888,POL_888,482,Union for Central African Renewal,POL,POL
+POL_888,POL_888,482,URCA,POL,POL
+POL_893,POL_893,490,Political Opposition,POL,POL
+POL_916,POL_916,775,Political Parties Representatives,POL,POL
+POL_920,POL_920,626,United Democratic Salvation Front,POL,POL
+POL_922,POL_922,626,United Sudan African Party,POL,POL
+POL_923,POL_923,626,United Democratic Party,POL,POL
+POL_957,POL_957,775,Political Parties Group,POL,POL
+POL_994,POL_994,346,NiP,POL,POL
+POL_994,POL_994,346,People and Justice,POL,POL
+POL_996,POL_996,346,NES,POL,POL
+POL_996,POL_996,346,People's European Union of Bosnia and Herzegovina,POL,POL
+POL_997,POL_997,346,SDP,POL,POL
+POL_997,POL_997,346,Social Democratic Party of Bosnia and Herzegovina,POL,POL
+POL_998,POL_998,346,NS,POL,POL
+POL_998,POL_998,346,Our Party,POL,POL
+POL_999,POL_999,346,Democratic Front,POL,POL
+POL_999,POL_999,346,DF,POL,POL
+CON_289,CON_289,630,Iran,CON,Country/State
+MEND-76,,,RJMEC,,
+MEND-76,,,Reconstituted Joint Monitoring and Evaluation Commission (RJMEC),,
+MEND-77,,,International Institute for Democracy and Electoral Assistance,,
+MEND-78,,,African Diplomatic Corps,,
+MEND-79,,,UN Women,,
+MEND-80,,,WIPC,,
+MEND-80,,,Women's International Peace Centre,,
+MEND-81,,,Cordaid International,,
+MEND-82,,,Norwegian Church Aid,,
+MEND-83,,,CTSAMVM,,
+MEND-83,,,Ceasefire & Transitional Security Arrangements Monitoring & Verification Mechanism,,
+MEND-84,,,Alliance of Sahel States (AES),,
+MEND-84,,,AES,,
+MEND-85,,,Tony Blair Institute for Global Change (TBI),,
+MEND-86,,,Somaliland,,
+MEND-87,,,Sharaka,,
+MEND-88,,,Arab Inter-Parliamentary Union,,
+MEND-89,,,Gaza Humanitarian Foundation,,
+MEND-90,,,Monaco,,
+MEND-91,,,International Atomic Energy Agency (IAEA),,
