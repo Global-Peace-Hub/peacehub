@@ -1,283 +1,282 @@
 <script>
-    import * as d3 from "d3";
+  import * as d3 from "d3";
 
-    export let innerWidthAdjusted;
-    export let innerHeight;
-    export let width;
-    export let height;
-    export let margin;
-    export let xScale;
-    export let yScale;
-    export let ucdp_xScale;
-    export let ucdp_yScale;
-    export let historical_events = [];
-    export let processedData;
-    export let processedM;
-    export let pathData;
-    export let ucdp_plot = [];
+  export let innerWidthAdjusted;
+  export let innerHeight;
+  export let width;
+  export let height;
+  export let margin;
+  export let xScale;
+  export let yScale;
+  export let ucdp_xScale;
+  export let ucdp_yScale;
+  export let historical_events = [];
+  export let processedData;
+  export let processedM;
+  export let pathData;
+  export let ucdp_plot = [];
 
-    // $: console.log(pathData);
+  // $: console.log(pathData);
 
-    let xAxisGroup;
-    let yAxisGroup;
-    let yUCDPAxisGroup;
+  let xAxisGroup;
+  let yAxisGroup;
+  let yUCDPAxisGroup;
 
-    $: {
-        if (xAxisGroup) {
-            const domain = xScale.domain();
-            let tickValues;
+  $: {
+    if (xAxisGroup) {
+      const domain = xScale.domain();
+      let tickValues;
 
-            if (width < 600) {
-                // Mobile: ~5 ticks
-                const step = Math.ceil(domain.length / 5);
-                tickValues = domain.filter((_, i) => i % step === 0);
-            } else if (width < 1200) {
-                // Medium screens: ~10 ticks
-                const step = Math.ceil(domain.length / 10);
-                tickValues = domain.filter((_, i) => i % step === 0);
-            } else {
-                // Large screens: every 3rd tick
-                tickValues = domain.filter((_, i) => i % 5 === 0);
-            }
+      if (width < 600) {
+        // Mobile: ~5 ticks
+        const step = Math.ceil(domain.length / 5);
+        tickValues = domain.filter((_, i) => i % step === 0);
+      } else if (width < 1200) {
+        // Medium screens: ~10 ticks
+        const step = Math.ceil(domain.length / 10);
+        tickValues = domain.filter((_, i) => i % step === 0);
+      } else {
+        // Large screens: every 3rd tick
+        tickValues = domain.filter((_, i) => i % 5 === 0);
+      }
 
-            const xAxis = d3
-                .axisBottom(xScale)
-                .tickValues(tickValues)
-                .tickFormat((d) => {
-                    const [year, month] = d.split("-");
-                    return `${month}/${year}`;
-                });
+      const xAxis = d3
+        .axisBottom(xScale)
+        .tickValues(tickValues)
+        .tickFormat((d) => {
+          const [year, month] = d.split("-");
+          return `${month}/${year}`;
+        });
 
-            d3.select(xAxisGroup)
-                .call(xAxis)
-                .style("font-family", "Montserrat, sans-serif")
-                .style("font-weight", "600")
-                .style("font-size", "12px");
-        }
-
-        if (yAxisGroup) {
-            const yAxis = d3.axisLeft(yScale);
-            d3.select(yAxisGroup)
-                .call(yAxis)
-                .style("font-family", "Montserrat, sans-serif")
-                .style("font-weight", "600")
-                .style("font-size", "12px");
-        }
-
-        if (yUCDPAxisGroup) {
-            const maxCount = Math.max(...ucdp_plot.map((d) => d.best_count));
-            const screenWidth = width;
-
-            const yAxis = d3
-                .axisRight(ucdp_yScale)
-                .ticks(3)
-                .tickFormat((d) => {
-                    if (screenWidth < 600) {
-                        return `${(d / 1000).toFixed(1)}k`;
-                    }
-                    return d3.format("d")(d);
-                });
-
-            d3.select(yUCDPAxisGroup)
-                .call(yAxis)
-                .selectAll("text")
-                .style("font-family", "Montserrat, sans-serif")
-                .style("font-weight", "600")
-                .style("font-size", "12px")
-                .style("fill", "red");
-
-            d3.select(yUCDPAxisGroup)
-                .selectAll(".domain, line")
-                .style("stroke", "red");
-        }
+      d3.select(xAxisGroup)
+        .call(xAxis)
+        .style("font-family", "Montserrat, sans-serif")
+        .style("font-weight", "600")
+        .style("font-size", "12px");
     }
+
+    if (yAxisGroup) {
+      const yAxis = d3.axisLeft(yScale);
+      d3.select(yAxisGroup)
+        .call(yAxis)
+        .style("font-family", "Montserrat, sans-serif")
+        .style("font-weight", "600")
+        .style("font-size", "12px");
+    }
+
+    if (yUCDPAxisGroup) {
+      const maxCount = Math.max(...ucdp_plot.map((d) => d.best_count));
+      const screenWidth = width;
+
+      const yAxis = d3
+        .axisRight(ucdp_yScale)
+        .ticks(3)
+        .tickFormat((d) => {
+          if (screenWidth < 600) {
+            return `${(d / 1000).toFixed(1)}k`;
+          }
+          return d3.format("d")(d);
+        });
+
+      d3.select(yUCDPAxisGroup)
+        .call(yAxis)
+        .selectAll("text")
+        .style("font-family", "Montserrat, sans-serif")
+        .style("font-weight", "600")
+        .style("font-size", "12px")
+        .style("fill", "red");
+
+      d3.select(yUCDPAxisGroup)
+        .selectAll(".domain, line")
+        .style("stroke", "red");
+    }
+  }
+
+  $: console.log(processedData);
+  
 </script>
 
 <!-- mediations per month -->
 <div class="mediation_type" bind:clientWidth={width}>
-    <h4>Mediation Events per Month</h4>
-    <div class="legend">
-        <div class="legend-item">
-            <div class="color-box white"></div>
-            <span style="font-weight: 600;">Mediation</span>
-        </div>
-        <div class="legend-item">
-            <div class="color-box steelblue"></div>
-            <span style="font-weight: 600;">Mediation-related</span>
-        </div>
-        <div class="legend-item">
-            <div class="red-line"></div>
-            <span style="font-weight: 600;">Battle-related deaths (UCDP)</span>
-        </div>
+  <h4>Mediation Events per Month</h4>
+  <div class="legend">
+    <div class="legend-item">
+      <div class="color-box white"></div>
+      <span style="font-weight: 600;">Mediation</span>
     </div>
-
-    <svg {width} {height}>
-        <g transform={`translate(${margin.left}, ${margin.top})`}>
-            <g
-                bind:this={xAxisGroup}
-                transform={`translate(0, ${innerHeight})`}
-            />
-            <g bind:this={yAxisGroup} transform={`translate(${0}, 0)`} />
-            <g
-                bind:this={yUCDPAxisGroup}
-                transform={`translate(${innerWidthAdjusted}, 0)`}
-            />
-
-            {#each processedData as d}
-                <rect
-                    x={xScale(`${d.year}-${d.month}`)}
-                    y={yScale(d.count.length)}
-                    width={xScale.bandwidth()}
-                    height={innerHeight - yScale(d.count.length)}
-                    fill="steelblue"
-                    rx="2"
-                />
-            {/each}
-
-            {#each processedM as m}
-                <rect
-                    x={xScale(`${m.year}-${m.month}`)}
-                    y={yScale(m.count.length)}
-                    width={xScale.bandwidth()}
-                    height={innerHeight - yScale(m.count.length)}
-                    fill="white"
-                    rx="2"
-                />
-            {/each}
-
-            <path d={pathData} fill="none" stroke="red" stroke-width="2" />
-
-            {#each ucdp_plot as d}
-                <circle
-                    cx={ucdp_xScale(`${d.year}-${d.month}`) +
-                        ucdp_xScale.bandwidth() / 2}
-                    cy={ucdp_yScale(d.best_count)}
-                    r="3"
-                    fill="red"
-                    stroke="black"
-                />
-            {/each}
-            {#each historical_events as event, i}
-                <line
-                    x1={xScale(`${event.year}-${event.month}`)}
-                    y1={10 + i * 20}
-                    x2={xScale(`${event.year}-${event.month}`)}
-                    y2={innerHeight}
-                    stroke="gray"
-                    stroke-width="1"
-                    stroke-opacity="0.5"
-                    stroke-dasharray="4 2"
-                />
-                <text
-                    x={xScale(`${event.year}-${event.month}`)}
-                    y={i * 20}
-                    fill="gray"
-                    text-anchor="middle"
-                >
-                    {event.name}
-                </text>
-            {/each}
-        </g>
-    </svg>
-    <div class="mediation_type_text">
-        <p class="text">
-            <strong>Mediation events</strong>: non-coercive facilitation of
-            communication or negotiation between disputing parties to help them
-            reach a mutually acceptable agreement or resolution to their
-            conflict by an external third-party. Mediation always involves at
-            least two (local) conflict stakeholders, at least one of them
-            needing to be a belligerent. <br /><br />
-
-            <strong>Mediation-related events</strong>: non-coercive measures to
-            facilitate the mediation. These measures are aimed at (1)
-            encouraging a conflict party or parties to come to/continue with the
-            negotiation; (2) expanding the range of actors directly or
-            indirectly included in the mediation; (3) coordinating among
-            third-parties; (4) monitoring and advising on implementation as part
-            of formal follow-up mechanisms.<br /><br />
-
-            <strong>Best estimate of battle-related deaths</strong>: the most
-            reliable assessment of fatalities resulting directly from combat
-            between armed actors. Source:
-            <a
-                target="_blank"
-                href="https://ucdp.uu.se/downloads/index.html#ged_global"
-                >Uppsala Conflict Data Program (UCDP)</a
-            >
-        </p>
+    <div class="legend-item">
+      <div class="color-box steelblue"></div>
+      <span style="font-weight: 600;">Mediation-related</span>
     </div>
+    <div class="legend-item">
+      <div class="red-line"></div>
+      <span style="font-weight: 600;">Battle-related deaths (UCDP)</span>
+    </div>
+  </div>
+
+  <svg {width} {height}>
+    <g transform={`translate(${margin.left}, ${margin.top})`}>
+      <g bind:this={xAxisGroup} transform={`translate(0, ${innerHeight})`} />
+      <g bind:this={yAxisGroup} transform={`translate(${0}, 0)`} />
+      <g
+        bind:this={yUCDPAxisGroup}
+        transform={`translate(${innerWidthAdjusted}, 0)`}
+      />
+
+      {#each processedData as d}
+        <rect
+          x={xScale(`${d.year}-${d.month}`)}
+          y={yScale(d.count.length)}
+          width={xScale.bandwidth()}
+          height={innerHeight - yScale(d.count.length)}
+          fill="steelblue"
+          rx="2"
+        />
+      {/each}
+
+      {#each processedM as m}
+        <rect
+          x={xScale(`${m.year}-${m.month}`)}
+          y={yScale(m.count.length)}
+          width={xScale.bandwidth()}
+          height={innerHeight - yScale(m.count.length)}
+          fill="white"
+          rx="2"
+        />
+      {/each}
+
+      <path d={pathData} fill="none" stroke="red" stroke-width="2" />
+
+      {#each ucdp_plot as d}
+        <circle
+          cx={ucdp_xScale(`${d.year}-${d.month}`) + ucdp_xScale.bandwidth() / 2}
+          cy={ucdp_yScale(d.best_count)}
+          r="3"
+          fill="red"
+          stroke="black"
+        />
+      {/each}
+      {#each historical_events as event, i}
+        <line
+          x1={xScale(`${event.year}-${event.month}`)}
+          y1={10 + i * 20}
+          x2={xScale(`${event.year}-${event.month}`)}
+          y2={innerHeight}
+          stroke="gray"
+          stroke-width="1"
+          stroke-opacity="0.5"
+          stroke-dasharray="4 2"
+        />
+        <text
+          x={xScale(`${event.year}-${event.month}`)}
+          y={i * 20}
+          fill="gray"
+          text-anchor="middle"
+        >
+          {event.name}
+        </text>
+      {/each}
+    </g>
+  </svg>
+  <div class="mediation_type_text">
+    <p class="text">
+      <strong>Mediation events</strong>: non-coercive facilitation of
+      communication or negotiation between disputing parties to help them reach
+      a mutually acceptable agreement or resolution to their conflict by an
+      external third-party. Mediation always involves at least two (local)
+      conflict stakeholders, at least one of them needing to be a belligerent.
+      <br /><br />
+
+      <strong>Mediation-related events</strong>: non-coercive measures to
+      facilitate the mediation. These measures are aimed at (1) encouraging a
+      conflict party or parties to come to/continue with the negotiation; (2)
+      expanding the range of actors directly or indirectly included in the
+      mediation; (3) coordinating among third-parties; (4) monitoring and
+      advising on implementation as part of formal follow-up mechanisms.<br
+      /><br />
+
+      <strong>Best estimate of battle-related deaths</strong>: the most reliable
+      assessment of fatalities resulting directly from combat between armed
+      actors. Source:
+      <a
+        target="_blank"
+        href="https://ucdp.uu.se/downloads/index.html#ged_global"
+        >Uppsala Conflict Data Program (UCDP)</a
+      >
+    </p>
+  </div>
 </div>
 
 <style>
-    h4 {
-        font-size: 20px;
-    }
+  h4 {
+    font-size: 20px;
+  }
 
-    .mediation_type {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #001c23;
-        box-sizing: border-box;
-        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
-        padding-bottom: 20px;
-    }
+  .mediation_type {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #001c23;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+    padding-bottom: 20px;
+  }
 
-    .legend {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        padding: 20px;
-        font-family: Arial, sans-serif;
-        align-self: flex-start;
-        width: 100%;
-    }
+  .legend {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    align-self: flex-start;
+    width: 100%;
+  }
 
-    .legend-item {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-size: 12px;
-        font-family: "Montserrat", sans-serif;
-    }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+  }
 
-    .color-box {
-        width: 20px;
-        height: 20px;
-        border: 1px solid black;
-        border-radius: 2px;
-    }
+  .color-box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+  }
 
-    .steelblue {
-        background-color: steelblue;
-    }
-    .white {
-        background-color: white;
-    }
+  .steelblue {
+    background-color: steelblue;
+  }
+  .white {
+    background-color: white;
+  }
 
-    .red-line {
-        width: 20px;
-        height: 2px;
-        background-color: red;
-    }
+  .red-line {
+    width: 20px;
+    height: 2px;
+    background-color: red;
+  }
 
-    .text {
-        max-width: 800px;
-        line-height: 1.2;
-        text-align: left;
-    }
+  .text {
+    max-width: 800px;
+    line-height: 1.2;
+    text-align: left;
+  }
 
-    a {
-        color: rgb(215, 215, 215);
-        font-weight: 400;
-    }
+  a {
+    color: rgb(215, 215, 215);
+    font-weight: 400;
+  }
 
-    a:focus {
-        outline: none; /* optional: removes default focus ring */
-        background-color: rgb(255, 255, 255); /* highlight background */
-        color: black; /* change text color */
-        border-radius: 2px; /* optional: rounded highlight */
-    }
+  a:focus {
+    outline: none; /* optional: removes default focus ring */
+    background-color: rgb(255, 255, 255); /* highlight background */
+    color: black; /* change text color */
+    border-radius: 2px; /* optional: rounded highlight */
+  }
 </style>

@@ -95,7 +95,7 @@
         let path = [
             "../data/mend_all_actors.csv",
             "../data/mena.csv",
-            "../data/mend_0207.csv",
+            "../data/mend_0207_fixed.csv",
             "../data/ucdp_last_last.csv",
             "../data/processes.csv",
             "../data/countries.csv",
@@ -297,6 +297,8 @@
         });
 
         processedData = fillMissingMonths(processedData);
+        console.log(groupedData);
+        
 
         // Filter UCDP to only months within the mediation data range for plotting
         const medMonths = new Set(processedData.map((d) => `${d.year}-${d.month}`));
