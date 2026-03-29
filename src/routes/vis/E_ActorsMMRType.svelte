@@ -23,9 +23,10 @@
     let abbreviations = [];
     let actorLookup;
     let medType = "All";
-    let selectedYearsAgt = [2018, 2024];
-    let minYear = 2018;
-    let maxYear = 2024;
+    $: minYear = def_data.length > 0 ? Math.min(...def_data.map((d) => +d.Year)) : 2018;
+    $: maxYear = def_data.length > 0 ? Math.max(...def_data.map((d) => +d.Year)) : 2025;
+    let selectedYearsAgt = [2018, 2025];
+    $: selectedYearsAgt = [minYear, maxYear];
     let year_data = mediations;
 
     // $: categoryPositions = categories.map((category) => {
@@ -45,7 +46,7 @@
         // Iterate through the array
         mediations.forEach((entry) => {
             // Split IDs if multiple exist
-            const ids = entry.third_party_id_GLOPAD.split(";");
+            const ids = entry.third_party_id_MEND.split(";");
             ids.forEach((id) => {
                 thirdPartyCounts[id] = (thirdPartyCounts[id] || 0) + 1;
             });
@@ -58,7 +59,7 @@
         }));
 
         const updatedIdValues = resultz.map((item) => {
-            const match = actors.find((actor) => actor.GLOPAD_ID === item.id);
+            const match = actors.find((actor) => actor.MEND_ID === item.id);
             return { ...item, name: match ? match.ActorName : item.id };
         });
 
@@ -72,8 +73,8 @@
 
         // Create a lookup table from actors
         const categoryLookup = actors.reduce((acc, actor) => {
-            acc[actor.GLOPAD_ID] =
-                actor.actor_classification_glopad || "Unknown";
+            acc[actor.MEND_ID] =
+                actor.actor_classification || "Unknown";
             return acc;
         }, {});
 

@@ -36,11 +36,7 @@
                     text-anchor="start"
                     fill="white"
                 >
-                    {location}
-                    {#if country !== location && country !== "Unknown"}
-                        {"- " + country + ""}
-                    {/if}
-                    {"[" + count + "]"}
+                    {location}{#if country !== location && country !== "Unknown"}{", " + country}{/if}{" [" + count + "]"}
                 </text>
             {/each}
         </g>
