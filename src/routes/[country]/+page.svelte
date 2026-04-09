@@ -4,7 +4,7 @@
     import Fuse from "fuse.js";
     import * as d3 from "d3";
     import { onMount } from "svelte";
-    import { getCSV, getGeo, fillMissingMonths } from "../../utils.js";
+    import { getCSV, getGeo, fillMissingMonths, fillMissingMonthsUCDP } from "../../utils.js";
     import Navigation from "../Navigation.svelte";
     import A_MediationPerMonth from "../vis/A_MediationPerMonth.svelte";
     import B_MediationLocations from "../vis/B_MediationLocations.svelte";
@@ -95,7 +95,7 @@
         let path = [
             "../data/mend_all_actors.csv",
             "../data/mena.csv",
-            "../data/mend_0207_fixed.csv",
+            "../data/mend_0207.csv",
             "../data/ucdp_last_last.csv",
             "../data/processes.csv",
             "../data/countries.csv",
@@ -300,9 +300,12 @@
         console.log(groupedData);
         
 
-        // Filter UCDP to only months within the mediation data range for plotting
-        const medMonths = new Set(processedData.map((d) => `${d.year}-${d.month}`));
-        ucdp_plot = ucdp_final.filter((d) => medMonths.has(`${d.year}-${d.month}`));
+        // Fill UCDP gaps with 0s: start when MEND starts, end when UCDP ends
+        const medYears = processedData.map((d) => +d.year);
+        const ucdpYears = ucdp_final.map((d) => +d.year);
+        const fillMin = Math.min(...medYears);
+        const fillMax = Math.max(...ucdpYears);
+        ucdp_plot = fillMissingMonthsUCDP(ucdp_final, fillMin, fillMax);
 
         // only M
         const only_m_grouped = d3.groups(

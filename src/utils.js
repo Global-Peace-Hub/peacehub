@@ -135,6 +135,32 @@ export const countryNames = [
     "Yemen"
 ];
 
+export function fillMissingMonthsUCDP(data, minYear, maxYear) {
+    if (data.length === 0) return [];
+
+    let completeData = [];
+
+    for (let year = minYear; year <= maxYear; year++) {
+        for (let month = 1; month <= 12; month++) {
+            let existingEntry = data.find(
+                (d) => d.year == year && d.month == String(month),
+            );
+
+            if (existingEntry) {
+                completeData.push(existingEntry);
+            } else {
+                completeData.push({
+                    year: String(year),
+                    month: String(month),
+                    best_count: 0,
+                });
+            }
+        }
+    }
+
+    return completeData;
+}
+
 export function fillMissingMonths(data) {
     if (data.length === 0) return [];
 
