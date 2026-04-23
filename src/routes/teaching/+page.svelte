@@ -114,6 +114,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- 2026/27 VIP Projects Button -->
+        <div class="vip-future-projects">
+            <a href="#" class="vip-future-button" aria-label="Explore upcoming VIP student projects">
+                Explore 2026/27 VIP Student Projects
+            </a>
+        </div>
     </section>
 
     <footer>
@@ -232,6 +239,50 @@
     @media (max-width: 767px) {
         .mediation-grid {
             grid-template-columns: 1fr; /* full width on mobile */
+        }
+    }
+
+    /* VIP Future Projects Button */
+    .vip-future-projects {
+        text-align: center;
+        margin: 30px auto 0 auto;
+        width: 55%;
+    }
+
+    .vip-future-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.12);
+        color: rgb(215, 215, 215) !important;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 400;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+        font-size: 16px;
+    }
+
+    .vip-future-button:hover {
+        background-color: rgba(255, 255, 255, 0.18);
+        border-color: rgba(255, 255, 255, 0.6);
+        color: white !important;
+    }
+
+    .vip-future-button:focus {
+        outline: 2px solid white;
+        outline-offset: 2px;
+        background-color: white;
+        color: black !important;
+    }
+
+    @media (max-width: 767px) {
+        .vip-future-projects {
+            width: 90%;
+        }
+
+        .vip-future-button {
+            padding: 10px 20px;
+            font-size: 14px;
         }
     }
 </style>
