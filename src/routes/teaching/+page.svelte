@@ -252,20 +252,22 @@
     .vip-future-button {
         display: inline-block;
         padding: 10px 20px;
-        background-color: rgba(255, 255, 255, 0.12);
+        background-color: rgba(70, 130, 180, 0.2);
         color: rgb(215, 215, 215) !important;
-        border: 1px solid rgba(255, 255, 255, 0.4);
+        border: 1px solid rgba(135, 206, 235, 0.5);
         border-radius: 4px;
         text-decoration: none;
         font-weight: 400;
-        transition: background-color 0.3s ease, border-color 0.3s ease;
+        transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         font-size: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
     .vip-future-button:hover {
-        background-color: rgba(255, 255, 255, 0.18);
-        border-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(70, 130, 180, 0.3);
+        border-color: rgba(135, 206, 235, 0.7);
         color: white !important;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
     }
 
     .vip-future-button:focus {
