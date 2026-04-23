@@ -115,10 +115,10 @@
             </div>
         </div>
 
-        <!-- 2026/27 VIP Projects Button -->
+        <!-- 2025/26 VIP Projects Button -->
         <div class="vip-future-projects">
             <a href="#" class="vip-future-button" aria-label="Explore upcoming VIP student projects">
-                Explore 2026/27 VIP Student Projects
+                Explore 2025/26 VIP Student Projects
             </a>
         </div>
     </section>
