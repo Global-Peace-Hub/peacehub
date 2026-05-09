@@ -115,7 +115,12 @@
             let hist_events = glopad[8];
 
             // Filter data for this country
-            mediations = mend.filter((d) => d.conflict_country && d.conflict_country.includes(country));
+            mediations = mend.filter((d) => {
+                if (!d.conflict_country) return false;
+                // Split by semicolon and check if country matches any part exactly
+                const countries = d.conflict_country.split(';').map(c => c.trim());
+                return countries.includes(country);
+            });
             ucdp = ucdp.filter((d) => d.country === country);
 
             // Auto-detect year range from mediation data
